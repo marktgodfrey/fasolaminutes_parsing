@@ -69,7 +69,7 @@ class SingingSpider(scrapy.Spider):
 
 
             if not pagenum:
-                print "SHIT " + song.xpath('./a/text()').extract()[0]
+                print "OOPS: " + song.xpath('./a/text()').extract()[0]
                 continue
 
 
