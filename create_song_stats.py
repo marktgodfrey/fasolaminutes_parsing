@@ -17,12 +17,16 @@ def create_stats(conn):
     for year_row in year_rows:
         year = year_row[0]
         rank = 1
-        curs.execute("SELECT song_id, COUNT(*) FROM song_leader_joins INNER JOIN minutes ON song_leader_joins.minutes_id = minutes.id WHERE minutes.year = ? GROUP BY song_id ORDER BY count(*) DESC", [year])
+        curs.execute("SELECT song_id, COUNT(*) FROM song_leader_joins \
+            INNER JOIN minutes ON song_leader_joins.minutes_id = minutes.id \
+            WHERE minutes.year = ? GROUP BY song_id ORDER BY count(*) DESC", \
+            [year])
         song_rows = curs.fetchall()
         for song_row in song_rows:
             song_id = song_row[0]
             lead_count = song_row[1]
-            curs.execute("INSERT INTO song_stats (year, song_id, lead_count, rank) VALUES (?,?,?,?)", [year, song_id, lead_count, rank])
+            curs.execute("INSERT INTO song_stats (year, song_id, lead_count, \
+                rank) VALUES (?,?,?,?)", [year, song_id, lead_count, rank])
             rank = rank + 1
         conn.commit()
 
@@ -35,9 +39,11 @@ def create_stats(conn):
             for year_row in year_rows:
                 song_id = song_row[0]
                 year = year_row[0]
-                curs.execute("SELECT * FROM song_stats WHERE song_id = ? AND year = ?", [song_id, year])
+                curs.execute("SELECT * FROM song_stats WHERE song_id = ? AND \
+                    year = ?", [song_id, year])
                 if curs.fetchone() is None:
-                	curs.execute("INSERT INTO song_stats (year, song_id, lead_count, rank) VALUES (?,?,0,554)", [year, song_id])
+                    curs.execute("INSERT INTO song_stats (year, song_id, \
+                        lead_count, rank) VALUES (?,?,0,554)", [year, song_id])
         conn.commit()
 
         year_count = year_count + 1
