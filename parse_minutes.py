@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 import re
-import sqlite3
+import util
 
 bad_words = [
 'Chairman',
@@ -182,7 +182,6 @@ def parse_minutes(s, debug_print=False):
 
 def insert_minutes(conn, d, minutes_id, debug_print=False):
 
-    conn.text_factory = unicode
     curs = conn.cursor()
     for session in d:
         for leader in session['leaders']:
@@ -249,10 +248,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
 
     curs.close()
 
-def parse_all_minutes():
-
-    conn = sqlite3.connect("minutes.db")
-    conn.text_factory = lambda x: x.decode('mac-roman')
+def parse_all_minutes(conn):
     curs = conn.cursor()
 
     # 3928 - camp fasola 2012
@@ -267,7 +263,6 @@ def parse_all_minutes():
         print "%s on %s"%(row[1],row[2])
 
         s = row[0]
-        # s = s.encode('utf-8')
         d = parse_minutes(s)
 
         minutes_id = row[3]
@@ -275,26 +270,18 @@ def parse_all_minutes():
         conn.commit()
 
     curs.close()
-    conn.close()
 
-def clear_minutes():
-
-    conn = sqlite3.connect("minutes.db")
+def clear_minutes(conn):
     curs = conn.cursor()
-
     curs.execute("DELETE FROM leaders")
     curs.execute("DELETE FROM song_leader_joins")
     curs.execute("DELETE FROM sqlite_sequence WHERE name='leaders'")
     curs.execute("DELETE FROM sqlite_sequence WHERE name='song_leader_joins'")
-
     conn.commit()
-
     curs.close()
-    conn.close()
-
-def main():
-    clear_minutes()
-    parse_all_minutes()
 
 if __name__ == '__main__':
-    main()
+    db = util.open_db()
+    clear_minutes(db)
+    parse_all_minutes(db)
+    db.close()

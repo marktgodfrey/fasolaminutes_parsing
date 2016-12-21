@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import sqlite3
+import util
 from parse_minutes import parse_minutes
 from parse_minutes import insert_minutes
 
@@ -27,7 +27,6 @@ if __name__ == '__main__':
     print s
     print parse_minutes(s, debug_print=True)
 
-    conn = sqlite3.connect("minutes.db")
-    conn.text_factory = str
+    conn = util.open_db()
     # insert_minutes(conn, parse_minutes(s), 3542)
     conn.close()

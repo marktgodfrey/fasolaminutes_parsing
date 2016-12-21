@@ -1,14 +1,9 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import sqlite3
 import time
 from numpy import array, log2
-
-def open_db():
-    conn = sqlite3.connect("minutes.db", check_same_thread = False)
-    conn.text_factory = str
-    return conn
+import util
 
 def count_leads(conn, leader_id):
     curs = conn.cursor()
@@ -106,7 +101,7 @@ def delete_stats(conn):
     curs.close()
 
 if __name__ == '__main__':
-    db = open_db()
+    db = util.open_db()
     delete_stats(db)
     create_stats(db)
     create_counts(db)

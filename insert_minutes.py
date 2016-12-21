@@ -2,11 +2,15 @@
 # encoding: utf-8
 
 import csv
-import sqlite3
+import util
 
-def main():
-    conn = sqlite3.connect("minutes.db")
-    conn.text_factory = str
+def delete_minutes(conn):
+    curs = conn.cursor()
+    curs.execute("DELETE FROM minutes")
+    conn.commit()
+    curs.close()
+
+def insert_minutes(conn):
     curs = conn.cursor()
 
     reader = csv.reader(open("Minutes_All.txt",'rb'), delimiter='\t')
@@ -16,8 +20,12 @@ def main():
             curs.execute('INSERT INTO minutes (Name, Location, Date, Minutes, Year, IsDenson, GoodCt, ErrCt, AmbCt, CorrCt, ProbCt, TotalCt, ProbPercent) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', row)
             conn.commit()
 
+    conn.commit()
     curs.close()
 
 
 if __name__ == '__main__':
-    main()
+    db = util.open_db()
+    delete_minutes(db)
+    insert_minutes(db)
+    db.close()

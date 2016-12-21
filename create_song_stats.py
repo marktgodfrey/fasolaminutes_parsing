@@ -1,13 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import sqlite3
 import time
-
-def open_db():
-    conn = sqlite3.connect("minutes.db")
-    conn.text_factory = str
-    return conn
+import util
 
 def create_stats(conn):
     curs = conn.cursor()
@@ -60,7 +55,7 @@ def delete_stats(conn):
     curs.close()
 
 if __name__ == '__main__':
-    db = open_db()
+    db = util.open_db()
     delete_stats(db)
     create_stats(db)
     db.close()

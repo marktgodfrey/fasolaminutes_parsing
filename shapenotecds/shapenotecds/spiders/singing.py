@@ -3,6 +3,11 @@ import scrapy
 import json
 import sqlite3
 
+def open_db():
+    conn = sqlite3.connect("../minutes.db")
+    conn.text_factory = str
+    return conn
+
 
 class SingingSpider(scrapy.Spider):
     name = "singing"
@@ -12,8 +17,7 @@ class SingingSpider(scrapy.Spider):
     # )
 
     def start_requests(self):
-        conn = sqlite3.connect("/Users/mark/sacredharp/minutes_data/minutes.db")
-        conn.text_factory = str
+        conn = open_db()
         curs = conn.cursor()
 
         # reqs = []
@@ -39,8 +43,7 @@ class SingingSpider(scrapy.Spider):
     def parse_old(self, response):
         sel = scrapy.Selector(response)
 
-        conn = sqlite3.connect("/Users/mark/sacredharp/minutes_data/minutes.db")
-        conn.text_factory = str
+        conn = open_db()
         curs = conn.cursor()
 
         curs.execute('SELECT id FROM minutes WHERE audio_url=?', [response.url])
@@ -108,8 +111,7 @@ class SingingSpider(scrapy.Spider):
         s = sel.xpath('//script[@class="wp-playlist-script"]/text()').extract()[0]
         p = json.loads(s)
 
-        conn = sqlite3.connect("/Users/mark/sacredharp/minutes_data/minutes.db")
-        conn.text_factory = str
+        conn = open_db()
         curs = conn.cursor()
 
         curs.execute('SELECT id FROM minutes WHERE audio_url=?', [response.url])
