@@ -118,6 +118,9 @@ class SingingSpider(scrapy.Spider):
         row = curs.fetchone()
         minutes_id = row[0]
 
+        with open(str(minutes_id) + '.json', 'w') as f:
+            json.dump(p, f, indent=4, separators=(',', ': '))
+
         songs = p['tracks']
         for song in songs:
             url = song['src']
