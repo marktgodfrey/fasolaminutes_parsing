@@ -2,6 +2,7 @@ from scrapy.spider import Spider
 from scrapy.selector import Selector
 
 import sqlite3
+from urlparse import urlparse, urljoin
 
 def open_db():
     conn = sqlite3.connect("../minutes.db")
@@ -30,7 +31,7 @@ class SingingSpider(Spider):
         curs = conn.cursor()
 
         reqs = []
-        curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\'')
+        curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\' AND id=3499')
         for row in curs:
             reqs.append(self.make_requests_from_url(row[0]))
 
@@ -72,13 +73,15 @@ class SingingSpider(Spider):
         row = curs.fetchone()
         minutes_id = row[0]
 
+        base_url = '{uri.scheme}://{uri.netloc}/'.format(uri=urlparse(response.url))
+
         sel = Selector(response)
         songs = sel.xpath('//div[@class="j-module n j-downloadDocument "]')
         for song in songs:
             url = None
             u = song.xpath('.//div[@class="leftDownload"]')[0].xpath('./a/@href').extract()
             if u:
-                url = u[0]
+                url = urljoin(base_url, u[0])
                 # print url
 
             pagenum = None
