@@ -129,6 +129,7 @@ class SingingSpider(scrapy.Spider):
 
             curs.execute("SELECT id FROM songs WHERE PageNum IN (?, ?)", [pagenum, altpage])
             row = curs.fetchone()
+<<<<<<< 6cc5d73057642631ea3aab20d947f5d1c0907fc4
             if row:
                 song_id = row[0]
                 songs.append(song_id)
@@ -159,5 +160,31 @@ class SingingSpider(scrapy.Spider):
                 for id in join_ids:
                     curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE id=?", (url, id))
                     self.logger.info("update: %5s %5s %s" % (id, pagenum, url))
+=======
+            if row is not None:
+                song_id = row[0]
+            if song_id == 0:
+                if pagenum[-1:] == 't' or pagenum[-1:] == 'b':
+                    #check for song without "t" or "b"
+                    curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum[0:-1]])
+                    row = curs.fetchone()
+                    if row is not None:
+                        song_id = row[0]
+                else:
+                    #check for song on "top"
+                    curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum+'t'])
+                    row = curs.fetchone()
+                    if row is not None:
+                        song_id = row[0]
+            if song_id == 0:
+                # print "\tno song id! %s"%(pagenum)
+                continue
+
+            # print pagenum + " :  " + url
+            # print "%d : %d"%(minutes_id, song_id)
+
+            #TODO: check for same song at the same singing (different day)
+            curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE minutes_id=? AND song_id=?", (url, minutes_id, song_id))
+>>>>>>> fix indents
 
         conn.commit()
