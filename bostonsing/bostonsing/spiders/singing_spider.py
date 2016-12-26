@@ -31,7 +31,7 @@ class SingingSpider(Spider):
         curs = conn.cursor()
 
         reqs = []
-        curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\' AND id=3499')
+        curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\'')
         for row in curs:
             reqs.append(self.make_requests_from_url(row[0]))
 
