@@ -67,7 +67,7 @@ class SingingSpider(scrapy.Spider):
 
 
                 if not pagenum:
-                    print "OOPS: " + song.xpath('./a/text()').extract()[0]
+                    self.logger.warning("no song id: " + song.xpath('./a/text()').extract()[0])
                     continue
 
                 song_data.append((pagenum, url))
@@ -120,7 +120,7 @@ class SingingSpider(scrapy.Spider):
                 urls.append(url)
                 pages.append(pagenum)
             else:
-                print "no song id: " + pagenum
+                self.logger.warning("no song id: " + pagenum)
 
         # make list of songs and ids from the minutes
         minutes_songs = []
@@ -138,11 +138,11 @@ class SingingSpider(scrapy.Spider):
         last_a = 0
         for a, b, n in s.get_matching_blocks():
             for pagenum, url in zip(pages[last_a:a], urls[last_a:a]):
-                print "skip: %5s %s" % (pagenum, url)
+                self.logger.warning("skip: %5s %s" % (pagenum, url))
             last_a = a+n
             for pagenum, url, join_ids in zip(pages[a:a+n], urls[a:a+n], minutes_ids[b:b+n]):
                 for id in join_ids:
                     curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE id=?", (url, id))
-                    print "update: %5s %5s %s" % (id, pagenum, url)
+                    self.logger.info("update: %5s %5s %s" % (id, pagenum, url))
 
         conn.commit()
