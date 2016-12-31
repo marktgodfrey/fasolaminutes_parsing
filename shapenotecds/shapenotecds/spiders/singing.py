@@ -2,6 +2,9 @@
 import scrapy
 import json
 import sqlite3
+import os
+import re
+import csv
 
 def open_db():
     conn = sqlite3.connect("../minutes.db")
@@ -23,9 +26,10 @@ class SingingSpider(scrapy.Spider):
         # reqs = []
         curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%shapenotecds.com%\'')
         # curs.execute('SELECT audio_url FROM minutes WHERE id=4903')
-        for row in curs:
-        	# reqs.append(self.make_requests_from_url(row[0]))
-            yield self.make_requests_from_url(row[0])
+        for row in curs.fetchall():
+            # reqs.append(self.make_requests_from_url(row[0]))
+            if not self.parse_file(row[0]):
+                yield self.make_requests_from_url(row[0])
 
         curs.close()
         conn.close()
@@ -39,6 +43,17 @@ class SingingSpider(scrapy.Spider):
             self.parse_old(response)
         else:
             self.parse_fancy(response)
+
+    def parse_file(self, url):
+        m = re.search(r'shapenotecds\.com/([^/]+)', url)
+        if m:
+            filename = m.group(1) + '.csv'
+            if os.path.isfile(filename):
+                print "<FILE: %s>" % filename
+                with open(filename, 'rb') as f:
+                    song_data = list(csv.reader(f))
+                    self.parse_section(url, song_data)
+                return True
 
     def parse_old(self, response):
         sel = scrapy.Selector(response)
