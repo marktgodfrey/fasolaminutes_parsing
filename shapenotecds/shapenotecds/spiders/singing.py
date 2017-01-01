@@ -2,6 +2,7 @@
 import scrapy
 import json
 import sqlite3
+import difflib
 import os
 import re
 import csv
@@ -58,115 +59,105 @@ class SingingSpider(scrapy.Spider):
     def parse_old(self, response):
         sel = scrapy.Selector(response)
 
-        conn = open_db()
-        curs = conn.cursor()
+        sections = sel.xpath('//ol')
+        for section in sections:
+            song_data = []
+            songs = section.xpath('./li')
 
-        curs.execute('SELECT id FROM minutes WHERE audio_url=?', [response.url])
-        row = curs.fetchone()
-        minutes_id = row[0]
+            for song in songs:
+                url = song.xpath('./a/@href').extract()[0]
 
-        songs = sel.xpath('//ol/li')
-        for song in songs:
-            url = song.xpath('./a/@href').extract()[0]
-
-            pagenum = None
-            p = song.xpath('./a/text()').re(r'-(\d{2,3}[tb]?)')
-            if p:
-				pagenum = p[0]
-            else:
-            	p = song.xpath('./a/text()').re(r'\s(\d{2,3}[tb]?)')
+                pagenum = None
+                p = song.xpath('./a/text()').re(r'-(\d{2,3}[tb]?)')
                 if p:
                     pagenum = p[0]
                 else:
-                    p = song.xpath('./a/text()').re(r'(\d{2,3}[tb]?)')
+                    p = song.xpath('./a/text()').re(r'\s(\d{2,3}[tb]?)')
                     if p:
                         pagenum = p[0]
+                    else:
+                        p = song.xpath('./a/text()').re(r'(\d{2,3}[tb]?)')
+                        if p:
+                            pagenum = p[0]
 
 
-            if not pagenum:
-                print "OOPS: " + song.xpath('./a/text()').extract()[0]
-                continue
+                if not pagenum:
+                    self.logger.warning("no song id: " + song.xpath('./a/text()').extract()[0])
+                    continue
 
+                song_data.append((pagenum, url))
 
-            # print pagenum + " :  " + url
-
-
-            song_id = 0
-            curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum])
-            row = curs.fetchone()
-            if row is not None:
-            	song_id = row[0]
-            if song_id == 0:
-            	if pagenum[-1:] == 't' or pagenum[-1:] == 'b':
-            		#check for song without "t" or "b"
-            		curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum[0:-1]])
-            		row = curs.fetchone()
-            		if row is not None:
-            			song_id = row[0]
-            	else:
-            		#check for song on "top"
-            		curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum+'t'])
-            		row = curs.fetchone()
-            		if row is not None:
-            			song_id = row[0]
-            if song_id == 0:
-            	# print "\tno song id! %s"%(pagenum)
-            	continue
-
-            # print pagenum + " :  " + url
-            # print "%d : %d"%(minutes_id, song_id)
-
-            #TODO: check for same song at the same singing (different day)
-            curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE minutes_id=? AND song_id=?", (url, minutes_id, song_id))
-
-        conn.commit()
+            self.parse_section(response.url, song_data)
 
     def parse_fancy(self, response):
         sel = scrapy.Selector(response)
-        s = sel.xpath('//script[@class="wp-playlist-script"]/text()').extract()[0]
-        p = json.loads(s)
 
+        sections = sel.xpath('//script[@class="wp-playlist-script"]/text()').extract()
+        for songs in sections:
+            song_data = []
+            p = json.loads(songs)
+
+            with open(str(minutes_id) + '.json', 'w') as f:
+                json.dump(p, f, indent=4, separators=(',', ': '))
+
+            songs = p['tracks']
+            for song in songs:
+                url = song['src']
+                pagenum = song['title']
+                song_data.append((pagenum, url))
+
+            self.parse_section(response.url, song_data)
+
+    def parse_section(self, audio_url, song_data):
         conn = open_db()
         curs = conn.cursor()
 
-        curs.execute('SELECT id FROM minutes WHERE audio_url=?', [response.url])
+        curs.execute('SELECT id FROM minutes WHERE audio_url=?', [audio_url])
         row = curs.fetchone()
         minutes_id = row[0]
 
-        with open(str(minutes_id) + '.json', 'w') as f:
-            json.dump(p, f, indent=4, separators=(',', ': '))
+        # make lists of recording urls and song ids
+        songs = []
+        pages = []
+        urls = []
+        for pagenum, url in song_data:
+            altpage = ''
+            if pagenum[-1:] in ('t', 'b'):
+                altpage = pagenum[:-1]
+            else:
+                altpage = pagenum + 't'
 
-        songs = p['tracks']
-        for song in songs:
-            url = song['src']
-            pagenum = song['title']
-
-            song_id = 0
-            curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum])
+            curs.execute("SELECT id FROM songs WHERE PageNum IN (?, ?)", [pagenum, altpage])
             row = curs.fetchone()
-            if row is not None:
-            	song_id = row[0]
-            if song_id == 0:
-            	if pagenum[-1:] == 't' or pagenum[-1:] == 'b':
-            		#check for song without "t" or "b"
-            		curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum[0:-1]])
-            		row = curs.fetchone()
-            		if row is not None:
-            			song_id = row[0]
-            	else:
-            		#check for song on "top"
-            		curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum+'t'])
-            		row = curs.fetchone()
-            		if row is not None:
-            			song_id = row[0]
-            if song_id == 0:
-            	# print "\tno song id! %s"%(pagenum)
-            	continue
+            if row:
+                song_id = row[0]
+                songs.append(song_id)
+                urls.append(url)
+                pages.append(pagenum)
+            else:
+                self.logger.warning("no song id: " + pagenum)
 
-            # print pagenum + " :  " + url
-            # print "%d : %d"%(minutes_id, song_id)
+        # make list of songs and ids from the minutes
+        minutes_songs = []
+        minutes_ids = []
+        curs.execute("SELECT id, song_id FROM song_leader_joins WHERE minutes_id=?", [minutes_id])
+        for id, song_id in curs:
+            if not minutes_songs or minutes_songs[-1] != song_id:
+                minutes_songs.append(song_id)
+                minutes_ids.append([id])
+            else:
+                minutes_ids[-1].append(id)
 
-            #TODO: check for same song at the same singing (different day)
-            curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE minutes_id=? AND song_id=?", (url, minutes_id, song_id))
+        # get the longest subsequence from recordings and minutes
+        s = difflib.SequenceMatcher(a=songs, b=minutes_songs)
+        last_a = 0
+        for a, b, n in s.get_matching_blocks():
+            for pagenum, url in zip(pages[last_a:a], urls[last_a:a]):
+                self.logger.warning("skip: %5s %s" % (pagenum, url))
+            last_a = a+n
+            for pagenum, url, join_ids in zip(pages[a:a+n], urls[a:a+n], minutes_ids[b:b+n]):
+                for id in join_ids:
+                    curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE id=?", (url, id))
+                    self.logger.info("update: %5s %5s %s" % (id, pagenum, url))
 
         conn.commit()
