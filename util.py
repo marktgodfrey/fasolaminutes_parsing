@@ -5,5 +5,5 @@ import sqlite3
 
 def open_db():
     conn = sqlite3.connect("minutes.db")
-    conn.text_factory = str
+    conn.text_factory = unicode
     return conn

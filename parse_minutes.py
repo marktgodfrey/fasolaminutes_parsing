@@ -136,7 +136,7 @@ def build_bad_words():
 def build_non_denson():
     ss = ''
     for s in non_denson:
-        ss += '\(' + s + '\)|'
+        ss += r'\(' + s + r'\)|'
     ss = ss[:-1]
     return ss
 
@@ -148,7 +148,7 @@ def parse_minutes(s, debug_print=False):
         session_count += 1
 
         # name_pattern = re.compile('(?<=Chairman\s)[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z]\w+');
-        name_pattern = re.compile(r'(\A|(?<=\s))((?!' + build_bad_words() + r')(?<!for\s)[A-Z]([\w’-]+|\.\s|\.)\s?){2,5}')
+        name_pattern = re.compile(ur'(\A|(?<=\s))((?!' + build_bad_words() + ur')(?<!for\s)[A-Z\u00C0-\u024F]([\u00C0-\u024F\w’-]+|\.\s|\.)\s?){2,5}', re.UNICODE)
         # pagenum_pattern = re.compile('[\[\{/](\d{2,3}[tb]?)[\]\}]')
         pagenum_pattern = re.compile(r'[\[\{/\s](\d{2,3}[tb]?)([\]\}\s]|$)(?!' + build_non_denson() + r')')
 
@@ -236,7 +236,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
                 curs.execute("INSERT INTO leaders (name) VALUES (?)", [name])
                 conn.commit()
                 leader_id = curs.lastrowid
-                curs.execute("UPDATE leader_name_aliases SET leader_id=? WHERE name=?", [leader_id,name])
+                curs.execute("UPDATE leader_name_aliases SET leader_id=? WHERE name=?", [leader_id, name])
             else:
                 leader_id = row[0]
 
