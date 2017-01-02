@@ -271,6 +271,29 @@ def parse_all_minutes(conn):
 
     curs.close()
 
+def parse_minutes_by_id(conn, minutes_id):
+    curs = conn.cursor()
+
+    # 3928 - camp fasola 2012
+    # 3542 - ireland
+    curs.execute("SELECT Minutes, Name, Date, id, isDenson FROM minutes WHERE id=?", [minutes_id])
+    rows = curs.fetchall()
+    for row in rows:
+
+        if row[4] == 0:
+            continue
+
+        print "%s on %s"%(row[1],row[2])
+
+        s = row[0]
+        d = parse_minutes(s)
+
+        minutes_id = row[3]
+        insert_minutes(conn, d, minutes_id)
+        conn.commit()
+
+    curs.close()
+
 def clear_minutes(conn):
     curs = conn.cursor()
     curs.execute("DELETE FROM leaders")
@@ -284,4 +307,5 @@ if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
     parse_all_minutes(db)
+    # parse_minutes_by_id(db, 5165)
     db.close()
