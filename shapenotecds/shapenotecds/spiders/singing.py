@@ -97,8 +97,8 @@ class SingingSpider(scrapy.Spider):
             song_data = []
             p = json.loads(songs)
 
-            with open(str(minutes_id) + '.json', 'w') as f:
-                json.dump(p, f, indent=4, separators=(',', ': '))
+            # with open(str(minutes_id) + '.json', 'w') as f:
+            #     json.dump(p, f, indent=4, separators=(',', ': '))
 
             songs = p['tracks']
             for song in songs:
