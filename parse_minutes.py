@@ -2,6 +2,8 @@
 # encoding: utf-8
 
 import re
+import os
+import csv
 import util
 
 bad_words = [
@@ -140,6 +142,30 @@ def build_non_denson():
     ss = ss[:-1]
     return ss
 
+def parse_csv(filename, debug_print=False):
+    session_count = 1
+    d = []
+    leaders = []
+    pagenum_pattern = re.compile(r'\d{2,3}[tb]?')
+    with open(filename, 'rb') as f:
+        for row in csv.reader(f):
+            if len(row) < 2:
+                continue
+            (pagenum, name) = row
+            if pagenum == 'BREAK':
+                if debug_print: print 'BREAK: ' + name
+                d.append({'session': session_count, 'leaders': leaders})
+                session_count += 1
+                leaders = []
+            elif pagenum_pattern.match(pagenum):
+                leaders.append({'name': name, 'song': pagenum})
+                if debug_print: print '***name: ' + name + '\tsong: ' + pagenum
+            elif debug_print:
+                print 'SKIP song: ' + pagenum
+    if leaders:
+        d.append({'session': session_count, 'leaders': leaders})
+    return d
+
 def parse_minutes(s, debug_print=False):
     session_count = 0
     sessions = re.split('RECESS|LUNCH',s)
@@ -253,7 +279,7 @@ def parse_all_minutes(conn):
 
     # 3928 - camp fasola 2012
     # 3542 - ireland
-    curs.execute("SELECT Minutes, Name, Date, id, isDenson FROM minutes")
+    curs.execute("SELECT Minutes, Name, Date, id, isDenson, Year FROM minutes")
     rows = curs.fetchall()
     for row in rows:
 
@@ -262,8 +288,15 @@ def parse_all_minutes(conn):
 
         print "%s on %s"%(row[1],row[2])
 
-        s = row[0]
-        d = parse_minutes(s)
+        d = None
+        csv_id = re.sub('[^A-Za-z_]', '', re.sub('[-\s]+', '_', row[1]))
+        filename = 'minutes/%s_%d.csv' % (csv_id, row[5])
+        if os.path.isfile(filename):
+            print "    FROM FILE: " + filename
+            d = parse_csv(filename)
+        else:
+            s = row[0]
+            d = parse_minutes(s)
 
         minutes_id = row[3]
         insert_minutes(conn, d, minutes_id)
