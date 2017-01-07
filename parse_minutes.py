@@ -158,7 +158,7 @@ def parse_csv(filename, debug_print=False):
                 session_count += 1
                 leaders = []
             elif pagenum_pattern.match(pagenum):
-                leaders.append({'name': name, 'song': pagenum})
+                leaders.append({'name': name.decode('utf-8'), 'song': pagenum})
                 if debug_print: print '***name: ' + name + '\tsong: ' + pagenum
             elif debug_print:
                 print 'SKIP song: ' + pagenum
