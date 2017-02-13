@@ -27,7 +27,8 @@ class SingingSpider(SpiderBase):
         reqs = []
         curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\'')
         for row in curs:
-            reqs.append(self.make_requests_from_url(row[0]))
+            for url in row[0].split(','):
+                reqs.append(self.make_requests_from_url(url))
 
         curs.close()
         conn.close()

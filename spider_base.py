@@ -21,7 +21,10 @@ class SpiderBase(scrapy.Spider):
         conn = self.open_db()
         curs = conn.cursor()
 
-        curs.execute('SELECT id FROM minutes WHERE audio_url=?', [audio_url])
+        curs.execute(
+            'SELECT id FROM minutes WHERE audio_url=? OR audio_url LIKE ? OR audio_url LIKE ? OR audio_url LIKE ?',
+            [audio_url, audio_url + ',%', '%,' + audio_url, '%,' + audio_url + ',%'])
+
         row = curs.fetchone()
         minutes_id = row[0]
 
