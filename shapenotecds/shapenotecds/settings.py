@@ -9,6 +9,9 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
+
 BOT_NAME = 'shapenotecds'
 
 SPIDER_MODULES = ['shapenotecds.spiders']
