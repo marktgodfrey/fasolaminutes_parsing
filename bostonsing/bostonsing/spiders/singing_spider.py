@@ -1,15 +1,9 @@
-from scrapy.spider import Spider
 from scrapy.selector import Selector
-
-import sqlite3
 from urlparse import urlparse, urljoin
 
-def open_db():
-    conn = sqlite3.connect("../minutes.db")
-    conn.text_factory = str
-    return conn
+from spider_base import SpiderBase
 
-class SingingSpider(Spider):
+class SingingSpider(SpiderBase):
 
     name = "singing"
     allowed_domains = ["bostonsing.org"]
@@ -27,13 +21,14 @@ class SingingSpider(Spider):
     # start_urls = g_start_urls
 
     def start_requests(self):
-        conn = open_db()
+        conn = self.open_db()
         curs = conn.cursor()
 
         reqs = []
         curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\'')
         for row in curs:
-            reqs.append(self.make_requests_from_url(row[0]))
+            for url in row[0].split(','):
+                reqs.append(self.make_requests_from_url(url))
 
         curs.close()
         conn.close()
@@ -66,14 +61,9 @@ class SingingSpider(Spider):
         # 	return
         # print minutes_id
 
-        conn = open_db()
-        curs = conn.cursor()
-
-        curs.execute('SELECT id FROM minutes WHERE audio_url=?', [response.url])
-        row = curs.fetchone()
-        minutes_id = row[0]
-
         base_url = '{uri.scheme}://{uri.netloc}/'.format(uri=urlparse(response.url))
+
+        song_data = []
 
         sel = Selector(response)
         songs = sel.xpath('//div[@class="j-module n j-downloadDocument "]')
@@ -95,37 +85,11 @@ class SingingSpider(Spider):
                 print song.xpath('.//div[@class="rightDownload"]/div/div[@class="cc-m-download-file-name"]/text()').extract()
 
             if pagenum:
-                print pagenum
-
-                song_id = 0
-                curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum])
-                row = curs.fetchone()
-                if row is not None:
-                    song_id = row[0]
-                if song_id == 0:
-                    if pagenum[-1:] == 't' or pagenum[-1:] == 'b':
-                        #check for song without "t" or "b"
-                        curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum[0:-1]])
-                        row = curs.fetchone()
-                        if row is not None:
-                            song_id = row[0]
-                    else:
-                        #check for song on "top"
-                        curs.execute("SELECT id FROM songs WHERE PageNum=?", [pagenum+'t'])
-                        row = curs.fetchone()
-                        if row is not None:
-                            song_id = row[0]
-                if song_id == 0:
-                    print "\tno song id! %s"%(pagenum)
-                    continue
-
-                print pagenum + ":  " + url
-
-                #TODO: check for same song at the same singing (different day)
-                curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE minutes_id=? AND song_id=?", (url, minutes_id, song_id))
-                conn.commit()
+                song_data.append((pagenum, url))
             else:
                 print song
 
-        curs.close()
-        conn.close()
+        if song_data:
+            self.parse_section(response.url, song_data)
+        else:
+            print "NO SONGS", response.url

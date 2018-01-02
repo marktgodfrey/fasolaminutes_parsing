@@ -6,6 +6,9 @@
 #     http://doc.scrapy.org/topics/settings.html
 #
 
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../..'))
+
 BOT_NAME = 'bostonsing'
 BOT_VERSION = '1.0'
 
