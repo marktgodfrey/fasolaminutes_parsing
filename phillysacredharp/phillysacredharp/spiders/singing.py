@@ -16,18 +16,18 @@ class SingingSpider(SpiderBase):
 
         curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%phillysacredharp.org%\'')
         for row in curs.fetchall():
-            url = row[0]
-            if not self.parse_file(url):
-                # Keystone recordings are all on the same page, so we split
-                # them up by using a url hash. Because these will resolve to
-                # the same url and scrapy does duplicate filtering, we need
-                # to set dont_filter
-                request = scrapy.Request(url, dont_filter=True)
-                request.meta['original_url'] = url
-                m = re.search(r'#(\d+)$', url)
-                if m:
-                    request.meta['year'] = m.group(1)
-                yield request
+            if not self.parse_file(row[0]):
+                for url in row[0].split(','):
+                    # Keystone recordings are all on the same page, so we split
+                    # them up by using a url hash. Because these will resolve to
+                    # the same url and scrapy does duplicate filtering, we need
+                    # to set dont_filter
+                    request = scrapy.Request(url, dont_filter=True)
+                    request.meta['original_url'] = url
+                    m = re.search(r'#(\d+)$', url)
+                    if m:
+                        request.meta['year'] = m.group(1)
+                    yield request
 
         curs.close()
         conn.close()
