@@ -5,6 +5,8 @@
 `parse_minutes.py`  
 `create_leader_stats.py`  
 `create_song_stats.py`  
+`map_minutes_audio.py`  
 `cd ./bostonsing; scrapy crawl singing`  
 `cd ./shapenotecds; scrapy crawl singing`  
+`cd ./phillysacredharp; scrapy crawl singing`  
 `create_index.py`  
