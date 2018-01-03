@@ -55,6 +55,7 @@ class SpiderBase(scrapy.Spider):
             self.parse_section(url, song_data)
 
     def parse_section(self, audio_url, song_data):
+        self.logger.info("Parsing %s" % (audio_url))
         conn = self.open_db()
         curs = conn.cursor()
 
