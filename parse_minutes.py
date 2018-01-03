@@ -279,7 +279,7 @@ def parse_all_minutes(conn):
 
     # 3928 - camp fasola 2012
     # 3542 - ireland
-    curs.execute("SELECT Minutes, Name, Date, id, isDenson, Year FROM minutes")
+    curs.execute("SELECT Minutes, Name, Date, id, isDenson FROM minutes")
     rows = curs.fetchall()
     for row in rows:
 
@@ -289,8 +289,7 @@ def parse_all_minutes(conn):
         print "%s on %s"%(row[1],row[2])
 
         d = None
-        csv_id = re.sub('[^A-Za-z_]', '', re.sub('[-\s]+', '_', row[1]))
-        filename = 'minutes/%s_%d.csv' % (csv_id, row[5])
+        filename = 'minutes/%s' % util.minutes_to_csv(row[1], row[2])
         if os.path.isfile(filename):
             print "    FROM FILE: " + filename
             d = parse_csv(filename)
