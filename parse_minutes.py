@@ -148,7 +148,18 @@ def parse_minutes(s, debug_print=False):
         session_count += 1
 
         # name_pattern = re.compile('(?<=Chairman\s)[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z]\w+');
-        name_pattern = re.compile(ur'(\A|(?<=\s))((?!' + build_bad_words() + ur')(?<!for\s)[A-Z\u00C0-\u024F]([\u00C0-\u024F\w’-]+|\.\s|\.)\s?){2,5}', re.UNICODE)
+        name_pattern = re.compile(ur'''
+            (\A|(?<=\s))
+            ((?!''' + build_bad_words() + ur''')
+            (?<!for\s)
+            (
+                # Start with upper case...
+                [A-Z\u00C0-\u024F] |
+                # ...or lower case followed by a string that has upper case
+                [a-z](?=[\u00C0-\u024F\w’]*[A-Z\u00C0-\u024F])
+            )
+            ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?){2,5}
+        ''', re.UNICODE | re.VERBOSE)
         # pagenum_pattern = re.compile('[\[\{/](\d{2,3}[tb]?)[\]\}]')
         pagenum_pattern = re.compile(r'[\[\{/\s](\d{2,3}[tb]?)([\]\}\s]|$)(?!' + build_non_denson() + r')')
 
