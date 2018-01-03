@@ -180,32 +180,36 @@ def parse_minutes(s, debug_print=False):
     # print d
     return d
 
+LEADERS = {} # leader -> id
+SONGS = {}   # page -> id
+ALIASES = {} # alias -> name
+INVALID = set()
 def insert_minutes(conn, d, minutes_id, debug_print=False):
 
     curs = conn.cursor()
+    # Seed dicts
+    if not SONGS:
+        for (id, page) in curs.execute("SELECT id, PageNum FROM songs"):
+            SONGS[page] = id
+        for (name, alias) in curs.execute("SELECT name, alias FROM leader_name_aliases"):
+            ALIASES[alias] = ALIASES.get(alias, name) # don't overwrite existing
+        for (name,) in curs.execute("SELECT name FROM leader_name_invalid"):
+            INVALID.add(name)
+
     for session in d:
         for leader in session['leaders']:
 
             #get song_id
-            song_id = 0
-            curs.execute("SELECT id FROM songs WHERE PageNum=?", [leader['song']])
-            row = curs.fetchone()
-            if row is not None:
-                song_id = row[0]
-            if song_id == 0:
+            song_id = SONGS.get(leader['song'])
+            if not song_id:
                 if leader['song'][-1:] == 't' or leader['song'][-1:] == 'b':
                     #check for song without "t" or "b"
-                    curs.execute("SELECT id FROM songs WHERE PageNum=?", [leader['song'][0:-1]])
-                    row = curs.fetchone()
-                    if row is not None:
-                        song_id = row[0]
+                    song_id = SONGS.get(leader['song'][0:-1])
                 else:
                     #check for song on "top"
-                    curs.execute("SELECT id FROM songs WHERE PageNum=?", [leader['song']+'t'])
-                    row = curs.fetchone()
-                    if row is not None:
-                        song_id = row[0]
-            if song_id == 0:
+                    song_id = SONGS.get(leader['song']+'t')
+                SONGS[leader['song']] = song_id # memoize this result
+            if not song_id:
                 print leader
                 print "\tno song id! %s"%(leader['song'])
                 continue
@@ -213,36 +217,28 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
             #find leader by name if exists, create if not
             name = leader['name']
 
-            curs.execute("SELECT name FROM leader_name_invalid WHERE name=?", [name])
-            row = curs.fetchone()
-            if row is not None:
+            if name in INVALID:
                 if debug_print: print "invalid name! %s"%(name)
                 continue
 
-            curs.execute("SELECT name FROM leader_name_aliases WHERE alias=?", [name])
-            row = curs.fetchone()
-            if row is not None:
-                if debug_print: print "replacing %s with %s"%(name, row[0])
-                name = row[0]
+            real_name = ALIASES.get(name)
+            if real_name:
+                if debug_print: print "replacing %s with %s"%(name, real_name)
+                name = real_name
 
             if name is '?':
                 # marked as a "bad" name in the alias table so let's just ignore this altogether
                 continue
 
-            curs.execute("SELECT * FROM leaders WHERE name=?", [name])
-            row = curs.fetchone()
-            leader_id = 0
-            if row is None:
+            leader_id = LEADERS.get(name)
+            if not leader_id:
                 curs.execute("INSERT INTO leaders (name) VALUES (?)", [name])
-                conn.commit()
                 leader_id = curs.lastrowid
                 curs.execute("UPDATE leader_name_aliases SET leader_id=? WHERE name=?", [leader_id, name])
-            else:
-                leader_id = row[0]
+                LEADERS[name] = leader_id
 
             if song_id and leader_id and minutes_id:
                 curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id) VALUES (?,?,?)", (song_id, leader_id, minutes_id))
-                conn.commit()
             else:
                 print "problem?! %d %d %d"%(song_id, leader_id, minutes_id)
 
@@ -267,8 +263,8 @@ def parse_all_minutes(conn):
 
         minutes_id = row[3]
         insert_minutes(conn, d, minutes_id)
-        conn.commit()
 
+    conn.commit()
     curs.close()
 
 def parse_minutes_by_id(conn, minutes_id):
