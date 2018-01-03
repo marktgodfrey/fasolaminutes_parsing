@@ -26,6 +26,10 @@ class SpiderBase(scrapy.Spider):
             [audio_url, audio_url + ',%', '%,' + audio_url, '%,' + audio_url + ',%'])
 
         row = curs.fetchone()
+        if not row:
+            self.logger.error("no minutes found for audio_url: %s" % (audio_url))
+            return
+
         minutes_id = row[0]
 
         # make lists of recording urls and song ids
