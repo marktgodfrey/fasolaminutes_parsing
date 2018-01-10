@@ -13,36 +13,12 @@ class SingingSpider(SpiderBase):
     # 'http://www.shapenotecds.com/ivey-memorial-liberty-sunday-march-29-2015//',
     # )
 
-    def start_requests(self):
-        conn = self.open_db()
-        curs = conn.cursor()
-
-        # reqs = []
-        curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%shapenotecds.com%\'')
-        # curs.execute('SELECT audio_url FROM minutes WHERE id=4903')
-        for row in curs.fetchall():
-            # reqs.append(self.make_requests_from_url(row[0]))
-            if not self.parse_file(row[0]):
-                yield self.make_requests_from_url(row[0])
-
-        curs.close()
-        conn.close()
-
-
     def parse(self, response):
         sel = scrapy.Selector(response)
         if len(sel.xpath('//script[@class="wp-playlist-script"]/text()')) == 0:
             self.parse_old(response)
         else:
             self.parse_fancy(response)
-
-    def parse_file(self, url):
-        m = re.search(r'shapenotecds\.com/([^/]+)', url)
-        if m:
-            filename = m.group(1) + '.csv'
-            if os.path.isfile(filename):
-                self.parse_csv(filename, url)
-                return True
 
     def parse_old(self, response):
         sel = scrapy.Selector(response)

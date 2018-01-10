@@ -7,6 +7,7 @@ class SingingSpider(SpiderBase):
 
     name = "singing"
     allowed_domains = ["bostonsing.org"]
+    csv_pattern = r'bostonsing\.org/recordings/(.*)'
     # global g_start_urls
     # g_start_urls = [
     # 	"http://www.bostonsing.org/recordings/alabama-state-2010/",
@@ -19,21 +20,6 @@ class SingingSpider(SpiderBase):
     # 	"http://www.bostonsing.org/recordings/aldridge-memorial/aldridge-2011/"
     # ]
     # start_urls = g_start_urls
-
-    def start_requests(self):
-        conn = self.open_db()
-        curs = conn.cursor()
-
-        reqs = []
-        curs.execute('SELECT audio_url FROM minutes WHERE audio_url LIKE \'%bostonsing.org%\'')
-        for row in curs:
-            for url in row[0].split(','):
-                reqs.append(self.make_requests_from_url(url))
-
-        curs.close()
-        conn.close()
-
-        return reqs
 
     def parse(self, response):
 

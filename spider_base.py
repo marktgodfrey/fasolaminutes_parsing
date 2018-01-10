@@ -3,6 +3,7 @@ import scrapy
 import sqlite3
 import difflib
 import os
+import re
 import csv
 
 class SpiderBase(scrapy.Spider):
@@ -12,8 +13,44 @@ class SpiderBase(scrapy.Spider):
         conn.text_factory = str
         return conn
 
+    def start_requests(self):
+        for url in self.get_audio_urls():
+            if not self.parse_file(url):
+                yield self.make_requests_from_url(url)
+
+    def get_audio_urls(self):
+        conn = self.open_db()
+
+        # Build a query to get audio_urls from that are in allowed_domains
+        domains = ['%' + d + '/%' for d in self.allowed_domains]
+        query = 'SELECT audio_url FROM minutes WHERE '
+        query += ' OR '.join('audio_url LIKE ?' for d in domains)
+
+        urls = []
+        for row in conn.execute(query, domains):
+            urls.extend(row[0].split(','))
+
+        conn.close()
+        return urls
+
+    def parse_file(self, url):
+        # Build the regex to extract a filename from a url
+        pat = getattr(self, 'csv_pattern', None)
+        if pat is None:
+            pat = '(?:%s)/(.*)' % '|'.join(self.allowed_domains)
+        m = re.search(pat, url)
+        if m:
+            # Strip trailing / and replace any others with '-'
+            filename = re.sub(r'/$', '', m.group(1)) + '.csv'
+            filename = filename.replace('/', '-')
+            # Try to parse the file
+            if os.path.isfile(filename):
+                self.parse_csv(filename, url)
+                return True
+
     def parse_csv(self, filename, url):
         with open(filename, 'rb') as f:
+            self.logger.info('parsing csv file: %s' % filename)
             song_data = list(csv.reader(f))
             self.parse_section(url, song_data)
 
