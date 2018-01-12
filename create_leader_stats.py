@@ -3,94 +3,43 @@
 
 import time
 from numpy import array, log2
+from collections import defaultdict
 import util
 
-def count_leads(conn, leader_id):
-    curs = conn.cursor()
-    curs.execute("SELECT songs.id, COUNT(*) as count FROM song_leader_joins INNER JOIN songs ON song_leader_joins.song_id = songs.id WHERE leader_id=? GROUP BY song_id ORDER BY count DESC", [leader_id])
-    rows = curs.fetchall()
-    l = {}
-    l['leader_id'] = leader_id
-    l['songs'] = []
-    for row in rows:
-        song_id = row[0]
-        lead_count = row[1]
-        l['songs'].append({'song_id': song_id, 'lead_count': lead_count})
-    curs.close()
-    return l
-
-def count_total_leads(conn, leader_id):
-    curs = conn.cursor()
-    curs.execute("SELECT lead_count FROM leader_song_stats WHERE leader_id=?", [leader_id])
-    rows = curs.fetchall()
-    l = {}
-    l['leader_id'] = leader_id
-    lead_counts = []
-    for row in rows:
-        lead_count = row[0]
-        lead_counts.append(float(lead_count))
-    curs.close()
-    lc = array(lead_counts)
-    l['lead_count'] = sum(lc)
+def count_total_leads(leader_id, counts):
+    lc = array(counts, dtype=float)
     lcnorm = lc / sum(lc)
-    l['song_entropy'] = sum(lcnorm * log2(lcnorm)) / -9.1137421660491889
-    return l
-
+    lead_count = sum(lc)
+    song_entropy = sum(lcnorm * log2(lcnorm)) / -9.1137421660491889
+    return lead_count, song_entropy
 
 def create_counts(conn):
     curs = conn.cursor()
-    curs.execute("SELECT id FROM leaders")
-    rows = curs.fetchall()
 
-    num_leaders = len(rows)
-    leader_count = 0
+    # Read all leader_song_stats at once
+    all_stats = defaultdict(list)
+    for (id, count) in curs.execute("SELECT leader_id, lead_count FROM leader_song_stats"):
+        all_stats[id].append(count)
 
-    tic = time.time()
+    for (id, counts) in all_stats.items():
+        lead_count, song_entropy = count_total_leads(id, counts)
+        curs.execute("UPDATE leaders SET lead_count=?, song_entropy=? WHERE id=?", [lead_count, song_entropy, id])
 
-    for row in rows:
-        leader_id = row[0]
-        l = count_total_leads(conn, leader_id)
-        # note this is funny looking because i was trying
-        # to make the function mappable so we could support multiprocessing
-        leader_id = l['leader_id']
-        lead_count = l['lead_count']
-        song_entropy = l['song_entropy']
-        curs.execute("UPDATE leaders SET lead_count=?, song_entropy=? WHERE id=?", [lead_count, song_entropy, leader_id])
-        conn.commit()
-        leader_count += 1
-
-        if (int(leader_count) % 1000) == 0:
-            toc = time.time()
-            est_remaining = float(toc - tic) / leader_count * (num_leaders - leader_count)
-            print "est rem: %f" % (est_remaining) # / 60)
-
+    print "updated %d leaders records" % len(all_stats)
+    conn.commit()
     curs.close()
 
 def create_stats(conn):
     curs = conn.cursor()
-
-    curs.execute("SELECT id FROM leaders")
-    rows = curs.fetchall()
-
-    num_leaders = len(rows)
-    leader_count = 0
-
-    tic = time.time()
-
-    for row in rows:
-        leader_id = row[0]
-        l = count_leads(conn, leader_id)
-        for s in l['songs']:
-            song_id = s['song_id']
-            lead_count = s['lead_count']
-            curs.execute("INSERT INTO leader_song_stats (song_id, leader_id, lead_count) VALUES (?,?,?)", [song_id, leader_id, lead_count])
-        conn.commit()
-        leader_count += 1
-        if (int(leader_count) % 1000) == 0:
-            toc = time.time()
-            est_remaining = float(toc - tic) / leader_count * (num_leaders - leader_count)
-            print "est rem: %f" % (est_remaining) # / 60)
-
+    curs.execute("""
+        INSERT INTO leader_song_stats (leader_id, song_id, lead_count)
+        SELECT leader_id, song_id, COUNT(*) as count
+        FROM song_leader_joins
+        GROUP BY leader_id, song_id
+        ORDER BY leader_id, count DESC
+    """)
+    print "created %d leader_song_stats records" % curs.rowcount
+    conn.commit()
     curs.close()
 
 def delete_stats(conn):
