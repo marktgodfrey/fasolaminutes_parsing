@@ -112,6 +112,6 @@ class SpiderBase(scrapy.Spider):
             for pagenum, url, join_ids in zip(pages[a:a+n], urls[a:a+n], minutes_ids[b:b+n]):
                 for id in join_ids:
                     curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE id=?", (url, id))
-                    self.logger.info("update: %5s %5s %s" % (id, pagenum, url))
+                self.logger.info("update: %5s %5r %s" % (pagenum, join_ids, url))
 
         conn.commit()
