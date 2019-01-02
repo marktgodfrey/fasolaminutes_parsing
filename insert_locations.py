@@ -9,7 +9,7 @@ import util
 def delete_locations(conn):
     curs = conn.cursor()
     curs.execute("DELETE FROM locations")
-    curs.execute("DELETE FROM minute_location_singing_joins")
+    curs.execute("DELETE FROM minutes_location_joins")
     conn.commit()
     curs.close()
 
@@ -81,7 +81,7 @@ def insert_locations(conn):
 
         if location_id > 0:
             minutes_id = row[1]
-            curs.execute("INSERT INTO minute_location_singing_joins (minutes_id, location_id) VALUES (?,?)", [minutes_id, location_id])
+            curs.execute("INSERT INTO minutes_location_joins (minutes_id, location_id) VALUES (?,?)", [minutes_id, location_id])
 
     conn.commit()
     curs.close()
