@@ -75,6 +75,7 @@ class SpiderBase(scrapy.Spider):
         pages = []
         urls = []
         for pagenum, url in song_data:
+            pagenum = pagenum.lower()
             altpage = ''
             if pagenum[-1:] in ('t', 'b'):
                 altpage = pagenum[:-1]
