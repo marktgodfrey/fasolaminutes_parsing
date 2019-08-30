@@ -4900,7 +4900,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 1,5442,"Olivet Congregational Church, St. Paul, Minnesota","1850 Iglehart Ave, St Paul, MN 55104","44.949115, -93.179043",http://www.olivetucc.net/,,,,,,,,,
 2,5442,"Town Hall - The Landing (formerly Murphy's Landing), Shakopee, Minnesota","2187 County Rd 101, Shakopee, MN 55379","44.803116, -93.492643",https://www.threeriversparks.org/parks/the-landing.aspx,,,,,,,,,
 ,5443,"Dominican Monastery, Freta, Warsaw, Poland",,"52.251247, 21.009183",https://freta.dominikanie.pl/,,,,Freta 10,Warszawa,,,00-227,Poland
-,5444,"Poplar Springs Baptist Church, Buchanan, Georgia","1151 Poplar Springs Church Rd, Buchanan, GA 30113","33.817598, -85.301690",https://www.facebook.com/poplarsprings37?rf=143316955691610,,,,,,,,,
+,5444,"Poplar Springs Primitive Baptist Church, North of Bowdon, Carroll County, Georgia","Smithfield Rd, Bowdon, GA 30108","33.601645, -85.273984",,,,,,,,,,
 ,5445,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
 ,5446,"Western Carolina University, Cullowhee, North Carolina","1 University Way, Cullowhee, NC 28723","35.310535, -83.182648",http://www.wcu.edu/discover/locations/main-campus/campus-map.aspx,,,,,,,,,
 ,5447,"St. Martin Spirituelles Zentrum, Munich, Germany",,"48.125040, 11.567333",http://www.stmartin-muenchen.de/,,,,Arndtstr. 8 (Rückgebäude),München,,,80469,Germany
@@ -5171,7 +5171,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 2,5753,"Town Hall - The Landing (formerly Murphy's Landing), Shakopee, Minnesota","2187 County Rd 101, Shakopee, MN 55379","44.803116, -93.492643",https://www.threeriversparks.org/parks/the-landing.aspx,,,,,,,,,
 ,5754,"University of Warsaw, Faculty of Geography and Regional Studies, Warsaw, Poland",,"52.240104, 21.017085",https://www.facebook.com/events/1583318661796038/,,,,,Warsaw,,,05-077,Poland
 ,5755,"Montezuma Lodge #1, Santa Fe, New Mexico","431 Paseo De Peralta, Santa Fe, NM 87501","35.692931, -105.936805",,,,,,,,,,
-,5756,"Poplar Springs Baptist Church, Buchanan, Georgia","1151 Poplar Springs Church Rd, Buchanan, GA 30113","33.817598, -85.301690",https://www.facebook.com/poplarsprings37?rf=143316955691610,,,,,,,,,
+,5756,"Poplar Springs Primitive Baptist Church, North of Bowdon, Carroll County, Georgia","Smithfield Rd, Bowdon, GA 30108","33.601645, -85.273984",,,,,,,,,,
 ,5757,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
 ,5759,"Western Carolina University, Cullowhee, North Carolina","1 University Way, Cullowhee, NC 28723","35.310535, -83.182648",http://www.wcu.edu/discover/locations/main-campus/campus-map.aspx,,,,,,,,,
 ,5761,Alpharetta Municipal Building,"2 Park Plaza, Alpharetta, GA 30009","34.074621, -84.292223",,,,,,,,,,
