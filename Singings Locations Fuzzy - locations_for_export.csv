@@ -4995,7 +4995,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5556,"Ephesus School, Roopville, Georgia","24414 Georgia Hwy 100, Roopville, GA 30170","33.405675, -85.252988",,,,,,,,,,
 ,5557,"Woman’s Club of Olympia, Olympia, Washington","1002 Washington St SE, Olympia, WA 98501","47.039790, -122.899392",http://www.womansclubofolympia.org/,,,,,,,,,
 ,5559,"Staplefield Village Hall, Crawley, Sussex, United Kingdom",,"51.036759, -0.179271",http://www.anstystaplefield-pc.gov.uk/Core/Ansty-and-Staplefield-Parish-Council/Pages/Local_Amenities_Clubs_and_Events_1.aspx,,,,Cuckfield Rd,Haywards Heath,West Sussex,England,RH17 6ET,United Kingdom
-,5560,"Union Primitive Baptist Church, Goggans, Georgia","Johnstonville Rd (across from intersection with Farm Rd), Barnesville, GA 30204","33.076554, -84.091582",http://georgiainfo.galileo.usg.edu/topics/historical_markers/county/lamar/goggans-georgia,,,,,,,,,
+,5560,Union Primitive Baptist Church,"204 GA-101, Temple, GA 30179","33.840295, -84.982628",,,,,,,,,,
 ,5561,"St. John’s United Church of Christ, Pinckney, Missouri","3890 State Highway 94, Pinckney Township, MO 63357","38.668303, -91.237424",www.tinyurl.com/pinckney,,,,,,,,,
 ,5562,"War Memorial Building, Holyoke, Massachusetts","310 Appleton St # 106A, Holyoke, MA 01040","42.205255, -72.611168",,,,,,,,,,
 ,5563,"Powerhouse Community Arts Center, Oxford, Mississippi","413 S 14th St, Oxford, MS 38655","34.364413, -89.517299",www.oxfordarts.com/,,,,,,,,,
@@ -5069,7 +5069,8 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5639,"Charles Washington Hall, Charles Town, West Virginia","106 N George St, Charles Town, WV 25414","39.289184, -77.860310",https://www.shenandoahharmony.com/singings/,,,,,,,,,
 ,5640,"Sabbathday Lake Shaker Village Meetinghouse, New Gloucester, Maine","707 Shaker Rd, New Gloucester, ME 04260","43.986391, -70.366144",http://maineshakers.com/,,,,,,,,,
 ,5641,"Holly Springs Primitive Baptist Church, Bremen, Georgia","Holly Springs Rd (Near I-20 x US Hwy 27), Bremen, GA 30117","33.683408, -85.149538",http://pbchurches.org/2008/12/05/holly-springs-primitive-baptist-church-bremen-georgia/,,,,,,,,,
-,5642,"Old Bishop’s Palace, Ladegården, Oslo, Norway",,,https://www.facebook.com/events/129138187781336/,,,,,Oslo,,,,Norway
+1,5642,"Uranienborgveien 2, Oslo, Norway",,"59.919762, 10.726384",,,,,Uranienborgveien 2,Oslo,,,0258,Norway
+2,5642,"Oslo Ladegård, Oslo gate 13, St. Hallvards Plass, Oslo, Norway",,"59.906076, 10.767585",,,,,Oslo gate 13,Oslo,,,0192,Norway
 ,5643,"Sherman Baptist Church, Calhoun County, Mississippi","MS-32 x County Road 272, Bruce, MS 38915","34.056292, -89.428958",,,,,,,,,,
 ,5644,"Liberty Church, Henagar, Alabama","1500 Liberty Rd, Henagar, AL 35978","34.651086, -85.757431",,,,,,,,,,
 ,5646,"Old Songs Community Arts Center, Voorheesville, New York","37 S Main St, Voorheesville, NY 12186","42.652592, -73.928945",http://oldsongs.org/,,,,,,,,,
