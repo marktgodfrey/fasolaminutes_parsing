@@ -120,5 +120,5 @@ if __name__ == '__main__':
     db = util.open_db()
     delete_locations(db)
     insert_locations(db)
-    find_counties(db)
+    # find_counties(db)
     db.close()
