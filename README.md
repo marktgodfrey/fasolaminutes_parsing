@@ -9,4 +9,5 @@
 `cd ./bostonsing; scrapy crawl singing`  
 `cd ./shapenotecds; scrapy crawl singing`  
 `cd ./phillysacredharp; scrapy crawl singing`  
+`insert_locations.py`  
 `create_index.py`  
