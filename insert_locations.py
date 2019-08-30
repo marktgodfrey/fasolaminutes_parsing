@@ -87,7 +87,7 @@ def insert_locations(conn):
     curs.close()
 
 def find_counties(conn):
-    gmaps = googlemaps.Client(key='AIzaSyAX-p2w26PIk1wBQCKrIPoQwWS037qKiB4')
+    gmaps = googlemaps.Client(key='')
     curs = conn.cursor()
     curs.execute("SELECT id, gps_lat, gps_long FROM locations WHERE country='USA' AND county=''")
     rows = curs.fetchall()
