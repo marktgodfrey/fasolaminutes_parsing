@@ -158,7 +158,7 @@ def parse_minutes(s, debug_print=False):
                 # ...or lower case followed by a string that has upper case
                 [a-z](?=[\u00C0-\u024F\w’]*[A-Z\u00C0-\u024F])
             )
-            ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?){2,5}
+            ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?|van\sden\s|Van\sden\s|van\sDen\s){2,5}
         ''', re.UNICODE | re.VERBOSE)
         # pagenum_pattern = re.compile('[\[\{/](\d{2,3}[tb]?)[\]\}]')
         pagenum_pattern = re.compile(r'[\[\{/\s](\d{2,3}[tb]?)([\]\}\s]|$)(?!' + build_non_denson() + r')')
