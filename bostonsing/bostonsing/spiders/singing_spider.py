@@ -1,5 +1,8 @@
 from scrapy.selector import Selector
-from urlparse import urlparse, urljoin
+try:
+    from urllib.parse import urlparse, urljoin
+except ImportError:
+    from urlparse import urlparse, urljoin
 
 from spider_base import SpiderBase
 
@@ -68,14 +71,14 @@ class SingingSpider(SpiderBase):
                 if pagenum[0] == '0':
                     pagenum = pagenum[1:]
             else:
-                print song.xpath('.//div[@class="rightDownload"]/div/div[@class="cc-m-download-file-name"]/text()').extract()
+                print(song.xpath('.//div[@class="rightDownload"]/div/div[@class="cc-m-download-file-name"]/text()').extract())
 
             if pagenum:
                 song_data.append((pagenum, url))
             else:
-                print song
+                print(song)
 
         if song_data:
             self.parse_section(response.url, song_data)
         else:
-            print "NO SONGS", response.url
+            print("NO SONGS", response.url)

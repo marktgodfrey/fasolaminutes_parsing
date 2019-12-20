@@ -1,12 +1,11 @@
-from scrapy.spider import BaseSpider
-from scrapy.selector import HtmlXPathSelector
-from scrapy.http import Request
+import scrapy
+from scrapy.selector import Selector
 
 import os
 import sqlite3
 import re
 
-class SingingsSpider(BaseSpider):
+class SingingsSpider(scrapy.Spider):
 
 	name = "allsingings"
 	allowed_domains = ["bostonsing.org"]
@@ -15,19 +14,19 @@ class SingingsSpider(BaseSpider):
 	]
 	
 	def parse(self, response):		
-		hxs = HtmlXPathSelector(response)
+		hxs = Selector(response)
 		sites = hxs.select("//div[@class='n j-table']//a/@href").extract()
 		for site in sites:
-			print site
+			print(site)
 			if site[0:25] == 'http://www.bostonsing.org':
-				yield Request(site, callback=self.parse_singing)
+				yield scrapy.Request(site, callback=self.parse_singing)
 			else:
 				#TODO: deal with other sites
 				pass
 				
 	def parse_singing(self, response):
 		
-		hxs = HtmlXPathSelector(response)
+		hxs = Selector(response=response)
 		
 		s = hxs.select("//div[@class='n j-header']/h1/text()").extract()
 		if not s:
@@ -77,16 +76,16 @@ class SingingsSpider(BaseSpider):
 		conn.text_factory = str
 		curs = conn.cursor()
 		
-		print ts
-		print year
+		print(ts)
+		print(year)
 		curs.execute('SELECT id FROM minutes WHERE name LIKE ? AND year=? AND isDenson=1', [ts,year])
 		row = curs.fetchone()
 		if row:
-			print "Minutes ID: %d"%row[0]
+			print("Minutes ID: %d" % row[0])
 			curs.execute("UPDATE minutes SET audio_url=? WHERE id=?", (response.url,row[0]))
 			conn.commit()
 		else:
-			print "Not Found!"
+			print("Not Found!")
 		
 		
 		curs.close()
