@@ -49,7 +49,7 @@ class SpiderBase(scrapy.Spider):
                 return True
 
     def parse_csv(self, filename, url):
-        with open(filename, 'rb') as f:
+        with open(filename, 'r') as f:
             self.logger.info('parsing csv file: %s' % filename)
             song_data = list(csv.reader(f))
             self.parse_section(url, song_data)
