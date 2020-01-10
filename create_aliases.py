@@ -12,10 +12,10 @@ def delete_aliases(conn):
     curs.close()
 
 def create_aliases(conn):
-    f =  open('FaSoLa Minutes Corrections (Responses) - Form Responses.csv', 'rb')
+    f =  open('FaSoLa Minutes Corrections (Responses) - Form Responses.csv', 'r')
     csvreader = csv.reader(f)
     curs = conn.cursor()
-    csvreader.next() # skip headers
+    next(csvreader) # skip headers
     for row in csvreader:
         curs.execute("INSERT INTO leader_name_aliases (name, alias, type) VALUES (?,?,?)", [row[2], row[1], row[3]])
     conn.commit()
@@ -29,10 +29,10 @@ def delete_invalid(conn):
     curs.close()
 
 def create_invalid(conn):
-    f =  open('FaSoLa Minutes Corrections (Responses) - Invalid Names.csv', 'rb')
+    f =  open('FaSoLa Minutes Corrections (Responses) - Invalid Names.csv', 'r')
     csvreader = csv.reader(f)
     curs = conn.cursor()
-    csvreader.next() # skip headers
+    next(csvreader) # skip headers
     for row in csvreader:
         curs.execute("INSERT INTO leader_name_invalid (name) VALUES (?)", [row[1]])
     conn.commit()

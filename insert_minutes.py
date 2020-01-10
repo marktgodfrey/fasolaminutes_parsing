@@ -13,8 +13,8 @@ def delete_minutes(conn):
 def insert_minutes(conn):
     curs = conn.cursor()
 
-    reader = csv.reader(open("Minutes_All.txt", 'rb'), delimiter='\t')
-    reader.next() # skip headers
+    reader = csv.reader(open("Minutes_All.txt", 'r'), delimiter='\t')
+    next(reader)  # skip headers
     for row in reader:
         curs.execute('INSERT INTO minutes (Name, Location, Date, Minutes, \
             Year, IsDenson, GoodCt, ErrCt, AmbCt, CorrCt, ProbCt, TotalCt, \
@@ -26,8 +26,8 @@ def insert_minutes(conn):
 def fix_denson(conn):
     curs = conn.cursor()
 
-    reader = csv.reader(open("denson_override.csv", 'rb'))
-    reader.next() # skip headers
+    reader = csv.reader(open("denson_override.csv", 'r'))
+    next(reader)  # skip headers
     for row in reader:
         curs.execute("UPDATE minutes SET IsDenson=? WHERE Name LIKE ? AND \
             Date LIKE ?", (row[2], row[0], row[1]))

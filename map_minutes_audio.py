@@ -7,8 +7,8 @@ import util
 def map_minutes_audio(conn):
     curs = conn.cursor()
 
-    reader = csv.reader(open("minutes_audio.csv", 'rb'))
-    reader.next() # skip headers
+    reader = csv.reader(open("minutes_audio.csv", 'r'))
+    next(reader) # skip headers
     for row in reader:
         curs.execute("UPDATE minutes SET audio_url=? WHERE Name LIKE ? AND \
             Date LIKE ?", (row[2], row[0], row[1]))

@@ -33,7 +33,7 @@ def create_stats(conn):
 
     conn.executemany("INSERT INTO song_stats (song_id, year, lead_count, rank) VALUES (?, ?, ?, ?)", values)
     conn.commit()
-    print "created %d song_stats records" % len(values)
+    print("created %d song_stats records" % len(values))
 
 
 def delete_stats(conn):

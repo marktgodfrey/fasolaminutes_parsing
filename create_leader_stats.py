@@ -25,7 +25,7 @@ def create_counts(conn):
         lead_count, song_entropy = count_total_leads(id, counts)
         curs.execute("UPDATE leaders SET lead_count=?, song_entropy=? WHERE id=?", [lead_count, song_entropy, id])
 
-    print "updated %d leaders records" % len(all_stats)
+    print("updated %d leaders records" % len(all_stats))
     conn.commit()
     curs.close()
 

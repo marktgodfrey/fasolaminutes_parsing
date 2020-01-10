@@ -14,10 +14,10 @@ def delete_locations(conn):
     curs.close()
 
 def insert_locations(conn):
-    f =  open('Singings Locations Fuzzy - locations_for_export.csv', 'rb')
+    f =  open('Singings Locations Fuzzy - locations_for_export.csv', 'r')
     csvreader = csv.reader(f)
     curs = conn.cursor()
-    csvreader.next() #headers
+    next(csvreader) #headers
     for row in csvreader:
         # multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long,address1,city,county,state_province,postal_code,country
         name = row[2]
@@ -48,7 +48,7 @@ def insert_locations(conn):
                     postal_code = m.group(4)
                     country = 'USA'
                 else:
-                    print "weird address?? %s" % address
+                    print("weird address?? %s" % address)
 
             if address1 is None:
                 address1 = row[9]
@@ -58,7 +58,7 @@ def insert_locations(conn):
                 postal_code = row[13]
                 country = row[14]
 
-            print "%s - %s - %s - %s - %s - %s - %s - %s - %s" % (name, url, notes, gps_lat, gps_long, address1, city, county, state_province)
+            print("%s - %s - %s - %s - %s - %s - %s - %s - %s" % (name, url, notes, gps_lat, gps_long, address1, city, county, state_province))
 
             curs.execute("SELECT id FROM locations WHERE gps_lat=? AND gps_long=?", [gps_lat,gps_long])
             location_row = curs.fetchone()
@@ -68,7 +68,7 @@ def insert_locations(conn):
             else:
                 location_id = location_row[0]
         else:
-            print 'no gps?!'
+            print('no gps?!')
 
             curs.execute("SELECT id FROM locations WHERE name=?", [name])
             location_row = curs.fetchone()
@@ -108,10 +108,10 @@ def find_counties(conn):
             c = county.split(' ')
             if c[-1] == 'County':
                 county = ' '.join(c[:-1])
-            print 'found county: %f,%f %s' % (gps_lat, gps_long, county)
+            print('found county: %f,%f %s' % (gps_lat, gps_long, county))
             curs.execute("UPDATE locations SET county=? WHERE id=?", [county, location_id])
         else:
-            print 'county not found? %f,%f' % (gps_lat, gps_long)
+            print('county not found? %f,%f' % (gps_lat, gps_long))
 
     conn.commit()
     curs.close()

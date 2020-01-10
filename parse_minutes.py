@@ -148,9 +148,9 @@ def parse_minutes(s, debug_print=False):
         session_count += 1
 
         # name_pattern = re.compile('(?<=Chairman\s)[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|[A-Z]\.\s[A-Z]\.\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|(?<=Chairman\s)[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z][\w]*?\s[A-Z]\w+|[A-Z][\w]*?\s[A-Z]\w+');
-        name_pattern = re.compile(ur'''
+        name_pattern = re.compile(r'''
             (\A|(?<=\s))
-            ((?!''' + build_bad_words() + ur''')
+            ((?!''' + build_bad_words() + r''')
             (?<!for\s)
             (
                 # Start with upper case...
@@ -167,7 +167,7 @@ def parse_minutes(s, debug_print=False):
         leaders = re.split(r'\v|called to order|\:\s|(?<=[^\.][^A-Z\]\}])\.(\s|\Z)|(?<=[\]\}”\)])[;\.\:]|;', session)  #double quotes!
         for chunk in leaders:
             if chunk and (len(chunk) > 2):
-                if debug_print: print chunk
+                if debug_print: print(chunk)
                 songs = re.finditer(pagenum_pattern, chunk)
                 first_song = None
                 for song in songs:
@@ -181,10 +181,10 @@ def parse_minutes(s, debug_print=False):
                             name = leader.group(0)
                             name = name.strip() # TODO: should be able to incorporate this into regex......
                             dd.append({'name': name, 'song': pagenum})
-                            if debug_print: print '***name: ' + name + '\tsong: ' + pagenum
+                            if debug_print: print('***name: ' + name + '\tsong: ' + pagenum)
                         # else:
                             # print "%d %d"%(leader.end(), first_song.start())
-                if debug_print: print "---chunk----------"
+                if debug_print: print("---chunk----------")
 
         d.append({'session': session_count, 'leaders': dd})
         # print "---session----------"
@@ -221,20 +221,20 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
                     song_id = SONGS.get(leader['song']+'t')
                 SONGS[leader['song']] = song_id # memoize this result
             if not song_id:
-                print leader
-                print "\tno song id! %s"%(leader['song'])
+                print(leader)
+                print("\tno song id! %s"%(leader['song']))
                 continue
 
             #find leader by name if exists, create if not
             name = leader['name']
 
             if name in INVALID:
-                if debug_print: print "invalid name! %s"%(name)
+                if debug_print: print("invalid name! %s"%(name))
                 continue
 
             real_name = ALIASES.get(name)
             if real_name:
-                if debug_print: print "replacing %s with %s"%(name, real_name)
+                if debug_print: print("replacing %s with %s"%(name, real_name))
                 name = real_name
 
             if name is '?':
@@ -251,7 +251,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
             if song_id and leader_id and minutes_id:
                 curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id) VALUES (?,?,?)", (song_id, leader_id, minutes_id))
             else:
-                print "problem?! %d %d %d"%(song_id, leader_id, minutes_id)
+                print("problem?! %d %d %d"%(song_id, leader_id, minutes_id))
 
     curs.close()
 
@@ -267,7 +267,7 @@ def parse_all_minutes(conn):
         if row[4] == 0:
             continue
 
-        print "%s on %s"%(row[1],row[2])
+        print("%s on %s" % (row[1], row[2]))
 
         s = row[0]
         d = parse_minutes(s)
@@ -290,7 +290,7 @@ def parse_minutes_by_id(conn, minutes_id):
         if row[4] == 0:
             continue
 
-        print "%s on %s"%(row[1],row[2])
+        print("%s on %s"%(row[1],row[2]))
 
         s = row[0]
         d = parse_minutes(s)
