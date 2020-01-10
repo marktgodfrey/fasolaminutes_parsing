@@ -3697,6 +3697,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,4050,"Jordans Village Hall, Jordans - Buckinghamshire, United Kingdom",,"51.614015, -0.596353",https://www.hallshire.com/halls/view/3491/jordans-village-hall,,,,Green W Rd,Beaconsfield,Buckinghamshire,England,HP9 2SY,United Kingdom
 ,4051,"Eugene Fitzgerald Student Center, Jefferson State Community College (Jefferson Campus), Birmingham, Alabama","2601 Carson Rd, Birmingham, AL 35215","33.653620, -86.707432",http://www.jeffersonstate.edu/,,,,,,,,,
 ,4053,"Heights Church of Christ, Houston, Texas","1548 Heights Blvd, Houston, TX 77008","29.799701, -95.396909",http://www.1548heights.org/,,,,,,,,,
+,4054,"St. Paul’s Chapel, New York, New York","209 Broadway, New York, NY 10007","40.711343, -74.009212",,,,,,,,,,
 ,4058,"John and Elsie Hollingsworth’s home, Ila, Georgia","1580 Adams-Clarke Rd, Ila, GA 30530","34.154792, -83.325485",,,,,,,,,,
 ,4059,"Antioch Baptist Church, Ider, Alabama","County Rd 783 x County Rd 141, Ider, AL 35981","34.750679, -85.628201",,,,,,,,,,
 ,4060,"Holy Trinity Church, Mapperley, Derbyshire, United Kingdom",,"52.981831, -1.353655",,,,,Mapperley,Ilkeston,Derbyshire,England,DE7,United Kingdom
@@ -3940,6 +3941,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,4328,"Eugene Fitzgerald Student Center, Jefferson State Community College (Jefferson Campus), Birmingham, Alabama","2601 Carson Rd, Birmingham, AL 35215","33.653620, -86.707432",http://www.jeffersonstate.edu/,,,,,,,,,
 ,4330,"Cornucopia Singing, Residence of Rowan Lupton, Princeton, New Jersey",,,,,,,,,,,,
 ,4333,"Heights Church of Christ, Houston, Texas","1548 Heights Blvd, Houston, TX 77008","29.799701, -95.396909",http://www.1548heights.org/,,,,,,,,,
+,4334,"St. John’s Historic Church, Rutherfordton, North Carolina","316 N Main St, Rutherfordton, NC 28139","35.371375, -81.956101",,,,,,,,,,
 ,4336,"Home of Raymond and Linda Patton, Henagar, Alabama","3858 County Road 134, Henagar, AL 35987","34.671036, -85.733008",,,,,,,,,,
 ,4338,"Antioch Baptist Church, Ider, Alabama","County Rd 783 x County Rd 141, Ider, AL 35981","34.750679, -85.628201",,,,,,,,,,
 ,4339,"Harriet Beecher Stowe House, Cincinnati, Ohio","2950 Gilbert Ave, Cincinnati, OH 45206","39.133153, -84.487344",http://stowehousecincy.org/index.html,,,,,,,,,
@@ -4154,6 +4156,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,4574,"Faith Primitive Baptist Church, Savannah, Georgia","3212 Bee Rd, Savannah, GA 31404","32.041068, -81.078051",,,,,,,,,,
 ,4575,"Taylor United Methodist Church, Lafayette County, Mississippi","Tin Can Alley x Main St, Taylor, MS 38673","34.271724, -89.588511",,,,,,,,,,
 ,4576,"Dripping Spring Christian Church, Columbia, Missouri","2701 W Dripping Springs Rd, Columbia, MO 65202","39.086949, -92.374152",,,,,,,,,,
+,4577,"Christ Family Church, Arrington, Tennessee","7575 Nolensville Rd, Nolensville, TN 37135","35.914542, -86.661488",,,,,,,,,,
 ,4578,"Our Lady and St. Thomas Church, Sheffield, United Kingdom",,"53.337768, -1.482133",http://www.olstsheffield.org.uk/,,,,34 Meadowhead,Sheffield,South Yorkshire,England,S8 7UD,United Kingdom
 ,4580,"Muscadine Methodist Church, Muscadine, Alabama","County Rd 49 x County Rd 267 (North Side of town), Muscadine, AL 36269","33.734901, -85.386113",https://www.facebook.com/pages/Muscadine-Methodist-Church/1171874286287312,,,,,,,,,
 ,4581,"Rochester Area Mennonite Fellowship, Rochester, New York","111 Hillside Ave, Rochester, NY 14610","43.143135, -77.562633",http://rochestermennonite.org/,,,,,,,,,
@@ -4404,6 +4407,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,4867,"St. Paul’s Episcopal Church, Duluth, Minnesota","1710 E Superior St, Duluth, MN 55812","46.803266, -92.076143",https://www.stpaulsfaithformation.org/,,,,,,,,,
 ,4868,"Memorial Hall, Worrall, Sheffield, United Kingdom",,"53.425063, -1.541696",http://www.worrallcommunityassociation.co.uk/events/,,,,49 Towngate Rd,Worrall,South Yorkshire,England,S35 0AR,United Kingdom
 ,4869,"Muscadine Methodist Church, Muscadine, Alabama","County Rd 49 x County Rd 267 (North Side of town), Muscadine, AL 36269","33.734901, -85.386113",https://www.facebook.com/pages/Muscadine-Methodist-Church/1171874286287312,,,,,,,,,
+,4871,"Christ Family Church, Arrington, Tennessee","7575 Nolensville Rd, Nolensville, TN 37135","35.914542, -86.661488",,,,,,,,,,
 ,4872,"Unity Hall, Barneveld, New York","101 Vanderkemp Ave, Barneveld, NY 13304","43.274091, -75.189389",http://www.unityhall.com/,,,,,,,,,
 ,4873,"The Milwaukie Community Club, Milwaukie, Oregon","5440 SE Kellogg Creek Dr, Milwaukie, OR 97222","45.426566, -122.606089",http://ncprd.com/milwaukie-center,,,,,,,,,
 ,4874,"Andrew’s Chapel/Schoolhouse, Upson County, Georgia","Andrews Chapel Rd, Thomaston, GA 30286","32.901432, -84.223923",,,,,,,,,,
@@ -4661,6 +4665,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5162,"Memorial Hall, Worrall, Sheffield, United Kingdom",,"53.425063, -1.541696",http://www.worrallcommunityassociation.co.uk/events/,,,,49 Towngate Rd,Worrall,South Yorkshire,England,S35 0AR,United Kingdom
 ,5163,"Muscadine Methodist Church, Muscadine, Alabama","County Rd 49 x County Rd 267 (North Side of town), Muscadine, AL 36269","33.734901, -85.386113",https://www.facebook.com/pages/Muscadine-Methodist-Church/1171874286287312,,,,,,,,,
 ,5164,"Murrell House, Park Hill, Oklahoma","19479 E Murrel Rd, Park Hill, OK 74451","35.855642, -94.959047",http://www.okhistory.org/sites/georgemurrell,,,,,,,,,
+,5165,"Arlington United Methodist Church, Nashville, Tennessee","1360 Murfreesboro Pike, Nashville, TN 37217","36.115671, -86.694166",,,,,,,,,,
 ,5166,"The Laurelhurst Club, Portland, Oregon","3721 SE Ankeny St, Portland, OR 97214","45.522880, -122.624680",thelaurelhurstclub.com,,,,,,,,,
 ,5167,"Foundation of Light, Ithaca, New York","391 Turkey Hill Rd, Ithaca, NY 14850","42.432810, -76.427573",http://folithaca.org/,,,,,,,,,
 ,5168,"Old County Line Church, Corner, Alabama","Old County Line Church Rd, Warrior, AL 35180","33.807181, -86.927940",,,,,,,,,,
@@ -4913,6 +4918,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5457,"Taylor United Methodist Church, Lafayette County, Mississippi","Tin Can Alley x Main St, Taylor, MS 38673","34.271724, -89.588511",,,,,,,,,,
 ,5458,"Muscadine Methodist Church, Muscadine, Alabama","County Rd 49 x County Rd 267 (North Side of town), Muscadine, AL 36269","33.734901, -85.386113",https://www.facebook.com/pages/Muscadine-Methodist-Church/1171874286287312,,,,,,,,,
 ,5459,"Murrell House, Park Hill, Oklahoma","19479 E Murrel Rd, Park Hill, OK 74451","35.855642, -94.959047",http://www.okhistory.org/sites/georgemurrell,,,,,,,,,
+,5460,"Arlington United Methodist Church, Nashville, Tennessee","1360 Murfreesboro Pike, Nashville, TN 37217","36.115671, -86.694166",,,,,,,,,,
 ,5461,"Burton Hall, Easton, New York","1071 NY-40, Greenwich, NY 12834","43.010938, -73.550526",http://www.albanysacredharp.org/uploads/2/8/1/6/28162385/directions_to_burton_hall.pdf,,,,,,,,,
 ,5462,"The Laurelhurst Club, Portland, Oregon","3721 SE Ankeny St, Portland, OR 97214","45.522880, -122.624680",thelaurelhurstclub.com,,,,,,,,,
 ,5463,"Andrew’s Chapel/Schoolhouse, Upson County, Georgia","Andrews Chapel Rd, Thomaston, GA 30286","32.901432, -84.223923",,,,,,,,,,
@@ -5185,6 +5191,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5769,"The Quiet Room, Australian Catholic University, 25A Barker Road, Strathfield",,"-33.876149, 151.075683",https://www.facebook.com/events/173828610134981/,,,,25A Barker Rd,Strathfield,,NSW,2135,Australia
 ,5770,"Taylor United Methodist Church, Lafayette County, Mississippi","Tin Can Alley x Main St, Taylor, MS 38673","34.271724, -89.588511",,,,,,,,,,
 ,5771,"Muscadine Methodist Church, Muscadine, Alabama","County Rd 49 x County Rd 267 (North Side of town), Muscadine, AL 36269","33.734901, -85.386113",https://www.facebook.com/pages/Muscadine-Methodist-Church/1171874286287312,,,,,,,,,
+,5772,"Arlington United Methodist Church, Nashville, Tennessee","1360 Murfreesboro Pike, Nashville, TN 37217","36.115671, -86.694166",,,,,,,,,,
 1,5773,"Rochester Mennonite Fellowship, Rochester, New York","111 Hillside Ave, Rochester, NY 14610","43.143168, -77.562634",,,,,,,,,,
 2,5773,"Tay House Lodge, Rochester, New York","85 Hillside Ave, Rochester, NY 14610","43.141736, -77.566116",,,,,,,,,,
 ,5774,"The Laurelhurst Club, Portland, Oregon","3721 SE Ankeny St, Portland, OR 97214","45.522880, -122.624680",thelaurelhurstclub.com,,,,,,,,,
