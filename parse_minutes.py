@@ -241,12 +241,12 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
             name = leader['name']
 
             if name in INVALID:
-                if debug_print: print("invalid name! %s"%(name))
+                if debug_print: print("invalid name! %s" % (name))
                 continue
 
             real_name = ALIASES.get(name)
             if real_name:
-                if debug_print: print("replacing %s with %s"%(name, real_name))
+                if debug_print: print("replacing %s with %s" % (name, real_name))
                 name = real_name
 
             if name is '?':
@@ -263,7 +263,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
             if song_id and leader_id and minutes_id:
                 curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id) VALUES (?,?,?)", (song_id, leader_id, minutes_id))
             else:
-                print("problem?! %d %d %d"%(song_id, leader_id, minutes_id))
+                print("problem?! %d %d %d" % (song_id, leader_id, minutes_id))
 
     curs.close()
 
