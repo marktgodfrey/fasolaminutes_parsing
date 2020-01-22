@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+import os
+import re
+import json
 import util
-from parse_minutes import parse_minutes
+from parse_minutes import parse_minutes, build_bad_words
 from parse_minutes import insert_minutes
+import difflib
 
-if __name__ == '__main__':
+def test_singing():
     # s = "The 46th session of the annual Sacred Harp singing at Liberty Church, in Winston County, was called to order by Billy Williams leading song on page [33b]. Prayer by Kenneth Handcock. Billy Williams then led {72} and leaders were called as follows: Alpha Black [318], [345b]; Corene White {73}, [379]; Stella Pratt {147}, [460]; Aubrey Tyree [358], [298], [434]; L. E. Hannah [147b], [455], [400]; Eron White [37b], [36b], [146]; B. B. Mattox [421] for Unie B. Howard who is ill, [217], [168]; Reedie Powell [200], [300], [269].RECESSThe class resumed singing with Billy Williams leading [410t]. The class was organized by electing the following officers: Chairman - Billy Williams; Vice Chairman - Ted Godsey; Arranging Committee - Travis Keeton; Secretary - Alpha Black. Leaders: Mae Conwill [270], [75], [99]; Carmon Brothers [101t], [207], {74}, for Ervin Brothers “That Beautiful Land”; Lola Roberson [475], [222]; John Hocutt [321b//321], [33t]; Elmer Conwill {448}.LUNCHThe class was called back by the Chairman, Billy Williams, leading song on page [127]. Leaders: Margaret Keeton and Bradley Allen [546], [402], [385b]; Josie Hyde [183], [428], [196]; Ester Brown [436], [317b//317]; John Hyde [39b], [63], {68}; Ada Godsey [59], [482], [301]; Elmer Conwill [142], {275}; Amanda Denson [186], [273]; Charley McCoy [280], [306], [198]; Ted Godsey [236], [408]; Blanton Adair [335], [339]; James Denson [224], [211], [358]; Alma Tyree, Viola Tyree, Bertha Wilson, Reedie Powell, James Denson, Amanda Denson, Roy Cleghorn, Blanton Adair, Jerry Parrish, Ruth Parrish, and Aubrey Tyree [358]; Travis Keeton [57], [56t], [225t]. Billy Williams [231], Aubrey Tyree 20b; Charley McCoy [36b]; Billy Williams [290]. The closing prayer was led by Aubrey Tyree.Chairman - Billy Williams; Vice Chairman - Ted Godsey; Secretary - Alpha Black."
     # s = "The seventh session of the Birthday Singing was held at Antioch Baptist Church on Friday night before the second Sunday in April. Birthday honorees were Mildred Johnson who celebrated her 90th birthday and Elder Homer Benefield who celebrated his 78th birthday this year.The class was called to order by Johnny Wright leading song on page [59]. The evening prayer was led by Felton Denney. Johnny Wright led song on page [335].The class organized with the following officers re-elected to serve: Chairman - Johnny Wright; Vice Chairman - Everette Ellis; Secretary - Charlene Wallace; Arranging Committee - Mary Florence Smith.Leaders: Jimmie Denney [123t]; Alice Edwards [104]; Charlene Wallace [84] (for I.V. McWhorter); Mary Florence Smith [63] (in memory of Florence Williams); Mildred Johnson [560]; Elder Homer Benefield {56}; Everette Ellis [62]; Ed Stevens [66]; Martha Beverly [146]; Josephine Denney [143]; Henry Schuman {32}; Roy Nelson [283]; Tom Ostwald [268]; Jan House [361]; Bill Beverly {29}; Felton Denney {73}; Louise Nelson [350]; Lonnie Rogers [225t]; Teenie Moody [73b].Rev. Tommy McGuire, pastor of the church, welcomed everyone. The blessing for the meal was offered by Rev. Tommy McGuire. The class was dismissed for one hour.RECESSThe class resumed singing with Johnny Wright leading song on page [294]. Leaders: Elder Neal Prichard [566]; the class sang “Happy Birthday” to Elder Homer Benefield and Mildred Johnson; Lou Cotney [218]; Elder Lewis Norton [45t]; Myron House [297]; Hugh McGraw [527] (by request); Everette Denney [405]; Evelyn Harris {47}; B.J. Harris [503]; Elsie Brock [460]; Mildred Johnson, Daphene Ray, and Diane Clayton [358]; Cindy Kissee [312b]; Mildred Patterson [119]; Matt Wells [49b]; Steven Schmidgall [496]; Charlie Obert {31}; Tom Ostwald [269]; Henry Schuman [480]; Martha Beverly [430]; Ed Stevens [300]; Bill Beverly [86]; Roy Nelson [434]; Lonnie Rogers [101t]; Charlie Obert [236].Announcements were made. Johnny Wright led song on page [46] as the closing song. Elder Homer Benefield dismissed the class with prayer.We were honored to have singers present from the states of: Alabama, Georgia, New Mexico, Michigan, California, and Minnesota.Chairman - Johnny Wright; Vice Chairman - Everette Ellis; Secretary - Charlene Wallace."
     # s = "The annual DeLong-Roberts Memorial Singing was opened with Vice Chairman Jesse Roberts leading [138b]. The morning prayer was offered by Henry Johnson.Leaders: Jesse Roberts [57]; John Plunkett [435], [541]; Tony Hammock [400], [75]; Matt DeLong [288]; Helen Bryson [172], [328]; Frances Mary D’Andrea [384],[148]; Jack Paulk [569b], [565]; Ed Thacker [176b], [48t]; Jeremy Shipp [260]; Lisa Grayson [201], [192]; Lonnie Rogers [389], [141]; Jeannette DePoy [142], [99]; Rachel Carlisle [145t], [204].RECESSRichard DeLong called the class to order leading [77t].A business session was held with the following officers elected or appointed to serve: Chairman--Richard DeLong; Vice Chairmen--Matt DeLong and Jesse Roberts; Secretary/Treasurer--Helen Bryson.Leaders: Jane Spencer [335], [564]; Jason Hollis [72b], [155]; Judy Chambless [339], [415]; Scott DePoy [448t], [277]; Erica Hinton [29b], [81t]; Karleen Williams [168], [45t]; Brady DeLong [37b], [61]; Cecil Roberts [491], [30b]; Micah Roberts [354b].LUNCHJesse Roberts called the class to order leading [137]. Leaders: Robert Chambless [145b]; Lisa Webb [222]; Claudia Egelhoff [556]; Bentley McGuire [153]; Ashley Roberts [196]; Matt Hinton [186]; Jonathan Smith [282]; Henry Johnson [539]; Judy Mincey [538]; Malinda Snow [344]; Janice Paulk [518]; Stanley Edwards and Marilyn Bradley [503], [528]; Andy Morse [183]; Oscar McGuire [441]; Jessica Altman [542]; Jean Payne [480]; Faye Hollis [340]; Ted Mercer [151]; Mark Puckett [454].RECESSJesse Roberts called the class to order leading [47t].John Plunkett conducted the memorial lesson and led [465] for the following deceased: Sherri Edwards and Mary Morse--Georgia; Alice Edwards--Alabama; Dean Slaton--Indiana.Helen Bryson led [475] for the following sick and shut-ins: Richard DeLong, Shirley Hardy, Irvin Roberts, Nora Roberts, Violet Thomason, Loy Garrison, Dorothy Garrison, and Shelbie Sheppard. Richard DeLong led [318] for all the DeLong and Roberts families who have been instrumental in leaving a rich legacy for us to follow. Henry Johnson closed the memorial lesson with prayer.Leaders: Sheri Taylor [209]; Claudia Egelhoff [474]; Lisa Grayson [370]; Jonathan Smith [312b]; Ashley Roberts [347]; Jessica Altman and Jesse Roberts [112]; Ed Thacker and Tony Hammock [494]; Frances Mary D’Andrea [532]; Ted Mercer [123b]; Matt DeLong and Richard DeLong [34t] (by request).The Locating Committee, Janice Paulk, John Plunkett, and Jesse Roberts, reported on possible locations for the singing to be held next year. Those discussed were Sweetwater Chapel, Antioch Primitive Baptist Church, and Emmaus Primitive Baptist Church. It was decided on Sweetwater Chapel (depending on its availability) for the singing in 2007; Antioch Primitive Baptist Church in 2008, with Emmaus Primitive Baptist Church as an alternate choice. The committee will have a final determination by the end of July.Announcements were made. Richard DeLong, Matt DeLong, and Jesse Roberts led [323t] for the closing song. John Plunkett dismissed the class with prayer.Chairman--Richard DeLong; Vice Chairmen--Matt DeLong and Jesse Roberts; Secretary/Treasure--Helen Bryson."
@@ -24,18 +28,131 @@ if __name__ == '__main__':
     # s = "Saturday, September 22The 23rd session of the Minnesota State Sacred Harp Singing Convention was called to order by Thea Johansen and Paul Landskroener leading [52t]. Kevin Bullock offered the opening prayer.The following officers were previously elected or appointed to serve: Co-Chairpersons--Thea Johansen and Paul Landskroener; Arranging Committee--Noelle Copeland and Jim Pfau; Chaplain--Kevin Bullock; Memorial Officer--Donna Gunderson-Rogers; Secretary--Tivey; Treasurer--Matt Wells.After opening announcements, Anna Pfau led [40]. Leaders: Nathan Berry [63]; Steven Levine [344]; Jane Wells [313b]; Jim Pfau [228]; Noelle Copeland [192]; Gordon Olsen [277]; Stacey Berkheimer [479]; Lincoln Richardson [350]; Donna Gunderson-Rogers [434]; Francis Gurtz [448t]; Barb Patterson [145b]; Hans Guttmann [480]; Leslie Williamson White [171]; Pop Wagner [99]; Hannah Lutz [209]; Dick Patterson [566]; Denise Kania [203].RECESSSteven Schmidgall brought the class back together by leading [333].Leaders: Claudia Egelhoff [380]; Scott Schroeder [178]; Roberta Strauss [441]; Kevin Bullock [195]; Sheila Patterson [29t]; Michael Moore [216]; Colette Miller [436]; James Page [297]; Karen Edwards and Dan Edwards [148]; Steve Luttinen [411]; Bonnie Ambrosi [31t]; Paul Wyatt [440]; Elise delMas [472]; Leon Pulsinelle [362]; Eleanor Haase [373]; Myles Alexander [328]; Jeanette Nelson [168]; Robin Fox [163t]; Angie Payne [77t].RECESSKit Canright led [39t] to bring the class back to order. Leaders: Valerie Stoehr [133]; Bill Waddington and Liz Pauly [474].A business session was held. Finances were discussed. Charlie Obert and Angie Payne were elected co-chairpersons for the 2013 Minnesota State Sacred Harp Singing Convention. Jim Goetz and Barb Patterson were elected co-chairpersons for the February 2013 Minnesota Midwinter Cooper Book Singing.Leaders: Martha Henderson [374]; Richard Popp [300]; Cecelia Kramer [157]; Kristine Peterson [84]; Steven T. Schmidgall [473]; Laura Densmore [522]; Kat Kohorst [348t]; Christine Stevens [379]. After grace, which was offered by Noelle Copeland, the class was dismissed for lunch.LUNCHAnna Pfau recalled the class leading [114]. Leaders: Charlie Obert [217]; Evelyn Lamb [196]; Lisa Cohen [485]; Jean Murphy [186]; Ben Copenhaver [562]; Kit Canright [475]; Chandler Yorkhall [383]; Wendy Popp [392]; Grace Patterson [542]; Michael Shewmaker [117]; Janell Draper [121]; Carol Buche [122]; Melanie Hauff [306]; Cathy Lutz and students from Saint Thomas University [218]; Matt Wells [456]; Ellen Lueck [193]; Kris Wiggins [234]; Julie Vea [378b]; Ted Mercer [291].RECESSNoelle Copeland brought the class back to order leading [32t]. Leaders: Kim Bahmer [162]; Anne Drexler [282]; Ann Sleeva [269]; Rochelle Lodder [34b]; Jenny Willard [36b]; Jeff Bell [208]; Carol Crawford [61]; Alexa Copeland and Stephanie Argo [352]; Midge Olsen [454]; Judy Hauff [536]; Karen Swenson [455]; Priscilla Wiggins [365]; Lisa Grayson [384]; Jim Crawford [546]; Paul Landskroener [155].Thea Johansen and Paul Landskroener led [146] to close. The class was then dismissed with prayer offered by Charlie Obert.Sunday, September 25The Sunday session of the 23rd Minnesota State Sacred Harp Singing Convention was called to order by Thea Johansen and Paul Landskroener leading [171]. After initial announcements, Anne Drexler offered the opening prayer.Leaders: Angie Payne [33b]; Charlie Obert [34b]; Barb Patterson [86]; Midge Olsen [66]; Bill Waddington [481]; Ann Sleeva [448t]; Gordon Olsen and Aaron Victorin-Vangerud [547]; Grace Patterson [47b]; Hans Guttmann [37b]; Janell Draper [89]; Jeff Bell [528]; Sheila Patterson and Jim Patterson [324]; Lara Andersen Wells and Matt Wells [318]; Wendy Popp [215].RECESSNathan Berry brought the class back to order by leading [274t]. Leaders: Lincoln Richardson [347]; Rochelle Lodder [313b]; Scott Schroeder [87]; Charlie Obert “Fairview”; Kris Wiggins [176b]; Pop Wagner [268]; Carol Buche [300]; Anne Drexler [277]; Donna Gunderson-Rogers [460]; Kat Kohorst [230]; Cecelia Kramer [191]; Ted Mercer [236]; Priscilla Wiggins [34t].RECESSNoelle Copeland brought the class back together leading [145b]. Leaders: Paul Wyatt [149]; Jenny Willard [480]; Melanie Hauff [271t].The memorial lesson was conducted by Priscilla Wiggins and Donna Gunderson-Rogers. Priscilla Wiggins reminded us that, as singers, we feel an instant connection to other singers and a spiritual connection to God. Each singer fills a space that no one else can fill, and so we remember these who are sick or shut-in and cannot be with us today. The following list of names was read: Don Buswell, Anita Buswell, Joan Trout, Skip Trout, Val Eng, Earl Burns, Jim Helke, Gin Peabody, Curtis Owen, Ed Hauff, Diana Zweig, Jim Herne, Sandy Bandli, Sharon Owens, Allan Grant, Sue Sherman, Bob Scorgie, and Bob Anderson. Priscilla Wiggins led [107].Donna Gunderson-Rogers asked us to remember those who have gone before us in the past year. She observed that we want to hear the names of our departed because of our profound sense of community, because we are part of each other, because we have been together in the past and will be together in heaven. Those remembered were John Grant--Arkansas; Lonnie Rodgers--Georgia; Anne Dhu McLucas and Eric Miller--Oregon; Ross Bunnell--Washington; Bob Struck, Joan Fritz, Margaret Peterson, Roberto Arroyo, Leo Kohorst, Jim Seaton, and Verna Henke--Minnesota; John Merritt--Mississippi; Howard Billian--Arizona; Sophie T. Grayson, Evelyn Koozniar, and Phil Trier--Illinois; Tom Schultz--Ontario, Canada; Paul Wagner, John Patterson, Lela Patterson, and Sam Thomas--Ohio; Marie Sherman--Missouri; Phyllis Heiser Hartwig--South Dakota; Arthel “Doc” Watson--North Carolina; Jane Arp and Mary Yousten--Wisconsin; Harrison Creel and Marie Ivey--Alabama. Donna Gunderson-Rogers led [176t]. Bonnie Ambrosi offered a prayer in memory of those named during the lesson. At the conclusion of the memorial lesson, Paul Wyatt offered the blessing for the noontime meal.LUNCHJim Pfau led [106] to bring the class to order. Leaders: Claudia Egelhoff [269]; Kevin Bullock [276]; Anna Pfau [532]; Myles Alexander [129]; Julie Vea [419]; Laura Densmore [377]; Ben Copenhaver [383]; Evelyn Lamb [272]; Ellen Lueck [189]; James Page [188]; Christine Stevens [542]; Roberta Strauss [384]; Richard Popp [71]; Eleanor Haase [142]; Carol Crawford [569b]; Nathan Berry [273]; Cathy Lutz and Ray Cott-Meissel [362]; Jeanette Nelson [503]; Steve Luttinen [349]; Judy Hauff [313t]; Steven Levine [496]; Lisa Grayson [340]; Steven T. Schmidgall [270].RECESSPaul Wyatt brought the class back to order leading [49b]. Leaders: Michael Moore [50t]; Bonnie Ambrosi [448b]; Leon Pulsinelle [43]; Martha Henderson [396]; Robin Fox [203]; Kit Canright [159]; Leslie Williamson White [549]; Carol Crawford and Jim Crawford [351]; Noelle Copeland [425]; Elise delMas [335]; Denise Kania [500]; Dick Patterson [385b]; Paul Landskroener [207]; Alexa Copeland and Will Gilman [315]; Karen Swenson [442]; Karen Edwards and Dan Edwards [99].Upcoming singings were announced. A business session was held for the purpose of hearing reports. Treasurer Matt Wells reported that we had met expenses for this weekend.Over the two days of the 23rd session of the Minnesota State Sacred Harp Singing Convention, 164 songs were led. Singers came from thirteen states and from two provinces of Canada. The singers recognized and thanked the many volunteers responsible for the success of the weekend.Thea Johansen and Paul Landskroener led [566] as the closing song. Kevin Bullock offered the closing prayer, and the class was dismissed.Co-Chairpersons--Thea Johansen and Paul Landskroener; Secretary--Tivey"
     # s = "The 4th annual Palo Alto All-Day Singing was held at the Unitarian Universalist Church of Palo Alto, Palo Alto, California, on the fourth Saturday in August. The class was called to order by Terry Moore leading [34b]. Dan Harper led [46].A business meeting was held and the following officers were elected or appointed to serve: Chairperson--Leigh Cooper; Vice Chairperson--Leah Coffin; Secretary--Betty Marvin; Treasurer--Terry Barber; Chaplain--Joel Chan; Arranging Officer--Julian Damashek. Joel Chan offered the opening prayer.Leaders: Leigh Cooper 59, [32t]; Leah Coffin [86], [107]; Betty Marvin [66], [540]; Joel Chan [268], [76b]; Lindy Groening [34t], [208]; Paul Kostka [49b], [198]; Rebecca Edwards [72b], [205]; David Fetcho [32b], [302]; Cecil Godfrey and Leon Godfrey [40]; Carolyn Deacy [29t], [372]; Phil Jensen [216], [503]; Linnea Sablosky [504], [112].RECESSThe class was called together by Susan Fetcho leading [52t]. Leaders: Jennie Brown [278b], [564]; Linda Booth [196], [313b]; Erika Wilson [560], [51]; Brian Harris [101b], [182]; Mary Gowins [498], [480]; Pat Coghlan [542], [492]; Taylor Warren [117], [410t]; Jeannette Ralston [551], [224].RECESSThe class was called back to order by David Fetcho leading [56t]. Leaders: Linda Selph [30t], [475]; Bob Jost [535], [68b]; Gabriel Kyne [82b], [83t]; Terry Moore [474], [218]; Susan Fetcho [370], [464]; Terry Barber [28b]; Janet Herman [371], [442]; Jeff Begley [50b], [284]; Mark Godfrey [74t], [500]; Julian Damashek [283]. Joel Chan offered the prayer before the noon meal.LUNCHThe class was called to order by Erika Wilson leading [145b]. Leaders: David Fetcho [546]; Phil Jensen [344]; Sarah Kostka and Paul Kostka [178]; Hannah Mae Blair [522]; Pat Coghlan [444]; Peter Ross [99]; Joel Chan [148]; Linda Booth [269]; Jeff Begley [547]; Mary O’Brien [128]; Janet Herman [192]; Linda Selph and Rebecca Edwards [377]; Jeannette Ralston [175]; Bob Jost [276]; Gabriel Kyne and Jennie Brown [411]; Dan Harper [236]; Linnea Sablosky and Susan Fetcho [419]; Carolyn Deacy and Lindy Groening [430].RECESSLinda Selph led [81t] to bring the class back together. Leaders: Mary Gowins [511]; Wren Hyde [162]; Brian Harris [56b]; Betty Marvin [538]; Inder Khalsa [131t]; Leah Coffin and Erika Wilson [506]; Taylor Warren [346]; Linda Selph and Terry Barber [197].A business meeting was held. The Treasurer reported that expenses were met. The Secretary reported that eighty-nine songs were sung, and that there were thirty-eight leaders. Resolutions were presented by Jeff Begley, who thanked the officers, committees, and all who made the singing possible, and resolved to convene again next year. Announcements of singings were made.Leigh Cooper and Mark Godfrey led [347] as the closing song. Joel Chan offered the closing prayer.Chairperson--Leigh Cooper; Vice Chairperson--Leah Coffin; Secretary--Betty Marvin"
 
-    minutes_id = 5177
-    conn = util.open_db()
-    curs = conn.cursor()
-    curs.execute("SELECT Minutes FROM minutes WHERE id=?", [minutes_id])
-    row = curs.fetchone();
-    s = row[0]
-    curs.close()
-    conn.close()
+    minutes_file = 'henagar_union_2018.txt'
+    minutes_file = 'coghlan_memorial_2019.txt'
+    with open(minutes_file) as f:
+        s = f.read()
 
-    print s
+    # minutes_id = 5177
+    # conn = util.open_db()
+    # curs = conn.cursor()
+    # curs.execute("SELECT Minutes FROM minutes WHERE id=?", [minutes_id])
+    # row = curs.fetchone();
+    # s = row[0]
+    # curs.close()
+    # conn.close()
+
+    print(s)
     minutes = parse_minutes(s, debug_print=True)
-    for session in minutes:
-        leaders = session['leaders']
-        for leader in leaders:
-            print leader['name']
+    print(minutes)
+    with open(os.path.splitext(minutes_file)[0] + '.json', 'w') as f:
+        json.dump(minutes, f)
+
+
+    # for session in minutes:
+    #     leaders = session['leaders']
+    #     for leader in leaders:
+    #         print leader['name']
+
+    # last_song = None
+    # with open('henagar_union_2018_songs.txt', 'w') as f:
+    #     for session in minutes:
+    #         # f.write('session %d\n' % (session['session']))
+    #         leaders = session['leaders']
+    #         for leader in leaders:
+    #             song = leader['song']
+    #             if song is not last_song:
+    #                 f.write(song + '\n')
+    #             last_song = song
+
+
+def test_name(chunk):
+    name_pattern = re.compile(r'''
+        (\A|(?<=\s))
+        (
+            (?!''' + build_bad_words() + r''')
+            (?<!for\s)
+            (
+                # Start with upper case...
+                [A-Z\u00C0-\u024F] |
+                # ...or lower case followed by a string that has upper case
+                [a-z](?=[\u00C0-\u024F\w’]*[A-Z\u00C0-\u024F])
+            )
+            ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?|van\sden\s|Van\sden\s|van\sDen\s
+         ){2,5}
+    ''', re.UNICODE | re.VERBOSE)
+    leaders = re.finditer(name_pattern, chunk)
+    for leader in leaders:
+        print(leader.group(0))
+        # if leader.end() <= first_song.start() + 1:
+        #     name = leader.group(0)
+        #     name = name.strip()  # TODO: should be able to incorporate this into regex......
+        #     dd.append({'name': name, 'song': pagenum})
+        #     if debug_print: print('***name: ' + name + '\tsong: ' + pagenum)
+
+
+def test_parse_minutes():
+    test_minutes_names = []
+    for filename in os.listdir('test'):
+        minutes_name, ext = os.path.splitext(filename)
+        if ext == '.txt':
+            test_minutes_names.append(minutes_name)
+
+    for minutes_name in test_minutes_names:
+
+        print('testing: %s' % minutes_name)
+
+        with open('test/%s.txt' % minutes_name, 'r') as txt_file:
+            minutes_text = txt_file.read()
+
+        with open('test/%s.json' % minutes_name, 'r') as json_file:
+            parsed_minutes_truth = json.load(json_file)
+
+        parsed_minutes_test = parse_minutes(minutes_text)
+
+        if len(parsed_minutes_test) != len(parsed_minutes_truth):
+            print('\tdifferent number of sessions!')
+            # return False
+            continue
+
+        for idx, session_truth in enumerate(parsed_minutes_truth):
+            session_test = parsed_minutes_test[idx]
+            leaders_truth = session_truth['leaders']
+            leaders_test = session_test['leaders']
+            if len(leaders_truth) != len(leaders_test):
+                print('\tdifferent number of leaders in session %d! %d %d' %
+                      (idx+1, len(leaders_truth), len(leaders_test)))
+                # return False
+
+                leader_names_truth = [l['name'] for l in leaders_truth]
+                leader_names_test = [l['name'] for l in leaders_test]
+                s = difflib.SequenceMatcher(a=leader_names_truth, b=leader_names_test)
+                last_a = 0
+                for a, b, n in s.get_matching_blocks():
+                    # print('match: %s %s' % (leaders_truth[a:a + n], leaders_truth[b:b + n]))
+                    if n > 0:
+                        # print('\t\tmatch: %d %d %d %d' % (a, b, n, last_a))
+                        for leader_name in leader_names_truth[last_a:a]:
+                            print("\t\tskip: %s" % leader_name)
+                        for leader_name in leader_names_test[last_a:b]:
+                            print("\t\tadded: %s" % leader_name)
+                        last_a = a + n
+
+                continue
+
+            for idx, leader_truth in enumerate(leaders_truth):
+                leader_test = leaders_test[idx]
+                if leader_truth['name'] != leader_test['name']:
+                    print('\tdifferent name! %s %s' % (leader_truth['name'], leader_test['name']))
+                    # return False
+                if leader_truth['song'] != leader_test['song']:
+                    print('\tdifferent song! %s %s' % (leader_truth['song'], leader_test['song']))
+                    # return False
+
+
+
+if __name__ == '__main__':
+    # test_singing()
+    # test_name(' Ruth Linehan [542]')
+    # test_name(' Old County Line')
+    test_parse_minutes()
