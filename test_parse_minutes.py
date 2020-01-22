@@ -111,18 +111,16 @@ def test_parse_minutes():
         parsed_minutes_test = parse_minutes(minutes_text)
 
         if len(parsed_minutes_test) != len(parsed_minutes_truth):
-            print('\tdifferent number of sessions!')
-            # return False
+            print('\tdifferent number of sessions! %d %d', (len(parsed_minutes_truth), len(parsed_minutes_test)))
             continue
 
-        for idx, session_truth in enumerate(parsed_minutes_truth):
-            session_test = parsed_minutes_test[idx]
+        for session_idx, session_truth in enumerate(parsed_minutes_truth):
+            session_test = parsed_minutes_test[session_idx]
             leaders_truth = session_truth['leaders']
             leaders_test = session_test['leaders']
             if len(leaders_truth) != len(leaders_test):
                 print('\tdifferent number of leaders in session %d! %d %d' %
-                      (idx+1, len(leaders_truth), len(leaders_test)))
-                # return False
+                      (session_idx + 1, len(leaders_truth), len(leaders_test)))
 
                 leader_names_truth = [l['name'] for l in leaders_truth]
                 leader_names_test = [l['name'] for l in leaders_test]
@@ -140,14 +138,12 @@ def test_parse_minutes():
 
                 continue
 
-            for idx, leader_truth in enumerate(leaders_truth):
-                leader_test = leaders_test[idx]
+            for leader_idx, leader_truth in enumerate(leaders_truth):
+                leader_test = leaders_test[leader_idx]
                 if leader_truth['name'] != leader_test['name']:
-                    print('\tdifferent name! %s %s' % (leader_truth['name'], leader_test['name']))
-                    # return False
+                    print('\tdifferent name! %s -> %s' % (leader_truth['name'], leader_test['name']))
                 if leader_truth['song'] != leader_test['song']:
-                    print('\tdifferent song! %s %s' % (leader_truth['song'], leader_test['song']))
-                    # return False
+                    print('\tdifferent song! %s -> %s' % (leader_truth['song'], leader_test['song']))
 
 
 
