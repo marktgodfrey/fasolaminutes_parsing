@@ -141,7 +141,7 @@ non_denson = [
 def build_bad_words():
     ss = ''
     for s in bad_words:
-        ss += s + '|'
+        ss += s + '[\.\s,’]+|'
     ss = ss[:-1]
     return ss
 
