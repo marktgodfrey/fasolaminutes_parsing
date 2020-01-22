@@ -13,9 +13,17 @@ bad_words = [
     'Chairlady',
     'Chairpersons',
     'Chairs',
+    'Co-Chair',
+    'Co-Chairs',
+    'Co-Chairmen',
+    'Co-Chairperson',
+    'Co-chair',
+    'Co-chairs',
     'Singing',
     'Secretary',
     'Secretaries',
+    'Treasurer',
+    'Treasurers',
     'Director',
     'Committee',
     'Committees',
@@ -48,6 +56,7 @@ bad_words = [
     'University',
     'Courthouse',
     'Meetinghouse',
+    'Meeting House'
     'Friends',
     'Seminary',
     'Cemetary',
@@ -99,7 +108,10 @@ bad_words = [
     'Labor',
     'County',
     'Line',
-    'Elder']
+    'Elder',
+    'Resolutions',
+    'Father',
+    'Moderator']
 
 non_denson = [
     'ACH',
