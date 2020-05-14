@@ -5277,7 +5277,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5867,"St. Luke Assembly of God, New Orleans, Louisiana","2201 Franklin Ave, New Orleans, LA 70117","29.980442, -90.048164",,,,,,,,,,
 ,5868,"Fairview United Methodist Church, Bloomington, Indiana","600 W 6th St, Bloomington, IN 47404","39.167993, -86.540038",,,,,,,,,,
 ,5869,"Cross Roads Presbyterian Church, Monroeville, Pennsylvania","2310 Haymaker Rd, Monroeville, PA 15146","40.411538, -79.752125",http://www.crossroadspresbyterian.com/,,,,,,,,,
-,5870,"Lyndon House Arts Center, Athens, Georgia","211 Hoyt St, Athens, Georgia 30601","33.964463, -83.376429",,,,,,,,,,
+,5870,"Lyndon House Arts Center, Athens, Georgia","211 Hoyt St, Athens, GA 30601","33.964463, -83.376429",,,,,,,,,,
 ,5872,"Liberty Church (McCormick), Jefferson County, Alabama","7828 McCormick Rd, Dora, AL 35062","33.737918, -87.010312",,,,,,,,,,
 ,5873,"Irasburg Town Hall, Irasburg, Vermont","161 Route 58 E, Irasburg, VT 05845","44.802545, -72.278157",https://www.facebook.com/pages/Irasburg-Town-Hall/392018694213171,,,,,,,,,
 ,5875,"Liberty Church, Henagar, Alabama","1500 Liberty Rd, Henagar, AL 35978","34.651086, -85.757431",,,,,,,,,,
@@ -5441,7 +5441,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,6045,"The Trinity Centre, Bristol, United Kingdom",,"51.458048, -2.576028",https://www.3ca.org.uk/,,,,"Trinity Centre, Trinity Rd",Bristol,Bristol,,BS2 0NW,United Kingdom
 ,6046,"Shady Grove (Keeton Cemetery), Nauvoo (Walker County), Alabama","Keeton Cemetery Rd x Keeton Ln (near Slicklizzard Rd), Nauvoo, AL 35578","33.953091, -87.463703",,,,,,,,,,
 ,6047,"Smyrna Primitive Baptist Church, Goodwater, Alabama","Co Rd 83, Goodwater, AL 35072","33.051908, -86.019681",,,,,,,,,,
-,6049,"Genesee Country Village & Museum, Mumford, New York","1410 Flint Hill Rd, Mumford, New York 14511","42.995976, -77.883610",https://z-m-www.facebook.com/events/346969906191247/,,,,,,,,,
+,6049,"Genesee Country Village & Museum, Mumford, New York","1410 Flint Hill Rd, Mumford, NY 14511","42.995976, -77.883610",https://z-m-www.facebook.com/events/346969906191247/,,,,,,,,,
 ,6050,"Gum Pond Primitive Baptist Church, Eva, Alabama","Gum Pond Rd x Thompson Hollow, Eva, AL 35621","34.330782, -86.674134",,,,,,,,,,
 1,6052,"Olivet Congregational Church, St. Paul, Minnesota","1850 Iglehart Ave, St Paul, MN 55104","44.949115, -93.179043",http://www.olivetucc.net/,,,,,,,,,
 2,6052,"Town Hall - The Landing (formerly Murphy's Landing), Shakopee, Minnesota","2187 County Rd 101, Shakopee, MN 55379","44.803116, -93.492643",https://www.threeriversparks.org/parks/the-landing.aspx,,,,,,,,,
