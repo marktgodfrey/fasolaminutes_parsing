@@ -4,10 +4,12 @@
 `create_aliases.py`  
 `parse_minutes.py`
 `insert_locations.py`
-`create_leader_stats.py`  
-`create_song_stats.py`  
+`create_leader_stats.py`
+`create_song_stats.py`
+`create_song_neighbors.py`
 `map_minutes_audio.py`  
-`cd ./bostonsing; scrapy crawl singing`  
-`cd ./shapenotecds; scrapy crawl singing`  
+`cd ./bostonsing; scrapy crawl singing`
+`cd ./shapenotecds; scrapy crawl singing`
 `cd ./phillysacredharp; scrapy crawl singing`
-`create_index.py`  
+`cd ./cork; map_audio.py`
+`create_index.py`
