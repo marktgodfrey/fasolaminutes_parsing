@@ -4,6 +4,7 @@
 import re
 import util
 
+
 bad_words = [
     'Chairman',
     'Chairperson',
@@ -113,6 +114,7 @@ bad_words = [
     'Father',
     'Moderator']
 
+
 non_denson = [
     'ACH',
     'AH',
@@ -138,6 +140,7 @@ non_denson = [
     'ScH',
     'WB']
 
+
 def build_bad_words():
     ss = ''
     for s in bad_words:
@@ -145,12 +148,14 @@ def build_bad_words():
     ss = ss[:-1]
     return ss
 
+
 def build_non_denson():
     ss = ''
     for s in non_denson:
         ss += r'\(' + s + r'\)|'
     ss = ss[:-1]
     return ss
+
 
 def parse_minutes(s, debug_print=False):
     session_count = 0
@@ -267,16 +272,17 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
 
     curs.close()
 
+
 def parse_all_minutes(conn):
     curs = conn.cursor()
 
     # 3928 - camp fasola 2012
     # 3542 - ireland
-    curs.execute("SELECT Minutes, Name, Date, id, isDenson FROM minutes")
+    curs.execute("SELECT Minutes, Name, Date, id, isDenson, isVirtual FROM minutes")
     rows = curs.fetchall()
     for row in rows:
 
-        if row[4] == 0:
+        if row[4] == 0 or row[5] == 1:
             continue
 
         print("%s on %s" % (row[1], row[2]))
@@ -289,6 +295,7 @@ def parse_all_minutes(conn):
 
     conn.commit()
     curs.close()
+
 
 def parse_minutes_by_id(conn, minutes_id):
     curs = conn.cursor()
@@ -313,6 +320,7 @@ def parse_minutes_by_id(conn, minutes_id):
 
     curs.close()
 
+
 def clear_minutes(conn):
     curs = conn.cursor()
     curs.execute("DELETE FROM leaders")
@@ -321,6 +329,7 @@ def clear_minutes(conn):
     curs.execute("DELETE FROM sqlite_sequence WHERE name='song_leader_joins'")
     conn.commit()
     curs.close()
+
 
 if __name__ == '__main__':
     db = util.open_db()

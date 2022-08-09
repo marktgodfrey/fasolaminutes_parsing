@@ -5,9 +5,9 @@ import util
 
 def delete_index(conn):
     curs = conn.cursor()
-    curs.execute("DROP INDEX song_index")
-    curs.execute("DROP INDEX leader_index")
-    curs.execute("DROP INDEX minutes_index")
+    curs.execute("DROP INDEX IF EXISTS song_index")
+    curs.execute("DROP INDEX IF EXISTS leader_index")
+    curs.execute("DROP INDEX IF EXISTS minutes_index")
     conn.commit()
     curs.close()
 

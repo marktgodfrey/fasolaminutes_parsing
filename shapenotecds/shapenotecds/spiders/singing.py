@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import json
-import os
-import re
 
 from spider_base import SpiderBase
 
@@ -15,10 +13,13 @@ class SingingSpider(SpiderBase):
 
     def parse(self, response):
         sel = scrapy.Selector(response)
-        if len(sel.xpath('//script[@class="wp-playlist-script"]/text()')) == 0:
-            self.parse_old(response)
-        else:
+        if sel.xpath('//script[@class="cue-playlist-data"]/text()'):
+            self.parse_cue_playlist(response)
+        elif sel.xpath('//script[@class="wp-playlist-script"]/text()'):
             self.parse_fancy(response)
+        else:
+            self.parse_old(response)
+
 
     def parse_old(self, response):
         sel = scrapy.Selector(response)
@@ -71,3 +72,13 @@ class SingingSpider(SpiderBase):
                 song_data.append((pagenum, url))
 
             self.parse_section(response.url, song_data)
+
+    def parse_cue_playlist(self, response):
+        sel = scrapy.Selector(response)
+
+        playlist_json = sel.xpath('//script[@class="cue-playlist-data"]/text()').extract()[0]
+        playlist = json.loads(playlist_json)
+        songs = playlist['tracks']
+        song_data = [(song['title'], song['audioUrl']) for song in songs]
+        self.parse_section(response.url, song_data)
+

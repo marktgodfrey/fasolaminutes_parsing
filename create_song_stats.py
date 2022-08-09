@@ -4,6 +4,7 @@
 from collections import defaultdict
 import util
 
+
 def build_ranks(conn):
     # ranks[year] = sorted [(count, song_id), ...]
     ranks = defaultdict(list)
@@ -17,6 +18,7 @@ def build_ranks(conn):
     for (song_id, count, year) in cursor:
         ranks[year].append((count, song_id))
     return ranks
+
 
 def create_stats(conn):
     ranks = build_ranks(conn)

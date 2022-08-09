@@ -1,0 +1,555 @@
+id,Keys,Times,Orientation,ThreeLiner
+1,F min,6/8,full,0
+2,F min,4/4,full,0
+3,A min,4/4,top,0
+4,G,4/4,bottom,0
+5,A min,4/4,top,0
+6,D min,3/2,bottom,1
+7,C,2/4,top,0
+8,C,3/4,bottom,0
+9,C,3/2,top,0
+10,G,4/4,bottom,0
+11,G,4/4,top,0
+12,E min,4/4,bottom,0
+13,F# min,4/4,top,0
+14,G,3/4,bottom,0
+15,F,4/4,top,0
+16,A,4/4,bottom,0
+17,Bb,4/4,full,0
+18,A min,4/4,top,0
+19,A,4/4,bottom,0
+20,F,3/4,top,0
+21,F,4/4,bottom,0
+22,F,4/4,top,0
+23,E min,4/4,bottom,0
+24,E min,4/4,top,0
+25,D,4/4,bottom,0
+26,Bb,4/4,full,0
+27,F,4/4,full,0
+28,E min,4/4,full,0
+29,G,"6/8, 3/4",full,0
+30,C,6/4,full,0
+31,C,3/4,top,0
+32,F,4/4,bottom,0
+33,G,4/4,full,0
+34,A,4/4,top,0
+35,A min,3/2,bottom,0
+36,C,4/4,top,0
+37,E min,4/4,bottom,0
+38,A,2/2,top,0
+39,G,3/2,bottom,0
+40,E min,4/4,top,0
+41,E,3/2,bottom,0
+42,E min,4/4,full,0
+43,G,4/4,top,0
+44,F,6/4,bottom,0
+45,A min,4/4,full,0
+46,C,"4/4, 3/4",full,1
+47,F,4/4,full,0
+48,C,4/4,top,0
+49,F# min,3/4,bottom,0
+50,G,6/8,full,0
+51,Ab,4/4,full,0
+52,C,4/4,full,0
+53,G,4/4,full,0
+54,F,4/4,full,0
+55,G,6/4,full,0
+56,G,4/4,full,0
+57,A,6/8,full,0
+58,E min,6/4,full,0
+59,A,4/4,full,0
+60,F# min,6/4,full,0
+61,B min,4/4,top,0
+62,Bb,3/4,bottom,0
+63,G,4/4,top,0
+64,G min,6/8,bottom,0
+65,A,2/2,top,0
+66,F min,4/4,bottom,1
+67,A min,6/8,full,0
+68,F,4/4,top,0
+69,Bb,4/4,bottom,0
+70,Bb,4/4,top,0
+71,G,3/2,bottom,0
+72,G min,6/4,top,0
+73,A min,6/4,bottom,0
+74,Db,6/4,full,0
+75,G,6/4,top,0
+76,C,2/4,bottom,0
+77,A min,4/4,top,0
+78,C,3/2,bottom,0
+79,A,4/4,full,0
+80,Eb,2/4,full,0
+81,F# min,2/4,top,0
+82,F,2/4,bottom,0
+83,A,4/4,top,0
+84,G,6/4,bottom,0
+85,Bb,4/4,top,0
+86,F# min,6/4,bottom,1
+87,A min,4/4,top,0
+88,F,6/4,bottom,0
+89,G,2/4,full,0
+90,F# min,2/4,full,0
+91,C# min,3/2,full,0
+92,F,2/4,full,0
+93,F,2/4,top,0
+94,F,4/4,bottom,0
+95,Bb,4/4,full,0
+96,A,4/4,full,0
+97,A,6/4,full,0
+98,F,4/4,full,0
+99,F,6/4,full,0
+100,F,4/4,full,0
+101,E min,2/4,bottom,0
+102,A,4/4,full,0
+103,G,6/4,full,0
+104,Bb,6/4,full,0
+105,A,4/4,full,0
+106,A,4/4,full,0
+107,A,4/4,top,0
+108,F# min,4/4,bottom,0
+109,E min,4/4,full,0
+110,G,6/8,full,0
+111,G,6/4,full,0
+112,F,4/4,full,0
+113,E min,4/4,full,0
+114,A min,4/4,full,0
+115,C,6/4,top,0
+116,A min,4/4,bottom,1
+117,Bb,2/4,full,0
+118,E min,4/4,full,0
+119,G,2/4,top,0
+120,A,4/4,bottom,0
+121,F,4/4,full,0
+122,A,4/4,full,1
+123,F# min,4/4,full,0
+124,F# min,4/4,full,0
+125,A min,6/8,full,1
+126,E min,4/4,full,0
+127,A min,6/4,full,1
+128,G,6/8,full,0
+129,D,4/4,full,0
+130,F,4/4,full,0
+131,A,4/4,full,0
+132,A,4/4,top,0
+133,G min,4/4,bottom,0
+134,A,2/4,full,0
+135,D min,2/4,full,0
+136,E min,4/4,full,0
+137,G,6/4,full,0
+138,F# min,4/4,full,0
+139,C,4/4,full,0
+140,F,2/4,full,0
+141,F# min,4/4,top,0
+142,G,6/8,bottom,0
+143,F# min,4/4,full,0
+144,D min,4/4,full,0
+145,A,6/8,full,0
+146,F,2/4,full,0
+147,G,2/4,full,0
+148,F,4/4,full,0
+149,G,4/4,top,1
+150,G,3/4,bottom,0
+151,G,6/4,full,0
+152,A,6/8,full,0
+153,G,4/4,full,0
+154,F# min,4/4,full,0
+155,F,2/4,full,0
+156,A,4/4,full,0
+157,G,2/4,top,0
+158,F,2/4,bottom,0
+159,Ab,6/4,full,0
+160,C,3/2,top,0
+161,C,4/4,bottom,0
+162,A min,2/4,full,0
+163,D,2/2,full,0
+164,A,4/4,full,0
+165,Eb,4/4,full,0
+166,F,4/4,full,0
+167,F,"3/4, 2/4",full,0
+168,Eb,4/4,full,0
+169,Bb,4/4,full,0
+170,D,2/4,full,0
+171,D,6/8,full,0
+172,F,2/4,full,0
+173,F min,4/4,full,0
+174,E min,6/8,top,1
+175,D min,4/4,bottom,0
+176,Eb,4/4,full,0
+177,G,4/4,full,0
+178,E min,4/4,top,0
+179,D,3/2,bottom,0
+180,A,4/4,full,0
+181,A min,4/4,full,0
+182,C,2/4,full,0
+183,F,2/4,full,0
+184,G min,4/4,full,0
+185,G,2/4,full,0
+186,F,2/4,full,0
+187,F,4/4,full,0
+188,G,4/4,full,0
+189,F# min,4/4,full,0
+190,D,2/4,full,0
+191,F,2/4,bottom,0
+192,F,4/4,top,0
+193,C,4/4,bottom,0
+194,F,4/4,full,0
+195,Eb,3/2,full,0
+196,C,6/4,full,0
+197,E min,4/4,full,0
+198,E min,4/4,full,0
+199,C,4/4,full,0
+200,E min,4/4,full,0
+201,E,4/4,full,0
+202,G,4/4,full,0
+203,D,4/4,full,0
+204,F,4/4,full,0
+205,G,"2/4, 6/8",full,0
+206,C,4/4,full,0
+207,E min,4/4,full,0
+208,Eb,4/4,full,0
+209,A,4/4,full,0
+210,F,4/4,full,0
+211,E min,6/8,full,0
+212,E min,4/4,full,0
+213,Bb,2/4,full,0
+214,F,4/4,full,0
+215,F# min,4/4,bottom,0
+216,Eb,4/4,full,0
+217,E min,4/4,full,0
+218,G,6/8,full,0
+219,E,6/4,full,0
+220,G,4/4,full,0
+221,Bb,4/4,full,0
+222,F,4/4,full,0
+223,E min,4/4,full,0
+224,F# min,4/4,full,0
+225,E min,4/4,full,0
+226,D,4/4,full,0
+227,F,6/4,top,0
+228,G,2/2,bottom,0
+229,F# min,4/4,full,0
+230,E min,4/4,full,0
+231,E min,4/4,full,0
+232,F,4/4,full,0
+233,F,4/4,full,0
+234,C,6/8,full,0
+235,F,4/4,full,0
+236,A,2/4,full,0
+237,E min,2/4,full,0
+238,A,3/2,top,0
+239,G,"4/4, 6/8",bottom,0
+240,A,"4/4, 2/4",full,0
+241,C,4/4,full,0
+242,F,3/2,full,0
+243,G,6/4,full,1
+244,G,3/4,full,1
+245,Ab,4/4,full,0
+246,C,"6/4, 4/4, 2/4",full,0
+247,C,3/4,full,0
+248,A,2/4,full,0
+249,"D min, D","6/4, 4/4, 2/4",full,0
+250,G,4/4,full,0
+251,A min,"6/4, 4/4",full,0
+252,G,"4/4, 2/2, 3/2, 6/4",full,0
+253,A,"2/4, 6/4, 6/8",full,0
+254,A min,"4/4, 2/4, 6/8, 6/4",full,0
+255,A,4/4,full,0
+256,A,6/8,full,0
+257,F# min,4/4,full,0
+258,A min,2/4,full,0
+259,E,4/4,full,0
+260,A,2/4,full,0
+261,A min,3/4,top,1
+262,F,4/4,bottom,0
+263,A min,4/4,full,0
+264,A,4/4,full,0
+265,F min,2/4,top,0
+266,G,4/4,bottom,0
+267,A min,4/4,top,0
+268,F,6/8,bottom,0
+269,C,4/4,full,0
+270,G min,4/4,full,0
+271,F min,3/4,top,0
+272,E min,2/4,bottom,0
+273,F,4/4,full,0
+274,Bb,4/4,full,0
+275,F,2/4,full,0
+276,F,4/4,full,0
+277,G,6/4,full,1
+278,Bb,3/4,top,0
+279,F,4/4,bottom,0
+280,F min,4/4,full,0
+281,C,4/4,full,0
+282,E,4/4,full,0
+283,F,6/4,full,0
+284,Bb,4/4,full,0
+285,F,4/4,full,0
+286,F,4/4,full,0
+287,F,4/4,full,0
+288,Eb,2/4,full,0
+289,G,3/4,full,0
+290,E min,4/4,full,0
+291,C,4/4,full,0
+292,A,4/4,full,0
+293,F,4/4,full,0
+294,A min,4/4,full,0
+295,F,"2/4, 6/8, 3/4",full,0
+296,E min,4/4,full,0
+297,F,3/4,full,0
+298,E,4/4,full,0
+299,A,4/4,full,0
+300,E min,4/4,full,0
+301,D,2/4,full,0
+302,F,4/4,full,0
+303,C,4/4,full,0
+304,E min,6/4,top,0
+305,A min,4/4,bottom,0
+306,C,4/4,top,0
+307,A min,2/2,bottom,0
+308,G,4/4,full,0
+309,A min,4/4,full,0
+310,Eb,4/4,full,0
+311,G,4/4,full,0
+312,F,4/4,full,0
+313,G,2/4,full,0
+314,F# min,"3/2, 4/4",full,0
+315,F,4/4,full,0
+316,G,2/4,full,0
+317,F,2/4,top,0
+318,F,6/4,bottom,0
+319,A min,4/4,full,0
+320,F,6/4,full,0
+321,E min,6/4,full,0
+322,D,4/4,full,0
+323,G min,4/4,full,0
+324,G,"6/4, 6/8",full,0
+325,F min,3/4,top,0
+326,E min,3/4,bottom,0
+327,A,2/4,full,0
+328,E min,2/4,full,0
+329,A,2/4,full,0
+330,D,4/4,full,0
+331,F,2/4,full,0
+332,G,4/4,full,0
+333,F,4/4,full,0
+334,A,6/4,full,1
+335,A,2/4,full,0
+336,F,4/4,full,0
+337,Db,4/4,full,0
+338,A,6/4,full,0
+339,A,2/4,full,0
+340,Bb,2/2,full,0
+341,F,2/4,top,0
+342,G min,2/4,bottom,0
+343,D min,6/4,full,1
+344,Bb,3/2,full,0
+345,A min,4/4,top,1
+346,F,3/4,bottom,0
+347,E min,4/4,full,0
+348,G,4/4,full,0
+349,C,4/4,full,0
+350,E,4/4,full,0
+351,F,4/4,full,0
+352,A,3/2,top,0
+353,F,2/4,bottom,0
+354,"A min, A","4/4, 6/8, 2/4",full,1
+355,Eb,2/4,full,0
+356,D,3/4,full,1
+357,E min,6/8,full,0
+358,G,4/4,full,0
+359,Bb,4/4,full,0
+360,E,4/4,full,0
+361,E min,4/4,full,0
+362,F,6/8,full,0
+363,A,3/4,full,0
+364,A min,6/4,full,0
+365,F,4/4,full,0
+366,E min,4/4,full,0
+367,Ab,4/4,full,0
+368,G,6/8,full,0
+369,F# min,6/8,full,0
+370,A min,6/4,full,0
+371,E min,4/4,full,0
+372,A,6/8,top,0
+373,G min,3/4,bottom,0
+374,F# min,4/4,full,0
+375,F,4/4,full,0
+376,F,3/4,full,0
+377,F,4/4,full,0
+378,D min,4/4,full,0
+379,Eb,2/4,full,0
+380,E min,3/4,top,0
+381,A min,2/4,bottom,0
+382,F,4/4,full,0
+383,F,"4/4, 3/2, 6/8",full,0
+384,Bb,2/4,full,0
+385,G,4/4,full,0
+386,G,3/4,full,0
+387,E,4/4,full,0
+388,Eb,4/4,full,0
+389,F,3/4,full,0
+390,F,2/4,full,0
+391,F,4/4,full,0
+392,E min,4/4,full,0
+393,E min,4/4,full,0
+394,F,2/4,full,0
+395,F# min,4/4,top,0
+396,A min,4/4,bottom,0
+397,Eb,4/4,full,0
+398,G,2/4,full,0
+399,Eb,4/4,full,0
+400,F,6/4,full,0
+401,F,4/4,full,0
+402,Eb,2/4,full,0
+403,G,2/4,full,0
+404,Eb,4/4,full,1
+405,D,"4/4, 2/4",full,0
+406,F,6/8,full,0
+407,A,3/2,top,0
+408,G,4/4,bottom,0
+409,F# min,4/4,full,0
+410,Bb,4/4,full,0
+411,C,3/4,full,0
+412,G,4/4,full,0
+413,A,6/4,full,0
+414,E min,4/4,full,0
+415,G,"2/4, 3/4",full,0
+416,D,2/4,full,0
+417,F# min,4/4,full,0
+418,F,3/4,full,0
+419,E min,2/4,full,0
+420,F,4/4,full,0
+421,F# min,4/4,full,0
+422,Eb,2/4,full,0
+423,A,4/4,full,0
+424,G,4/4,top,0
+425,F,4/4,bottom,0
+426,F# min,4/4,full,0
+427,F# min,4/4,full,0
+428,F# min,4/4,full,0
+429,F,4/4,full,0
+430,F,4/4,full,0
+431,A min,4/4,full,0
+432,F,4/4,full,0
+433,F,3/4,full,1
+434,Eb,4/4,full,0
+435,F,6/8,full,0
+436,F,6/8,full,0
+437,F,4/4,full,0
+438,E min,4/4,full,0
+439,F,4/4,full,0
+440,C# min,4/4,full,0
+441,D min,4/4,full,0
+442,C,4/4,full,0
+443,F,4/4,full,0
+444,E min,4/4,full,0
+445,F# min,"6/4, 3/4",top,0
+446,A,4/4,bottom,0
+447,G,6/8,full,1
+448,E,6/4,full,0
+449,D,4/4,full,1
+450,F,6/4,full,0
+451,E min,4/4,full,0
+452,Bb,4/4,full,0
+453,D min,"3/4, 4/4",full,0
+454,E,4/4,full,0
+455,F min,3/4,full,0
+456,G min,2/4,full,0
+457,A,2/4,full,0
+458,G,4/4,full,0
+459,G,4/4,full,0
+460,F,3/4,full,0
+461,F,4/4,full,0
+462,F,4/4,full,0
+463,F,4/4,full,0
+464,E,4/4,full,0
+465,Bb,3/2,full,0
+466,F,4/4,full,0
+467,F,4/4,full,0
+468,F,3/4,full,0
+469,C,4/4,full,0
+470,G,2/4,full,0
+471,G,4/4,full,0
+472,A,4/4,full,0
+473,F,4/4,full,0
+474,C,2/4,full,0
+475,F,4/4,full,0
+476,F,4/4,full,0
+477,F,2/4,full,0
+478,E min,4/4,full,0
+479,Bb,4/4,full,0
+480,F,4/4,full,0
+481,E,6/4,full,0
+482,F,2/4,full,0
+483,C,"4/4, 6/4",full,0
+484,F# min,4/4,full,0
+485,F,4/4,full,0
+486,G,3/4,full,0
+487,G,3/4,full,0
+488,C,3/2,full,0
+489,Bb,4/4,full,0
+490,Eb,3/4,full,0
+491,F,3/4,full,0
+492,A,2/4,full,0
+493,Bb,2/4,full,0
+494,A,4/4,full,0
+495,E,4/4,full,0
+496,F,3/4,full,0
+497,E min,4/4,full,0
+498,G,3/4,full,0
+499,F,4/4,full,0
+500,F,3/2,full,0
+501,D min,3/2,full,0
+502,A min,4/4,full,0
+503,E min,4/4,full,0
+504,Eb,"2/2, 2/4, 6/8, 3/4, 4/4",full,0
+505,G,4/4,full,0
+506,G,4/4,full,0
+507,Bb,3/4,full,0
+508,Bb,6/4,full,0
+509,Ab,2/2,full,0
+510,F,6/4,full,0
+511,F,4/4,full,0
+512,Eb,4/4,full,0
+513,E,2/4,full,0
+514,E min,4/4,full,0
+515,A,2/2,full,0
+516,F,4/4,full,0
+517,Eb,4/4,full,0
+518,Bb,4/4,full,0
+519,Eb,4/4,full,0
+520,F,3/4,full,0
+521,F,4/4,full,0
+522,Eb,4/4,full,0
+523,D,4/4,full,0
+524,E min,4/4,full,0
+525,A,4/4,full,0
+526,E min,4/4,full,0
+527,Bb,6/4,full,0
+528,F,4/4,full,0
+529,A min,4/4,full,0
+530,Eb,4/4,full,0
+531,F,4/4,full,0
+532,G min,6/4,full,0
+533,Bb,4/4,full,0
+534,E min,3/2,full,0
+535,F,4/4,full,0
+536,D,2/2,full,0
+537,F,4/4,full,0
+538,F,4/4,full,0
+539,Eb,4/4,full,0
+540,F,4/4,full,0
+541,F,4/4,full,0
+542,F,4/4,full,0
+543,E min,4/4,full,0
+544,E min,4/4,full,0
+545,A,3/4,full,0
+546,Bb,4/4,full,0
+547,A min,2/4,full,0
+548,G,4/4,full,0
+549,F,2/2,top,0
+550,Bb,3/4,bottom,0
+551,F,4/4,full,0
+552,Bb,6/4,full,0
+553,F,4/4,full,0
+554,G,4/4,full,0
