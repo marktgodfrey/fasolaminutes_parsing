@@ -93,5 +93,5 @@ if __name__ == '__main__':
     insert_minutes(db)
     fix_denson(db)
     fix_virtual(db)
-    do_ordinal_dates(db)
+    # do_ordinal_dates(db)
     db.close()

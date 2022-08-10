@@ -16,7 +16,7 @@ class SpiderBase(scrapy.Spider):
     def start_requests(self):
         for url in self.get_audio_urls():
             if not self.parse_file(url):
-                yield self.make_requests_from_url(url)
+                yield scrapy.Request(url=url, callback=self.parse)
 
     def get_audio_urls(self):
         conn = self.open_db()
