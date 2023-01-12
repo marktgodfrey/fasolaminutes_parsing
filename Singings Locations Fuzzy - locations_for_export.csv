@@ -4054,7 +4054,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,4460,"St. Bartholomew’s Church Hall, Benton, Newcastle upon Tyne, United Kingdom",,"55.016001, -1.568647",http://www.stbartholomewschurch.org.uk/,,,,"3 Station Rd, Forest Hall",Newcastle upon Tyne,Tyne and Wear,England,NE12 8AN,United Kingdom
 ,4461,"Zion Primitive Baptist Church, Gordo, Alabama","County Rd 49 x Dyer Dr, Gordo, AL 35466","33.424273, -87.879035",,,,,,,,,,
 ,4463,"Holly Springs Primitive Baptist Church, Bremen, Georgia","Holly Springs Rd (Near I-20 x US Hwy 27), Bremen, GA 30117","33.683408, -85.149538",http://pbchurches.org/2008/12/05/holly-springs-primitive-baptist-church-bremen-georgia/,,,,,,,,,
-,4464,"Ökomenisches Forum HafenCity, Hamburg, Germany",,"53.542649, 10.002368",http://www.oekumenisches-forum-hafencity.de/start/index.php?language=d,,,,Shanghaiallee 12,Hamburg,,,20457,Germany
+,4464,"Ökumenisches Forum HafenCity, Hamburg, Germany",,"53.542649, 10.002368",http://www.oekumenisches-forum-hafencity.de/start/index.php?language=d,,,,Shanghaiallee 12,Hamburg,,,20457,Germany
 ,4466,"Liberty Church, Henagar, Alabama","1500 Liberty Rd, Henagar, AL 35978","34.651086, -85.757431",,,,,,,,,,
 ,4467,"Sherman Baptist Church, Calhoun County, Mississippi","MS-32 x County Road 272, Bruce, MS 38915","34.056292, -89.428958",,,,,,,,,,
 ,4468,"Fellowship Primitive Baptist Church, Cullman County, Alabama","US Hwy 278 x County Rd 813, Cullman, AL 35057","34.194113, -86.956728",,,,,,,,,,
@@ -5093,7 +5093,7 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,5658,"Macedonia Primitive Baptist Church, Jackson County, Alabama","County Rd 43 x County Rd 38, Section, AL 35771","34.518593, -86.000019",,,,,,,,,,
 ,5660,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
 ,5661,"Altamont New York Fair Grounds, Altamont, New York","129 Grand Street, Altamont, NY 12009","42.697754, -74.025388",,,,,,,,,,
-,5662,"Botley Women’s Institute Hall, Oxford, United Kingdom",,"51.751856, -1.292301",,,,,N Hinksey Ln,Oxford,Oxfordshire,England,OX2 0LT,
+,5662,"Botley Women’s Institute Hall, Oxford, United Kingdom",,"51.751856, -1.292301",,,,,N Hinksey Ln,Oxford,Oxfordshire,England,OX2 0LT,United Kingdom
 ,5664,"Salem United Methodist Church, Cedar Bluff, Alabama","AL Hwy 9, Cedar Bluff, AL 35959","34.247991, -85.474354",,,,,,,,,,
 ,5665,"Big Creek Primitive Baptist Church, Alpharetta, Georgia","4490 State Bridge Way, Alpharetta, GA 30005","34.059084, -84.229057",http://awesomealpharetta.com/locations/big-creek-primitive-baptist-church/,,,,,,,,,
 ,5666,"Mt. Lebanon Missionary Baptist Church, Fayette County, Alabama","Mt. Lebanon Rd, Fayette, AL 35555","33.773864, -87.888766",,,,,,,,,,
@@ -5692,3 +5692,160 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,6328,"Woodlands Garden, Decatur, Georgia","932 Scott Blvd, Decatur, GA 30030","33.786287, -84.303752",,,,,,,,,,
 ,6329,"Eldridge Farm, near Orleans, Indiana","1194 State Highway 337, Orleans, IN 47452","38.575125, -86.310474",,,,,,,,,,
 ,6330,"Mt. Zion Methodist Church, Harrodsburg, Kentucky","Lexington Rd (Hwy 68), Harrodsburg, KY 40330","37.839942, -84.725402",,,,,,,,,,
+,6331,"Antioch Baptist Church, Ider, Alabama","County Rd 783 x County Rd 141, Ider, AL 35981","34.750679, -85.628201",,,,,,,,,,
+,6332,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
+,6333,"Camp Ground Methodist Church, Cleburne County, Alabama","24581 Co Rd 49, Muscadine, AL 36269","33.770347, -85.413262",,,,,,,,,,
+,6334,"Brisbane Community Park, Brisbane, California","11 Old County Rd, Brisbane, CA 94005","37.685356, -122.401575",,,,,,,,,,
+,6335,"Friends’ Meeting House, Chicago, Illinois","5615 S Woodlawn Ave, Chicago, IL 60637","41.792801, -87.596164",https://57thstreet.ilym.org/57thStreet/,,,,,,,,,
+,6336,"Liberty Church (McCormick), Jefferson County, Alabama","7828 McCormick Rd, Dora, AL 35062","33.737918, -87.010312",,,,,,,,,,
+,6337,"Rocky Mount Primitive Baptist Church, Daviston, Alabama","County Road 79 x County Road 80, Daviston, AL 36256","33.016557, -85.668546",,,,,,,,,,
+,6338,"Seward Park, Seattle, Washington","5900 Lake Washington Blvd S, Seattle, WA 98118","47.552315, -122.255451",https://twitter.com/SEAsacredharp/status/1492652337101369344,,,,,,,,,
+,6339,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6340,"Ökumenisches Forum HafenCity, Hamburg, Germany",,"53.542649, 10.002368",http://www.oekumenisches-forum-hafencity.de/start/index.php?language=d,,,,Shanghaiallee 12,Hamburg,,,20457,Germany
+,6341,"Rehoboth House New Year’s Singing, Osage Avenue, Philadelphia, Pennsylvania",,,,,,,,,,,,
+,6342,"Ephesus School, Roopville, Georgia","24414 Georgia Hwy 100, Roopville, GA 30170","33.405675, -85.252988",,,,,,,,,,
+,6343,"Society for American Music Singing, Sonora Zoom Room (Virtual), Tucson, Arizona",,,,,,,,,,,,
+,6344,"Staplefield Village Hall, Crawley, Sussex, United Kingdom",,"51.036759, -0.179271",http://www.anstystaplefield-pc.gov.uk/Core/Ansty-and-Staplefield-Parish-Council/Pages/Local_Amenities_Clubs_and_Events_1.aspx,,,,Cuckfield Rd,Haywards Heath,West Sussex,England,RH17 6ET,United Kingdom
+,6345,"Old Orchard Presbyterian Church, Saint Louis, Missouri","640 Amelia Ave, Webster Groves, MO 63119","38.596738, -90.338130",,,,,,,,,,
+,6346,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6347,"Radnor Primitive Baptist Church, Nashville, Tennessee","503 Brewer Dr, Nashville, TN 37211","36.055695, -86.724642",,,,,,,,,,
+,6348,"Edwardsville Baptist Church, Edwardsville, Alabama","4062 Burton St, Heflin, AL 36264","33.706246, -85.508978",,,,,,,,,,
+,6349,"Pontotoc Electric Power Association (Pepa) meeting room, Bruce, Mississippi","125 S Newberger Ave, Bruce, MS 38915","33.989196, -89.346736",,,,,,,,,,
+,6350,"Shiloh Primitive Baptist Church, South of Tallapoosa, Georgia","Shiloh Church Rd (in between Old Hwy 100 and Barge Tallapoosa Rd), Waco, GA 30182","33.660804, -85.278493",,,,,,,,,,
+,6351,"Seabold Hall, Bainbridge Island, Washington","14450 Komedal Rd NE, Bainbridge Island, WA 98110","47.694063, -122.558117",https://biparks.org/map-location/seabold-hall/,,,,,,,,,
+,6352,"Antioch Baptist Church, Ider, Alabama","County Rd 783 x County Rd 141, Ider, AL 35981","34.750679, -85.628201",,,,,,,,,,
+,6353,"Old County Line Church, Corner, Alabama","Old County Line Church Rd, Warrior, AL 35180","33.807181, -86.927940",,,,,,,,,,
+,6354,"Union Primitive Baptist Church, Goggans, Georgia","Johnstonville Rd (across from intersection with Farm Rd), Barnesville, GA 30204","33.076554, -84.091582",http://georgiainfo.galileo.usg.edu/topics/historical_markers/county/lamar/goggans-georgia,,,,,,,,,
+,6355,"Not-Quite New Haven Not-Quite All-Day Singing, Guilford, Connecticut",,,,,,,,,,,,
+,6356,"Old Harmony Primitive Baptist Church, Abernathy, Alabama","Co Rd 60, Abernathy, AL 36264","33.646132, -85.418326",,,,,,,,,,
+,6357,"Pine Grove Church, Collinsville, Alabama","County Rd 469, Collinsville, AL 35961","34.218074, -85.857076",,,,,,,,,,
+,6358,"Kegworth Village Hall, Leicestershire, United Kingdom",,"52.837755, -1.276204",https://www.hallshire.com/halls/view/1108/kegworth-village-hall,,,,Nottingham Rd,Kegworth,Leicestershire,England,DE74 2EH,United Kingdom
+,6359,"Westside Park Pavilion, Atlanta, Georgia","1660 Johnson Rd NW, Atlanta, GA 30318","33.782067, -84.441091",https://www.facebook.com/events/westside-park-pavilion-atlanta/atlanta-all-day-sacred-harp-singing-2022/1020836208830628/,,,,,,,,,
+,6360,"Pedro Point Firehouse, Pacifica, California","1227 Danmann Ave, Pacifica, CA 94044","37.595689, -122.508922",https://www.pedropoint.org,,,,,,,,,
+,6361,"Strickler Farm, Mountville, Pennsylvania","1855 Stony Battery Rd, Mountville, PA 17554","40.047029, -76.420241",,,,,,,,,,
+,6363,"St. Michael Lutheran Church, Cleburne County, Alabama","2213 CR 14, Muscadine, AL 36269","33.815231, -85.406963",,,,,,,,,,
+,6364,"Friendship Primitive Baptist Church, Haleyville, Alabama","County Road 23 (in between intersections with County Road 3217 and Violet Road), Haleyville, AL 35565","34.236831, -87.513971",,,,,,,,,,
+,6365,"Crellin Park, Chatham, New York","2940 NY-66, Chatham, NY 12037","42.371985, -73.605491",https://www.facebook.com/events/1042135643070338,,,,,,,,,
+,6366,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6367,"Old Madison Church Building - Burritt On The Mountain, Huntsville, Alabama","3101 Burritt Drive, Huntsville, AL 35801","34.716914, -86.538961",,,,,,,,,,
+,6368,"Mount Zion Primitive Baptist Church, Ashland, Alabama","Clay County 5, Ashland, AL 36251","33.238271, -85.888454",,,,,,,,,,
+,6369,"Shady Grove (Keeton Cemetery), Nauvoo (Walker County), Alabama","Keeton Cemetery Rd x Keeton Ln (near Slicklizzard Rd), Nauvoo, AL 35578","33.953091, -87.463703",,,,,,,,,,
+,6370,"Frenchay Quaker Meeting House, Bristol, United Kingdom",,"51.498755, -2.518287",http://www.bristolquakers.org.uk/meeting_house_details.php?meetinghouse=Frenchay%20Quaker%20Meeting%20House,,,,Beckspool Rd,Frenchay,Bristol,England,BS16 1NT,United Kingdom
+,6371,"Grace Chapel Primitive Baptist Church, Memphis, Tennessee","828 Berclair Rd, Memphis, TN 38122","35.153911, -89.911005",http://gracechapelmemphis.com/,,,,,,,,,
+,6372,"Faith Lutheran Church, Okemos, Michigan","4515 Dobie Rd, Okemos, MI 48864","42.712547, -84.411198",,,,,,,,,,
+,6373,"Laurelhurst Park, Portland, Oregon","3721 SE Ankeny St, Portland, OR 97214","45.522221, -122.624383",,,,,,,,,,
+,6374,"Oolenoy Community Center, Pumpkintown, South Carolina","5301 Dacusville Hwy, Pickens, SC 29671","34.992514, -82.643549",,,,,,,,,,
+,6375,"Mt. Olive Primitive Baptist Church, Cullman, Alabama","Brunner St x St. Joseph St, Cullman, AL 35055","34.179857, -86.858265",https://pbchurches.org/2008/01/22/mt-olive-primitive-baptist-church-cullman-alabama/,,,,,,,,,
+,6376,"Pisgah Presbyterian Church, Versailles (near Lexington), Kentucky","710 Pisgah Pike, Versailles, KY 40383","38.054219, -84.654533",http://pisgahchurch.org/,,,,,,,,,
+,6377,"Wisewood Methodist Church, Wisewood, Sheffield, United Kingdom",,"53.408244, -1.518296",https://www.wisewoodmethodist.co.uk/,,,,Ben Ln,Sheffield,South Yorkshire,England,S6 4SB,United Kingdom
+,6378,"Cane Creek Primitive Baptist Church, Cleburne County, Alabama","US-78, Heflin, AL 36264","33.687325, -85.526104",,,,,,,,,,
+,6379,"Parish Hall of St. Johannis, Berlin, Germany",,"52.525125, 13.349800",https://www.sacredharpberlin.de/convention.html,,,,Alt-Moabit 24,Berlin,,,10559,Germany
+,6381,"Rocky Mount Primitive Baptist Church, Daviston, Alabama","County Road 79 x County Road 80, Daviston, AL 36256","33.016557, -85.668546",,,,,,,,,,
+,6382,"Red Cannon Antiques, Cranberry (Venango County), Pennsylvania","630 Peg N Awl Rd, Cranberry, PA 16319","41.296423, -79.616567",,,,,,,,,,
+,6383,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+1,6384,"Kilbourn Park Fieldhouse, Chicago, Illinois","3501 N Kilbourn Ave, Chicago, IL 60641","41.944741, -87.738607",,,,,,,,,,
+2,6384,"Logan Avondale VFW, Chicago, Illinois","3009 N Kedzie Ave, Chicago, IL 60618","41.935971, -87.707323",,,,,,,,,,
+,6386,"Mount Pisgah Primitive Baptist Church, Sylvester, Georgia","1742 Evergreen Rd, Sylvester, GA 31791","31.421414, -83.879929",http://www.baileymonumentco.info/cemeteries-locations/georgia-cemeteries/worth-co/,,,,,,,,,
+,6387,"Siloam Church/Old Paths Bible Church, Pike County, Missouri","Pike 410, Middletown, MO 63359","39.244405, -91.290814",http://www.oldpathsbiblechurch.org/,,,,,,,,,
+,6388,"Holly Springs Primitive Baptist Church, Bremen, Georgia","Holly Springs Rd (Near I-20 x US Hwy 27), Bremen, GA 30117","33.683408, -85.149538",http://pbchurches.org/2008/12/05/holly-springs-primitive-baptist-church-bremen-georgia/,,,,,,,,,
+,6389,"Zion Primitive Baptist Church, Gordo, Alabama","County Rd 49 x Dyer Dr, Gordo, AL 35466","33.424273, -87.879035",,,,,,,,,,
+,6390,"Liberty Church, Henagar, Alabama","1500 Liberty Rd, Henagar, AL 35978","34.651086, -85.757431",,,,,,,,,,
+,6391,"Unitarian Universalist Church of Palo Alto, Palo Alto, California","505 E Charleston Rd, Palo Alto, CA 94306","37.419359, -122.112350",http://www.uucpa.org/,,,,,,,,,
+,6392,"Blue Bell Park, Philadelphia, Pennsylvania","842 W Walnut Ln, Philadelphia, PA 19144","40.031260, -75.195292",,,,,,,,,,
+,6393,"Hopewell Primitive Baptist Church, Oneonta, Alabama","3681 Airport Rd, Altoona, AL 35952","33.965745, -86.374175",,,,,,,,,,
+,6395,Alpharetta Municipal Building,"2 Park Plaza, Alpharetta, GA 30009","34.074621, -84.292223",,,,,,,,,,
+,6396,"Birmingham Square Dance Association Friendship Hall, Fultondale, Alabama","1024 Old Walker Chapel Rd, Fultondale, AL 35068","33.608085, -86.798798",,,,,,,,,,
+,6397,"Exeter Friends Meeting, Douglassville, Pennsylvania","191 Meetinghouse Rd, Douglassville, PA 19518","40.313191, -75.784453",,,,,,,,,,
+,6398,"Addington Chapel, Bremen Community, Cullman County, Alabama","185 Co Rd 59, Cullman County, AL 35033","33.982804, -87.009103",,,,,,,,,,
+,6399,"King School House (Mt. Vernon Baptist Church), Natural Bridge, Alabama","County Rd 357 (off US Hwy 278), Haleyville, AL 35565","34.103610,-87.572780",http://roadsidethoughts.com/cem_map.htm?cem=Mount%20Vernon%20Missionary%20Baptist%20Church%20Cemetery&lat=34.103610&lon=-87.572780&lsr=gn&st=Alabama&frm=Natural%20Bridge&dir=ENE&dst=1&frm=Natural%20Bridge,,,,,,,,,
+,6400,"Hopewell Primitive Baptist Church, Ephesus, Georgia","Hopewell Rd, Roopville, GA 30170","33.401821, -85.220497",,,,,,,,,,
+,6401,"Macedonia Primitive Baptist Church, Jackson County, Alabama","County Rd 43 x County Rd 38, Section, AL 35771","34.518593, -86.000019",,,,,,,,,,
+,6402,"Button Bay State Park Pavilion, Ferrisburgh, Vermont","5 Button Bay State Park Rd, Vergennes, VT 05491","44.182404, -73.361701",,,,,,,,,,
+,6403,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
+,6404,"Altamont New York Fair Grounds, Altamont, New York","129 Grand Street, Altamont, NY 12009","42.697754, -74.025388",,,,,,,,,,
+,6405,"Botley Women’s Institute Hall, Oxford, United Kingdom",,"51.751856, -1.292301",,,,,N Hinksey Ln,Oxford,Oxfordshire,England,OX2 0LT,United Kingdom
+,6406,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6407,"Mt. Lebanon Missionary Baptist Church, Fayette County, Alabama","Mt. Lebanon Rd, Fayette, AL 35555","33.773864, -87.888766",,,,,,,,,,
+,6408,"New Hope Church No. 1, Cullman County, Alabama","County Road 940 x County Road 998, Cullman, AL 35057","34.145166, -87.067362",,,,,,,,,,
+,6409,"South Malling Parish Church, Lewes, Sussex, United Kingdom",,"50.881170, 0.006867",http://www.southmallingchurch.org.uk/,,,,Church Ln,Lewes,East Sussex,England,BN7,United Kingdom
+,6410,"Sunderland Town Park Pavilion, Sunderland, Massachusetts","Park Rd, Sunderland, MA 01375","42.473174, -72.566075",http://www.sunderlandfire.com/town-park-svfa,,,,,,,,,
+,6411,"Liberty Church, Henagar, Alabama","1500 Liberty Rd, Henagar, AL 35978","34.651086, -85.757431",,,,,,,,,,
+,6412,"Cullman County Courthouse, Cullman, Alabama","500 Second Ave SW, Cullman, AL 35055","34.172430, -86.841761",,,,,,,,,,
+,6413,"Flat Shoals Primitive Baptist Church, Stockbridge, Georgia","2052 Fairview Rd, Stockbridge, GA 30281","33.606238, -84.175965",,,,,,,,,,
+,6414,"Polwarth Parish Church, Edinburgh, Scotland",,"55.934095, -3.223609",https://sacredharp.uk/event/scotland-singing/2022-07-09/,,,,36-38 Polwarth Terrace,Edinburgh,,Scotland,EH11 1LU,United Kingdom
+,6415,"Parc Desmarchais, Verdun, Montréal, Quebec",,"45.453383, -73.566111",https://www.facebook.com/events/724237065393647,,,,5200 Bd LaSalle ,Verdun,,QC,H4H 1N8,Canada
+,6416,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6417,"First Presbyterian Church (Presbyterian Church in America), Jasper, Alabama","1510 4th Ave S, Jasper, AL 35501","33.836316, -87.278859",,,,,,,,,,
+,6418,"New Prospect Church, Cullman County, Alabama","County Rd 38 x County Rd 76, Cullman, AL 35057","33.984971, -86.926104",,,,,,,,,,
+,6419,"Benjamin Perry Boathouse, Bristol, United Kingdom",,"51.448598, -2.592543",,,,,13 Redcliffe Parade W,Bristol,Bristol,England,BS1 6SP,United Kingdom
+,6420,"Gum Pond Primitive Baptist Church, Eva, Alabama","Gum Pond Rd x Thompson Hollow, Eva, AL 35621","34.330782, -86.674134",,,,,,,,,,
+,6421,"Cumberland Fairgrounds, Cumberland, Maine","175 Blanchard Rd, Cumberland, ME 04021","43.811114, -70.288135",https://www.facebook.com/events/834122344232239,,,,,,,,,
+,6422,"Warren Wilson College Chapel, Swannanoa, North Carolina","701 Warren Wilson Rd, Swannanoa, NC 28778","35.614112, -82.441465",https://www.swangathering.com/about-us/history.html,,,,,,,,,
+,6423,"Mount Zion Methodist Church, Mt. Zion, Georgia","49 N Prospect Ave, Mt Zion, GA 30150","33.635849, -85.186858",,,,,,,,,,
+,6424,"Sutton Junction Community Hall, Sutton Junction, Quebec, Canada",,"45.147413, -72.596802",https://www.facebook.com/events/sutton-junction-community-hall-128-chem-du-mont-écho-sutton-qc-j0e-2k0/sutton-all-day-sacred-harp-singing/575929687286764/,,,,128 Chem. du Mont-Écho,Sutton,,QC,J0E 2K0,Canada
+,6426,"Fuller Cemetery, Ider, Alabama","County Rd 773 x AL Hwy 117, Ider, AL 35981","34.703276, -85.674127",,,,,,,,,,
+,6427,"The Evergreen State College Organic Farmhouse, Olympia, Washington","2712 Lewis Rd NW, Olympia, WA 98502","47.069948, -122.985911",https://www.facebook.com/events/1033734783975145/?ref=newsfeed,,,,,,,,,
+,6428,"Wilson’s Chapel, Carrollton (Cross Plains Community), Georgia","272 Hutcheson Ferry Rd, Whitesburg, GA 30185","33.556988, -84.966111",https://www.facebook.com/WilsonsChapel/timeline?ref=page_internal,,,,,,,,,
+,6429,"Mt. Lebanon Missionary Baptist Church, Fayette County, Alabama","Mt. Lebanon Rd, Fayette, AL 35555","33.773864, -87.888766",,,,,,,,,,
+,6430,"Mt. Herman Primitive Baptist Church, Vardaman, Mississippi","132-154 Hollis Switch Rd, Vardaman, MS 38878","33.890309, -89.227033",,,,,,,,,,
+,6431,"St. Paul’s Church Hall, Winchester, United Kingdom",,"51.066703, -1.321208",,,,,St Paul's Hill,Winchester,,England,SO22 5AB,United Kingdom
+,6433,"Emmaus Primitive Baptist Church, Carrollton, Georgia","2063 Oak Grove Church Rd, Carrollton, GA 30117","33.516981, -85.087110",,,,,,,,,,
+,6435,"Concord Primitive Baptist Church, Winfield, Alabama","575 County Highway 173, Winfield, AL 35594","33.944158, -87.794022",,,,,,,,,,
+,6436,"Edwardsville Baptist Church, Edwardsville, Alabama","4062 Burton St, Heflin, AL 36264","33.706246, -85.508978",,,,,,,,,,
+,6437,"Mount Pisgah Primitive Baptist Church, Sylvester, Georgia","1742 Evergreen Rd, Sylvester, GA 31791","31.421414, -83.879929",http://www.baileymonumentco.info/cemeteries-locations/georgia-cemeteries/worth-co/,,,,,,,,,
+,6438,"Friends Meeting House, Toronto, Ontario",,"43.670554, -79.398506",https://www.facebook.com/events/2046470332343088/,,,,60 Lowther Ave,Toronto,,ON,M5R 1C7,Canada
+,6439,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6440,"Unitarian Universalist Church of Palo Alto, Palo Alto, California","505 E Charleston Rd, Palo Alto, CA 94306","37.419359, -122.112350",http://www.uucpa.org/,,,,,,,,,
+,6441,"Pine Grove Church, Collinsville, Alabama","County Rd 469, Collinsville, AL 35961","34.218074, -85.857076",,,,,,,,,,
+,6442,"Antioch Primitive Baptist Church, Forest, Mississippi","MS-21, Forest, MS 39074","32.459823, -89.425555",,,,,,,,,,
+,6443,"Unitarian Universalist Church of Palo Alto, Palo Alto, California","505 E Charleston Rd, Palo Alto, CA 94306","37.419359, -122.112350",http://www.uucpa.org/,,,,,,,,,
+,6445,"Old County Line Church, Corner, Alabama","Old County Line Church Rd, Warrior, AL 35180","33.807181, -86.927940",,,,,,,,,,
+,6446,"New Providence Primitive Baptist Church, Ringgold, Louisiana","Bienville Rd (LA 154), Ringgold, LA 71068","32.329985, -93.258036",,,,,,,,,,
+,6447,"Maidencreek Meeting House, near Leesport, Pennsylvania","Shackamaxon St x Butcher's Alley, Leesport, PA 19533","40.449714, -75.967691",,,,,,,,,,
+,6448,"Shoal Creek Church, North of Heflin, Alabama","County Rd 553 D, Fruithurst, AL 36262","33.775656, -85.564125",http://shoalcreekchurch.net/,,,,,,,,,
+,6449,"Community Center, Cape Meares, Oregon","5690 4th St NW, Tillamook, OR 97141","45.499010, -123.958727",http://www.capemeares.org/schoolhouse/building-use/,,,,,,,,,
+,6450,"The Church of Greenville, Simpsonville, South Carolina","212 E Standing Springs Rd, Simpsonville, SC 29680","34.729082, -82.294777",,,,,,,,,,
+,6451,"Antioch Baptist Church, Ider, Alabama","County Rd 783 x County Rd 141, Ider, AL 35981","34.750679, -85.628201",,,,,,,,,,
+,6452,"Woolman Hill Quaker Retreat Center, Deerfield, Massachusetts","107 Keets Rd, Deerfield, MA 01342","42.556966, -72.581461",,,,,,,,,,
+,6453,"Blackburn Hall, Rothwell, United Kingdom",,"53.748918, -1.475904",https://sacredharp.uk/event/uk-convention/2022-09-17/,,,,"Commercial St, Rothwell",Leeds,West Yorkshire,England,LS26 0AW,United Kingdom
+,6454,"Shady Grove (Keeton Cemetery), Nauvoo (Walker County), Alabama","Keeton Cemetery Rd x Keeton Ln (near Slicklizzard Rd), Nauvoo, AL 35578","33.953091, -87.463703",,,,,,,,,,
+,6456,"Church of the Redeemer, Chestnut Hill, Massachusetts","379 Hammond St, Chestnut Hill, MA 02467","42.329798, -71.168018",http://www.redeemerchestnuthill.org/,,,,,,,,,
+,6457,"All Souls Chapel, Rookwood General Cemetery, Sydney, New South Wales, Australia",,"-33.871290, 151.059912",https://www.facebook.com/events/1258666184951794,,,,Hawthorne Ave,Rookwood,,New South Wales,2141,Australia
+,6458,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6459,"Poplar Springs Primitive Baptist Church, North of Bowdon, Carroll County, Georgia","Smithfield Rd, Bowdon, GA 30108","33.601645, -85.273984",,,,,,,,,,
+,6460,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
+,6461,"Goldener Saal At Atlantic Hotel, Bremen, Germany",,"53.075461, 8.805191",,,,,Bredenstraße 2,Bremen,,,28195,Germany
+,6462,"Hopewell Primitive Baptist Church, Oneonta, Alabama","3681 Airport Rd, Altoona, AL 35952","33.965745, -86.374175",,,,,,,,,,
+,6463,"Roberta Civic Center, Roberta, Georgia","93 S Mathews St, Roberta, GA 31078","32.717497, -84.009663",,,,,,,,,,
+,6464,"Lacey Woods Park, Arlington, Virginia","1200 N George Mason Dr, Arlington, VA 22205","38.884447, -77.126684",https://www.arlingtonva.us/Government/Departments/Parks-Recreation/Locations/Parks/Lacey-Woods-Park,,,,,,,,,
+,6465,"Taylor United Methodist Church, Lafayette County, Mississippi","Tin Can Alley x Main St, Taylor, MS 38673","34.271724, -89.588511",,,,,,,,,,
+,6466,"Holly Springs Primitive Baptist Church, Bremen, Georgia","Holly Springs Rd (Near I-20 x US Hwy 27), Bremen, GA 30117","33.683408, -85.149538",http://pbchurches.org/2008/12/05/holly-springs-primitive-baptist-church-bremen-georgia/,,,,,,,,,
+,6467,"Kilbourn Park Fieldhouse, Chicago, Illinois","3501 N Kilbourn Ave, Chicago, IL 60641","41.944741, -87.738607",,,,,,,,,,
+,6468,"Arlington United Methodist Church, Nashville, Tennessee","1360 Murfreesboro Pike, Nashville, TN 37217","36.115671, -86.694166",,,,,,,,,,
+,6469,"Laurelhurst Park, Portland, Oregon","3721 SE Ankeny St, Portland, OR 97214","45.522221, -122.624383",,,,,,,,,,
+,6470,"Roberta Civic Center, Roberta, Georgia","93 S Mathews St, Roberta, GA 31078","32.717497, -84.009663",,,,,,,,,,
+,6471,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6472,"Old County Line Church, Corner, Alabama","Old County Line Church Rd, Warrior, AL 35180","33.807181, -86.927940",,,,,,,,,,
+,6473,"Germantown Mennonite Church, Philadelphia, Pennsylvania","21 W Washington Ln, Philadelphia, PA 19144","40.042883, -75.181645",https://www.facebook.com/events/2085383001643646,,,,,,,,,
+,6474,"Mt. Oak Methodist Church, Arab, Alabama","Ruth Rd x Mt. Oak Rd, Arab, AL 35016","34.363246, -86.550633",,,,,,,,,,
+,6475,"Fairview United Methodist Church, Bloomington, Indiana","600 W 6th St, Bloomington, IN 47404","39.167993, -86.540038",,,,,,,,,,
+,6476,"Milam Park, Clarkston, Georgia","3867 Norman Rd, Clarkston, GA 30021","33.806854, -84.232571",https://www.facebook.com/events/1127238724858507,,,,,,,,,
+,6477,"Highgate URC Chapel, London, United Kingdom",,"51.569981, -0.149087",http://www.highgateurc.co.uk/,,,,South Grove,London,Greater London,England,N6 6PH,United Kingdom
+,6479,"Big Creek Primitive Baptist Church, Alpharetta, Georgia","4490 State Bridge Way, Alpharetta, GA 30005","34.059084, -84.229057",http://awesomealpharetta.com/locations/big-creek-primitive-baptist-church/,,,,,,,,,
+,6480,"Cochran Chapel United Methodist Church, Dallas, Texas","9027 Midway Rd, Dallas, TX 75209","32.862361, -96.836282",,,,,,,,,,
+,6481,"The Vineyard Church, Chicago, Illinois","5333 S Greenwood Ave, Chicago, IL 60615","41.798308, -87.599302",https://www.facebook.com/events/6086018268092272,,,,,,,,,
+,6482,"St. Giles Presbyterian Church, Richmond, Virginia","5200 Grove Ave, Richmond, VA 23226","37.571725, -77.511327",,,,,,,,,,
+,6484,"Liberty Church (McCormick), Jefferson County, Alabama","7828 McCormick Rd, Dora, AL 35062","33.737918, -87.010312",,,,,,,,,,
+,6485,"Holly Springs Primitive Baptist Church, Bremen, Georgia","Holly Springs Rd (Near I-20 x US Hwy 27), Bremen, GA 30117","33.683408, -85.149538",http://pbchurches.org/2008/12/05/holly-springs-primitive-baptist-church-bremen-georgia/,,,,,,,,,
+,6486,"Milwaukee Friends (Quaker) Meetinghouse, Milwaukee, Wisconsin","3224 N Gordon Pl, Milwaukee, WI 53212","43.077085, -87.894631",,,,,,,,,,
+,6487,"Rumsey Town Hall, Rumsey, California","14380 Manzanita St, Rumsey, CA 95679","38.888379, -122.237495",,,,,,,,,,
+,6488,"Immanuel Baptist Church, Nashville, Tennessee","222 Belle Meade Blvd, Nashville, TN 37205","36.111741, -86.854000",http://www.ibcnashville.org/,,,,,,,,,
+,6489,"Stapleford Baptist Church, Albert St, Stapleford, Nottingham, United Kingdom",,"52.930805, -1.272840",https://www.facebook.com/events/480968572403443/,,,,Albert St,Stapleford,Nottinghamshire,England,NG9 8DB,United Kingdom
+,6490,"Oak Hill Baptist Church, Oxford, Alabama","County Line Rd x Delisa Dr, Oxford, AL 36203","33.585194, -85.815858",,,,,,,,,,
+,6491,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6492,"King School House (Mt. Vernon Baptist Church), Natural Bridge, Alabama","County Rd 357 (off US Hwy 278), Haleyville, AL 35565","34.103610,-87.572780",http://roadsidethoughts.com/cem_map.htm?cem=Mount%20Vernon%20Missionary%20Baptist%20Church%20Cemetery&lat=34.103610&lon=-87.572780&lsr=gn&st=Alabama&frm=Natural%20Bridge&dir=ENE&dst=1&frm=Natural%20Bridge,,,,,,,,,
+,6493,"Jordans Village Hall, Jordans - Buckinghamshire, United Kingdom",,"51.614015, -0.596353",https://www.hallshire.com/halls/view/3491/jordans-village-hall,,,,Green W Rd,Beaconsfield,Buckinghamshire,England,HP9 2SY,United Kingdom
+,6494,"Union Baptist Church, Warrior, Alabama","Warrior Jasper Rd x Corner School Rd, Warrior, AL 35180","33.763975, -86.931430",,,,,,,,,,
+,6495,"Quaker Meeting House, Cork, Ireland",,"51.892078, -8.468588",https://www.facebook.com/events/315025472250998,,,,Summerhill S,Cork,County Cork,Munster,T12 XW8R,Ireland
+,6496,"Eldridge Farm, near Orleans, Indiana","1194 State Highway 337, Orleans, IN 47452","38.575125, -86.310474",,,,,,,,,,
+,6497,"Mt. Zion Methodist Church, Harrodsburg, Kentucky","Lexington Rd (Hwy 68), Harrodsburg, KY 40330","37.839942, -84.725402",,,,,,,,,,
