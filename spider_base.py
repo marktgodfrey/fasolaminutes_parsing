@@ -76,6 +76,11 @@ class SpiderBase(scrapy.Spider):
         urls = []
         for pagenum, url in song_data:
             pagenum = pagenum.lower()
+
+            m = re.search(r'^(\d+[tb]?)', pagenum)
+            if m:
+                pagenum = m.group()
+
             altpage = ''
             if pagenum[-1:] in ('t', 'b'):
                 altpage = pagenum[:-1]
