@@ -12,4 +12,5 @@
 `cd ./shapenotecds; scrapy crawl singing`
 `cd ./phillysacredharp; scrapy crawl singing`
 `cd ./cork; map_audio.py`
+`cd ./archiveorg; map_audio.py`
 `create_index.py`
