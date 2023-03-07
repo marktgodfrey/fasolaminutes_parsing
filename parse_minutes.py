@@ -254,7 +254,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
                 if debug_print: print("replacing %s with %s" % (name, real_name))
                 name = real_name
 
-            if name is '?':
+            if name == '?':
                 # marked as a "bad" name in the alias table so let's just ignore this altogether
                 continue
 
