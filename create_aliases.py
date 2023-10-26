@@ -12,12 +12,15 @@ def delete_aliases(conn):
     curs.close()
 
 def create_aliases(conn):
-    f =  open('FaSoLa Minutes Corrections (Responses) - Form Responses.csv', 'r')
+    f = open('FaSoLa Minutes Corrections (Responses) - Form Responses.csv', 'r')
     csvreader = csv.reader(f)
     curs = conn.cursor()
-    next(csvreader) # skip headers
+    next(csvreader)  # skip headers
     for row in csvreader:
-        curs.execute("INSERT INTO leader_name_aliases (name, alias, type) VALUES (?,?,?)", [row[2], row[1], row[3]])
+        alias = row[1].strip()
+        name = row[2].strip()
+        type = row[3]
+        curs.execute("INSERT INTO leader_name_aliases (name, alias, type) VALUES (?,?,?)", [name, alias, type])
     conn.commit()
     curs.close()
 
