@@ -22,21 +22,25 @@ def read_item(item_id):
         if 'format' not in file or file['format'] != 'VBR MP3':
             continue
 
+        if len(file['title'].split('.')) < 2:
+            # print(file['title'].split('.'))
+            continue
+
         if file['title'].split('.')[2] == 'v02':  # :(
             continue
 
-        title = file['title'].split('.')[4]
+        title = file['title'].split('.')[-1]
         m = re.search(r'^(\d+[tb]?)', title)
         pagenum = m.group() if m else None
         if not pagenum:
-            print(file)
+            # print('no pagenum? %s %s' % (file, title))
             continue
 
         if pagenum[0] == '0':
             pagenum = pagenum[1:]
 
         url = os.path.join(BASE_URL, item_id, file['name'])
-        # print('%s,%s' % (pagenum, url))
+        print('%s,%s' % (pagenum, url))
         songs.append((pagenum, url))
     return songs
 
