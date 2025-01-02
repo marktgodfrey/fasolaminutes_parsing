@@ -6088,13 +6088,13 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,6762,"The Monday Club, Webster Groves, Missouri","37 S Maple Ave, Webster Groves, MO 63119","38.591023, -90.355273",http://stlfasola.org/MissouriConvention2024flyer.pdf,,,,,,,,,
 ,6763,"Bombyx Center For Arts & Equity, Florence, Massachusetts","130 Pine St, Northampton, MA 01062","42.331625, -72.674437",https://bombyx.live/events/,,,,,,,,,
 ,6764,"Lafayette County Arena, Oxford, Mississippi","70 F.D. Buddy E Pkwy, Oxford, MS 38655","34.355058, -89.484195",https://lafayettearena.com,,,,,,,,,
-,6766,"Kostel U Jákobova žebříku, Prague, Czech Republic",,,https://www.kosteljakob.cz,,,,U Školské zahrady 1264,Praha,,,182 00,Czechia
+,6766,"Kostel U Jákobova žebříku, Prague, Czech Republic",,"50.123712, 14.461642",https://www.kosteljakob.cz,,,,U Školské zahrady 1264,Praha,,,182 00,Czechia
 ,6767,"Second Presbyterian Church, Spartanburg, South Carolina","438 N Church St, Spartanburg, SC 29303","34.957202, -81.938109",http://www.secondspartanburg.org/,,,,,,,,,
 ,6768,"Liberty Church (McCormick), Jefferson County, Alabama","7828 McCormick Rd, Dora, AL 35062","33.737918, -87.010312",,,,,,,,,,
 ,6769,"Shady Grove Primitive Baptist Church, Winston County, Alabama","Alabama Hwy 195 x County Rd 18, Double Springs, AL 35553","34.188949, -87.425988",,,,,,,,,,
 ,6770,"The Cathedral Church of St. Paul, Detroit, Michigan","4800 Woodward Ave, Detroit, MI 48201","42.356270, -83.063219",http://detroitcathedral.org/,,,,,,,,,
 ,6771,"St. Paul’s Episcopal Church, Indianapolis, Indiana","6050 N Meridian St, Indianapolis, IN 46208","39.864549, -86.156834",https://stpaulsindy.org/,,,,,,,,,
-,6772,"Gleis 21, Vienna, Austria",,,https://www.facebook.com/events/1500297777476928/,,,,Bloch-Bauer-Promenade 22,Wien,,,1100,Austria
+,6772,"Gleis 21, Vienna, Austria",,"48.179013, 16.386172",https://www.facebook.com/events/1500297777476928/,,,,Bloch-Bauer-Promenade 22,Wien,,,1100,Austria
 ,6773,Alpharetta Municipal Building,"2 Park Plaza, Alpharetta, GA 30009","34.074621, -84.292223",,,,,,,,,,
 ,6776,"Liberty Church, Henagar, Alabama","1500 Liberty Rd, Henagar, AL 35978","34.651086, -85.757431",,,,,,,,,,
 ,6777,"Exeter Street Hall, Brighton, East Sussex, United Kingdom",,"50.835616, -0.149376",http://www.exeterstreethall.org/,,,,16-17 Exeter St,Brighton,East Sussex,England,BN1 5PG,United Kingdom
@@ -6109,11 +6109,11 @@ multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long
 ,6785,"Shiloh Primitive Baptist Church, South of Tallapoosa, Georgia","Shiloh Church Rd (in between Old Hwy 100 and Barge Tallapoosa Rd), Waco, GA 30182","33.660804, -85.278493",,,,,,,,,,
 ,6786,"Seabold Hall, Bainbridge Island, Washington","14450 Komedal Rd NE, Bainbridge Island, WA 98110","47.694063, -122.558117",https://biparks.org/map-location/seabold-hall/,,,,,,,,,
 ,6787,"Holly Springs Primitive Baptist Church, Bremen, Georgia","Holly Springs Rd (Near I-20 x US Hwy 27), Bremen, GA 30117","33.683408, -85.149538",http://pbchurches.org/2008/12/05/holly-springs-primitive-baptist-church-bremen-georgia/,,,,,,,,,
-,6788,"University of Michigan / Ann Arbor Singing, Burton Memorial Tower, Ann Arbor, Michigan",,,,,,,,,,,,
+,6788,"Burton Memorial Tower, University of Michigan, Ann Arbor, Michigan","230 N Ingalls St, Ann Arbor, MI 48109","42.279503, -83.738667",,,,,,,,,,
 ,6789,"Antioch Baptist Church, Ider, Alabama","County Rd 783 x County Rd 141, Ider, AL 35981","34.750679, -85.628201",,,,,,,,,,
 ,6790,"Old County Line Church, Corner, Alabama","Old County Line Church Rd, Warrior, AL 35180","33.807181, -86.927940",,,,,,,,,,
 ,6791,"Union Primitive Baptist Church, Goggans, Georgia","Johnstonville Rd (across from intersection with Farm Rd), Barnesville, GA 30204","33.076554, -84.091582",http://georgiainfo.galileo.usg.edu/topics/historical_markers/county/lamar/goggans-georgia,,,,,,,,,
-,6792,"Rhode Island Singing, Providence, Rhode Island",,,,,,,,,,,,
+,6792,"Providence Friends Meeting House, Providence, Rhode Island","99 Morris Ave, Providence, RI 02906","41.835700, -71.397747",http://providencefriends.org/,,,,,,,,,
 ,6793,"Connecticut Hall, Yale University, New Haven, Connecticut","344 College St, New Haven, CT 06511","41.308167, -72.928845",,,,,,,,,,
 ,6794,"Old Harmony Primitive Baptist Church, Abernathy, Alabama","Co Rd 60, Abernathy, AL 36264","33.646132, -85.418326",,,,,,,,,,
 ,6795,"Pine Grove Church, Collinsville, Alabama","County Rd 469, Collinsville, AL 35961","34.218074, -85.857076",,,,,,,,,,
