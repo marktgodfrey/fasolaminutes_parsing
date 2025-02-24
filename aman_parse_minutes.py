@@ -1,15 +1,12 @@
-#!/usr/bin/env python
-# encoding: utf-8
-
 import re
 import util
 
 import spacy #added
 
 
-
+ner = spacy.load("en_core_web_sm")  # Load pre-trained English model
 def clean_ner(text): #added
-    ner = spacy.load("en_core_web_sm")  # Load pre-trained English model
+
     # print('processing:',text)
     processed_text = ner(text)  # Process the full name at once
     if processed_text.ents:
