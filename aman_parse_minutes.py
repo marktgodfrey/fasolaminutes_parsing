@@ -1,22 +1,36 @@
+#!/usr/bin/env python
+# encoding: utf-8
+
 import re
 import util
+import spacy
+nlp = spacy.load("en_core_web_sm")
 
-import spacy #added
+cached_bad_words = set()  # Cache of confirmed non-names
+cached_name_words = set()  # Cache of confirmed names
 
+def is_name(word):
+    """Check if a word is a name using caching and spaCy."""
+    if word in cached_name_words:
+        return True
+    if word in cached_bad_words:
+        return False
 
-ner = spacy.load("en_core_web_sm")  # Load pre-trained English model
-def clean_ner(text): #added
+    doc = nlp(word)
+    for token in doc:
+        if token.pos_ == "PROPN":  # Proper noun
+            cached_name_words.add(word)
+            return True
 
-    # print('processing:',text)
-    processed_text = ner(text)  # Process the full name at once
-    if processed_text.ents:
-        # print('returning true')
-        return processed_text.ents[0].text, True
-    else:
-        # print('returning false')
-        return text, False  # Return the original text and a flag
+    cached_bad_words.add(word)  # Cache non-names
+    return False
 
-
+def clean_ner(name):
+    """Process names and avoid redundant spaCy checks."""
+    name = name.strip()
+    if is_name(name):
+        return name, True  # Return name and confirmation that it's a name
+    return name, False
 
 bad_words = [
     'Chairman',
@@ -211,11 +225,8 @@ def parse_minutes(s, debug_print=False):
                             name = leader.group(0)
                             name = name.strip() # TODO: should be able to incorporate this into regex......
 
-                            if clean_ner(name)[1]:
-                                name = clean_ner(name)[0]
-                            else:
-                                name = clean_ner(name)[0]
-                            
+                            name = clean_ner(name)[0]
+
                             dd.append({'name': name, 'song': pagenum})
                             if debug_print: print('***name: ' + name + '\tsong: ' + pagenum)
                         # else:
@@ -226,7 +237,6 @@ def parse_minutes(s, debug_print=False):
         # print "---session----------"
     # print d
     return d
-
 
 LEADERS = {} # leader -> id
 SONGS = {}   # page -> id
