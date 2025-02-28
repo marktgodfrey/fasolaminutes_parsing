@@ -1,29 +1,35 @@
 #!/usr/bin/env python
 # encoding: utf-8
-
+import pandas as pd
 import re
 import util
 import spacy
 nlp = spacy.load("en_core_web_sm")
 
-cached_bad_words = set()  # Cache of confirmed non-names
+cached_non_name_words = set()  # Cache of confirmed non-names
 cached_name_words = set()  # Cache of confirmed names
 
 def is_name(word):
     """Check if a word is a name using caching and spaCy."""
     if word in cached_name_words:
         return True
-    if word in cached_bad_words:
+    if word in cached_non_name_words:
         return False
 
     doc = nlp(word)
     for token in doc:
-        if token.pos_ == "PROPN":  # Proper noun
+        if token.ent_type_ == "PERSON":
             cached_name_words.add(word)
             return True
-
-    cached_bad_words.add(word)  # Cache non-names
+        elif token.pos_ == "PROPN":
+            cached_name_words.add(word)
+            return True
+        else:
+            cached_non_name_words.add(word)  # Cache non-names
     return False
+
+
+
 
 def clean_ner(name):
     """Process names and avoid redundant spaCy checks."""
@@ -365,5 +371,11 @@ if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
     parse_all_minutes(db)
+    pd.DataFrame({"Name Words": list(cached_name_words)}).to_csv("spacy_names.csv", index=False)
+    pd.DataFrame({"Non-Name Words": list(cached_non_name_words)}).to_csv("spacy_non_names.csv", index=False)
+    shared_values = cached_name_words & cached_non_name_words  # Intersection of sets
+    pd.DataFrame({"Unclear Words": list(shared_values)}).to_csv("spacy_shared_unclear_names.csv", index=False)
+    print("name count:",len(cached_name_words))
+    print("non name count:",len(cached_non_name_words))
     # parse_minutes_by_id(db, 5165)
     db.close()
