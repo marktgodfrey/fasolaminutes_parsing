@@ -372,10 +372,12 @@ if __name__ == '__main__':
     clear_minutes(db)
     parse_all_minutes(db)
     pd.DataFrame({"Name Words": list(cached_name_words)}).to_csv("spacy_names.csv", index=False)
+    print("name count:",len(cached_name_words))
     pd.DataFrame({"Non-Name Words": list(cached_non_name_words)}).to_csv("spacy_non_names.csv", index=False)
+    print("non name count:",len(cached_non_name_words))
     shared_values = cached_name_words & cached_non_name_words  # Intersection of sets
     pd.DataFrame({"Unclear Words": list(shared_values)}).to_csv("spacy_shared_unclear_names.csv", index=False)
-    print("name count:",len(cached_name_words))
-    print("non name count:",len(cached_non_name_words))
+
+
     # parse_minutes_by_id(db, 5165)
     db.close()
