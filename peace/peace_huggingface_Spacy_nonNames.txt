@@ -1,0 +1,328 @@
+"Aileen Woodley": True, 0.999104
+"Calum Woods": True, 0.488553
+"The Harper": True, 0.694568
+"Frits DeBohr": False, 0.000000
+"Rain Haynes": True, 0.984600
+"Aoife O’Grady": True, 0.994108
+"During Saturday": False, 0.000000
+"The Registration": False, 0.000000
+"The Saturday": False, 0.000000
+"Claudine Townsend": True, 0.997859
+"P.M.": True, 0.760862
+"In Roh Hye": False, 0.000000
+"Delores Canaday": False, 0.000000
+"At John Fawcett’s": True, 0.932916
+"MB Gowans": True, 0.750130
+"Aileen Vance": True, 0.998404
+"Iain McLean": True, 0.998641
+"All Dublin": False, 0.000000
+"Destiny Woods": True, 0.702301
+"Trent Frick": True, 0.980719
+"Floy Driskill": True, 0.692456
+"Depths We Cry": False, 0.000000
+"Will Ahrenhole": True, 0.997491
+"The Beasley Family": False, 0.000000
+"Tommye Mauldin": True, 0.995830
+"Piers Cawley": True, 0.997802
+"delRe": False, 0.000000
+"Emily Cargile": True, 0.998208
+"Life’s Journey’": False, 0.000000
+"The Roots": False, 0.000000
+"All Day": False, 0.000000
+"Brother Stavros Winner": True, 0.983471
+"Clarice Kjeralff": True, 0.993028
+"But The Blood": False, 0.000000
+"Art Hargrove": True, 0.998741
+"Co-Chairman Rodney Ivey": True, 0.999126
+"The Creel": False, 0.000000
+"Pam Dunning": True, 0.998218
+"While Syble": True, 0.995893
+"At Doddridge Chapel": False, 0.000000
+"DeMars": True, 0.990575
+"Celtic World’": False, 0.000000
+"WECP": False, 0.000000
+"Annalise Perone": True, 0.998524
+"Sage Chaser-Dempsey": True, 0.989156
+"névé": False, 0.000000
+"Emily Venable": True, 0.996881
+"Clearcy Ruttledge": True, 0.999123
+"Elise Meyer Bothling": True, 0.999009
+"In The": False, 0.000000
+"The Kerr Family": False, 0.000000
+"The Lacy Family-Reba Windom": True, 0.992584
+"McGraw": True, 0.830672
+"Eimear O’ Donovan": True, 0.997128
+"On Saturday": False, 0.000000
+"The Oliver": True, 0.901717
+"Tottie Harken": True, 0.977718
+"The Hat Parade--Betty Shepherd": True, 0.998804
+"Wing Mui": True, 0.981003
+"The Eddins": False, 0.000000
+"Tussaint Burnette": True, 0.650540
+"Died For Me": False, 0.000000
+"Dolly Hudgins": True, 0.998959
+"Even Venditti": True, 0.996273
+"Dutchified German Spirituals": False, 0.000000
+"Teacher--Dan Brittain": True, 0.999248
+"Clarence Cates": True, 0.998911
+"The Union": False, 0.000000
+"Brent Devore": True, 0.997155
+"The Green": False, 0.000000
+"The Eva Striebeck": True, 0.369061
+"The Silverton Grange All-Day": False, 0.000000
+"Mercy Teichert": True, 0.678356
+"Blakely Stewart": True, 0.994907
+"Serenity Manning": True, 0.615659
+"Robyn Bundy": True, 0.999174
+"The London": False, 0.000000
+"Rebecca Over": True, 0.992584
+"Anders Fahey": True, 0.999109
+"Tigre Lusardi": True, 0.758077
+"Daire O’Sullivan": True, 0.998203
+"Layla Slaughter": True, 0.925220
+"Case O’Dell": False, 0.000000
+"Will Black": True, 0.992119
+"Ai Chin": True, 0.962502
+"McCool": True, 0.972875
+"In Cagle’s": True, 0.721362
+"The Tuesday Night Singers": False, 0.000000
+"Tori Gundlach": True, 0.999362
+"Bascum Mattox": True, 0.797408
+"Elise DelMas": True, 0.999273
+"The Youth Boys": False, 0.000000
+"Chip Ward": True, 0.993613
+"The Ladykillers": False, 0.000000
+"The Arranger": True, 0.523252
+"Emily O’Dell": True, 0.996865
+"Dynamics Chapter V. The": False, 0.000000
+"The Supertonic": False, 0.000000
+"Tell Me Of The Angels": False, 0.000000
+"Won’t Turn Back": False, 0.000000
+"Chair-person Sarah Davie": True, 0.999154
+"The Chairladies": False, 0.000000
+"Founders Ted": True, 0.884724
+"Web Sink": False, 0.000000
+"The Rudiments": False, 0.000000
+"Beautiful Land": False, 0.000000
+"Leaders Steve Cackley": True, 0.999281
+"The Green Family": False, 0.000000
+"Our Savior": False, 0.000000
+"Table Grace": False, 0.000000
+"Myrtice Meeks": True, 0.996381
+"Whilst Sheila Girling Macadam": True, 0.998018
+"Masti-Denise Maynard": True, 0.989547
+"But The Blood Of Jesus": False, 0.000000
+"Art Peddle": False, 0.000000
+"My Soul": False, 0.000000
+"Pocket Harmonist": False, 0.000000
+"Leaders Jamie Yeats": True, 0.997110
+"Sage Brownlee": True, 0.998697
+"The Alexander": True, 0.548859
+"The Jamulus Singers": False, 0.000000
+"The Landing": False, 0.000000
+"The Friday": False, 0.000000
+"Chapter XI": False, 0.000000
+"All Scottish": False, 0.000000
+"Dolores Holbrook": True, 0.998871
+"Trent Peachy": True, 0.974723
+"The Kerr": True, 0.909359
+"Greggory Stockert": True, 0.994783
+"McLeod": True, 0.998053
+"The Trumpet": False, 0.000000
+"Thich Nu Chon Duc": True, 0.987456
+"Will Price": True, 0.995555
+"My Friends": False, 0.000000
+"The Pontotoc Winter": False, 0.000000
+"Tanner Frazier": True, 0.998495
+"Co-Chairman Susan Miller-Coulter": True, 0.991732
+"The Levites": False, 0.000000
+"Co-Chairman David Rust": True, 0.999064
+"Will Means": True, 0.967951
+"NEW YEAR": False, 0.000000
+"Life’s Journey": False, 0.000000
+"The Bristol": False, 0.000000
+"Johannes Saver": True, 0.995634
+"The Celebration Lesson": False, 0.000000
+"Scots-Irish": False, 0.000000
+"Price Walden": True, 0.505224
+"The Beech Tree": False, 0.000000
+"Co-Chairman Ian Smiley": True, 0.999232
+"Elise Eskew Sparks": True, 0.998559
+"The Avery Family": False, 0.000000
+"Elise Englert": True, 0.998740
+"Rain Morical": True, 0.956188
+"Teacher-Rachel Hall Rachel Hall": True, 0.994073
+"Sula O’Duffy": True, 0.997396
+"Leaders Katherine Glatter": True, 0.998847
+"Vernice Calvert": True, 0.996216
+"The Founders’": False, 0.000000
+"Leaders Don Clark": True, 0.998878
+"Will All Go Home": False, 0.000000
+"Four Mile Community": False, 0.000000
+"Ruker McMullen": True, 0.998945
+"Roll Call": False, 0.000000
+"Ima Rowland": True, 0.998636
+"Chery Stroud": True, 0.995689
+"Hester Edwards": True, 0.997964
+"The Geneva All-Day": False, 0.000000
+"Johannes Kunst": True, 0.998866
+"Elise Cavicchi": True, 0.999417
+"Molly-Claire Gillett": True, 0.903005
+"Elise delMas": True, 0.998720
+"Connor O’Toole": True, 0.997810
+"The Montréal": False, 0.000000
+"Era Howton": True, 0.998488
+"Lukasz Zóltek": True, 0.999352
+"By And By": False, 0.000000
+"The Olney Hymns": False, 0.000000
+"Boys Youth": False, 0.000000
+"Boundless God": False, 0.000000
+"Molly Mixon": True, 0.998823
+"Eamonn O’Neill": True, 0.997979
+"Sunny Young": True, 0.998437
+"The Sunday Session": False, 0.000000
+"Price L. Worrell": True, 0.988114
+"The Wakefield Singers": False, 0.000000
+"Reverends Jim Miller": True, 0.999067
+"Have Had Singing": True, 0.750425
+"His Blessings": False, 0.000000
+"Shone Around": True, 0.481124
+"Secretaries--Fiona Nugent": True, 0.999049
+"The Beasley": True, 0.504382
+"The Shenandoah Harmony": False, 0.000000
+"Loves Me": False, 0.000000
+"Pro-tem Liz Owen": True, 0.995373
+"The Chicago": False, 0.000000
+"Daire O’ Sullivan": True, 0.998203
+"Pam Sims": True, 0.998632
+"Allsion Ivey": True, 0.579136
+"The Locating": False, 0.000000
+"Piers Blewitt": True, 0.998450
+"Rosalind Woods": True, 0.998527
+"Keillor More": False, 0.000000
+"But God’s": True, 0.563174
+"Sungwoo Yoon": True, 0.956463
+"Dolly Sarley": True, 0.999065
+"The Danby": False, 0.000000
+"The Rogers Children": False, 0.000000
+"Leaders Nick Hall": True, 0.997686
+"Edmund Golloday": True, 0.999207
+"The Sydneysiders Caitlin Jay": True, 0.994246
+"The Dallas": False, 0.000000
+"Co-chairmen Benedicta Hardy": True, 0.999097
+"Nate Mathews": True, 0.998600
+"The Founders’ Lesson": False, 0.000000
+"The Dayton Harmonist": False, 0.000000
+"The Harris Family": False, 0.000000
+"Dolly Bush": True, 0.998861
+"Eliza See": True, 0.986488
+"At Rosslyn Chapel": False, 0.000000
+"Aileen Cheng": True, 0.998805
+"Chloë Spreadborough": True, 0.902834
+"Wener Ullah": True, 0.999205
+"Thérèse Power": False, 0.000000
+"Edmund Galladay": True, 0.999068
+"The Gilmore Family": False, 0.000000
+"At Home": False, 0.000000
+"The Rogers": True, 0.728480
+"River Skrenes": False, 0.000000
+"Teacher-Dan Brittain Dan": True, 0.998480
+"The Cork Singers": False, 0.000000
+"Dolores Canerday": True, 0.999054
+"Teacher--Sam Sommers": True, 0.998949
+"Annefloor Van Landaghen": True, 0.963010
+"The Great Roll Call": False, 0.000000
+"Edmund Golladay": True, 0.999318
+"Will Stallings": True, 0.999022
+"Chresten DNC": False, 0.000000
+"Elise Fairless": True, 0.997648
+"Day That Will Be": False, 0.000000
+"The Munich": False, 0.000000
+"Arnfried Mähler": True, 0.998558
+"The Rock": False, 0.000000
+"Iain Paxon": True, 0.998869
+"Audress Gurley": True, 0.766934
+"The Coweta": False, 0.000000
+"All Frank": False, 0.000000
+"Isis Arslan": True, 0.999329
+"The Wallowa Valley All-Day": False, 0.000000
+"The IV": False, 0.000000
+"Founders Ted Johnson": True, 0.998815
+"Will Townsend": True, 0.998128
+"This Levitical": False, 0.000000
+"McFate": True, 0.901853
+"Chip Westbrook": True, 0.996589
+"Explorers’ Group": False, 0.000000
+"The Sheppards": False, 0.000000
+"Sean O’Donnell": True, 0.999066
+"One They Are Falling Asleep": False, 0.000000
+"Rosalind Oldham": True, 0.998905
+"The New Year’s Day": False, 0.000000
+"Gilly Campbell": True, 0.998964
+"Chip Wise": True, 0.994455
+"Teacher-Judy Caudle Judy Caudle": True, 0.995894
+"DeLong": True, 0.901567
+"Who Must Be Heard": False, 0.000000
+"Every Guest": False, 0.000000
+"The Man With": False, 0.000000
+"Emily Veniable": True, 0.968767
+"Celestial Watering": False, 0.000000
+"See Me Now": False, 0.000000
+"The Sherbrooke": False, 0.000000
+"The Texas": False, 0.000000
+"The Brady": True, 0.933920
+"Rye Skelton": True, 0.626260
+"Car Bear": True, 0.679774
+"Tanner Pfeiffer": True, 0.998066
+"Elise Eskew": True, 0.998938
+"The Lacy": False, 0.000000
+"At Old Temple Kirk": False, 0.000000
+"Loved One Home": False, 0.000000
+"Twenty Year Club": False, 0.000000
+"Clarence McCool": True, 0.996848
+"Will Dove": True, 0.996505
+"Henning Baltruschat": True, 0.997432
+"Made With Hands": False, 0.000000
+"The Butterfly’": False, 0.000000
+"Will D.": True, 0.921669
+"Heather Ikeler": True, 0.999198
+"Alpha Black": False, 0.000000
+"E. Vernice": True, 0.998144
+"Light At The River": False, 0.000000
+"The Morton All-Day": False, 0.000000
+"The Cullman": False, 0.000000
+"Of Thee": True, 0.707503
+"On Sunday": False, 0.000000
+"Frances D’Andrea": True, 0.996386
+"Will Spendlove": True, 0.998342
+"The Monday": False, 0.000000
+"Willy Logan": True, 0.998946
+"Rosalind Wood": True, 0.998655
+"Gaylon Barrow": True, 0.984861
+"Dolores Wilks": True, 0.996131
+"The Sunday": False, 0.000000
+"Co-Chairman David Ivey": True, 0.999038
+"Molly-Claire Gillet": True, 0.898694
+"The Introductory Lesson": False, 0.000000
+"Molly Black": True, 0.997639
+"Norm Howe": True, 0.998288
+"The Founder’s Lesson": True, 0.630502
+"Heather Purdy": True, 0.998363
+"Performing Arts": False, 0.000000
+"Parting Hand": False, 0.000000
+"Devout Life": False, 0.000000
+"The Ivey Family": False, 0.000000
+"Conor O’Hanlon": True, 0.998723
+"Will Peebles": True, 0.996681
+"Co-Chairman Terry Wootten": True, 0.998552
+"Emily Sigmon": True, 0.998601
+"Eimear O’Donovan": True, 0.997128
+"Case O’dell": False, 0.000000
+"May Witt": True, 0.971664
+"The Rock Ranch": False, 0.000000
+"Spiritual Wisdom": False, 0.000000
+"The Lonnie Rogers": True, 0.981658
+"Alonzo Edwards": True, 0.997059
+"Sinead O’Mahoney": True, 0.994564
+"PVADS": False, 0.000000
+"Per-Olof Swing": True, 0.988468
