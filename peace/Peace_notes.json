@@ -1,0 +1,14 @@
+{
+    "Done":[
+        "Extract names with no bad words according to the specified list",
+        "Detect bad words even with preceding special characters or artiles like 'The President John'",
+        
+        "Use transformers to filter out names that are not human names"
+    ],
+
+    "Todo":[
+        "Recognize abreviated human names",
+        "Implement huggingfact models on Spacy Non-names list by Aman"
+    ]
+
+}
