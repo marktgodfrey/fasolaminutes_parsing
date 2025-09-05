@@ -20,6 +20,12 @@ bad_words = [
     'Co-Chairperson',
     'Co-chair',
     'Co-chairs',
+    'Co-chairmen',
+    'Co-chairperson',
+    'Vice-Chairman',
+    'Vice-chairman',
+    'Vice-Chairperson',
+    'Vice-chairperson',
     'Singing',
     'Secretary',
     'Secretaries',
@@ -52,6 +58,8 @@ bad_words = [
     'Mississippi',
     'Arrangement',
     'Arrangements',
+    'Arranger',
+    'Arrangers',
     'Arranging',
     'College',
     'University',
@@ -112,7 +120,8 @@ bad_words = [
     'Elder',
     'Resolutions',
     'Father',
-    'Moderator']
+    'Moderator',
+    'Psalm']
 
 
 non_denson = [
@@ -125,19 +134,21 @@ non_denson = [
     'EH\s2',
     'EH1',
     'EH2',
-    'SoH',
     'GH',
     'HS',
     'ICH',
+    'JB',
     'KsH',
     'KH',
     'LD',
     'MH',
+    'NbH',
     'NH',
     'NHC',
     'OSH',
     'ShH',
     'ScH',
+    'SoH',
     'WB']
 
 
