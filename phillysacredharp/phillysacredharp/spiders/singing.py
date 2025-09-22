@@ -11,13 +11,18 @@ class SingingSpider(SpiderBase):
     allowed_domains = ["phillysacredharp.org"]
 
     def start_requests(self):
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate, br'}
         for url in self.get_audio_urls():
             if not self.parse_file(url):
                 # Keystone recordings are all on the same page, so we split
                 # them up by using a url hash. Because these will resolve to
                 # the same url and scrapy does duplicate filtering, we need
                 # to set dont_filter
-                request = scrapy.Request(url, dont_filter=True)
+                request = scrapy.Request(url, dont_filter=True, headers=headers)
                 request.meta['original_url'] = url
                 m = re.search(r'#(\d+)$', url)
                 if m:

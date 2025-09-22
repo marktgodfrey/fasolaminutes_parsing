@@ -14,9 +14,14 @@ class SpiderBase(scrapy.Spider):
         return conn
 
     def start_requests(self):
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate, br'}
         for url in self.get_audio_urls():
             if not self.parse_file(url):
-                yield scrapy.Request(url=url, callback=self.parse)
+                yield scrapy.Request(url=url, callback=self.parse, headers=headers)
 
     def get_audio_urls(self):
         conn = self.open_db()

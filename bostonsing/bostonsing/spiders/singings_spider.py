@@ -16,10 +16,15 @@ class SingingsSpider(scrapy.Spider):
 	def parse(self, response):		
 		hxs = Selector(response)
 		sites = hxs.select("//div[@class='n j-table']//a/@href").extract()
+		headers = {
+			'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36',
+			'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+			'Accept-Language': 'en-US,en;q=0.5',
+			'Accept-Encoding': 'gzip, deflate, br'}
 		for site in sites:
 			print(site)
 			if site[0:25] == 'http://www.bostonsing.org':
-				yield scrapy.Request(site, callback=self.parse_singing)
+				yield scrapy.Request(site, callback=self.parse_singing, headers=headers)
 			else:
 				#TODO: deal with other sites
 				pass
