@@ -1,0 +1,149 @@
+
+
+CREATE TABLE "leader_name_aliases" (
+"id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
+"leader_id" INTEGER DEFAULT NULL,
+"name" TEXT DEFAULT NULL,
+"alias" TEXT DEFAULT NULL,
+"type" TEXT DEFAULT NULL);
+
+
+CREATE TABLE "leader_name_invalid" (
+"id" INTEGER PRIMARY KEY,
+"name" TEXT
+);
+
+
+CREATE TABLE "leader_song_stats" (
+"id" INTEGER PRIMARY KEY AUTOINCREMENT,
+"leader_id" INTEGER,
+"song_id" INTEGER,
+"lead_count" INTEGER,
+"lead_rank" INTEGER
+);
+
+
+CREATE TABLE "leaders" (
+"id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
+"name" TEXT DEFAULT NULL,
+"lead_count" INTEGER DEFAULT NULL,
+"song_entropy" REAL DEFAULT NULL,
+"top20_count" INTEGER DEFAULT 0,
+"location_count" INTEGER DEFAULT 0
+);
+
+
+CREATE TABLE "locations" (
+"id" INTEGER PRIMARY KEY DEFAULT NULL,
+"name" TEXT DEFAULT NULL,
+"url" TEXT DEFAULT NULL,
+"notes" TEXT DEFAULT NULL,
+"gps_lat" REAL DEFAULT NULL,
+"gps_long" REAL DEFAULT NULL,
+"address" TEXT DEFAULT NULL,
+"city" TEXT DEFAULT NULL,
+"county" TEXT DEFAULT NULL,
+"state_province" TEXT DEFAULT NULL,
+"postal_code" TEXT DEFAULT NULL,
+"country" TEXT DEFAULT NULL
+);
+
+
+CREATE TABLE "minutes" (
+"id" INTEGER PRIMARY KEY DEFAULT NULL,
+"Name" TEXT DEFAULT NULL,
+"Location" TEXT DEFAULT NULL,
+"Date" TEXT DEFAULT NULL,
+"Minutes" TEXT DEFAULT NULL,
+"Year" INTEGER DEFAULT NULL,
+"IsDenson" INTEGER DEFAULT NULL,
+"GoodCt" INTEGER DEFAULT NULL,
+"ErrCt" INTEGER DEFAULT NULL,
+"AmbCt" INTEGER DEFAULT NULL,
+"CorrCt" INTEGER DEFAULT NULL,
+"ProbCt" INTEGER DEFAULT NULL,
+"TotalCt" INTEGER DEFAULT NULL,
+"ProbPercent" REAL DEFAULT NULL,
+"audio_url" TEXT DEFAULT NULL,
+"DateOrdinal" INTEGER,
+"IsVirtual" INTEGER DEFAULT NULL);
+
+
+CREATE TABLE "minutes_location_joins" (
+"id" INTEGER DEFAULT NULL PRIMARY KEY,
+"minutes_id" INTEGER DEFAULT NULL,
+"location_id" INTEGER DEFAULT NULL
+);
+
+
+CREATE TABLE "minutes_singing_joins" (
+"id" INTEGER PRIMARY KEY,
+"minutes_id" INTEGER,
+"singing_id" INTEGER,
+"singing_index" INTEGER,
+"singing_end" INTEGER
+);
+
+
+CREATE TABLE "singings" (
+"id" INTEGER PRIMARY KEY,
+"name" TEXT
+);
+
+
+CREATE TABLE "song_leader_joins" (
+"id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
+"song_id" INTEGER DEFAULT NULL,
+"leader_id" INTEGER DEFAULT NULL,
+"minutes_id" INTEGER DEFAULT NULL,
+"audio_url" );
+
+
+CREATE TABLE "song_neighbors" (
+"id" INTEGER PRIMARY KEY,
+"from_song_id" INTEGER,
+"to_song_id" INTEGER,
+"rank" INTEGER
+);
+
+
+CREATE TABLE "song_stats" (
+"id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
+"song_id" INTEGER DEFAULT NULL,
+"year" INTEGER DEFAULT NULL,
+"lead_count" INTEGER DEFAULT NULL,
+"rank" INTEGER DEFAULT NULL);
+
+
+CREATE TABLE "songs" (
+"id" INTEGER PRIMARY KEY DEFAULT NULL,
+"PageNum" TEXT DEFAULT NULL,
+"Title" TEXT DEFAULT NULL,
+"TitleOrdinal" TEXT DEFAULT NULL,
+"MeterName" TEXT DEFAULT NULL,
+"MeterCount" TEXT DEFAULT NULL,
+"SongText" TEXT DEFAULT NULL,
+"Comments" TEXT DEFAULT NULL,
+"Comp1First" TEXT DEFAULT NULL,
+"Comp1Last" TEXT DEFAULT NULL,
+"Comp1Date" TEXT DEFAULT NULL,
+"Comp2First" TEXT DEFAULT NULL,
+"Comp2Last" TEXT DEFAULT NULL,
+"Comp2Date" TEXT DEFAULT NULL,
+"CompAlternateEntry" TEXT DEFAULT NULL,
+"CompBookTitle" TEXT DEFAULT NULL,
+"CompBookTitleAlternateEntry" TEXT DEFAULT NULL,
+"Poet1First" TEXT DEFAULT NULL,
+"Poet1Last" TEXT DEFAULT NULL,
+"Poet1Date" TEXT DEFAULT NULL,
+"Poet2First" TEXT DEFAULT NULL,
+"Poet2Last" TEXT DEFAULT NULL,
+"Poet2Date" TEXT DEFAULT NULL,
+"PoetAlternateEntry" TEXT DEFAULT NULL,
+"PoetBookTitle" TEXT DEFAULT NULL,
+"PoetBookTitleAlternateEntry" TEXT DEFAULT NULL,
+"Keys" TEXT,
+"Times" TEXT,
+"Orientation" TEXT,
+"ThreeLiner" INTEGER
+);
