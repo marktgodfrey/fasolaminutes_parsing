@@ -1,4 +1,21 @@
 
+CREATE TABLE "books" (
+"id" INTEGER PRIMARY KEY DEFAULT NULL,
+"title" TEXT DEFAULT NULL,
+"year" INTEGER DEFAULT NULL
+);
+
+CREATE TABLE "book_song_joins" (
+"id" INTEGER PRIMARY KEY DEFAULT NULL,
+"book_id" INTEGER,
+"song_id" INTEGER,
+"page_num" TEXT DEFAULT NULL,
+"text" TEXT DEFAULT NULL,
+"words_attribution" TEXT DEFAULT NULL,
+"keys" TEXT DEFAULT NULL,
+"times" TEXT DEFAULT NULL,
+"orientation" TEXT DEFAULT NULL
+);
 
 CREATE TABLE "leader_name_aliases" (
 "id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
@@ -18,15 +35,15 @@ CREATE TABLE "leader_song_stats" (
 "id" INTEGER PRIMARY KEY AUTOINCREMENT,
 "leader_id" INTEGER,
 "song_id" INTEGER,
-"lead_count" INTEGER,
-"lead_rank" INTEGER
+"lesson_count" INTEGER,
+"lesson_rank" INTEGER
 );
 
 
 CREATE TABLE "leaders" (
 "id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
 "name" TEXT DEFAULT NULL,
-"lead_count" INTEGER DEFAULT NULL,
+"lesson_count" INTEGER DEFAULT NULL,
 "song_entropy" REAL DEFAULT NULL,
 "top20_count" INTEGER DEFAULT 0,
 "location_count" INTEGER DEFAULT 0
@@ -64,6 +81,7 @@ CREATE TABLE "minutes" (
 "ProbCt" INTEGER DEFAULT NULL,
 "TotalCt" INTEGER DEFAULT NULL,
 "ProbPercent" REAL DEFAULT NULL,
+"DensonYear" REAL DEFAULT NULL,
 "audio_url" TEXT DEFAULT NULL,
 "DateOrdinal" INTEGER,
 "IsVirtual" INTEGER DEFAULT NULL);
@@ -96,7 +114,9 @@ CREATE TABLE "song_leader_joins" (
 "song_id" INTEGER DEFAULT NULL,
 "leader_id" INTEGER DEFAULT NULL,
 "minutes_id" INTEGER DEFAULT NULL,
-"audio_url" );
+"lesson_id" INTEGER DEFAULT NULL,
+"audio_url" TEXT DEFAULT NULL
+);
 
 
 CREATE TABLE "song_neighbors" (
@@ -111,39 +131,14 @@ CREATE TABLE "song_stats" (
 "id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
 "song_id" INTEGER DEFAULT NULL,
 "year" INTEGER DEFAULT NULL,
-"lead_count" INTEGER DEFAULT NULL,
+"lesson_count" INTEGER DEFAULT NULL,
 "rank" INTEGER DEFAULT NULL);
 
 
 CREATE TABLE "songs" (
 "id" INTEGER PRIMARY KEY DEFAULT NULL,
-"PageNum" TEXT DEFAULT NULL,
-"Title" TEXT DEFAULT NULL,
-"TitleOrdinal" TEXT DEFAULT NULL,
-"MeterName" TEXT DEFAULT NULL,
-"MeterCount" TEXT DEFAULT NULL,
-"SongText" TEXT DEFAULT NULL,
-"Comments" TEXT DEFAULT NULL,
-"Comp1First" TEXT DEFAULT NULL,
-"Comp1Last" TEXT DEFAULT NULL,
-"Comp1Date" TEXT DEFAULT NULL,
-"Comp2First" TEXT DEFAULT NULL,
-"Comp2Last" TEXT DEFAULT NULL,
-"Comp2Date" TEXT DEFAULT NULL,
-"CompAlternateEntry" TEXT DEFAULT NULL,
-"CompBookTitle" TEXT DEFAULT NULL,
-"CompBookTitleAlternateEntry" TEXT DEFAULT NULL,
-"Poet1First" TEXT DEFAULT NULL,
-"Poet1Last" TEXT DEFAULT NULL,
-"Poet1Date" TEXT DEFAULT NULL,
-"Poet2First" TEXT DEFAULT NULL,
-"Poet2Last" TEXT DEFAULT NULL,
-"Poet2Date" TEXT DEFAULT NULL,
-"PoetAlternateEntry" TEXT DEFAULT NULL,
-"PoetBookTitle" TEXT DEFAULT NULL,
-"PoetBookTitleAlternateEntry" TEXT DEFAULT NULL,
-"Keys" TEXT,
-"Times" TEXT,
-"Orientation" TEXT,
-"ThreeLiner" INTEGER
+"title" TEXT DEFAULT NULL,
+"meter" TEXT DEFAULT NULL,
+"music_attribution" TEXT DEFAULT NULL,
+"three_liner" INTEGER
 );

@@ -7,22 +7,43 @@ import util
 
 def build_ranks(conn):
     # ranks[year] = sorted [(count, song_id), ...]
+    counts = build_counts(conn)
     ranks = defaultdict(list)
-    cursor = conn.execute("""
-        SELECT song_id, COUNT(*), minutes.Year
-        FROM song_leader_joins
-        JOIN minutes ON song_leader_joins.minutes_id = minutes.id
-        GROUP BY minutes.Year, song_id
-        ORDER BY minutes.Year ASC, COUNT(*) DESC, song_id ASC
-    """)
-    for (song_id, count, year) in cursor:
-        ranks[year].append((count, song_id))
+    for song_id, yearcount in counts.items():
+        for year, count in yearcount.items():
+            ranks[year].append((count, song_id))
+    for data in ranks.values():
+        data.sort(reverse=True)
     return ranks
+
+
+def build_counts(conn):
+    curs = conn.cursor()
+    # counts[song_id][year] = count
+    counts = {}
+    years = conn.execute("SELECT DISTINCT year FROM minutes").fetchall()
+    for song_id, in db.execute("SELECT id FROM songs"):
+        counts[song_id] = {}
+        for year, in years:
+            counts[song_id][year] = 0
+
+    # Get lessons by song and year; compute counts
+    cursor = db.execute("""
+        SELECT DISTINCT lesson_id, song_id, minutes.Year
+        FROM song_leader_joins
+        JOIN minutes ON song_leader_joins.minutes_id = minutes.id""")
+    for lesson_id, song_id, year in cursor:
+        counts[song_id][year] += 1
+
+    conn.commit()
+    curs.close()
+
+    return counts
 
 
 def create_stats(conn):
     ranks = build_ranks(conn)
-    # values = [(song_id, year, lead_count, rank), ...]
+    # values = [(song_id, year, lesson_count, rank), ...]
     values = []
     for year in sorted(ranks.keys()):
         rank = 1
@@ -33,7 +54,7 @@ def create_stats(conn):
             last_count = count
             values.append((song_id, year, count, rank))
 
-    conn.executemany("INSERT INTO song_stats (song_id, year, lead_count, rank) VALUES (?, ?, ?, ?)", values)
+    conn.executemany("INSERT INTO song_stats (song_id, year, lesson_count, rank) VALUES (?, ?, ?, ?)", values)
     conn.commit()
     print("created %d song_stats records" % len(values))
 

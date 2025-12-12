@@ -21,7 +21,7 @@ def insert_minutes(conn):
     for row in reader:
         curs.execute('INSERT INTO minutes (Name, Location, Date, Minutes, \
             Year, IsDenson, GoodCt, ErrCt, AmbCt, CorrCt, ProbCt, TotalCt, \
-            ProbPercent) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', row)
+            ProbPercent, DensonYear) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)', row)
 
     conn.commit()
     curs.close()

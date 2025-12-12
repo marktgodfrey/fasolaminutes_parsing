@@ -12,15 +12,15 @@ def open_db():
     return conn
 
 
-def parse_csv(conn, filename, minutes_id):
+def parse_csv(conn, filename, minutes_id, book_year):
     with open(filename, 'r') as f:
         print('parsing csv file: %s' % filename)
         song_data = list(csv.reader(f))
-        parse_section(conn, minutes_id, song_data)
+        parse_section(conn, minutes_id, book_year, song_data)
 
 
-def parse_section(conn, minutes_id, song_data):
-    print("Parsing %d" % (minutes_id))
+def parse_section(conn, minutes_id, book_year, song_data):
+    print("Parsing %d (%d)" % (minutes_id, book_year))
     curs = conn.cursor()
 
     # make lists of recording urls and song ids
@@ -34,7 +34,10 @@ def parse_section(conn, minutes_id, song_data):
         else:
             altpage = pagenum + 't'
 
-        curs.execute("SELECT id FROM songs WHERE PageNum IN (?, ?)", [pagenum, altpage])
+        curs.execute("SELECT songs.id FROM songs \
+                        INNER JOIN book_song_joins ON songs.id = book_song_joins.song_id \
+                        INNER JOIN books ON books.id = book_song_joins.book_id \
+                        WHERE books.year == ? AND page_num IN (?, ?)", [book_year, pagenum, altpage])
         row = curs.fetchone()
         if row:
             song_id = row[0]
@@ -85,19 +88,20 @@ if __name__ == '__main__':
     for row in reader:
         date = row[0]
         filename = row[1]
-        curs.execute("SELECT id FROM minutes \
+        curs.execute("SELECT id, DensonYear FROM minutes \
             WHERE Name LIKE 'Ireland%Convention' AND \
             Date LIKE ?", [date])
         id_row = curs.fetchone()
-        if row:
+        if id_row:
             minutes_id = id_row[0]
-            minutes.append((minutes_id, row[1]))
+            book_year = id_row[1]
+            minutes.append((minutes_id, filename, book_year))
         else:
-            print("no minutes for date: " + row[0])
+            print("no minutes for date: " + date)
     curs.close()
 
     print(minutes)
-    for minutes_id, filename in minutes:
-        parse_csv(conn, filename, minutes_id)
+    for minutes_id, filename, book_year in minutes:
+        parse_csv(conn, filename, minutes_id, book_year)
 
     conn.close()

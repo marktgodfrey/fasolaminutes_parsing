@@ -1,29 +1,27 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-import time
-from numpy import array, log2
+import math
 from collections import defaultdict
 import util
 
-def count_total_leads(leader_id, counts):
-    lc = array(counts, dtype=float)
-    lcnorm = lc / sum(lc)
-    lead_count = sum(lc)
-    song_entropy = sum(lcnorm * log2(lcnorm)) / -9.1137421660491889
-    return lead_count, song_entropy
+def count_total_lessons(counts):
+    lesson_count = sum(counts)
+    lcnorm = [x / lesson_count for x in counts]
+    song_entropy = sum([x * math.log2(x) for x in lcnorm]) / -9.1137421660491889
+    return lesson_count, song_entropy
 
 def create_counts(conn):
     curs = conn.cursor()
 
     # Read all leader_song_stats at once
     all_stats = defaultdict(list)
-    for (id, count) in curs.execute("SELECT leader_id, lead_count FROM leader_song_stats"):
+    for (id, count) in curs.execute("SELECT leader_id, lesson_count FROM leader_song_stats"):
         all_stats[id].append(count)
 
     for (id, counts) in all_stats.items():
-        lead_count, song_entropy = count_total_leads(id, counts)
-        curs.execute("UPDATE leaders SET lead_count=?, song_entropy=? WHERE id=?", [lead_count, song_entropy, id])
+        lesson_count, song_entropy = count_total_lessons(counts)
+        curs.execute("UPDATE leaders SET lesson_count=?, song_entropy=? WHERE id=?", [lesson_count, song_entropy, id])
 
     print("updated %d leaders records" % len(all_stats))
     conn.commit()
@@ -35,7 +33,7 @@ def create_top20_counts(conn):
     cursor = conn.execute("""
         SELECT leader_id, COUNT(*)
         FROM leader_song_stats
-        WHERE lead_rank <= 20 AND lead_count >= 5
+        WHERE lesson_rank <= 20 AND lesson_count >= 5
         GROUP BY leader_id
     """)
     for (id, count) in cursor:
@@ -49,7 +47,7 @@ def create_location_counts(conn):
     curs = conn.cursor()
 
     cursor = conn.execute("""
-        SELECT leader_id, COUNT(DISTINCT(location_id)) as c
+        SELECT leader_id, COUNT(*) as c
         FROM song_leader_joins
         INNER JOIN minutes_location_joins ON minutes_location_joins.minutes_id = song_leader_joins.minutes_id
         WHERE location_id IS NOT NULL
@@ -86,7 +84,7 @@ def create_stats(conn):
             last_count = count
             values.append((leader_id, song_id, count, rank))
 
-    conn.executemany("INSERT INTO leader_song_stats (leader_id, song_id, lead_count, lead_rank) VALUES (?, ?, ?, ?)", values)
+    conn.executemany("INSERT INTO leader_song_stats (leader_id, song_id, lesson_count, lesson_rank) VALUES (?, ?, ?, ?)", values)
 
     print("created %d leader_song_stats records" % len(values))
     conn.commit()

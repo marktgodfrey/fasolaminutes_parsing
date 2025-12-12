@@ -45,7 +45,7 @@ def read_item(item_id):
     return songs
 
 
-def insert_songs(conn, minutes_id, songs_audio):
+def insert_songs(conn, minutes_id, book_year, songs_audio):
     print("Parsing %d" % (minutes_id))
     curs = conn.cursor()
 
@@ -60,7 +60,10 @@ def insert_songs(conn, minutes_id, songs_audio):
         else:
             altpage = pagenum + 't'
 
-        curs.execute("SELECT id FROM songs WHERE PageNum IN (?, ?)", [pagenum, altpage])
+        curs.execute("SELECT songs.id FROM songs \
+                    INNER JOIN book_song_joins ON songs.id = book_song_joins.song_id \
+                    INNER JOIN books ON books.id = book_song_joins.book_id \
+                    WHERE books.year == ? AND page_num IN (?, ?)", [book_year, pagenum, altpage])
         row = curs.fetchone()
         if row:
             song_id = row[0]
@@ -114,19 +117,20 @@ if __name__ == "__main__":
         name = row[0]
         date = row[1]
         item_id = row[2]
-        curs.execute("SELECT id FROM minutes \
+        curs.execute("SELECT id, DensonYear FROM minutes \
                 WHERE Name IS ? AND \
                 Date IS ?", [name, date])
         id_row = curs.fetchone()
         if id_row:
             minutes_id = id_row[0]
-            minutes.append((minutes_id, item_id))
+            book_year = id_row[1]
+            minutes.append((minutes_id, item_id, book_year))
         else:
             print("no minutes: " + row[0])
     curs.close()
 
-    for minutes_id, item_id in minutes:
+    for minutes_id, item_id, book_year in minutes:
         songs = read_item(item_id)
-        insert_songs(conn, minutes_id, songs)
+        insert_songs(conn, minutes_id, book_year, songs)
 
     conn.close()

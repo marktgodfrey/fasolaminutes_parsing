@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import json
+
 import scrapy
 import sqlite3
 import difflib
@@ -65,7 +67,7 @@ class SpiderBase(scrapy.Spider):
         curs = conn.cursor()
 
         curs.execute(
-            'SELECT id FROM minutes WHERE audio_url=? OR audio_url LIKE ? OR audio_url LIKE ? OR audio_url LIKE ?',
+            'SELECT id, DensonYear FROM minutes WHERE audio_url=? OR audio_url LIKE ? OR audio_url LIKE ? OR audio_url LIKE ?',
             [audio_url, audio_url + ',%', '%,' + audio_url, '%,' + audio_url + ',%'])
 
         row = curs.fetchone()
@@ -74,6 +76,10 @@ class SpiderBase(scrapy.Spider):
             return
 
         minutes_id = row[0]
+        book_year = row[1]
+
+        with open(str(minutes_id) + '.json', 'w') as f:
+            json.dump(song_data, f, indent=4, separators=(',', ': '))
 
         # make lists of recording urls and song ids
         songs = []
@@ -86,13 +92,15 @@ class SpiderBase(scrapy.Spider):
             if m:
                 pagenum = m.group()
 
-            altpage = ''
             if pagenum[-1:] in ('t', 'b'):
                 altpage = pagenum[:-1]
             else:
                 altpage = pagenum + 't'
 
-            curs.execute("SELECT id FROM songs WHERE PageNum IN (?, ?)", [pagenum, altpage])
+            curs.execute("SELECT songs.id FROM songs \
+                            INNER JOIN book_song_joins ON songs.id = book_song_joins.song_id \
+                            INNER JOIN books ON books.id = book_song_joins.book_id \
+                            WHERE books.year == ? AND page_num IN (?, ?)", [book_year, pagenum, altpage])
             row = curs.fetchone()
             if row:
                 song_id = row[0]

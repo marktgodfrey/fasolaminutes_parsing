@@ -3,7 +3,7 @@
 
 import re
 import csv
-import googlemaps
+# import googlemaps
 import util
 
 def delete_locations(conn):
@@ -86,35 +86,35 @@ def insert_locations(conn):
     conn.commit()
     curs.close()
 
-def find_counties(conn):
-    gmaps = googlemaps.Client(key='')
-    curs = conn.cursor()
-    curs.execute("SELECT id, gps_lat, gps_long FROM locations WHERE country='USA' AND county=''")
-    rows = curs.fetchall()
-    for row in rows:
-        location_id = row[0]
-        gps_lat = row[1]
-        gps_long = row[2]
-
-        # gps = '%f,%f' % (gps_lat, gps_long)
-        # geocode_result = gmaps.geocode(gps)
-        geocode_result = gmaps.reverse_geocode((gps_lat, gps_long))
-        for c in geocode_result[0]['address_components']:
-            if c['types'][0] == 'administrative_area_level_2':
-                county = c['long_name']
-                break
-
-        if county:
-            c = county.split(' ')
-            if c[-1] == 'County':
-                county = ' '.join(c[:-1])
-            print('found county: %f,%f %s' % (gps_lat, gps_long, county))
-            curs.execute("UPDATE locations SET county=? WHERE id=?", [county, location_id])
-        else:
-            print('county not found? %f,%f' % (gps_lat, gps_long))
-
-    conn.commit()
-    curs.close()
+# def find_counties(conn):
+#     gmaps = googlemaps.Client(key='')
+#     curs = conn.cursor()
+#     curs.execute("SELECT id, gps_lat, gps_long FROM locations WHERE country='USA' AND county=''")
+#     rows = curs.fetchall()
+#     for row in rows:
+#         location_id = row[0]
+#         gps_lat = row[1]
+#         gps_long = row[2]
+#
+#         # gps = '%f,%f' % (gps_lat, gps_long)
+#         # geocode_result = gmaps.geocode(gps)
+#         geocode_result = gmaps.reverse_geocode((gps_lat, gps_long))
+#         for c in geocode_result[0]['address_components']:
+#             if c['types'][0] == 'administrative_area_level_2':
+#                 county = c['long_name']
+#                 break
+#
+#         if county:
+#             c = county.split(' ')
+#             if c[-1] == 'County':
+#                 county = ' '.join(c[:-1])
+#             print('found county: %f,%f %s' % (gps_lat, gps_long, county))
+#             curs.execute("UPDATE locations SET county=? WHERE id=?", [county, location_id])
+#         else:
+#             print('county not found? %f,%f' % (gps_lat, gps_long))
+#
+#     conn.commit()
+#     curs.close()
 
 if __name__ == '__main__':
     db = util.open_db()

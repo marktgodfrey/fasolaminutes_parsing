@@ -16,6 +16,7 @@ def create_index(conn):
     curs.execute("CREATE INDEX song_index ON song_leader_joins(song_id)")
     curs.execute("CREATE INDEX leader_index ON song_leader_joins(leader_id)")
     curs.execute("CREATE INDEX minutes_index ON song_leader_joins(minutes_id)")
+    curs.execute("CREATE INDEX lesson_index ON song_leader_joins(lesson_id)")
     conn.commit()
     curs.close()
 

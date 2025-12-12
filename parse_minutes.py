@@ -189,7 +189,7 @@ def parse_minutes(s, debug_print=False):
             ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?|van\sden\s|Van\sden\s|van\sDen\s){2,5}
         ''', re.UNICODE | re.VERBOSE)
         # pagenum_pattern = re.compile('[\[\{/](\d{2,3}[tb]?)[\]\}]')
-        pagenum_pattern = re.compile(r'[\[\{/\s](\d{2,3}[tb]?)([\]\}\s]|$)(?!' + build_non_denson() + r')')
+        pagenum_pattern = re.compile(r'[\[{/\s](\d{2,3}[tb]?)-(1991|2025)(?:[\]}\s]|$)(?!' + build_non_denson() + r')')
 
         dd = []
         leaders = re.split(r'\v|called to order|\:\s|(?<=[^\.][^A-Z\]\}])\.(\s|\Z)|(?<=[\]\}”\)])[;\.\:]|;', session)  #double quotes!
@@ -202,14 +202,15 @@ def parse_minutes(s, debug_print=False):
                     if not first_song:
                         first_song = song
                     pagenum = song.group(1)
+                    book = song.group(2)
                     # print pagenum
                     leaders = re.finditer(name_pattern, chunk)
                     for leader in leaders:
                         if leader.end() <= first_song.start()+1:
                             name = leader.group(0)
                             name = name.strip() # TODO: should be able to incorporate this into regex......
-                            dd.append({'name': name, 'song': pagenum})
-                            if debug_print: print('***name: ' + name + '\tsong: ' + pagenum)
+                            dd.append({'name': name, 'song': pagenum, 'book': int(book)})
+                            if debug_print: print('***name: ' + name + '\tsong: ' + pagenum + '\tbook: ' + book)
                         # else:
                             # print "%d %d"%(leader.end(), first_song.start())
                 if debug_print: print("---chunk----------")
@@ -228,30 +229,38 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
     curs = conn.cursor()
     # Seed dicts
     if not SONGS:
-        for (id, page) in curs.execute("SELECT id, PageNum FROM songs"):
-            SONGS[page] = id
+        for (song_id, page, year) in curs.execute("SELECT songs.id, page_num, year FROM songs \
+                                            INNER JOIN book_song_joins ON songs.id = book_song_joins.song_id \
+                                            INNER JOIN books on books.id = book_song_joins.book_id"):
+            SONGS[(page, year)] = song_id
         for (name, alias) in curs.execute("SELECT name, alias FROM leader_name_aliases"):
             ALIASES[alias] = ALIASES.get(alias, name) # don't overwrite existing
         for (name,) in curs.execute("SELECT name FROM leader_name_invalid"):
             INVALID.add(name)
 
+    lesson_idx = 0
+    last_song_id = None
     for session in d:
         for leader in session['leaders']:
 
             #get song_id
-            song_id = SONGS.get(leader['song'])
+            song_id = SONGS.get((leader['song'], leader['book']))
             if not song_id:
                 if leader['song'][-1:] == 't' or leader['song'][-1:] == 'b':
                     #check for song without "t" or "b"
-                    song_id = SONGS.get(leader['song'][0:-1])
+                    song_id = SONGS.get((leader['song'][0:-1], leader['book']))
                 else:
                     #check for song on "top"
-                    song_id = SONGS.get(leader['song']+'t')
-                SONGS[leader['song']] = song_id # memoize this result
+                    song_id = SONGS.get((leader['song']+'t', leader['book']))
+                SONGS[(leader['song']+'t', leader['book'])] = song_id # memorize this result
             if not song_id:
                 print(leader)
-                print("\tno song id! %s"%(leader['song']))
+                print("\tno song id! %s %s"%(leader['song'], leader['book']))
                 continue
+
+            if last_song_id != song_id:
+                lesson_idx += 1
+                last_song_id = song_id
 
             #find leader by name if exists, create if not
             name = leader['name']
@@ -277,7 +286,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
                 LEADERS[name] = leader_id
 
             if song_id and leader_id and minutes_id:
-                curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id) VALUES (?,?,?)", (song_id, leader_id, minutes_id))
+                curs.execute("INSERT INTO song_leader_joins (song_id, leader_id, minutes_id, lesson_id) VALUES (?,?,?,?)", (song_id, leader_id, minutes_id, lesson_idx))
             else:
                 print("problem?! %d %d %d" % (song_id, leader_id, minutes_id))
 
