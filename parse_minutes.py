@@ -121,7 +121,12 @@ bad_words = [
     'Resolutions',
     'Father',
     'Moderator',
-    'Psalm']
+    'Psalm',
+    'Composer',
+    'Session',
+    'Co-Vice',
+    'Saturday',
+    'Sunday']
 
 
 non_denson = [
@@ -179,6 +184,7 @@ def parse_minutes(s, debug_print=False):
         name_pattern = re.compile(r'''
             (\A|(?<=\s))
             ((?!''' + build_bad_words() + r''')
+            (?!.*--)
             (?<!for\s)
             (
                 # Start with upper case...
@@ -186,7 +192,7 @@ def parse_minutes(s, debug_print=False):
                 # ...or lower case followed by a string that has upper case
                 [a-z](?=[\u00C0-\u024F\w’]*[A-Z\u00C0-\u024F])
             )
-            ([\u00C0-\u024F\w’-]+|\.\s|\.)\s?|van\sden\s|Van\sden\s|van\sDen\s){2,5}
+            ([\u00C0-\u024F\w’-]+|\.\s|\.|\s)\s?|van\sden\s|Van\sden\s|van\sDen\s){2,5}
         ''', re.UNICODE | re.VERBOSE)
         # pagenum_pattern = re.compile('[\[\{/](\d{2,3}[tb]?)[\]\}]')
         pagenum_pattern = re.compile(r'[\[{/\s](\d{2,3}[tb]?)-(1991|2025)(?:[\]}\s]|$)(?!' + build_non_denson() + r')')
@@ -317,7 +323,7 @@ def parse_all_minutes(conn):
     curs.close()
 
 
-def parse_minutes_by_id(conn, minutes_id):
+def parse_minutes_by_id(conn, minutes_id, debug_print=False):
     curs = conn.cursor()
 
     # 3928 - camp fasola 2012
@@ -332,7 +338,7 @@ def parse_minutes_by_id(conn, minutes_id):
         print("%s on %s"%(row[1],row[2]))
 
         s = row[0]
-        d = parse_minutes(s)
+        d = parse_minutes(s, debug_print=debug_print)
 
         minutes_id = row[3]
         insert_minutes(conn, d, minutes_id)
@@ -355,5 +361,5 @@ if __name__ == '__main__':
     db = util.open_db()
     clear_minutes(db)
     parse_all_minutes(db)
-    # parse_minutes_by_id(db, 5165)
+    # parse_minutes_by_id(db, 7130, debug_print=True)
     db.close()

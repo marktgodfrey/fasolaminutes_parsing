@@ -29,7 +29,7 @@ def build_counts(conn):
 
     # Get lessons by song and year; compute counts
     cursor = db.execute("""
-        SELECT DISTINCT lesson_id, song_id, minutes.Year
+        SELECT DISTINCT minutes_id  || ':' || lesson_id, song_id, minutes.Year
         FROM song_leader_joins
         JOIN minutes ON song_leader_joins.minutes_id = minutes.id""")
     for lesson_id, song_id, year in cursor:

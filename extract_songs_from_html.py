@@ -1,11 +1,13 @@
+import os.path
+
 from bs4 import BeautifulSoup
 import json
 import re
 
-# INPUT_HTML = "SongData_Denson_1991.html"
-# OUTPUT_JSON = "SongData_1991.json"
-INPUT_HTML = "SongData_Denson_2025.html"
-OUTPUT_JSON = "SongData_2025.json"
+INPUT_HTML = "SongData_Denson_1991.html"
+OUTPUT_JSON = "SongData_1991.json"
+# INPUT_HTML = "SongData_Denson_2025.html"
+# OUTPUT_JSON = "SongData_2025.json"
 
 def strip_parenthetical(meter_text):
     if not meter_text:
@@ -61,28 +63,33 @@ for div in soup.select("div.entry"):
         # turn <br> into newlines
         raw = text_p.get_text("\n")
 
+        lines = raw.splitlines()
+
         # split and clean line endings
-        lines = [line.rstrip() for line in raw.splitlines()]
+        # lines = [line.rstrip() for line in lines]
 
-        # strip leading/trailing blank lines
-        while lines and lines[0] == "":
-            lines.pop(0)
-        while lines and lines[-1] == "":
-            lines.pop()
+        # # strip leading/trailing blank lines
+        # while lines and lines[0] == "":
+        #     lines.pop(0)
+        # while lines and lines[-1] == "":
+        #     lines.pop()
+        #
+        # # collapse runs of blank lines to a single blank line
+        # norm_lines = []
+        # last_blank = False
+        # for line in lines:
+        #     if line == "":
+        #         if not last_blank:
+        #             norm_lines.append(line)
+        #         last_blank = True
+        #     else:
+        #         norm_lines.append(line)
+        #         last_blank = False
 
-        # collapse runs of blank lines to a single blank line
-        norm_lines = []
-        last_blank = False
-        for line in lines:
-            if line == "":
-                if not last_blank:
-                    norm_lines.append(line)
-                last_blank = True
-            else:
-                norm_lines.append(line)
-                last_blank = False
+        song_text = "\n".join(lines)
+        song_text = song_text.replace("\n\n", "\n")
 
-        song_text = "\n".join(norm_lines)
+        # song_text = raw
 
     entries.append(
         {
@@ -95,8 +102,17 @@ for div in soup.select("div.entry"):
         }
     )
 
+if os.path.exists(OUTPUT_JSON):
+    with open(OUTPUT_JSON, 'r') as jsonfile:
+        songs = json.load(jsonfile)
+    for old_song, new_song in zip(songs, entries):
+        for key in new_song:
+            old_song[key] = new_song[key]
+else:
+    songs = entries
+
 # ---- write JSON ----
 with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-    json.dump(entries, f, indent=2, ensure_ascii=False)
+    json.dump(songs, f, indent=2, ensure_ascii=False)
 
 print(f"Wrote {len(entries)} entries to {OUTPUT_JSON}")

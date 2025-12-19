@@ -29,9 +29,9 @@ def insert_song(curs, song):
     return song_id
 
 def insert_join(curs, song, book_id, song_id):
-    curs.execute('INSERT INTO book_song_joins (book_id, song_id, page_num, text, words_attribution, keys) \
-                                                        VALUES (?,?,?,?,?,?)',
-                 (book_id, song_id, song['pagenum'], song['text'], song['poet'], song['keys']))
+    curs.execute('INSERT INTO book_song_joins (book_id, song_id, page_num, text, words_attribution, keys, times, orientation) \
+                                                        VALUES (?,?,?,?,?,?,?,?)',
+                 (book_id, song_id, song['pagenum'], song['text'], song['poet'], song['keys'], song['times'], song['orientation']))
 
 def delete_songs(conn):
     curs = conn.cursor()
@@ -54,6 +54,17 @@ def insert_songs(conn):
         songs25_map = {}
         for song in songs25:
             songs25_map[song['pagenum']] = song
+
+    # this gives us time signatures
+    with open('New Song Data - Mode of Time and 3-Liner.csv') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            song = songs25_map[pagenum_convert(row['Page in 2025'])]
+            song['times'] = row['Time Mode']
+            # print(song)
+        for song in songs25_map.values():
+            if not 'times' in song:
+                print(f'missing time mode! {song["pagenum"]}')
 
     curs.execute('SELECT id FROM books WHERE Title == "The Sacred Harp: 1991 Edition"')
     book_id_91 = curs.fetchone()[0]
@@ -83,7 +94,7 @@ def insert_songs(conn):
             # | `new`           | A new page was added to the 2025 edition.                                                            |
             # | `remove`        | The page was removed (as a song) in the 2025 edition.                                                |
 
-            # TODO: three-liner, times, orientation
+            # TODO: three-liner
             if action == "keep" or action == "renumber":
                 # inserting only 2025 song for both books, NOTE may be different meter and music_attribution
                 song_id = insert_song(curs, song_25)

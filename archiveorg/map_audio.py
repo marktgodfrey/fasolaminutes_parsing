@@ -22,14 +22,17 @@ def read_item(item_id):
         if 'format' not in file or file['format'] != 'VBR MP3':
             continue
 
-        if len(file['title'].split('.')) < 2:
-            # print(file['title'].split('.'))
-            continue
+        title = file['title']
+        if 'mosquito' in item_id:
+            comps = title.split('.')
+            if len(comps) < 2:
+                continue
 
-        if file['title'].split('.')[2] == 'v02':  # :(
-            continue
+            if len(comps) > 2 and comps[2] == 'v02':  # :(
+                continue
 
-        title = file['title'].split('.')[-1]
+            title = title.split('.')[-1]
+
         m = re.search(r'^(\d+[tb]?)', title)
         pagenum = m.group() if m else None
         if not pagenum:
@@ -45,7 +48,7 @@ def read_item(item_id):
     return songs
 
 
-def insert_songs(conn, minutes_id, book_year, songs_audio):
+def insert_songs(conn, minutes_id, book_year, songs_audio, check_seq=True):
     print("Parsing %d" % (minutes_id))
     curs = conn.cursor()
 
@@ -73,34 +76,50 @@ def insert_songs(conn, minutes_id, book_year, songs_audio):
         else:
             print("no song id: " + pagenum)
 
-    # make list of songs and ids from the minutes
-    minutes_songs = []
-    minutes_ids = []
-    curs.execute("SELECT id, song_id FROM song_leader_joins WHERE minutes_id=?", [minutes_id])
-    for join_id, song_id in curs:
-        if not minutes_songs or minutes_songs[-1] != song_id:
-            minutes_songs.append(song_id)
-            minutes_ids.append([join_id])
-        else:
-            minutes_ids[-1].append(join_id)
+    if check_seq:
+        # make list of songs and ids from the minutes
+        minutes_songs = []
+        minutes_ids = []
+        curs.execute("SELECT id, song_id FROM song_leader_joins WHERE minutes_id=?", [minutes_id])
+        for join_id, song_id in curs:
+            if not minutes_songs or minutes_songs[-1] != song_id:
+                minutes_songs.append(song_id)
+                minutes_ids.append([join_id])
+            else:
+                minutes_ids[-1].append(join_id)
 
-    # get the longest subsequence from recordings and minutes
-    s = difflib.SequenceMatcher(a=songs, b=minutes_songs)
-    last_a = 0
-    for a, b, n in s.get_matching_blocks():
-        for pagenum, url in zip(pages[last_a:a], urls[last_a:a]):
-            print("skip: %5s %s" % (pagenum, url))
-        last_a = a+n
-        for pagenum, url, join_ids in zip(pages[a:a+n], urls[a:a+n], minutes_ids[b:b+n]):
+        # get the longest subsequence from recordings and minutes
+        s = difflib.SequenceMatcher(a=songs, b=minutes_songs)
+        last_a = 0
+        for a, b, n in s.get_matching_blocks():
+            for pagenum, url in zip(pages[last_a:a], urls[last_a:a]):
+                print("skip: %5s %s" % (pagenum, url))
+            last_a = a+n
+            for pagenum, url, join_ids in zip(pages[a:a+n], urls[a:a+n], minutes_ids[b:b+n]):
+                for id in join_ids:
+                    curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE id=?", (url, id))
+                print("update: %5s %5r %s" % (pagenum, join_ids, url))
+
+                # # check the URL exists
+                # resp = requests.head(url)
+                # if resp.status_code != 200:
+                #     print('missing audio! ' + url)
+    else:
+        minutes_ids = {}
+        # TODO: there's a bug here if there's mutiple lessons for the same song, eg minutes_id=7128 song_id=280
+        for song_id in songs:
+            curs.execute("SELECT id FROM song_leader_joins WHERE minutes_id=? AND song_id=?", [minutes_id, song_id])
+            minutes_ids[song_id] = []
+            for join_id, in curs:
+                minutes_ids[song_id].append(join_id)
+            if len(minutes_ids[song_id]) == 0:
+                print('lesson not found for song: %s' % song_id)
+
+        for pagenum, song_id, url in zip(pages, songs, urls):
+            join_ids = minutes_ids[song_id]
             for id in join_ids:
                 curs.execute("UPDATE song_leader_joins SET audio_url=? WHERE id=?", (url, id))
             print("update: %5s %5r %s" % (pagenum, join_ids, url))
-
-            # # check the URL exists
-            # resp = requests.head(url)
-            # if resp.status_code != 200:
-            #     print('missing audio! ' + url)
-
     print('---------')
 
     conn.commit()
@@ -131,6 +150,6 @@ if __name__ == "__main__":
 
     for minutes_id, item_id, book_year in minutes:
         songs = read_item(item_id)
-        insert_songs(conn, minutes_id, book_year, songs)
+        insert_songs(conn, minutes_id, book_year, songs, check_seq=(item_id != 'sacredharp2025edition'))
 
     conn.close()

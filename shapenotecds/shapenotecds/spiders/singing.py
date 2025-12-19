@@ -6,7 +6,7 @@ from spider_base import SpiderBase
 
 class SingingSpider(SpiderBase):
     name = "singing"
-    allowed_domains = ["shapenotecds.com"]
+    allowed_domains = ["shapenotecds.com", "sacredharp.com"]
     # start_urls = (
     # 'http://www.shapenotecds.com/ivey-memorial-liberty-sunday-march-29-2015//',
     # )
