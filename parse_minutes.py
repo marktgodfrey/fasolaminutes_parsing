@@ -40,6 +40,7 @@ bad_words = [
     'Committees',
     'Convention',
     'All-Day',
+    'All-Book',
     'Session',
     'Sacred',
     'Musical',
@@ -79,6 +80,7 @@ bad_words = [
     'SHPC',
     'Seek',
     'President',
+    'Presidents',
     'Vice',
     'Co-Vice',
     'After',
@@ -103,6 +105,7 @@ bad_words = [
     'Highway',
     'Outgoing',
     'Recreation',
+    'Adventure',
     'City',
     'County',
     'Avenue',
@@ -134,7 +137,6 @@ bad_words = [
     'Psalm',
     'Composer',
     'Session',
-    'Co-Vice',
     'Saturday',
     'Sunday']
 
