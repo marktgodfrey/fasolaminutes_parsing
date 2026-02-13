@@ -22,6 +22,10 @@ def read_item(item_id):
         if 'format' not in file or file['format'] != 'VBR MP3':
             continue
 
+        if 'title' not in file:
+            print(f'missing title! {item_id} {file}')
+            continue
+
         title = file['title']
         if 'mosquito' in item_id:
             comps = title.split('.')
@@ -106,7 +110,7 @@ def insert_songs(conn, minutes_id, book_year, songs_audio, check_seq=True):
                 #     print('missing audio! ' + url)
     else:
         minutes_ids = {}
-        # TODO: there's a bug here if there's mutiple lessons for the same song, eg minutes_id=7128 song_id=280
+        # TODO: there's a bug here if there's multiple lessons for the same song, eg minutes_id=7128 song_id=280
         for song_id in songs:
             curs.execute("SELECT id FROM song_leader_joins WHERE minutes_id=? AND song_id=?", [minutes_id, song_id])
             minutes_ids[song_id] = []

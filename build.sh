@@ -10,7 +10,6 @@ python create_song_stats.py
 python create_song_neighbors.py
 python map_minutes_audio.py
 pushd ./bostonsing; scrapy crawl singing; popd
-pushd ./shapenotecds; scrapy crawl singing; popd
 pushd ./phillysacredharp; scrapy crawl singing; popd
 pushd ./cork; python map_audio.py; popd
 pushd ./archiveorg; python map_audio.py; popd
