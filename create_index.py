@@ -8,6 +8,7 @@ def delete_index(conn):
     curs.execute("DROP INDEX IF EXISTS song_index")
     curs.execute("DROP INDEX IF EXISTS leader_index")
     curs.execute("DROP INDEX IF EXISTS minutes_index")
+    curs.execute("DROP INDEX IF EXISTS lesson_index")
     conn.commit()
     curs.close()
 
