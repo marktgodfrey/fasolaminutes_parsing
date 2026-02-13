@@ -138,7 +138,11 @@ bad_words = [
     'Composer',
     'Session',
     'Saturday',
-    'Sunday']
+    'Sunday',
+    'Uncle',
+    'Brother',
+    'Sister',
+    'Father']
 
 
 non_denson = [
