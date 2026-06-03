@@ -8,7 +8,11 @@ import requests
 
 
 def open_db():
-    conn = sqlite3.connect(os.path.join(os.path.dirname(__file__), '..', 'minutes.db'))
+    db_path = os.environ.get(
+        'MINUTES_DB',
+        os.path.join(os.path.dirname(__file__), '..', 'minutes.db'),
+    )
+    conn = sqlite3.connect(db_path)
     return conn
 
 

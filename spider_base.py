@@ -11,7 +11,11 @@ import csv
 class SpiderBase(scrapy.Spider):
     def open_db(self):
         # This is run in a subdirectory (bostonsing, or shapenotecds)
-        conn = sqlite3.connect(os.path.join(os.path.dirname(__file__), 'minutes.db'))
+        db_path = os.environ.get(
+            'MINUTES_DB',
+            os.path.join(os.path.dirname(__file__), 'minutes.db'),
+        )
+        conn = sqlite3.connect(db_path)
         conn.text_factory = str
         return conn
 

@@ -5,6 +5,31 @@ import re
 import util
 
 
+def normalize_leader_name(name):
+    return re.sub(r'\s+', ' ', name).strip()
+
+
+def expand_shared_last_name_leaders(s):
+    name_part = r"(?:[A-Z]\.\s*){1,3}|[A-Z][\w’'-]+"
+    pattern = re.compile(
+        r"(?<![A-Z\u00C0-\u024F][\w’'-]\s)"
+        r"\b(?P<first>" + name_part + r")\s+and\s+"
+        r"(?P<second>(?P<second_first>[A-Z][\w’'-]+)\s+"
+        r"(?P<last>[A-Z][\w’'-]+))"
+        r"(?=\s*[,{\[\d])",
+        re.UNICODE,
+    )
+
+    def replace(match):
+        if re.search(r"[A-Z\u00C0-\u024F][\w’'-]+\s+$", s[:match.start()]):
+            return match.group(0)
+
+        first = normalize_leader_name(match.group('first'))
+        return '%s %s and %s' % (first, match.group('last'), match.group('second'))
+
+    return pattern.sub(replace, s)
+
+
 bad_words = [
     'Chairman',
     'Chairperson',
@@ -191,6 +216,7 @@ def build_non_denson():
 
 def parse_minutes(s, debug_print=False):
     session_count = 0
+    s = expand_shared_last_name_leaders(s)
     sessions = re.split('RECESS|LUNCH',s)
     d = []
     for session in sessions:
@@ -229,8 +255,7 @@ def parse_minutes(s, debug_print=False):
                     leaders = re.finditer(name_pattern, chunk)
                     for leader in leaders:
                         if leader.end() <= first_song.start()+1:
-                            name = leader.group(0)
-                            name = name.strip() # TODO: should be able to incorporate this into regex......
+                            name = normalize_leader_name(leader.group(0))
                             dd.append({'name': name, 'song': pagenum, 'book': int(book)})
                             if debug_print: print('***name: ' + name + '\tsong: ' + pagenum + '\tbook: ' + book)
                         # else:
@@ -285,7 +310,7 @@ def insert_minutes(conn, d, minutes_id, debug_print=False):
                 last_song_id = song_id
 
             #find leader by name if exists, create if not
-            name = leader['name']
+            name = normalize_leader_name(leader['name'])
 
             if name in INVALID:
                 if debug_print: print("invalid name! %s" % (name))

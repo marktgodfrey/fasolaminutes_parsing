@@ -10,13 +10,33 @@ BASE_URL = 'https://archive.org/download'
 
 
 def open_db():
-    conn = sqlite3.connect(os.path.join(os.path.dirname(__file__), '..', 'minutes.db'))
+    db_path = os.environ.get(
+        'MINUTES_DB',
+        os.path.join(os.path.dirname(__file__), '..', 'minutes.db'),
+    )
+    conn = sqlite3.connect(db_path)
     return conn
 
 
 def read_item(item_id):
     response = requests.get('https://archive.org/metadata/' + item_id)
-    data = json.loads(response.text)
+    try:
+        data = response.json()
+    except ValueError:
+        print('bad archive.org metadata response: %s status=%s' % (
+            item_id,
+            response.status_code,
+        ))
+        return []
+
+    if 'files' not in data:
+        print('missing archive.org files metadata: %s status=%s keys=%s' % (
+            item_id,
+            response.status_code,
+            sorted(data.keys()),
+        ))
+        return []
+
     songs = []
     for file in data['files']:
         if 'format' not in file or file['format'] != 'VBR MP3':
