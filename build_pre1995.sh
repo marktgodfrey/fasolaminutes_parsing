@@ -24,18 +24,18 @@ done
 "${PYTHON}" create_leader_stats.py
 "${PYTHON}" create_song_stats.py
 "${PYTHON}" create_song_neighbors.py
-#"${PYTHON}" map_minutes_audio.py
-#pushd ./bostonsing
-#scrapy crawl singing
-#popd
-#pushd ./phillysacredharp
-#scrapy crawl singing
-#popd
-#pushd ./cork
-#"${PYTHON}" map_audio.py
-#popd
-#pushd ./archiveorg
-#"${PYTHON}" map_audio.py
-#popd
+"${PYTHON}" map_minutes_audio.py
+pushd ./bostonsing
+scrapy crawl singing
+popd
+pushd ./phillysacredharp
+"${PYTHON}" map_audio.py
+popd
+pushd ./cork
+"${PYTHON}" map_audio.py
+popd
+pushd ./archiveorg
+"${PYTHON}" map_audio.py
+popd
 "${PYTHON}" create_index.py
 sqlite3 "${DB_PATH}" "VACUUM;"
