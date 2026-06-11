@@ -37,6 +37,27 @@ NAME_BEFORE_PAGE_PATTERN = (
     r"(?:[A-Z][A-Za-z’'.-]*|[A-Z]\.)"
     r"(?:\s+(?:and\s+)?(?:[A-Z][A-Za-z’'.-]*|[A-Z]\.)){0,4}"
 )
+HEADER_SMALL_WORDS = {
+    'a',
+    'an',
+    'and',
+    'at',
+    'by',
+    'for',
+    'in',
+    'of',
+    'on',
+    'or',
+    'the',
+    'to',
+}
+HEADER_SPECIAL_CAPS = {
+    'DEKALB': 'DeKalb',
+    'DUTCH': 'Dutch',
+    'MT': 'Mt',
+    'MR': 'Mr',
+    'USA': 'USA',
+}
 
 
 def _looks_like_title(line):
@@ -111,15 +132,63 @@ def find_big_minutes_headers(text, start_after='NOTES:'):
             continue
 
         headers.append({
-            'name': title,
-            'location': location,
-            'date': date,
+            'name': normalize_pre1995_header_text(title),
+            'location': normalize_pre1995_header_text(location),
+            'date': normalize_pre1995_header_text(date),
+            'raw_name': title,
+            'raw_location': location,
+            'raw_date': date,
             'line': title_start + 1,
             'start': title_start,
             'body_start': idx + 1,
         })
 
     return headers
+
+
+def normalize_pre1995_header_text(text):
+    """Convert all-caps OCR header fields to ordinary display capitalization."""
+    words_seen = 0
+    words = re.findall(r'[A-Za-z]', text)
+    if not words:
+        return text.strip()
+
+    uppercase = sum(1 for letter in words if letter.isupper())
+    if uppercase / float(len(words)) < 0.60:
+        return text.strip()
+
+    def normalize_token(match):
+        nonlocal words_seen
+        token = match.group(0)
+        upper_token = token.upper()
+
+        is_lowercase_connector = (
+            words_seen > 0
+            and len(upper_token) > 1
+            and upper_token.lower() in HEADER_SMALL_WORDS
+        )
+
+        if is_lowercase_connector:
+            normalized = upper_token.lower()
+        elif upper_token in HEADER_SPECIAL_CAPS:
+            normalized = HEADER_SPECIAL_CAPS[upper_token]
+        elif re.match(r'^[A-Z]\.?$', token):
+            normalized = token.upper()
+        elif len(token) <= 2 and token.isupper():
+            normalized = token
+        else:
+            normalized = token.lower().title()
+            normalized = re.sub(r"([A-Za-z])[’']S\b", r"\1's", normalized)
+            normalized = re.sub(
+                r'\bMc([a-z])',
+                lambda m: 'Mc' + m.group(1).upper(),
+                normalized,
+            )
+
+        words_seen += 1
+        return normalized
+
+    return re.sub(r"[A-Za-z]+(?:[’'][A-Za-z]+)?|[A-Z]\.?", normalize_token, text).strip()
 
 
 def split_big_minutes_text(text, book_year=1991):
@@ -136,6 +205,9 @@ def split_big_minutes_text(text, book_year=1991):
             'name': header['name'],
             'location': header['location'],
             'date': header['date'],
+            'raw_name': header['raw_name'],
+            'raw_location': header['raw_location'],
+            'raw_date': header['raw_date'],
             'line': header['line'],
             'minutes': raw_text,
             'normalized_minutes': normalize_pre1995_minutes(raw_text, book_year),

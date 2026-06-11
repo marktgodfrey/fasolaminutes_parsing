@@ -44,6 +44,76 @@ YEAR_PATTERN = re.compile(r'(\d{4})')
 
 PRE1995_NON_DENSON_OVERRIDES = {
     (
+        'OLD DEKALB COUNTY COURTHOUSE IN DECATUR',
+        'Decatur Georgia',
+        'Saturday, September 21, 1991',
+    ),
+    (
+        'FLORIDA STATE SINGING CONVENTION',
+        'Panama City Beach, Florida',
+        'November 30--December 1, 1991',
+    ),
+    (
+        'CONCORD PRIMITIVE BAPTIST CHURCH',
+        '.7 mile south or Counry Road 14 on Beasley Road, Winfield, Alabama',
+        'December 8, 1991',
+    ),
+    (
+        'LITTLE BRANCH PRIMITIVE BAPTIST CHURCH',
+        'Albertville, Alabama',
+        'December 12, 1991',
+    ),
+    (
+        'MARTIN BLACKMON MEMORIAL',
+        'New Hope Primitive Baptist Church - Villa Rica, Georgia',
+        'December 29 1991',
+    ),
+    (
+        'CINCINNATI',
+        'Northside Christian Church',
+        'Wednesday, January 1, 1992',
+    ),
+    (
+        'DUTCH TREAT SINGING',
+        'Shadu Grove Church, Winston County, Alabama',
+        'January 5, 1992',
+    ),
+    (
+        'WEST GEORGIA COLLEGE SINGING',
+        'Food Services Building, Carrollton, Georgia',
+        'January 5, 1992',
+    ),
+    (
+        'CHICAGO ANNIVERSARY SINGING',
+        'Indian Boundary Park - Chicago, Illinois',
+        'Sunday, January 12, 1992',
+    ),
+    (
+        'UNCLE JACK KERR MEMORIAL',
+        'Camp Ground Methodist Church- North of Fruithurst, Alabama',
+        'January 12, 1992',
+    ),
+    (
+        'ALL-CALIFORNIA SACRED HARP CONVENTION',
+        "Women's 20th Century Club, Eagle Rock, California",
+        'January 19, 1992',
+    ),
+    (
+        'FOUR - NOTE SINGING',
+        'Marion, Kentucky',
+        'January 25, 1992',
+    ),
+    (
+        'SOUTHWESTERN BAPTIST THEOLOGICAL SEMINARY',
+        'Fort Worth, Texas',
+        'January 25, 1991',
+    ),
+    (
+        'GALILLE CONVENTION',
+        'Stapleton, Alabama',
+        'January 25,26, 1992',
+    ),
+    (
         'GARRISON MEMORIAL',
         'Oak Grove Primitive Baptist Church - Alpharetta, Georgia',
         'March 15, 1992',
@@ -52,11 +122,6 @@ PRE1995_NON_DENSON_OVERRIDES = {
         'SOUTHWEST TEXAS SACRED HARP CONVENTION',
         'Little Vine Primitive Baptist Church - Austin, Texas',
         'August 29, 30, 1992',
-    ),
-    (
-        'ALL-CALIFORNIA SACRED HARP CONVENTION',
-        "Women's 20th Century Club, Eagle Rock, California",
-        'January 19, 1992',
     ),
     (
         'GARRISON MEMORIAL',
@@ -73,6 +138,60 @@ PRE1995_NON_DENSON_OVERRIDES = {
         "Oak Grove Primitive Baptist Church Alpharetta, Georgia, B'ham Road",
         'March 20, 1994',
     ),
+}
+
+
+PRE1995_DATE_CORRECTIONS = {
+    (
+        'ORIGINAL DUTCH SINGING',
+        'West Georgia College, Carrolton, Georgia',
+        'January 3, 1393',
+    ): 'January 3, 1993',
+    (
+        'SHADY GROVE (KEETON CEMETARY)',
+        'Walker County, Alabama',
+        'May 2, 1992',
+    ): 'May 2, 1993',
+    (
+        'THE LOG CABIN SACRED HARP SINGING',
+        'North of Double Springs, Alabama',
+        'March 15, 1991',
+    ): 'March 15, 1992',
+    (
+        'DUTTON AND GREEN MEMORIAL',
+        'New Flatwoods Primtive Baptist Church, South of Nauvoo, Alabama',
+        'July 4, 1991',
+    ): 'July 4, 1993',
+    (
+        'WINSTON COUNTY CONVENTION',
+        'Shady Grove Church',
+        'September 22, 1991',
+    ): 'September 22, 1992',
+    (
+        'LIBERTY HILL BAPTIST CHURCH',
+        'Boaz, Alabama',
+        'September 26, 1994',
+    ): 'September 26, 1993',
+    (
+        'JORDAN CHAPEL',
+        'Newell, Randolph County, Alabama',
+        'October 23, 1991',
+    ): 'October 23, 1992',
+    (
+        'COY PUTMAN MEMORIAL',
+        'Rocky Mount Primitive Baptist Church, Arab, Alabama',
+        'October 23, 1193',
+    ): 'October 23, 1993',
+    (
+        'FAYETTE COUNTY CONVENTION',
+        'Bevill State Junior College, Fayette, Alabama',
+        'August 7, 1934',
+    ): 'August 7, 1994',
+    (
+        'GUM POND CHURCH',
+        'Morgan County, Alabama',
+        'September 25, 1974',
+    ): 'September 25, 1994',
 }
 
 
@@ -170,19 +289,21 @@ def seed_existing_leaders(conn):
 
 def build_minutes_values(record, minutes_year, denson_year):
     name_upper = record['name'].upper()
+    original_key = (
+        record.get('raw_name', record['name']),
+        record.get('raw_location', record['location']),
+        record.get('raw_date', record['date']),
+    )
+    date = PRE1995_DATE_CORRECTIONS.get(original_key, record['date'])
     is_denson = 0 if (
         'SOUTHWEST TEXAS' in name_upper
         or '(COOPER BOOK)' in name_upper or '(COOPER BOCK)' in name_upper
-        or (
-            record['name'],
-            record['location'],
-            record['date'],
-        ) in PRE1995_NON_DENSON_OVERRIDES
+        or original_key in PRE1995_NON_DENSON_OVERRIDES
     ) else 1
     return {
         'Name': record['name'],
         'Location': record['location'],
-        'Date': record['date'],
+        'Date': date,
         'Minutes': record['normalized_minutes'],
         'Year': minutes_year,
         'IsDenson': is_denson,
@@ -194,7 +315,7 @@ def build_minutes_values(record, minutes_year, denson_year):
         'TotalCt': 0,
         'ProbPercent': 0,
         'DensonYear': denson_year,
-        'DateOrdinal': date_ordinal(record['date']),
+        'DateOrdinal': date_ordinal(date),
         'IsVirtual': 0,
     }
 

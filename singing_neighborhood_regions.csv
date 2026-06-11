@@ -1,0 +1,337 @@
+singing,region_id,region_size,mapped_minutes,distinct_leaders,first_year,last_year,region_distinct_leaders,merge_score,merge_reason,seed_region_id,seed_region_size,seed_region_distinct_leaders,seed_internal_edges,seed_mean_internal_weighted_jaccard
+Mt. Zion Memorial,S001,17,34,310,1992,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Union Musical Convention,S001,17,33,377,1992,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Holly Springs Memorial Singing,S001,17,33,355,1992,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Alpharetta Municipal Building,S001,17,33,138,1992,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Holly Springs Church,S001,17,32,579,1992,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Georgia State Sacred Harp Singing Convention,S001,17,31,676,1992,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Chattahoochee Sacred Harp Convention,S001,17,31,488,1992,2024,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Denney Memorial,S001,17,29,199,1995,2025,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Oak Grove Primitive Baptist Church - Alpharetta,S001,17,29,91,1992,2017,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+DeLong-Roberts Memorial Singing,S001,17,28,229,1992,2019,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+University of West Georgia,S001,17,28,171,1993,2020,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Emmaus Baptist Church - Carrollton,S001,17,16,104,1992,2007,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+New Hope Memorial Singing,S001,17,10,57,1992,2005,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+Martin Blackmon Memorial,S001,17,6,55,1992,1997,1423,,seed_region,S001,14,1348,14,0.28575092667896895
+B.M. Smith Memorial Singing,S001,17,8,84,2013,2020,1423,0.1812349960459419,small_region_best_match,S061,1,84,0,
+Flat Shoals Primitive Baptist Church Singing,S001,17,15,185,2007,2022,1423,0.1564486197165447,small_region_best_match,S079,1,185,0,
+Salem United Methodist Church,S001,17,18,221,2002,2019,1423,0.17939274178112768,small_region_best_match,S118,1,221,0,
+Kermit Adams and Steve Adams Memorial Singing,S002,14,33,215,1992,2025,556,,seed_region,S002,14,556,16,0.3329901915673922
+Winston County Convention,S002,14,32,230,1992,2025,556,,seed_region,S002,14,556,16,0.3329901915673922
+Shady Grove Annual Singing,S002,14,32,166,1993,2025,556,,seed_region,S002,14,556,16,0.3329901915673922
+Clifford Wakefield Memorial,S002,14,31,162,1992,2024,556,,seed_region,S002,14,556,16,0.3329901915673922
+Godsey Sisters and Sandra Spradlin Memorial Singing,S002,14,31,137,1992,2025,556,,seed_region,S002,14,556,16,0.3329901915673922
+Wakefield Memorial Singing,S002,14,30,157,1994,2025,556,,seed_region,S002,14,556,16,0.3329901915673922
+Mt. Ebron Church Memorial Singing,S002,14,28,141,1992,2019,556,,seed_region,S002,14,556,16,0.3329901915673922
+Bear Creek Convention,S002,14,18,92,1992,2009,556,,seed_region,S002,14,556,16,0.3329901915673922
+Cherry Tree Singing,S002,14,17,88,1992,2009,556,,seed_region,S002,14,556,16,0.3329901915673922
+Pine Tucky Church,S002,14,10,60,1992,2001,556,,seed_region,S002,14,556,16,0.3329901915673922
+Mountain Home Church,S002,14,9,65,1992,2000,556,,seed_region,S002,14,556,16,0.3329901915673922
+Marion County Court House Singing,S002,14,8,61,1993,2000,556,,seed_region,S002,14,556,16,0.3329901915673922
+The Log Cabin Sacred Harp Singing,S002,14,7,66,1992,1998,556,,seed_region,S002,14,556,16,0.3329901915673922
+Macedonia Baptist Church,S002,14,7,66,1993,1999,556,,seed_region,S002,14,556,16,0.3329901915673922
+United Kingdom Sacred Harp Convention,S003,18,29,458,1996,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Oxford Sacred Harp Singing Day,S003,18,20,119,2000,2019,805,,seed_region,S003,13,708,13,0.37341552349614876
+London Singing,S003,18,16,220,2008,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Gwehelog Singing,S003,18,14,112,2009,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Lewes Sacred Harp Singing Day,S003,18,14,89,2011,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Cork All-Day Singing,S003,18,13,138,2011,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Thanksgiving Sacred Harp Singing,S003,18,13,103,2011,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Ireland Sacred Harp Singing Convention,S003,18,11,412,2011,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Sussex Shape Note Singing,S003,18,10,45,2011,2022,805,,seed_region,S003,13,708,13,0.37341552349614876
+Bristol Singing,S003,18,9,153,2014,2024,805,,seed_region,S003,13,708,13,0.37341552349614876
+Winchester Singing,S003,18,8,87,2018,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Brighton Sacred Harp Singing Day,S003,18,7,106,2016,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Oxford Singing,S003,18,5,61,2020,2025,805,,seed_region,S003,13,708,13,0.37341552349614876
+Germany Sacred Harp Convention,S003,18,10,229,2014,2025,805,0.33359962323675696,small_region_best_match,S032,3,338,2,0.26179885564581346
+Poland Sacred Harp Singing Convention,S003,18,8,184,2009,2018,805,0.33359962323675696,small_region_best_match,S032,3,338,2,0.26179885564581346
+Oslo Sacred Harp Singing,S003,18,7,92,2015,2025,805,0.33359962323675696,small_region_best_match,S032,3,338,2,0.26179885564581346
+Olney Sacred Harp Singing,S003,18,5,59,2007,2025,805,0.15027446987501422,small_region_best_match,S109,1,59,0,
+Paris Sacred Harp Singing,S003,18,5,70,2016,2023,805,0.17697257218633625,small_region_best_match,S111,1,70,0,
+Henagar-Union Convention,S004,17,33,1046,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Ivey Memorial Singing,S004,17,33,460,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+The United Sacred Harp Musical Association,S004,17,32,1184,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Alabama Sacred Harp Musical Association,S004,17,32,769,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Lookout Mountain Convention,S004,17,32,687,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Lacy Memorial,S004,17,32,424,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Independence Day Singing,S004,17,31,644,1992,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Liberty Decoration Day Singing,S004,17,30,374,1995,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Pine Grove Singing,S004,17,27,252,1998,2025,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Camp Fasola Singing School,S004,17,11,424,2008,2018,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Camp Fasola,S004,17,7,359,2003,2023,2733,,seed_region,S004,11,2141,11,0.3244431518359043
+Hopewell Homecoming,S004,17,32,469,1992,2025,2733,0.32667066399105765,small_region_best_match,S029,3,796,2,0.26996256439063787
+"Alexander, Hullett, Lowe, Brothers, Hyatt, Putman, and Wootten Memorial",S004,17,31,271,1992,2025,2733,0.32667066399105765,small_region_best_match,S029,3,796,2,0.26996256439063787
+Aldridge Memorial,S004,17,28,441,1992,2019,2733,0.32667066399105765,small_region_best_match,S029,3,796,2,0.26996256439063787
+Camp Fasola - Adult Emphasis,S004,17,12,349,2008,2019,2733,0.17611552178861234,small_region_best_match,S063,1,349,0,
+National Sacred Harp Singing Convention,S004,17,27,852,1995,2023,2733,0.27009146002514633,small_region_best_match,S099,1,852,0,
+Young People's Convention,S004,17,30,942,1993,2025,2733,0.2552072442084312,small_region_best_match,S125,1,942,0,
+East Midlands Sacred Harp Convention,S005,11,23,170,2002,2025,332,,seed_region,S005,11,332,12,0.3882263958553051
+South Yorkshire Singing,S005,11,19,145,2008,2025,332,,seed_region,S005,11,332,12,0.3882263958553051
+New Year's Day Singing,S005,11,19,101,2006,2025,332,,seed_region,S005,11,332,12,0.3882263958553051
+Stapleford Sacred Harp Singing,S005,11,18,95,2004,2025,332,,seed_region,S005,11,332,12,0.3882263958553051
+West Yorkshire Sacred Harp Day,S005,11,17,124,2004,2023,332,,seed_region,S005,11,332,12,0.3882263958553051
+Scotland Singing,S005,11,11,99,2013,2025,332,,seed_region,S005,11,332,12,0.3882263958553051
+Newcastle Upon Tyne Sacred Harp Singing,S005,11,11,92,2006,2019,332,,seed_region,S005,11,332,12,0.3882263958553051
+Goodshaw Sacred Harp Day,S005,11,9,69,2010,2019,332,,seed_region,S005,11,332,12,0.3882263958553051
+Sheffield Sacred Harp Singing Day,S005,11,8,88,2009,2018,332,,seed_region,S005,11,332,12,0.3882263958553051
+Oldham Sacred Harp Singing Day,S005,11,8,43,2009,2016,332,,seed_region,S005,11,332,12,0.3882263958553051
+Holmfirth Sacred Harp Singing,S005,11,6,43,2008,2016,332,,seed_region,S005,11,332,12,0.3882263958553051
+Labor Day Singing,S006,13,34,285,1992,2025,620,,seed_region,S006,9,516,10,0.33698902486830423
+Cane Creek Primitive Baptist Church,S006,13,34,157,1992,2025,620,,seed_region,S006,9,516,10,0.33698902486830423
+Edwardsville Church,S006,13,34,133,1992,2025,620,,seed_region,S006,9,516,10,0.33698902486830423
+Old Harmony Primitive Baptist Church,S006,13,34,112,1992,2025,620,,seed_region,S006,9,516,10,0.33698902486830423
+"Albright, Cates, Brown, and Sheppard Memorial Singing",S006,13,32,194,1992,2025,620,,seed_region,S006,9,516,10,0.33698902486830423
+"Alewine, Laminack, and Stephen McElroy Memorial Singing",S006,13,32,112,1992,2025,620,,seed_region,S006,9,516,10,0.33698902486830423
+Cleburne County Convention,S006,13,31,165,1992,2023,620,,seed_region,S006,9,516,10,0.33698902486830423
+Jack and Henry Kerr Memorial,S006,13,26,118,1995,2023,620,,seed_region,S006,9,516,10,0.33698902486830423
+McWhorter Memorial,S006,13,15,92,1995,2009,620,,seed_region,S006,9,516,10,0.33698902486830423
+Shiloh-Little Vine Singing,S006,13,29,121,1992,2020,620,0.2705959475851064,small_region_best_match,S056,2,177,1,0.2795581566455599
+Poplar Springs Church,S006,13,15,108,1992,2006,620,0.2705959475851064,small_region_best_match,S056,2,177,1,0.2795581566455599
+Crossroads Church Memorial Singing,S006,13,22,96,1995,2017,620,0.22992342274312993,small_region_best_match,S070,1,96,0,
+Elder and Mrs. Jason Davis Memorial,S006,13,26,130,1992,2017,620,0.18727554489001424,small_region_best_match,S075,1,130,0,
+All-Wisconsin Sacred Harp Singing,S007,14,33,266,1992,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Midwest Convention,S007,14,32,700,1992,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Lincoln's Birthday Singing,S007,14,32,165,1992,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Minnesota State Convention,S007,14,30,450,1994,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Michiana Singing,S007,14,30,378,1993,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Chicago Anniversary Singing,S007,14,30,313,1994,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+University of Chicago/Hyde Park Singing,S007,14,26,157,1998,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Kalamazoo Singing,S007,14,24,280,1999,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Fox Valley Folk Festival,S007,14,22,109,1993,2025,1233,,seed_region,S007,9,1085,10,0.38337250327804906
+Missouri State Convention,S007,14,29,359,1992,2025,1233,0.25418620435024797,small_region_best_match,S031,3,384,2,0.2715685134900696
+Columbia Singing,S007,14,26,125,1995,2019,1233,0.25418620435024797,small_region_best_match,S031,3,384,2,0.2715685134900696
+Northeast Missouri Memorial Day Singing,S007,14,10,66,2013,2024,1233,0.25418620435024797,small_region_best_match,S031,3,384,2,0.2715685134900696
+Fasola Omaha,S007,14,14,88,1998,2025,1233,0.20931713282825704,small_region_best_match,S077,1,88,0,
+Iowa All-Day Singing,S007,14,19,146,2002,2025,1233,0.18910389768607894,small_region_best_match,S083,1,146,0,
+New England Convention,S008,15,27,612,1992,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Western Massachusetts Sacred Harp Singing Convention,S008,15,24,662,1999,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Rhode Island Singing,S008,15,19,300,2004,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Pioneer Valley Singing,S008,15,17,311,2002,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+New York City Singing,S008,15,16,381,2007,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Berkshire Foothills Singing,S008,15,16,303,2007,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Cape Cod Singing,S008,15,13,161,2007,2020,1053,,seed_region,S008,9,987,9,0.41672811800599313
+New Haven Singing,S008,15,12,248,2011,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Boston Singing,S008,15,12,233,2010,2025,1053,,seed_region,S008,9,987,9,0.41672811800599313
+Vermont State Singing,S008,15,25,265,1997,2024,1053,0.4012249615296818,small_region_best_match,S036,3,349,2,0.29328191266951975
+Quebec Convention,S008,15,19,150,1998,2019,1053,0.4012249615296818,small_region_best_match,S036,3,349,2,0.29328191266951975
+Montreal Singing,S008,15,7,123,2016,2025,1053,0.4012249615296818,small_region_best_match,S036,3,349,2,0.29328191266951975
+Maine Singing,S008,15,20,262,2004,2025,1053,0.30809121956641333,small_region_best_match,S050,2,289,1,0.3073537719889881
+Shaker Meetinghouse and Francis Bliss Memorial Singing,S008,15,12,118,2010,2025,1053,0.30809121956641333,small_region_best_match,S050,2,289,1,0.3073537719889881
+Jeremiah Ingalls Singing,S008,15,10,115,2004,2025,1053,0.21844165804228377,small_region_best_match,S085,1,115,0,
+Potomac River Convention,S009,9,32,463,1992,2025,892,,seed_region,S009,9,892,10,0.3115468596722398
+James River Convention,S009,9,32,215,1992,2025,892,,seed_region,S009,9,892,10,0.3115468596722398
+New York State Convention,S009,9,27,320,1992,2025,892,,seed_region,S009,9,892,10,0.3115468596722398
+Northern Shenandoah Valley Singing,S009,9,24,301,1994,2019,892,,seed_region,S009,9,892,10,0.3115468596722398
+New York State Regional Singing - June,S009,9,24,221,1996,2023,892,,seed_region,S009,9,892,10,0.3115468596722398
+Garden State Singing Convention,S009,9,23,256,1993,2018,892,,seed_region,S009,9,892,10,0.3115468596722398
+New York State Regional Singing - April,S009,9,21,93,1998,2025,892,,seed_region,S009,9,892,10,0.3115468596722398
+New York State Regional Singing - February,S009,9,19,90,1997,2015,892,,seed_region,S009,9,892,10,0.3115468596722398
+Rivanna River Singing,S009,9,14,100,2003,2018,892,,seed_region,S009,9,892,10,0.3115468596722398
+Pacific Northwest Convention - Washington,S010,8,25,348,1997,2025,553,,seed_region,S010,8,553,10,0.39674121078087954
+Pacific Northwest Convention - Oregon,S010,8,21,357,1997,2025,553,,seed_region,S010,8,553,10,0.39674121078087954
+Eugene Singing,S010,8,21,121,1998,2019,553,,seed_region,S010,8,553,10,0.39674121078087954
+Portland Sacred Harp Singing,S010,8,17,279,2007,2025,553,,seed_region,S010,8,553,10,0.39674121078087954
+Cape Meares Singing,S010,8,15,140,2010,2025,553,,seed_region,S010,8,553,10,0.39674121078087954
+Olympia Sacred Harp Singing,S010,8,13,121,2010,2025,553,,seed_region,S010,8,553,10,0.39674121078087954
+Bainbridge Island Sacred Harp Singing,S010,8,6,93,2017,2024,553,,seed_region,S010,8,553,10,0.39674121078087954
+Mt. Adams Singing,S010,8,5,65,2014,2018,553,,seed_region,S010,8,553,10,0.39674121078087954
+All-California Sacred Harp Singing Convention,S011,12,33,542,1993,2025,777,,seed_region,S011,7,590,7,0.3557683489438394
+Golden Gate Singing,S011,12,19,232,2005,2025,777,,seed_region,S011,7,590,7,0.3557683489438394
+Palo Alto Singing,S011,12,11,92,2012,2023,777,,seed_region,S011,7,590,7,0.3557683489438394
+Helwig-Coghlan Memorial Sacred Harp Singing,S011,12,8,104,2016,2025,777,,seed_region,S011,7,590,7,0.3557683489438394
+Dominic Ciavonne Ziegler Memorial Singing,S011,12,8,71,2013,2020,777,,seed_region,S011,7,590,7,0.3557683489438394
+Santa Cruz Singing,S011,12,6,55,2014,2025,777,,seed_region,S011,7,590,7,0.3557683489438394
+Old Felta Schoolhouse Singing,S011,12,5,71,2015,2019,777,,seed_region,S011,7,590,7,0.3557683489438394
+Los Angeles Regional Singing,S011,12,23,132,1995,2017,777,0.21043994887805206,small_region_best_match,S035,3,170,3,0.4054447426087438
+Lunsford and Jolly Memorial Singing,S011,12,22,120,1997,2019,777,0.21043994887805206,small_region_best_match,S035,3,170,3,0.4054447426087438
+Santa Barbara Regional Singing,S011,12,9,55,1997,2006,777,0.21043994887805206,small_region_best_match,S035,3,170,3,0.4054447426087438
+Rocky Mountain Sacred Harp Singing Convention,S011,12,24,280,1992,2018,777,0.19588139457216097,small_region_best_match,S117,1,280,0,
+Tucson Singing,S011,12,14,104,2007,2024,777,0.18283056397544897,small_region_best_match,S123,1,104,0,
+Shady Grove (Keeton Cemetery),S012,15,33,219,1992,2025,567,,seed_region,S012,7,435,7,0.3468831293204277
+Friendship Primitive Baptist Church - April,S012,15,32,147,1992,2025,567,,seed_region,S012,7,435,7,0.3468831293204277
+Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,S012,15,30,188,1992,2023,567,,seed_region,S012,7,435,7,0.3468831293204277
+Belton and Emma Beasley and Phillip Lee III Memorial Singing,S012,15,29,174,1993,2023,567,,seed_region,S012,7,435,7,0.3468831293204277
+Old Flatwoods Primitive Baptist Church,S012,15,22,135,1992,2014,567,,seed_region,S012,7,435,7,0.3468831293204277
+Harper Memorial Singing,S012,15,14,111,1993,2008,567,,seed_region,S012,7,435,7,0.3468831293204277
+Joseph Jackson Beasley Memorial,S012,15,11,107,1994,2025,567,,seed_region,S012,7,435,7,0.3468831293204277
+"Martha Harper Nix, Lewis Keeton, and Lavada McGough Gilmore Memorial",S012,15,18,123,1992,2010,567,0.33844681582350344,small_region_best_match,S045,2,165,1,0.45132287773325497
+"Dutton, Green, and Jackson Memorial",S012,15,17,119,1992,2008,567,0.33844681582350344,small_region_best_match,S045,2,165,1,0.45132287773325497
+Friendship Primitive Baptist Church - January,S012,15,6,56,1998,2003,567,0.16495767356959132,small_region_best_match,S048,2,77,1,0.25691234517751904
+Friendship Primitive Baptist Church - August,S012,15,5,42,2000,2004,567,0.16495767356959132,small_region_best_match,S048,2,77,1,0.25691234517751904
+Old Enon Church,S012,15,19,129,1992,2013,567,0.31266040619045166,small_region_best_match,S054,2,220,1,0.2787692797112141
+Tom Harper and Ganus Wakefield Memorial,S012,15,17,157,1992,2008,567,0.31266040619045166,small_region_best_match,S054,2,220,1,0.2787692797112141
+Sullins School House,S012,15,9,52,1992,2000,567,0.1951711054458116,small_region_best_match,S055,2,99,1,0.23439383078691678
+Old Union Baptist Church,S012,15,5,75,1992,1997,567,0.1951711054458116,small_region_best_match,S055,2,99,1,0.23439383078691678
+Cotaco Convention,S013,14,33,231,1992,2025,846,,seed_region,S013,7,504,8,0.29900296835728973
+Gum Pond Decoration Day Singing,S013,14,29,193,1992,2020,846,,seed_region,S013,7,504,8,0.29900296835728973
+Gum Pond Primitive Baptist Church,S013,14,28,184,1992,2019,846,,seed_region,S013,7,504,8,0.29900296835728973
+Sharon Jordan Leach Memorial Singing,S013,14,28,175,1992,2019,846,,seed_region,S013,7,504,8,0.29900296835728973
+"Putnam, Light, and King Memorial Singing",S013,14,28,117,1995,2025,846,,seed_region,S013,7,504,8,0.29900296835728973
+Mt. Oak Methodist Church,S013,14,15,64,1993,2007,846,,seed_region,S013,7,504,8,0.29900296835728973
+Mount Vernon Primitive Baptist Church,S013,14,12,60,1992,2003,846,,seed_region,S013,7,504,8,0.29900296835728973
+Mattox Memorial Singing,S013,14,14,51,1992,2007,846,0.1516502124274473,small_region_best_match,S043,2,60,1,0.2729636443616803
+Church Music Heritage and Fall Festival,S013,14,7,25,2005,2011,846,0.1516502124274473,small_region_best_match,S043,2,60,1,0.2729636443616803
+Harpeth Valley - Priestley Miller Memorial Singing,S013,14,31,127,1993,2025,846,0.15803426440975035,small_region_best_match,S049,2,169,1,0.40617157064143955
+Immanuel Baptist Church,S013,14,28,110,1992,2022,846,0.15803426440975035,small_region_best_match,S049,2,169,1,0.40617157064143955
+Huntsville Sacred Harp Singing,S013,14,31,389,1992,2025,846,0.22488160912686322,small_region_best_match,S082,1,389,0,
+Tennessee River Convention,S013,14,6,38,1992,1997,846,0.1542918669395677,small_region_best_match,S121,1,38,0,
+Tennessee State Sacred Harp Singing,S013,14,16,134,2008,2025,846,0.2136391348229443,small_region_best_match,S122,1,134,0,
+Kentucky State Sacred Harp Singing,S014,10,33,127,1992,2025,581,,seed_region,S014,6,437,5,0.2865134954564966
+Ohio State Convention,S014,10,31,353,1993,2025,581,,seed_region,S014,6,437,5,0.2865134954564966
+Cincinnati New Year's Singing,S014,10,28,134,1994,2025,581,,seed_region,S014,6,437,5,0.2865134954564966
+Yellow Springs,S014,10,17,87,1995,2003,581,,seed_region,S014,6,437,5,0.2865134954564966
+Oberlin Sacred Harp Singing,S014,10,10,56,1998,2007,581,,seed_region,S014,6,437,5,0.2865134954564966
+Ebenezer Mennonite Old Schoolhouse Singing,S014,10,5,39,1995,2002,581,,seed_region,S014,6,437,5,0.2865134954564966
+Mid-Michigan Singing,S014,10,16,76,2009,2025,581,0.18762168645334312,small_region_best_match,S051,2,158,1,0.2392410842093053
+Pauline Creel Childers Memorial Singing,S014,10,10,122,2001,2010,581,0.18762168645334312,small_region_best_match,S051,2,158,1,0.2392410842093053
+Central Ontario All-Day Singing,S014,10,22,151,2004,2025,581,0.16145282592607135,small_region_best_match,S064,1,151,0,
+John and Loraine Bayer Memorial Singing,S014,10,7,97,2017,2025,581,0.19211024499590318,small_region_best_match,S087,1,97,0,
+H. R. Avery Memorial Singing,S015,8,25,95,1997,2025,380,,seed_region,S015,6,171,8,0.406500229019826
+Mt. Zion Homecoming Singing,S015,8,21,49,2001,2023,380,,seed_region,S015,6,171,8,0.406500229019826
+Smyrna Sacred Harp Singing,S015,8,19,70,2002,2025,380,,seed_region,S015,6,171,8,0.406500229019826
+Rocky Mount Primitive Baptist Church Homecoming,S015,8,18,69,1999,2025,380,,seed_region,S015,6,171,8,0.406500229019826
+"Futral, Nelson, and Henry Memorial Singing",S015,8,17,65,2002,2018,380,,seed_region,S015,6,171,8,0.406500229019826
+Hillabee Sacred Harp Convention,S015,8,17,59,1999,2021,380,,seed_region,S015,6,171,8,0.406500229019826
+Auburn Sacred Harp Singing,S015,8,18,202,2004,2022,380,0.17575380600573168,small_region_best_match,S060,1,202,0,
+Boiling Springs Convention,S015,8,32,155,1992,2023,380,0.2795982599527089,small_region_best_match,S062,1,155,0,
+Alvis Brothers - B. I. Wood Memorial Singing,S016,5,19,103,1992,2010,320,,seed_region,S016,5,320,6,0.25520839235980824
+Mount Moriah Primitive Baptist Church,S016,5,18,96,1992,2004,320,,seed_region,S016,5,320,6,0.25520839235980824
+Warrior River - Clear Creek Convention,S016,5,12,214,1992,2003,320,,seed_region,S016,5,320,6,0.25520839235980824
+Gilliland and Brothers Memorial Singing,S016,5,8,116,1992,2001,320,,seed_region,S016,5,320,6,0.25520839235980824
+Liberty Hill Baptist Church,S016,5,6,41,1992,1997,320,,seed_region,S016,5,320,6,0.25520839235980824
+State Line Church,S017,8,31,414,1992,2025,969,,seed_region,S017,5,875,4,0.2863348463596755
+Antioch Baptist Church,S017,8,29,458,1993,2025,969,,seed_region,S017,5,875,4,0.2863348463596755
+Cross Roads Church,S017,8,29,269,1992,2017,969,,seed_region,S017,5,875,4,0.2863348463596755
+"Elder Homer Benefield, Katherine Benefield, and Mildred Johnson Memorial",S017,8,28,171,1995,2024,969,,seed_region,S017,5,875,4,0.2863348463596755
+Wootten Family New Year's Eve Singing,S017,8,27,300,1996,2025,969,,seed_region,S017,5,875,4,0.2863348463596755
+Chestnut Grove Church,S017,8,22,129,1992,2013,969,0.18671424353971694,small_region_best_match,S042,2,166,1,0.28433752261974427
+Shady Grove Decoration Day Singing,S017,8,7,86,2004,2013,969,0.18671424353971694,small_region_best_match,S042,2,166,1,0.28433752261974427
+Macedonia Primitive Baptist Church,S017,8,30,188,1992,2025,969,0.22653473960644502,small_region_best_match,S091,1,188,0,
+Oxford City Hall,S018,7,31,198,1992,2025,373,,seed_region,S018,5,262,6,0.2840278923346348
+Taylor Singing,S018,7,17,62,2006,2025,373,,seed_region,S018,5,262,6,0.2840278923346348
+Bethel Primitive Baptist Church - Mississippi,S018,7,16,82,1992,2019,373,,seed_region,S018,5,262,6,0.2840278923346348
+Calhoun County Sacred Harp Musical Association,S018,7,14,61,2009,2025,373,,seed_region,S018,5,262,6,0.2840278923346348
+Hill Roane Memorial,S018,7,11,33,2006,2019,373,,seed_region,S018,5,262,6,0.2840278923346348
+John N. Merritt Memorial Singing Convention,S018,7,13,104,2007,2019,373,0.16429590582541312,small_region_best_match,S086,1,104,0,
+Mississippi State Convention,S018,7,29,149,1995,2025,373,0.2457154407010783,small_region_best_match,S095,1,149,0,
+Illinois State Sacred Harp Convention,S019,5,28,194,1995,2025,311,,seed_region,S019,5,311,6,0.3224387207653476
+Higher Ground Singing,S019,5,26,156,1996,2025,311,,seed_region,S019,5,311,6,0.3224387207653476
+Bloomington Singing,S019,5,17,109,2004,2023,311,,seed_region,S019,5,311,6,0.3224387207653476
+Eldridge Schoolhouse Singing,S019,5,16,90,2007,2025,311,,seed_region,S019,5,311,6,0.3224387207653476
+Indiana State Fair Singing,S019,5,7,40,2015,2025,311,,seed_region,S019,5,311,6,0.3224387207653476
+Hopewell Primitive Baptist Church,S020,7,34,234,1992,2025,664,,seed_region,S020,5,578,4,0.3241191202654474
+Rogers Memorial Singing,S020,7,33,265,1992,2025,664,,seed_region,S020,5,578,4,0.3241191202654474
+Burnham and Brown Memorial,S020,7,32,278,1992,2025,664,,seed_region,S020,5,578,4,0.3241191202654474
+Calhoun County Convention,S020,7,32,175,1992,2023,664,,seed_region,S020,5,578,4,0.3241191202654474
+Oak Hill Baptist Church,S020,7,32,152,1992,2023,664,,seed_region,S020,5,578,4,0.3241191202654474
+Etowah County Sacred Harp Singing,S020,7,12,124,1992,2003,664,0.18244247096867663,small_region_best_match,S076,1,124,0,
+Zion Hill Primitive Baptist Church,S020,7,17,141,1992,2013,664,0.17784023999655454,small_region_best_match,S126,1,141,0,
+Maidencreek All Day Singing,S021,5,27,375,1996,2025,666,,seed_region,S021,5,666,6,0.4225509571080284
+Exeter Singing,S021,5,24,306,2001,2025,666,,seed_region,S021,5,666,6,0.4225509571080284
+Keystone Sacred Harp Convention,S021,5,23,513,1999,2025,666,,seed_region,S021,5,666,6,0.4225509571080284
+Oliver Kindig-Stokes Memorial Singing,S021,5,14,193,2009,2025,666,,seed_region,S021,5,666,6,0.4225509571080284
+Central Pennsylvania Sacred Harp All-Day Singing,S021,5,7,164,2010,2016,666,,seed_region,S021,5,666,6,0.4225509571080284
+Mulberry River Convention,S022,12,32,201,1992,2025,592,,seed_region,S022,5,382,6,0.33170606759173
+Sanders Memorial,S022,12,30,155,1993,2025,592,,seed_region,S022,5,382,6,0.33170606759173
+"Parker, Hollis, and Putman Memorial",S022,12,29,183,1992,2025,592,,seed_region,S022,5,382,6,0.33170606759173
+Clear Creek Convention West,S022,12,27,141,1992,2019,592,,seed_region,S022,5,382,6,0.33170606759173
+Moon and Guthrie Memorial,S022,12,19,148,1992,2011,592,,seed_region,S022,5,382,6,0.33170606759173
+Lillian Calvert and Irene Woodley Memorial,S022,12,28,148,1993,2023,592,0.28895583261218344,small_region_best_match,S034,3,230,2,0.3365960676378108
+"Stephenson, Wall, and Hocutt Memorial",S022,12,27,113,1992,2024,592,0.28895583261218344,small_region_best_match,S034,3,230,2,0.3365960676378108
+"W.A. Parker, Mr. and Mrs. Joe Myers, and Elsie Beasley Memorial",S022,12,19,113,1992,2013,592,0.28895583261218344,small_region_best_match,S034,3,230,2,0.3365960676378108
+Lamar and Pickens Counties Convention,S022,12,31,143,1992,2025,592,0.24221782264406497,small_region_best_match,S046,2,185,1,0.26190797143136996
+Elmore Center Singing,S022,12,28,92,1993,2020,592,0.24221782264406497,small_region_best_match,S046,2,185,1,0.26190797143136996
+Alabama Collegiate Singing,S022,12,22,161,1999,2020,592,0.18534107871380132,small_region_best_match,S057,1,161,0,
+J.D. Starnes Memorial,S022,12,23,94,1992,2015,592,0.2022130355640882,small_region_best_match,S084,1,94,0,
+Pioneer Day Singing,S023,5,19,60,2006,2025,158,,seed_region,S023,5,158,5,0.3225258343696179
+South Carolina State Singing in Memory of William Walker,S023,5,16,59,2008,2025,158,,seed_region,S023,5,158,5,0.3225258343696179
+Swannanoa Gathering Shape Note Singing,S023,5,14,78,2007,2023,158,,seed_region,S023,5,158,5,0.3225258343696179
+Mountain Heritage Day Singing,S023,5,11,55,2008,2018,158,,seed_region,S023,5,158,5,0.3225258343696179
+Furman University Singing,S023,5,8,36,2012,2019,158,,seed_region,S023,5,158,5,0.3225258343696179
+Rock Creek-Mountain Home,S024,11,16,97,1992,2007,363,,seed_region,S024,5,161,6,0.3542901677698776
+Ryan Creek Convention,S024,11,13,72,1995,2007,363,,seed_region,S024,5,161,6,0.3542901677698776
+Jones Chapel Sacred Harp Memorial Singing - November,S024,11,8,76,1992,1999,363,,seed_region,S024,5,161,6,0.3542901677698776
+Jones Chapel Sacred Harp Memorial Singing - July,S024,11,8,61,1993,1999,363,,seed_region,S024,5,161,6,0.3542901677698776
+Liberty Church - Helicon,S024,11,5,40,1993,1996,363,,seed_region,S024,5,161,6,0.3542901677698776
+New Hope Church,S024,11,33,132,1993,2025,363,0.17116505741097413,small_region_best_match,S037,3,182,3,0.3010471773975987
+Vinemont Singing,S024,11,12,83,2005,2024,363,0.17116505741097413,small_region_best_match,S037,3,182,3,0.3010471773975987
+Providence Singing,S024,11,9,63,2010,2025,363,0.17116505741097413,small_region_best_match,S037,3,182,3,0.3010471773975987
+Doss Memorial Singing,S024,11,10,77,1992,2002,363,0.15799339416607247,small_region_best_match,S072,1,77,0,
+New Canaan Baptist Church,S024,11,8,50,1992,1999,363,0.16804660140150884,small_region_best_match,S100,1,50,0,
+Parker Family and Sherry Guthery Memorial Singing,S024,11,14,71,2000,2014,363,0.20181697654113936,small_region_best_match,S112,1,71,0,
+South Georgia Sacred Harp Singing Convention,S025,6,32,121,1993,2025,209,,seed_region,S025,4,198,4,0.28928261372489317
+Middle Georgia Sacred Harp Singing,S025,6,20,85,2004,2025,209,,seed_region,S025,4,198,4,0.28928261372489317
+Andrew's Chapel Singing,S025,6,18,72,2008,2025,209,,seed_region,S025,4,198,4,0.28928261372489317
+Emmaus Primitive Baptist Church Singing - Thomaston,S025,6,9,48,2012,2020,209,,seed_region,S025,4,198,4,0.28928261372489317
+Mount Pisgah Primitive Baptist Church,S025,6,18,37,2010,2025,209,0.16753726790260304,small_region_best_match,S041,2,43,1,0.48824477873121286
+Cedar Creek Singing,S025,6,8,25,2012,2019,209,0.16753726790260304,small_region_best_match,S041,2,43,1,0.48824477873121286
+Texas State Convention,S026,4,29,282,1993,2025,360,,seed_region,S026,4,360,6,0.3560459226646336
+Dallas County Singing,S026,4,25,163,1999,2025,360,,seed_region,S026,4,360,6,0.3560459226646336
+William J. Reynolds Sacred Harp Singing,S026,4,24,145,1994,2025,360,,seed_region,S026,4,360,6,0.3560459226646336
+Baylor University Sacred Harp Singing,S026,4,19,113,2003,2025,360,,seed_region,S026,4,360,6,0.3560459226646336
+Reid Memorial,S027,8,34,346,1992,2025,1071,,seed_region,S027,4,608,4,0.33938832927256124
+County Line Church,S027,8,33,307,1992,2025,1071,,seed_region,S027,4,608,4,0.33938832927256124
+"Chafin, Harbinson, and Hollis Memorial",S027,8,33,256,1992,2025,1071,,seed_region,S027,4,608,4,0.33938832927256124
+Walker County Convention,S027,8,33,250,1992,2025,1071,,seed_region,S027,4,608,4,0.33938832927256124
+"Moore, Graves, and Calvert Memorial",S027,8,33,267,1992,2025,1071,0.3275217523936141,small_region_best_match,S044,2,604,1,0.23454683164446957
+Cullman County Sacred Harp Convention,S027,8,32,493,1992,2025,1071,0.3275217523936141,small_region_best_match,S044,2,604,1,0.23454683164446957
+Mt. Lebanon Church,S027,8,32,375,1992,2024,1071,0.2703974614124314,small_region_best_match,S047,2,513,1,0.37416461874465745
+Fayette County Convention,S027,8,31,340,1993,2025,1071,0.2703974614124314,small_region_best_match,S047,2,513,1,0.37416461874465745
+Seed and Feed Sacred Harp Singing,S028,5,31,166,1992,2025,330,,seed_region,S028,4,310,4,0.2905215379898645
+Jack Smith Memorial Singing,S028,5,19,120,2001,2019,330,,seed_region,S028,4,310,4,0.2905215379898645
+Emory Sacred Harp Singing,S028,5,18,140,2005,2025,330,,seed_region,S028,4,310,4,0.2905215379898645
+Spivey Hall Singing,S028,5,17,108,2003,2019,330,,seed_region,S028,4,310,4,0.2905215379898645
+Atlanta Sacred Harp Singing,S028,5,6,81,2018,2025,330,0.165443925290979,small_region_best_match,S059,1,81,0,
+Victoria Sacred Harp Singing,S030,3,9,28,2013,2025,48,,seed_region,S030,3,48,3,0.4691186543444951
+Australian Sacred Harp Convention,S030,3,8,44,2016,2025,48,,seed_region,S030,3,48,3,0.4691186543444951
+Sydney Singing,S030,3,6,23,2016,2025,48,,seed_region,S030,3,48,3,0.4691186543444951
+Louisiana State Sacred Harp Convention,S033,4,12,31,1992,2004,36,,seed_region,S033,3,36,2,0.3239166275646743
+Harry Eskew Sacred Harp Singing,S033,4,6,14,2001,2007,36,,seed_region,S033,3,36,2,0.3239166275646743
+New Orleans Baptist Theological Seminary Spring Singing,S033,4,6,14,1994,2001,36,,seed_region,S033,3,36,2,0.3239166275646743
+New Orleans Baptist Theological Seminary Fall Singing,S033,4,5,9,1993,2000,36,0.24491959610225966,small_region_best_match,S101,1,9,0,
+Savannah Sacred Harp Singing,S038,3,10,44,2005,2015,111,,seed_region,S038,2,56,1,0.28969492240014516
+Augusta Sacred Harp Singing,S038,3,8,28,2011,2018,111,,seed_region,S038,2,56,1,0.28969492240014516
+Piccolo Spoleto Sacred Harp Singing,S038,3,10,79,2010,2019,111,0.23132853776745557,small_region_best_match,S113,1,79,0,
+Barrett Patton's Christmas Singing,S039,2,8,65,2014,2023,103,,seed_region,S039,2,103,1,0.24936468927275698
+St. Joseph's On the Mountain Episcopal Church,S039,2,6,64,2013,2018,103,,seed_region,S039,2,103,1,0.24936468927275698
+Capitol City Shape Note Singing,S040,2,12,85,2010,2025,97,,seed_region,S040,2,97,1,0.2815122393853527
+Tri-County Sacred Harp Singing,S040,2,7,40,2013,2019,97,,seed_region,S040,2,97,1,0.2815122393853527
+"Northwest Arkansas Shiloh Singing, Spring Session",S052,3,15,58,2007,2024,80,,seed_region,S052,2,70,1,0.4192014531307274
+"Northwest Arkansas Shiloh Singing, Fall Session",S052,3,15,39,2008,2025,80,,seed_region,S052,2,70,1,0.4192014531307274
+Shiloh Sacred Harp Singing,S052,3,6,25,2000,2005,80,0.17233657117103712,small_region_best_match,S120,1,25,0,
+Northwest Pennsylvania Singing,S053,2,12,69,2008,2019,95,,seed_region,S053,2,95,1,0.3449849789338968
+Pittsburgh Regional Sacred Harp Singing,S053,2,11,59,2010,2020,95,,seed_region,S053,2,95,1,0.3449849789338968
+Alaska Sacred Harp Singing Convention,S058,1,12,64,2008,2019,64,,seed_region,S058,1,64,0,
+Chattanooga Area Sacred Harp Singing,S065,1,9,57,1997,2005,57,,seed_region,S065,1,57,0,
+Conference for the Society of American Music,S066,1,11,91,2014,2025,91,,seed_region,S066,1,91,0,
+Cork Quaker House Singing,S067,1,14,22,2022,2024,22,,seed_region,S067,1,22,0,
+Cornucopia All-Night Singing,S068,1,5,31,2012,2016,31,,seed_region,S068,1,31,0,
+Coweta County Courthouse Singing,S069,1,6,32,2014,2019,32,,seed_region,S069,1,32,0,
+Darien Primitive Baptist Church Homecoming and Singing,S071,1,7,36,2006,2014,36,,seed_region,S071,1,36,0,
+Duke Memorial Singing,S073,1,8,50,1993,2001,50,,seed_region,S073,1,50,0,
+Duluth Singing,S074,1,6,67,2011,2025,67,,seed_region,S074,1,67,0,
+Feast and FaSoLa,S078,1,10,37,2010,2020,37,,seed_region,S078,1,37,0,
+Houston Sacred Harp Singing Convention,S081,1,13,57,2005,2019,57,,seed_region,S081,1,57,0,
+Jordan's Chapel Methodist Church,S088,1,21,116,1992,2012,116,,seed_region,S088,1,116,0,
+Kitchens Memorial,S089,1,5,37,2012,2016,37,,seed_region,S089,1,37,0,
+Little Vine Primitive Baptist Church - Empire,S090,1,17,235,1992,2011,235,,seed_region,S090,1,235,0,
+Marian Bush Memorial Singing,S092,1,5,26,2018,2023,26,,seed_region,S092,1,26,0,
+Memphis Singing,S093,1,10,70,2011,2024,70,,seed_region,S093,1,70,0,
+Mississippi College,S094,1,5,24,1995,2000,24,,seed_region,S094,1,24,0,
+Haynes Creek Church Singing,S096,2,6,28,2010,2019,45,0.1517357248884023,small_region_best_match,S080,1,28,0,
+Mountain Park United Methodist Church,S096,2,6,24,1999,2004,45,,seed_region,S096,1,24,0,
+Mountain View Shape Note Gathering,S097,1,7,31,2006,2018,31,,seed_region,S097,1,31,0,
+Mt. Zion Primitive Baptist Church,S098,1,5,57,1992,2005,57,,seed_region,S098,1,57,0,
+New Providence Primitive Baptist Church,S102,1,18,42,2007,2025,42,,seed_region,S102,1,42,0,
+New Year's Eve Singing,S103,1,6,39,2007,2013,39,,seed_region,S103,1,39,0,
+Newton County Singing,S104,1,11,33,2002,2012,33,,seed_region,S104,1,33,0,
+North Carolina Sacred Harp Convention,S105,1,27,146,1993,2025,146,,seed_region,S105,1,146,0,
+Northern California Regional Sacred Harp Singing,S106,1,6,50,1997,2004,50,,seed_region,S106,1,50,0,
+Norumbega Harmony Singing,S107,1,6,37,2016,2024,37,,seed_region,S107,1,37,0,
+Old Songs Book Singing,S108,1,21,74,1993,2025,74,,seed_region,S108,1,74,0,
+Pacific Northwest Convention,S110,1,5,59,1992,1996,59,,seed_region,S110,1,59,0,
+Pikes Peak Sacred Harp Singing,S114,1,9,46,2006,2015,46,,seed_region,S114,1,46,0,
+Pratt-Woodard Memorial Singing,S115,1,6,31,2008,2013,31,,seed_region,S115,1,31,0,
+"Rocky Mountain Convention, Colorado Session",S116,1,5,127,2018,2025,127,,seed_region,S116,1,127,0,
+Sardis On the River,S119,1,7,45,2004,2010,45,,seed_region,S119,1,45,0,
+Velton Chafin Memorial Singing,S124,1,5,13,2020,2024,13,,seed_region,S124,1,13,0,
