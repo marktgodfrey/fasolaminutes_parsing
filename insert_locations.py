@@ -6,6 +6,11 @@ import csv
 # import googlemaps
 import util
 
+LOCATION_FILES = [
+    'Singings Locations Fuzzy - locations_for_export.csv',
+    'pre1995_locations.csv',
+]
+
 def delete_locations(conn):
     curs = conn.cursor()
     curs.execute("DELETE FROM locations")
@@ -13,11 +18,11 @@ def delete_locations(conn):
     conn.commit()
     curs.close()
 
-def insert_locations(conn):
-    f =  open('Singings Locations Fuzzy - locations_for_export.csv', 'r')
+def insert_locations_file(conn, path):
+    f = open(path, 'r')
     csvreader = csv.reader(f)
     curs = conn.cursor()
-    next(csvreader) #headers
+    next(csvreader)  # headers
     for row in csvreader:
         # multilocation_day_id,minutes_id,name,address,lat_long,url,notes,gps_lat,gps_long,address1,city,county,state_province,postal_code,country
         name = row[2]
@@ -63,8 +68,14 @@ def insert_locations(conn):
             curs.execute("SELECT id FROM locations WHERE gps_lat=? AND gps_long=?", [gps_lat,gps_long])
             location_row = curs.fetchone()
             if location_row is None:
-                curs.execute("INSERT INTO locations (name, url, notes, gps_lat, gps_long, address, city, county, state_province, postal_code, country) VALUES (?,?,?,?,?,?,?,?,?,?,?)", [name, url, notes, gps_lat, gps_long, address1, city, county, state_province, postal_code, country])
-                location_id = curs.lastrowid
+                curs.execute("SELECT id FROM locations WHERE name=?", [name])
+                location_row = curs.fetchone()
+                if location_row is None:
+                    curs.execute("INSERT INTO locations (name, url, notes, gps_lat, gps_long, address, city, county, state_province, postal_code, country) VALUES (?,?,?,?,?,?,?,?,?,?,?)", [name, url, notes, gps_lat, gps_long, address1, city, county, state_province, postal_code, country])
+                    location_id = curs.lastrowid
+                else:
+                    location_id = location_row[0]
+                    curs.execute("UPDATE locations SET url=?, notes=?, gps_lat=?, gps_long=?, address=?, city=?, county=?, state_province=?, postal_code=?, country=? WHERE id=?", [url, notes, gps_lat, gps_long, address1, city, county, state_province, postal_code, country, location_id])
             else:
                 location_id = location_row[0]
         else:
@@ -81,10 +92,20 @@ def insert_locations(conn):
 
         if location_id > 0:
             minutes_id = row[1]
-            curs.execute("INSERT INTO minutes_location_joins (minutes_id, location_id) VALUES (?,?)", [minutes_id, location_id])
+            curs.execute(
+                "SELECT id FROM minutes_location_joins WHERE minutes_id=? AND location_id=?",
+                [minutes_id, location_id],
+            )
+            if curs.fetchone() is None:
+                curs.execute("INSERT INTO minutes_location_joins (minutes_id, location_id) VALUES (?,?)", [minutes_id, location_id])
 
     conn.commit()
     curs.close()
+    f.close()
+
+def insert_locations(conn):
+    for path in LOCATION_FILES:
+        insert_locations_file(conn, path)
 
 # def find_counties(conn):
 #     gmaps = googlemaps.Client(key='')

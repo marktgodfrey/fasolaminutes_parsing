@@ -36,7 +36,7 @@ MONTH_PATTERN = (
 )
 FIRST_DATE_PATTERN = re.compile(
     r'(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[,]?\s*'
-    r'(' + MONTH_PATTERN + r')\s+(\d{1,2})',
+    r'(' + MONTH_PATTERN + r'),?\s+(\d{1,2})',
     re.IGNORECASE,
 )
 YEAR_PATTERN = re.compile(r'(\d{4})')
@@ -124,9 +124,44 @@ PRE1995_NON_DENSON_OVERRIDES = {
         'August 29, 30, 1992',
     ),
     (
+        'UNIVERSITY OF GEORGIA',
+        'Visitor Center Botonical Gardens, Athens, Georgia',
+        'February 22, 23, 1992',
+    ),
+    (
+        'SOUTHEAST TEXAS CONVENTION',
+        'Salem Lutheren Church, Brenham, Texas',
+        'October 24, 1992',
+    ),
+    (
+        'FOUR - NOTE SINGING',
+        'Marion, Kentucky',
+        'January 23, 1993',
+    ),
+    (
+        'BALDWIN COUNTY SACRED HARP SINGING CONVENTION',
+        'Bay Minette City Hall— Bay Minette Alabama',
+        'January 23 -24, 1993',
+    ),
+    (
+        'UNIVERSITY OF GEORGIA',
+        'Visitor Center Botonical Gardens, Athens, Gerogia',
+        'February 28, 1993',
+    ),
+    (
         'GARRISON MEMORIAL',
         'Oak Grove Primitive Baptist Church _ Alpharetta, Georgia',
         'March 21, 1993',
+    ),
+    (
+        'SOUTHEAST TEXAS SINGING',
+        'Salem Lutheran Church, Brenham, Texas',
+        'October 23, 1993',
+    ),
+    (
+        'EAST TEXAS SACRED HARP SINGING CONVENTION',
+        'Henderson, Texas',
+        'August 7 and 8, 1993',
     ),
     (
         'BALDWIN COUNTY Cooper Book SINGING CONVENTION',
@@ -134,9 +169,29 @@ PRE1995_NON_DENSON_OVERRIDES = {
         'January, 22-23, 1994',
     ),
     (
+        'UNIVERSITY OF GEORGIA',
+        'Visitor Center-Botanical Gardens, Athens Georgia',
+        'February 27, 1994',
+    ),
+    (
+        'EAST TEXAS SACRED HARP SINGING CONVENTION',
+        'Community Center Building - Henderson, Texas',
+        'August 13, 14, 1994',
+    ),
+    (
         'GARRISON MEMORIAL (COOPER BOOK)',
         "Oak Grove Primitive Baptist Church Alpharetta, Georgia, B'ham Road",
         'March 20, 1994',
+    ),
+    (
+        'SOUTHEAST TEXAS SINGING',
+        'Salem Lutheran Church, Brenham, Texas',
+        'October 22, 1994',
+    ),
+    (
+        'FLORIDA STATE CONVENTION',
+        'Holiday Inn, Panama City, Florida',
+        'December 3-4, 1994',
     ),
 }
 

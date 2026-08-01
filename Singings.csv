@@ -7293,450 +7293,456 @@ id,singing,location,date,corrected_singing,index,start,end,one-off,book,notes,so
 7248,OLD UNION BAPTIST CHURCH,"Five miles southwest of Winfield, Alabama","April 19, 1992",Old Union Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
 7249,FRIENDSHIP PRIMITIVE BATPSIT CHURCH,"Haleyville, Alabama","April 26, 1992",Friendship Primitive Baptist Church - April,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
 7250,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"April 27, 1992",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7251,EMMAUS PRIMITIVE BAPTIST CHURCH,"South of Carrollton, Georgia","May 3, 1992",Emmaus Baptist Church - Carrollton,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7252,SHADY GROVE ( KEETON CEMETERY),"Walker County, Alabama","May 3, 1992",Shady Grove (Keeton Cemetery),,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7253,HUNTSVILLE SACRED HARP SINGING,Burritt Museum,"May 9, 1992",Huntsville Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7254,CROSS ROADS BAPTIST CHURCH,"County Road 66 East Cleburne County, Alabama","May 10, 1992",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7255,OLD FLATWOODS PRIMITIVE BAPTIST CHURCH,"Nauvoo, Alabama","May 10, 1992",Old Flatwoods Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7256,HARMONY CHURCH,"Lawrenceburg, Tennessee","May 16, 1992",Mattox Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7257,KENTUCKY STATE SACRED HARP CONVENTION,"Berea, Kentucky","May 16, 1992",Kentucky State Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7258,CANE CREEK PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","May 17,1992",Cane Creek Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7259,NEW CANAAN BAPTIST CHURCH,"Walker County, Alabama","May 17, 1992",New Canaan Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7260,POPOLAR SPRINGS CHURCH,"North of Tallapossa, Georgia","May 17, 1992",Poplar Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.977
-7261,DOSS MEMORIAL SINGING,"Sardis Baptist Church - Morris, Alabama","May 23-24, 1992",Doss Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7262,GUM POND CHURCH,"Morgan County, Alabama","May 24, 1992",Gum Pond Decoration Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7263,MOUNT PISGAH (COOPER BOCK) SACRED HARP SINGING,"Chambers County, Alabama","May 23, 1992",Mount Pisgah Singing Society (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7264,SULLINS SCHOOL HOUSE,"Hamilton, Alabama","May 24, 1992",Sullins School House,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7265,"PARKER, HOLLIS AND PUTTMAN MEMORIAL","Liberty Church (McComrick ) Jefferson County, Alabama.","May 31, 1992","Parker, Hollis, and Putman Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.985
-7266,MIDWEST CONVENTION,"Evanston, Illinois","May 30, 1992",Midwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7267,HOLLY SPRING MEMORIAL,"Near Bremen, Georgia, 1 -20- 27S","June 6, 7, 1992",Holly Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7268,LIBERTY CHURCH,"Henagar, Alabama","June 7, 1992",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7269,PINE TUCKY CHURCH,"Winston County, Alabama","June 6, 1992",Pine Tucky Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7270,HOPEWELL HOMECOMING,"Oneonta, Alabama","June 12, 14, 1992",Hopewell Homecoming,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7271,ALPHARETTA MUNICIPAL BUILDING,"Alpharetta, Georgia","June 14, 1992",Alpharetta Municipal Building,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7272,MOUNT VERNON PRIMITIVE BAPTIST CHURCH,"Near Cullman, Alabama on Hwy. 69 East.","June 14, 1992",Mount Vernon Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7273,NEW HOPE PRIMITIVE BAPTIST CHURCH,"Near Villa Rica, Georgia","June 14, 1992",New Hope Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7274,PLEASANT HILL (JOHNSON SCHOOL HOUSE),"Aldridge Memorial - Fayette County, Alabama","June 14, 1992",Aldridge Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7275,"MOORE, GRAVES AND CALVERT MEMORIAL","Addington Chapel Methodist Church, Cullman County, Alabama","June 21, 1992","Moore, Graves, and Calvert Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7276,HOPEWELL PRIMITIVE BAPTIST CHURCH,"Near Ephesus, Georgia","June 21, 1992",Hopewell Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7277,KING SCHOOL HOUSE (MT. VERNON CHURCH),"Natural Bridge, Alabama","June 21, 1992",Clifford Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7278,LITTLE VINE FRIMITIVE BAPTIST CHURCH,"Empire, Alabama","June 21, 1992",Little Vine Primitive Baptist Church - Empire,,,,,,,minutes_pre95.db,add_new_row_from_database,0.886
-7279,ST. MICHAEL CHURCH,"Fruithurst, Alabama","June 21, 1992","Alewine, Laminack, and Stephen McElroy Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7280,THE BATTLES AND KEENER MEMORIAL,"Pleasant Valley Church. Gallant, Alabara","June 21, 1992",The Battles And Keener Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7281,SHADY GROVE CHURCH,"Winston County, Alabama","June 27, 18, 1992",Kermit Adams and Steve Adams Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7282,DeLONG MEMORIAL,"Ebenezer Primitive Baptist Church-Dunwoody, Georgia","June 28, 1992",DeLong-Roberts Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7283,INDIAN CREEK CHURCH,"North of Bowdon, Georgia Hwy 100","June 28, 1992",Indian Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7284,MT. LEBANON CHURCH,"Near Fayette, Alabama","June 28, 1992",Mt. Lebanon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7285,JONES CHAPEL SENIOR CITIZEN CENTER,"Gib Hale, Grady Chandler and Luther Parker Memorial","July 1, 1992",Jones Chapel Sacred Harp Memorial Singing - November,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7286,MUSCADINE METHODIST CHURCH,"Muscadine, Alsbama","July 4, 1992",Independence Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7287,HENAGAR UNION CONVENTION - LIBERTY CHURCH,"Henagar, Alabama","July 4, 5, 1992",Henagar-Union Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7288,CROSS ROADS BAPTIST CHURCH,"North of Tallapoosa, Georgia off Hwy 100","July 5, 1992",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7289,DUTTOM AND GREEN SINGING,"New Flatwoods Primitive Baptist Church, South of Nauvoo, Alabama","July 7, 1992","Dutton, Green, and Jackson Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7290,CULLMAN COUNTY SINGING CONVENTION,"Cullman County, Courthouse","July 11, 12, 1992",Cullman County Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7291,MT. ZION PRIMITIVE BAPTIST CHURCH,"HWY. 159 North of Gordo, Alabama","July 12, 1992",Mt. Zion Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7292,MICHIANA REGIONAL SACFRD HARP SINGING,"New Testament Baptist Church, Goshen, Indiana","Saturday July 11, 1992",Michiana Regional Sacfrd Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7293,NORTHMINSTER PRESBYTERIAN CHURCH,"Columbus, Ohio","Saturday, July 18, 1992",Northminster Presbyterian Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7294,WALKER COUNTY CONVENTION,"City Auditorium, Jasper, Alabama","July 18, 1992",Walker County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7295,"CHAFIN, HARBINSON AND HOLLIS MEMORIAL","New Prospect Church, Cullman County, Alabama","July 19, 1992","Chafin, Harbinson, and Hollis Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7296,CINCINNATI SACRED HARP SINGING,"Calvary Episcopal Church, Cincinnati, Ohio","July 25, 1992",Cincinnati Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7297,COTACO SACRED HARP CONVENTION,Gum Pond Primitive Baptist Church,"July 25, 1992",Cotaco Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7298,DORSEY CREEK CHURCH,"Bremen, Alabama on Hwy 69","July 26, 1992",Dorsey Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7299,MT. ZION MEMORIAL SINGING,"Mount Zion, Georgia","July 25, 26 1992",Mt. Zion Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7300,CHATTAHOCHEE CONVENTION,"Wilson's Chapel Church - Carrollton, Georqia","August 1-2, 1992",Chattahoochee Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.979
-7301,WARRIOR RIVER - CLEAR CREEK CONVENTION,"Pleasant Valley Church, Gallant, Alabama","August 1, 2, 1992",Warrior River - Clear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7302,LAMAR AND PICKENS COUNTY CONVENTION,ZION CHURCH,"AUGUST 9, 1992",Lamar and Pickens Counties Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7303,TENNESSEE RIVER CONVENTION,"Second Creek Church -Five Point, Tennessee","August 9, 1992",Tennessee River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7304,BOILING SPRINGS MUSICAL CONVENTION,"Ebenezer Methodist Church, Chambers County, Alabama","Saturday, August 15, 1992",Boiling Springs Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7305,CLEBURNE COUNTY CONVENTION,Mars Hill Primitive Baptist Church,"August 15, 16,1992",Cleburne County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7306,ROCK CREEK MOUNTAIN HOME-RYAN CREEK CONVENTION,Dorsey Creek Primitive Baptist Church,"August 15, 16, 1992",Rock Creek-Mountain Home,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7307,BEAR CREEK CONVENTION,"Shady Grove Church - Winston Counrty, Alabama","August 22, 1992",Bear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7308,CHERRY TREE SINGING,James Creek Church,"August 23, 1992",Cherry Tree Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7309,ROBERTA SINGING,"Maconic Lodge, Roberta, Georgia","August 23, 1992",Roberta Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7310,LOOKOUT MOUNTAIN CONVENTION,Pine Grove Church,"August 22, 23, 1992",Lookout Mountain Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7311,LACY'S CHAPEL,"Henagar, Alabarna","August 30, 1992",Lacy Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7312,VIVALENE MOON AND HARLIE GUTHRIE MEMORIAL,"Liberty Church (McCormick) Jefferson County, Alabama","August 30, 1992",Moon and Guthrie Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7313,SOUTHWEST TEXAS SACRED HARP CONVENTION,"Little Vine Primitive Baptist Church - Austin, Texas","August 29, 30, 1992","Southwest Texas Sacred Harp Singing Convention, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7314,UNION MUSICAL CONVENTION,"Oak Grove Chruch, near Alpharetta, Georgia","August 29, 30, 1992",Union Musical Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7315,CLEAR CREEK CONVENTION WEST,"Pleasant Hill Church (Johnson School House) Fayette County, Alabama","September 6, 1992",Clear Creek Convention West,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7316,LITTLE VINE CHURCH,"Near Bremen, Georgia","September 6, 1992",Shiloh-Little Vine Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7317,MULBERRY RIVER CONVENTION,Liberty Church (McCormick) Primitive Baptist Church,"September 5, 6, 1992",Mulberry River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7318,LABOR DAY SINGING,Sholes Creek Chruch,"September 7, 1992",Labor Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7319,FOX VALLEY SINGING,"Chicago, Illinoise","September 6, 1992",Fox Valley Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7320,THE UNITED SACRED HARP MUSICAL ASSOCIATION,"West Georgia College, Carrolton, Georgia.","September 12-13, 1992",The United Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7321,MOUNTAIN HOME CHURCH,"Near Bear Creek, Alabama","September 13, 1992",Mountain Home Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7322,CALHOUN COUNTY CONVENTION,Four Mile Mt. Moriah Primitive Baptist Church,"September 19, 20, 1992",Calhoun County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7323,ROCKY MOUNTAIN SACRED HARP SINGING,"Old San Ysidro Church, Corrales, New Mexico","September 19, 20, 1992",Rocky Mountain Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7324,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","September 20, 1992",Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7325,GUM POND CHURCH,"Morgan County, Alabama","September 27, 1992",Gum Pond Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7326,WINSTON COUNTY CONVENTION,Shady Grove Church,"September 22, 1992",Winston County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7327,LIBERTY HILL BAPTIST CHURCH,"Boaz, Alabama","September 27, 1992",Liberty Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7328,NEW ENGLAND SINGING,"Strafford, Vermont","October 2-3, 1992",New England Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7329,"ALEXANDER, HULLETT LOWE AND BROTHERS MEFORIAL",Hopewell Primitive Baptist Church,"October 4, 1992","Alexander, Hullett, Lowe, Brothers, Hyatt, Putman, and Wootten Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7330,OLD SARDIS CHURCH #1,"Near Lynn, Alabama","October 4, 1992",Tom Harper and Ganus Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7331,CHESNUT GROVE CHURCH,"Ider, Alabama","October 11, 1992",Chestnut Grove Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7332,MEMORIAL SINGING,Glenco Senior Citizen Center,"October 13, 1992",Etowah County Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7333,SECOND CREEK PRIMITIVE BAPTIST CHURCH,"Near Five Points, Tennessee","October 11, 1992",Tennessee State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.917
-7334,THE WALKER CATES AND HERBERT BROWN MEMORIAL,Muscadine Methodist Church,"October 11, 1992","Albright, Cates, Brown, and Sheppard Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7335,TWIN CITIES SACRED HARP SINGING CONVENTION,"Lyndale Congregational Church, MPLS, Minnesota","October 17, 18, 1992",Twin Cities Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7336,MARS HILL PRIMITIVE BAPTIST CHURCH,"McWhorter Memorial- Cleburne County, Alabama","October 18, 1992",Zion Hill Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.882
-7337,REID MEMORIAL,"Old County Line Church_ Near Corner, Alabama","October 18, 1992",Reid Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7338,COY PUTMAN MEMORIAL,"Rocky Mount Fall Singing, Arab, Alabama","October 24, 1992",Coy Putman Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7339,JORDAN CHAPEL,"Newell, Randolph County, Alabama","October 23, 1992",Jordan's Chapel Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7340,CINCINNATI -COLUMBUS,"Friends Meetinghouse, Yellow Springs, Ohio","October 24, 1992","Columbus-Cincinnati Singing, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7341,MR AND MRS JOE MYERS AND W. A. PARKER MEMORIAL,"New Hope Primitive Baptist Church - Walker County, Alabama","October 24, 25, 1992","W.A. Parker, Mr. and Mrs. Joe Myers, and Elsie Beasley Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7342,SOUTHEAST TEXAS CONVENTION,"Salem Lutheren Church, Brenham, Texas","October 24, 1992",Southeast Texas Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7343,LOUISIANA STATE SACRED HARP CONVENTION,New Orleans Baptist Theological Seminary,"October 23-24, 1992",Louisiana State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7344,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"October 25, 1992",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7345,NEW YORK STATE SACRED HARP CONVENTION,"Bethel Grove Community Center, Ithaca, New York","October 16-17, 1992",New York State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7346,BETHEL PRIMITIVE BAPTIST CHURCH,"Heard County, Georgia, Off, Hwy 27 So.","Saturday October 31, 1992",Bethel Primitive Baptist Church - Mississippi,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7347,ALVIS BROTHER5 - B. I WOOD MeMORIAL SINGING,Pilgrim Rest Primitive Baptist Church,"November 1, 1992",Alvis Brothers - B. I. Wood Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.975
-7348,"MADISON, WISCONSIN SINGING",St. Francis House,"November 7, 1992",All-Wisconsin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7349,HOLLY SPRINGS MEMORIAL,"I-20 27 HWY South, Bremen, Georgia","November 1, 1992",Holly Springs Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7350,MT EBRON CHURCH MEMORIAL SINGING,Near Double Springs Alabama,"November 1, 1992",Mt. Ebron Church Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7351,IMMANUEL BAPTIST CHURCH,"Nashville, Tennessee","Saturday, November 7 1992",Immanuel Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7352,OAK HILL CHURCH,"Oxford, Alabama","November 3, 1992",Oak Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7353,HARMONY PRIMITIVE BAPTIST CHURCH,"Calhoun, Georgia","November 15, 1992",Elder and Mrs. Jason Davis Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7354,JONES CHAPEL SENIOR CITIZEN CENTER,"Cullman County, Alabama","November 15, 1992",Jones Chapel Sacred Harp Memorial Singing - November,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7355,ALABAMA STATE CONVENTION,"Mt Pleasant Home Primitive Baptist Church North Birmingham, Alabama","November 21, 22, 1992",Alabama Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7356,JAMES RIVER SACRED HARP SINGING CONVENTION,"Dorey Recreation Center, Richmond, Virginia","November 21, 1992",James River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7357,MT. VERNON (KING SCHOOL HOUSE),"Natural Bridge, Alabama","November 22, 1992",Mt. Vernon (King School House),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7358,MARTIN BLACKMON MEMORIAL.,"New Hope Primitive Baptist Church, East of Villa Rica, Georgia","November 29, 1992",Martin Blackmon Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7359,TUSCALOSSA COMMUNITY CENTER SINGING,"Southside Lions Club in Rosedale Tuscaloosa, Alabama","November 29, 1992",Tuscaloosa Community Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7360,SOUTHWEST TEXAS CONVENTION,Bethel Primitive Baptist Church,"March 28 - 29, 1992",Southwest Texas Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7361,MACEDONIA PRIMITIVE BAPTIST CHURCH,"Fyffe, Alabama","June 21,1992",Macedonia Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7362,CONNECTICUT CONVENTION,"Wesleyan University, Middletown, Connecticut","July 12, 1992",Connecticut Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7363,BEASLEY AND LEE MEMORIAL,"Concord Primitiva Baptist Church, Winfield, Alabama","August 16, 1992",Beasley And Lee Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7364,OAK GROVE CHURCH,"Near Alpheretta, Georgia","November 8, 1992",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7365,LIBERTY CHURCH,"Helicon, Alsbama","December 6, 1992",Liberty Church - Helicon,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7366,LITTLE BRANCH PRIMITIVE BAPTIST CHURCH,"Albertville, Alabama","December 17, 1992",Little Branch Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7367,SINGING'S HELD IN 1993 CINCINNATI NEW YEAR SINGING,"College Hill Christian Church, Cincinnati, Ohio","January 1, 1993",Singing'S Held In 1993 Cincinnati New Year Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7368,ORIGINAL DUTCH SINGING,"West Georgia College, Carrolton, Georgia","January 3, 1993",University of West Georgia,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7369,DUTCH TREAT SINGING,"Shady Grove Church, Winston County, Alabama","January 3, 1993",Shady Grove Annual Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7370,UNCLE JACK KERR MEMORIAL,"Camp Ground Methodist Church - North of Fruithurst, Alabama","January 10, 1993",Uncle Jack Kerr Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7371,INDIAN BOUNDARY PARK,"Chicago, Illinois","January 10, 1993",Indian Boundary Park,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7372,ALL- CALIFORNIA SACRED HARP SINGING CONVENTION,"San Francisco, California","January 17, 1993",All-California Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7373,FOUR - NOTE SINGING,"Marion, Kentucky","January 23, 1993",Four - Note Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7374,BALDWIN COUNTY SACRED HARP SINGING CONVENTION,Bay Minette City Hall— Bay Minette Alabama,"January 23 -24, 1993",W. L. Green Memorial and Baldwin County Sacred Harp Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7375,LIBERTY CHURCH,"Henagar, Alabama","January 31, 1993",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7376,"PARKER, HOLLIS AND PUTMAN MEMORIAL","Liberty Church (McCormick) Jefferson County, Alabama","January 31, 1993","Parker, Hollis, and Putman Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7377,BOB BURNHAM MEMORIAL DUTCH TREAT SINGING,"Jacksonville, Alabama","February 7, 1993",Burnham and Brown Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7378,MOUNT HOPE BAPTIST CHURCH,"Northeast of Sipsey, Alabama","February 7, 1993",J.D. Starnes Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7379,MR AND MRS HOMER MURPHREE MEMORIAL,Pine Grove Church,"February 14, 1993",Mr And Mrs Homer Murphree Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7380,LINCOLN'S BIRTHDAY SINGING,"University of Chicago, Ida Noyes Hall","February 14, 1993",Lincoln's Birthday Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7381,OHIO STATE CONVENTION,"Columbus, Ohio","February 20, 21, 1993",Ohio State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7382,SANDERS MEMORIAL,"Cardova Senior Citizens Center- Cardova, Alabama","February 21, 1993",Sanders Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7383,PACIFIC NORTHWEST CONVENTION,"Portland, Oregon","February 27, 1993",Pacific Northwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7384,TEXAS STATE SACRED HARP CONVENTION,"Conference Center, College Station, Texas","February 27-28, 1993",Texas State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7385,UNIVERSITY OF GEORGIA,"Visitor Center Botonical Gardens, Athens, Gerogia","February 28, 1993",University of Georgia Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7386,DUKE MEMORIAL SINGING,"Bethel Primitive Baptist Church - Heard County, Georgia","March 6, 1993",Duke Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7387,WALKER MEMORIAL SINGING,"Vinemont Fire Station, Vinemont, Alabama","March 7, 1993",Walker Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7388,MR. AND MRS. FRANK ROGERS MEMORI AL,"Ephesus, Georgia","March 7, 1993",Mr. And Mrs. Frank Rogers Memori Al,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7389,MISSOURI STATE CONVENTION,Union Baptist Church,"March 13, 14, 1993",Missouri State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7390,OXFORD CITY HALL,Oxford Mississippi,"March 14, 1993",Oxford City Hall,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7391,ANTIOCH METHODIST CHURCH,"Cleburne County, Alabama","March 21, 1993",Antioch Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7392,GARRISON MEMORIAL,"Oak Grove Primitive Baptist Church _ Alpharetta, Georgia","March 21, 1993",Garrison Memorial (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7393,THE LOG CABIN SACRED HARP SINGING,"North of Double Springs, Alabama","March 21, 1993",The Log Cabin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7394,GEORGIA STATE CONVENTION,"Big Creek Primitive Baptist Church, Alpharetta, Georgia","March 27, 28, 1993",Georgia State Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7395,MOUNT PLEASANT BAPTIST CHURCH,"Crossville, Alabama","March 21, 1993",Mount Pleasant Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7396,POTOMIC RIVER CONVENTION,"Washington, DC","April 3, 4, 1993",Potomac River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.958
-7397,EDWARDSVILLE CHURCH,"Six miles east of Heflin, Alabama","April 4, 1993",Edwardsville Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7398,OLD ENON CHURCH,"Lynn, Alabama","April 4, 1993",Old Enon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7399,OAK GROVE CHURCH,"Alpharetta, Georgia","April 11, 1993",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7400,OLD COUNTY LINE CHURCH,"Near Corner, Alabama","April 11, 1993",County Line Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7401,ANTIOCH BAPTIST CHURCH,Ider Alabama,"April 11, 1993",Antioch Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7402,SECOND CREEK SINGING,"Five Points, Tennessee","April 11, 1993",Second Creek Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7403,ROCKY MOUNT PRIMITIVE BAPTIST CHURCH,"HWY 69 East of Arab, Alabama","Saturday April 17, 1993",Sharon Jordan Leach Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7404,HARPETH VALLEY-PRIESTLEY MILLER MEMORIAL,"Harpeth Presbyterian Church-South of Nashville, Tennessee","April 17, 1993",Harpeth Valley - Priestley Miller Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.909
-7405,EPHESUS CHURCH,"Valley (Fairfax), Alabama","April 18, 1993",Ephesus Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7406,OLD HARMONY PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","April 18, 1993",Old Harmony Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7407,OLD UNION BAPTIST CHURCH,"Five miles southwest of Winfield, Alabama","April 18, 1993",Old Union Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7408,NEW ORLEANS BAPTIST THEOLOGICAL SEMINARY,"3939 Gentilly Blbd., New Orleans, Louisiana","April 20, 1993",New Orleans Baptist Theological Seminary Fall Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7409,COLUMBUS -CINCINNATI SINGING,"Yellow Springs, Ohio","April 24, 1993","Columbus-Cincinnati Singing, Spring Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7410,FRIENDSHIP PRIMITIVE BAPTSIT CHURCH,"Haleyville, Alabama","April 25, 1993",Friendship Primitive Baptist Church - April,,,,,,,minutes_pre95.db,add_new_row_from_database,0.895
-7411,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"April 25, 1993",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7412,EMMAUS BAPTIST CHURCH,"South of Carrollton, Georgia","May 2, 1993",Emmaus Baptist Church - Carrollton,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7413,NORTH CAROLINA CONVENTION,"Unitarian Universalist Fellowship Raleigh, North Carolina","May 2, 1993",North Carolina Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7414,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","May 2, 1993",Shady Grove (Keeton Cemetery),,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7415,HUNTSVILLE SACRED HARP SINGING,Burritt Museum,"May 8, 1993",Huntsville Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7416,CROSS ROADS BAPTIST CHURCH,"County Road 66-East Cleburne County, Alabama","May 9, 1993",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7417,OLD FLATWOODS PRIMITIVE BAPTIST CHURCH,"Nauvoo, Alabama","May 9, 1993",Old Flatwoods Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7418,KENTUCKY STATE SACRED HARP CONVENTION,"Berea, Kentucky","May 15, 1993",Kentucky State Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7419,CANE CREEK PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","May 16, 1993",Cane Creek Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7420,NEW CANAAN BAPTIST CHURCH,"Walker County, Alabama","May 16, 1993",New Canaan Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7421,GARDEN STATE SACRED HARP SINGING CONVENTION,"Montclair Friends Meetinghouse, Upper Montclair, New Jersey","May 14-15, 1993",Garden State Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7422,POPOLAR SPRINGS CHURCH,"North of Tallapoosa, Georgia off HWY 100.","May 16, 1993",Poplar Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.977
-7423,DOSS MEPORIAL SINGING,"Sardis Baptist Clurch, Morris Alabama","May 23, 1993",Doss Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.952
-7424,GUM POND PRIMITIVE BAPTIST CHURCH,"Morgan County, Alabama","May 23, 1993",Gum Pond Decoration Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7425,MOUNT PISGAH CHURCH (COOPER BOOK),"Chambers County, Alabama","May 22, 1993",Mount Pisgah Singing Society (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7426,SULLINS SCHOOL HOUSE,"Hamilton, Alabama","May 23, 1993",Sullins School House,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7427,MIDWEST CONVENTION,"Evanston and Chicago, Illinois","May 29-30, 1993",Midwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7428,SOUTHWEST TEXAS SACRED HARP CONVENTION,Bethel Primitive Baptist Church McMahan (Caldwell CO.) Texas,"May 29-30, 1993","Southwest Texas Sacred Harp Singing Convention, Spring Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7429,HOLLY SPRINGS MEMORIAL SINGING,"Near Bremen, Georgia 1-20 -27s","June 5-6, 1993",Holly Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7430,LIBERTY CHURCH,"Henager, Alabama","June 6, 1993",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7431,PINE TUCKY CHURCH,"Winston County, Alabama","June 6, 1993",Pine Tucky Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7432,HOPEWELL HOMECOMING,"Oneonta, Alabama","June 12, 13, 1993",Hopewell Homecoming,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7433,ALPHARETTA MUNICIPAL BUILDING,"Alpharetta, Gorgia","June, 13, 1993",Alpharetta Municipal Building,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7434,MOUNT VERNON CHURCH,"Near Cullman, Alabama on HWY. 69 East","June 13, 1993",Mount Vernon Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7435,NEW HOPE CHURCH,"Villa Rica, Georgia","June 13, 1993",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7436,PLEASANT HILL (JOHNSON SCHOOL HOUSE),"Aldridge Memorial - Fayette County, Alabama","June 13, 1993",Aldridge Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7437,"MOORE, GRAVES AND CALVERT MEMORIAL","Addington Chapel Methodist Church, Cullman County, Alabama","June 19, 1993","Moore, Graves, and Calvert Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7438,HOPEWELL PRIMITIVE BAPTIST CHURCH,"Near Ephesus, Georgia","June 20, 1993",Hopewell Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7439,KING SCHOOL HOUSE (MT. VERNON BAPTIST CHURCH),"National Bridge, Alabama","June 20, 1993",Clifford Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7440,LITTLE VINE PRIMITIVE BAPTIST CHURCH,"Empire, Alabama","June 20, 1993",Little Vine Primitive Baptist Church - Empire,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7441,ALTAMONT FAIR (TRICOUNTY FAIR GROUNDS),Near Albany New York,"June 26, 27, 1993",Old Songs Book Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7442,THE BATTLES AND KEENER MEMORIAL,"Pleasant Valley Church - Gallant, Alabama","Saturday, June 26, 1993",The Battles And Keener Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7443,SHADY GROVE CHURCH,"Winston County, Alabama","June 26, 27, 1993",Kermit Adams and Steve Adams Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7444,DELONG MEMORIAL,"Ebenezer Primitive Baptist Church Dunewoody, Georgia","June 27, 1993",DeLong-Roberts Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7445,INDIAN CREEK CHURCH,"North of Bowdon, Gerogia HWY 100","June 27, 1993",Indian Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7446,MT. LEBANON CHURCH,"Near Fayette, Alabama","June 27, 1993",Mt. Lebanon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7447,NEW HOPE CHURCH,"Cullman, County, Alabama.","June 27, 1993",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7448,HENAGAR UNION CONVENTION - LIBERTY CHURCH,"Henagar, Alabama","July 3, 4, 1993",Henagar-Union Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7449,CROSS ROADS BAPTIST CHURCH,"North of Tallapoosa, Georgia - off HWY 100","July 4, 1993",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7450,DUTTON AND GREEN MEMORIAL,"New Flatwoods Primtive Baptist Church, South of Nauvoo, Alabama","July 4, 1993","Dutton, Green, and Jackson Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7451,MUSCADINE METHODIST CHURCH,"Muscadine, Alabama","July 5, 1993",Independence Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7452,JONES CHAPEL MEMORIAL,"Cullman County, Alabama","July 7, 1993",Jones Chapel Sacred Harp Memorial Singing - July,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7453,MICHIANA SACRED HARP SINGING,"New Testament Baptist Church, Goshen, Indiana","July 10, 1993",Michiana Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7454,Cullman COUNTY SINGING CONVENTION,"Cullman County Courthouse, Cullman, Alabama","July 10, 11, 1993",Cullman County Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7455,CONNECTICUT CONVENTION,"Middletown, Connecticut","July 11, 1993",Connecticut Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7456,MT. ZION PRIMITIVE BAPTIST CHURCH,"Hwy 159 north of Gordo, Alabama","July 11, 1993",Mt. Zion Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7457,MT. OAK METHODIST CHURCH,"Six miles northwest of Arab, Alabama","Saturday July 17, 1993",Mt. Oak Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7458,WALKER COUNTY CONVENTION,"City Auditorium, Jasper, Alabama","July 17, 1993",Walker County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7459,"CHAFIN, HARBINSON AND HOLLIS MEMORIAL","New Prospect Church, Cullman County, Alabama","July 18, 1993","Chafin, Harbinson, and Hollis Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7460,DEAN ALLEMANG HOMECOMING SINGING,"Columbus, Ohio","July 18, 1993",Dean Allemang Homecoming Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7461,COTACO SACRED HARP CONVENTION,Gum Pond Primitive Baptist Church,"Saturday, July 24, 1993",Cotaco Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7462,CINCINNATI ALL DAY SINGING,College Hill Christian Church,"July 25, 1993",Cincinnati Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7463,DORSEY CREEK PRIMITIVE BAPTIST CHURCH,"Bremen, Alabama on Hwy 69","July 25, 1993",Dorsey Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.889
-7464,MARION COUNTY COURT HOUSE SINGING,"Hamilton, Alabama","July 25, 1993",Marion County Court House Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7465,MT ZION MEMORIAL,"MT. ZION, GEORGIA","JULY 24, 25, 1993",Mt. Zion Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7466,WARRIOR RIVER - CLEAR CREEK CONVENTION,"Liberty Hill ChurCh, Boaz, Alabama","July 31-August 1, 1993",Warrior River - Clear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7467,FAVETTE COUNTY CONVENTION,"Bevill State Junior College, Fayette, Alabama","August 1, 1993",Fayette County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.96
-7468,LAMAR AND PICKENS COUNTY CONVENTION,Zion Church,"August 8, 1993",Lamar and Pickens Counties Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7469,MACEDONIA BAPTIST CHRUCH,"Haleyville, Alabama","August 8, 1993",Macedonia Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.958
-7470,TENNESSEE RIVER CONVENTION,"Second Creek Church - Five Points, Tennessee","August 8, 1993",Tennessee River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7471,ELMORE CENTER,"Four miles south of Gordo, Alabama, County Roads 9 and 21","August 11, 1993",Elmore Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7472,BEASLEY - LEE MEMORIAL SINGING,"Concord Primitive Baptist Church, Winfield, Alabama","August 15, 1993",Belton and Emma Beasley and Phillip Lee III Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7473,CLEBURNE COUNTY CONVENTION,Mars Hill Primitive Baptist Church,"August 15, 1993",Cleburne County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7474,ROCK CREEK MOUNTAIN HOME-RYAN CREEK CONVENTION,Dorsey Creek Primitive Baptist Curch,"August 14, 15, 1993",Rock Creek-Mountain Home,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7475,BEAR CREEK CONVENITO,"Shady Grove Church - Winston County, Alabama","August 21, 1993",Bear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.927
-7476,LOOKOUT FOUNTAIN CONVENTION,Pine Grove Church,"August 21-22, 1993",Lookout Mountain Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7477,CHERRY TREE SINGING,James Creek Church,"August 22, 1993",Cherry Tree Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7478,UNION MUSICAL CONVENTION,Camp Creck Primitive Baptist Church,"August 28-29, 1993",Union Musical Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7479,ROBERT SINGING,"Masonic Lodge, Roberta, Georgia","August 22, 1993",Roberta Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7480,YOUNG PEOPLES SACRED HARP SINGING,"Grace Baptist Church, Sumiton, Alabama","August 28, 1993",Young People's Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7481,LACY'S CHAPEL SINGING,"Dean Chapel Church, Henegar, Alabama","August 29, 1993",Lacy Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7482,MOON AND GUTHRIE MEMORIAL,"Liberty Church (McCormick) Jefferson County, Alabama","August 29, 1993",Moon and Guthrie Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7483,CLEAR CREEK CONVENTION WEST,"Pleasant Hill Church, (Johnson School House) Fayette County, Alabama","September 5, 1993",Clear Creek Convention West,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7484,LITTLE VINE CHURCH,"Near Bremen, Georgia","September 5, 1993",Shiloh-Little Vine Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7485,FOX VALLEY FOLK FESTIVAL,"Geneva, Illinois","September 5, 1993",Fox Valley Folk Festival,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7486,MULBERRY RIVER CONVENTION,Liberty Church (McCormick) Primitive Baptist Church,"September 4, 5, 1993",Mulberry River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7487,LABOR DAY SINGING,Shoals Creek Church,"September 6, 1993",Labor Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7488,THE UNITED SACRED HARP MUSICAL ASSOCIATION,"Coundy Line Church, Near Corner, Alabama","September 11, 12, 1993",The United Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7489,MOUNTAIN HOME CHURCH,"Near Bear Creeak, Alabama","September 12, 1993",Mountain Home Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7490,CALHOUN COUNTY CONVENTION,Four Mile MT. Moriah Primitive Baptist Church,"September 18, 1993",Calhoun County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7491,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","September 19, 1993",Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7492,GUM POND CHURCH,"Morgan County, Alabama","September 27, 1993",Gum Pond Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7493,LIBERTY HILL BAPTIST CHURCH,"Boaz, Alabama","September 26, 1993",Liberty Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7494,WINSTON COUNTY SINGING CONVENTION,Shady Grove Church,"September 26, 1993",Winston County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7495,ROCKY MOUNTAIN SACRED HARP SINGING,Denver (Lakewood) Colorado,"October 2, 3, 1993",Rocky Mountain Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7496,"ALEXANDER, HULLETT, LOWE AND BROTHERS MEMORIAL",Hopewell Primitive Baptist Church,"October 3, 1993","Alexander, Hullett, Lowe, Brothers, Hyatt, Putman, and Wootten Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7497,OLD SARDIS CHURCH #1,"Near Lynn, Alabama","October 3, 1993",Tom Harper and Ganus Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7498,CHESNUT GROVE CHURCH,"Ider, Alabama","October 10, 1993",Chestnut Grove Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7499,SECOND CREEK PRIMITIVE BAPTIST CHURCH,"Near Five Points, Tennessee","October 11, 1993",Tennessee State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.917
-7500,HARPER MEMORIAL,Old Flatwoods Primitive Baptist Church - Nauvoo Alabama,"October 10, 1993",Harper Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7501,MEMORIAL SINGING,Glenco Senior Citizen Center,"Saturday, October 9, 1993",Etowah County Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7502,NEW YORK STATE SACRED HARP CONVENTION,"Bethel Grove Community Center, Ithaca New York","October 15-17, 1993",New York State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7503,MARS HILL PRIMITIVE BAPTIST CHURCH,"McWhorter Memorial - Cleburn County, Alabama","October 17, 1993",Zion Hill Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.882
-7504,REID MEMORIAL,"Old County Line Church near Corner, Alabama","October 17, 1993",Reid Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7505,COY PUTMAN MEMORIAL,"Rocky Mount Primitive Baptist Church, Arab, Alabama","October 23, 1993",Coy Putman Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7506,JORDAN CHAPEL,"Newall, Randolph County, Alabama","October 24, 1993",Jordan's Chapel Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7507,CINCINNATI- COLUMBUS,"Friends Meetinghouse, Yellow Springs, Ohio","October 23, 1993","Columbus-Cincinnati Singing, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7508,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Sneads Crossroads,"October 24, 1993",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7509,SOUTHEAST TEXAS SINGING,"Salem Lutheran Church, Brenham, Texas","October 23, 1993",Southeast Texas Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7510,SOUTHWEST TEXAS CONVENTION,"Littlevine Primitive Baptist Church, Austin, Texas","October 30, 31, 1993",Southwest Texas Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7511,MARTIN BLACKMON MEMORIAL,"New Hope Primitive Baptist Church, East of Villa Rica, Georgia","October 31, 1993",Martin Blackmon Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7512,TUSCALOSSA COMMUNITY CENTER,"Rosedale Southside Lions Club, Tuscalossa, Alabama","October 31, 1993",Tuscaloosa Community Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7513,ALVIS BROTHERS -B. I. WOOD MEMORIAL SINGING,Pilgrims's Rest Primitive Baptist Church,"November 7, 1993",Alvis Brothers - B. I. Wood Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7514,MT EBRON CHURCH MEMORIAL SINGING,"Near Double Springs, Alabama","November 7, 1993",Mt. Ebron Church Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7515,SOUTH GEORGIA SACRED HARP SINGING CONVENTION,"Lebanon Primitive Baptist Church Near Cordele, Georgia","November 7, 1993",South Georgia Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7516,BETHEL PRIMITIVE BAPTIST CHURCH,"Heard County, Georgia - Off Hwy 27 South","Saturday, November 6, 1993",Bethel Primitive Baptist Church - Mississippi,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7517,HOLLY SPRINGS MEMORIAL,"1-20 and 27 South, Bremen, Georgia","November 7, 1993",Holly Springs Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7518,IMMANUEL BAPTIST CHURCH,"Nashville, Tennessee","November 13, 1993",Immanuel Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7519,"MADISON, WISCONSIN SINGING",St. Francis House,"Saturday, November 13, 1993",All-Wisconsin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7520,OAK GROVE CHURCH,"Alpharetta, Georgia","November 14, 1993",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7521,OAK HILL BAPTIST CHURCH,"Oxford, Alabama","November 14, 1993",Oak Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7522,HARMONY PRIMITIVE BAPTIST CHURCH,"Calhoun, Georgia","November 21, 1993",Elder and Mrs. Jason Davis Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7523,JONES CHAPEL SENIOR CITIZEN CENTER,"Cullman County, Alabama","November 21, 1993",Jones Chapel Sacred Harp Memorial Singing - November,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7524,ALABAMA STATE CONVENTION,"Mt. Pleasant Home Primitive Baptist Church, North Birmingham, Alabama","November 27, 28, 1993",Alabama Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7525,MT. VERNON (KING SCHOOL HOUSE),"Natural Bridge, Alabama","November 28, 1993",Mt. Vernon (King School House),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7526,ST. MICHAEL CHURCH,"Fruithurst, Alabama","June 20, 1993","Alewine, Laminack, and Stephen McElroy Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7527,OAK GROVE PRIMITIVE BAPTIST CHURCH,"Oak Grove, Alabama","July 11, 1993",Boiling Springs Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7528,LOUISIANA STATE SACRED HARP CONVENTION,Bethel Primitive Baptist Church,"October 30, 1993",Louisiana State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7529,CALVERT AND WOODLEY MEMORIAL SINGING,"Pleasant Grove Church- Boldo- Near Jasper, Alabama.","January 9, 1993",Lillian Calvert and Irene Woodley Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7530,JAMES RIVER CONVENTION,"Richmond, Virginia","November 20, 21, 1993",James River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7531,LIBERTY CHURCH,"Helicon, Alabama","December 5, 1993",Liberty Church - Helicon,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7532,CONCORD PRIMITIVE BAPTIST CHURCH,"Winfield, Alabama","December 12, 1993",Joseph Jackson Beasley Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7533,LITTLE BRANCH PRIMITIVE BAPTIST CHURCH,"Albertville, Alabama","December 16, 1993",Little Branch Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7534,CINCINNATI NEW YEAR'S SINGING,College Hill Christian Church,"Saturday, January 1, 1994",Cincinnati New Year's Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7535,DUTCH TREAT SINGING,"Shady Grove Church, Winston County, Alabama","January 2, 1994",Shady Grove Annual Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7536,WEST GEORGIA COLLEGE (FOOD SERVICES BUILDING),"Carrollton, Georgia","January 2, 1994",University of West Georgia,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7537,UNCLE JACK KERR MEMORIAL,"Camp Ground Methodist Church - North of Fruithurst, Alabama","January 9, 1994",Uncle Jack Kerr Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7538,ANNIVERSARY SINGING,"Chicago, Illinois","January 9, 1994",Chicago Anniversary Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7539,ALL-CALIFORNIA SACRED HARP SINGING CONVENTION,"San Diego, California","January 15, 16, 1994",All-California Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7540,SOUTHWESTERN BAPTIST THEOLOGICAL SEMINARY,"Fort Worth, Texas","January 19, 1994",William J. Reynolds Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7541,BALDWIN COUNTY Cooper Book SINGING CONVENTION,"Bay Minette City Hall - Bay Minette, Alabama","January, 22-23, 1994",W. L. Green Memorial and Baldwin County Sacred Harp Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7542,"PARKER, HOLLIS AND PUTMAN MEMORIAL","Liberty Church, (McCormick) Jefferson County, Alabama","January 30, 1994","Parker, Hollis, and Putman Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7543,BOB BURNHAM MEMORIAL DUTCH TREAT SINGING,"Jacksonville, Alabama","February 6, 1994",Burnham and Brown Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7544,MT. HOPE BAPTIST CHURCH,"Northeast of Sipsey, Alabama","February 6, 1994",J.D. Starnes Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7545,LINCOLN'S BIRTHDAY SINGING,"University of Chicago, Ida Noyes Hall","February 6, 1994",Lincoln's Birthday Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7546,OHIO STATE CONVENTION,"Cincinnati, Ohio","February 18-20, 1994",Ohio State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7547,SANDERS MEMORIAL,"Cardova Senior Citizen Center - Cardova, Alabama","February 20, 1994",Sanders Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7548,PACIFIC NORTHWEST CONVENTION,"Seattle, Washington","February 27, 1994",Pacific Northwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7549,UNIVERSITY OF GEORGIA,"Visitor Center-Botanical Gardens, Athens Georgia","February 27, 1994",University of Georgia Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7550,WINSTON COUNTY COURTHOUSE MEMORI AL SINGING,"Winston County, Alabama","Saturday, February 26, 1994",Winston County Courthouse Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.988
-7551,TEXAS STATE CONVENTION,"Conference Center, College Station, Texas","February 26-27, 1994",Texas State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7552,MR. AND MRS. O.H. HANDLEY AND MR. AND MRS .WH. WALKER MEMORIAL SINGING,"Vinemont Fire Station, Vinemont, Alabama (Cullman, County)","March 6, 1994",Walker Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.992
-7553,MARTHA HARPER NIX - LEWIS KEETON MEMORIAL,"New Flatwoods Church - Nauvoo, Alabama - Walker County","March 6, 1994","Martha Harper Nix, Lewis Keeton, and Lavada McGough Gilmore Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7554,MR. AND MRS. FRANK ROGERS MEMORIAL,"Ephesus, Georgia","March 6, 1994",Rogers Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7555,MR. AND MRS. HOMER MURPHREE MEMORIAL,Pine Grove Baptist Church,"Saturday, March 12, 1994",Mr And Mrs Homer Murphree Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7556,OXFORD CITY HA,"Oxford, Mississippi","March 13, 1994",Oxford City Hall,,,,,,,minutes_pre95.db,add_new_row_from_database,0.933
-7557,L.O. AND C. H. GILLILAND MEMORI AL,Old Clear Creek Primitive Baptist Church,"March 13, 1994",Gilliland and Brothers Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7558,ANTIOCH METHODIST CHURCH,Cleburne County. Alabama,"March 20, 1994",Antioch Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7559,GARRISON MEMORIAL (COOPER BOOK),"Oak Grove Primitive Baptist Church Alpharetta, Georgia, B'ham Road","March 20, 1994",Garrison Memorial (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7560,MEMORIAL SINGING GLENCO SENIOR CITIZEN CENTER,"Near Gadsden, Alabama","March 20, 1994",Etowah County Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7561,THE LOG CABIN SACRED HARP SINGING,"North of Double Springs, Alabama","March 20, 1994",The Log Cabin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7562,"LEONA HORTON, MAUDE ADANS, MINA ADAMS AND DELIA WATTS MEMORIAL","Shady Grove Church - Double Springs, Alabama","March 20, 1994",Godsey Sisters and Sandra Spradlin Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7563,GEORGIA STATE CONVENTION,"Old Decatur Courthouse, Decatur, Georgia","March 26- 27, 1994",Georgia State Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7564,SHADY GROVE PRIMITIVE BAPTIST CHURCH,Winston County. Alabama,"March 27, 1994",???,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7565,EDWARDSVILLE CHURCH,"Six miles east of Heflin, Ala.. off Hwy. 78.","April 3, 1994",Edwardsville Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7566,OLD ENON CHURCH,"Lynn, Alabama","April 3, 1994",Old Enon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7567,HARPETH VALLELY - PRIESTLEY MILLER MEMORIAL,"Harpeth Presbyterian Church -South of Nashville, Tennessee","Saturday, April 9, 1994",Harpeth Valley - Priestley Miller Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.899
-7568,STATE LINE CHURCH,"Cleburne County, Alabama","April 9, 1994",State Line Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7569,ANTIOCH BAPTIST CHURCH,"Ider, Alabama","April 10, 1994",Antioch Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7570,COUNTY LINE CHURCH,"Near Corner, Alabama","April 10, 1994",County Line Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7571,NEW ORLEANS BAPTIST THEOLOGICAL SEMINARV,"3939 Gentilly Blvd., New Orleans, Louisiana","April, 14, 1994",New Orleans Baptist Theological Seminary Spring Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7572,SEED AND FEED SACRED HARP SINGING,"Atlanta Friends Meeting House, Decatur Georgia","Saturday, April 16, 1994",Seed and Feed Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7573,POTOMAC RIVER CONVENTION,"Washington, DC.",April 15-17 1994,Potomac River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7574,ROCKY MOUNT PRIMITIVE BAPTIST CHURCH,"HWY. 69 East of Arab, Alabama","Saturday, April 16, 1994",Sharon Jordan Leach Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7575,EPHESUS CHURCH,Valley (Fairfax) Alabama,"April 17, 1994",Ephesus Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7576,OLD HARMONY PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","April 17, 1994",Old Harmony Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7577,OLD UNION BAPTIST CHURCH,"Five miles southwest of Winfield, Alabama","April 17, 1994",Old Union Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7578,COLUMBUS- CINCINNATI SINGING,"Yellow Springs, Ohio","April 23, 1994","Columbus-Cincinnati Singing, Spring Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7579,FRIENDSHIP PRIMITIVE BAPTIST CHURCH,"Haleyville, Alabama","April 24, 1994",Friendship Primitive Baptist Church - April,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7580,OAK GROVE CHURCH,"Alpharetta, Georgia","April 24, 1994",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7581,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"April 24, 1994",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7582,EMMAUS CHURCH,"South of Carrollton, Georgia","May 1, 1994",Emmaus Baptist Church - Carrollton,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7583,NORTH CAROLINA SACRED HARP CONVENTION,"Raleigh, North Carolina","May 1, 1994",North Carolina Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7584,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","May 1, 1994",Shady Grove (Keeton Cemetery),,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7585,HUNTSVILLE SACRED HARP SINGING,Burritt Museum,"May 7, 1994",Huntsville Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7586,CROSS ROADS BAPTIST CHURCH,"County Road 66 --East Cleburne County, Alabama","May 2, 1994",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7587,OLD FLATWOODS PRIMITVE BAPTIST CHURCH,"Nauvoo, Alabama","May 8, 1994",Old Flatwoods Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.987
-7588,HARMONY CHURCH,"Lawerenceburg, Tennessee","Saturday, May 14, 1994",Mattox Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7589,KENTUCKY STATE SACRED HARP CONVENTION,"Berea, Kentucky","Saturday, May 14, 1994",Kentucky State Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7590,CANE CREEK PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","May 15, 1994",Cane Creek Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7591,GARDEN STATE SACRED HARP SINGING CONVENTION,"Montclair Friends Meetinghouse, Upper Montclair, New Jersey","May 13-14, 1994",Garden State Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7592,NEW CANAAN BAPTIST CHURCH,"Walker County, Alabama","May 15, 1994",New Canaan Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7593,DOSS MEMORIAL SINGING,"Sardis Baptist Church, Morris, Alabama","May 22, 1994",Doss Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7594,GUM POND PRIMITIVE BAPTIST CHURCH,"Morgan County, Alabama","May 22, 1994",Gum Pond Decoration Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7595,POPOLAR SPRINGS CHURCH,"North of Tallapoosa, Georgia off Hwy. 100","May 22, 1994",Poplar Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.977
-7596,GULLINS SCHOOL HOUSE,"Hamilton, Alabama","May 22, 1994",Sullins School House,,,,,,,minutes_pre95.db,add_new_row_from_database,0.95
-7597,MIDWEST CONVENTION,"Chicago, Illinoise","May 28-29, 1994",Midwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7598,SOUTHWEST TEXAS CONVENTION,"Bethel Primitive Baptist Church - McMahan, Texas","May 28-29, 1994",Southwest Texas Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7599,HOLLY SPRINGS MEMORIAL SINGING,"Near Bremen, Georgia I-20 and 27 South","June 4-5, 1994",Holly Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7600,LIBERTY CHURCH,"Henager, Alabama","June 5, 1994",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7601,PINE TUCKY CHURCH,"Winston County, Alabama","June 5, 1994",Pine Tucky Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7602,NORTHERN SHENANDOAH VALLEY SINGING,"Berryville, Virginia",June 11 1994,Northern Shenandoah Valley Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7603,HOPEWELL HOMECOMING,"Oneonta, Alabama","June 11, 12, 1994",Hopewell Homecoming,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7604,ALPHARETTA MUNICIPAL BUILDING,"Alpharetta, Georgia","June 12, 1994",Alpharetta Municipal Building,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7605,MOUNT VERNON PRIMITIVE BAPTIST CHURCH,"Near Cullman, Alabama on HWY. 69 East","JUNE 12, 1994",Mount Vernon Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7606,NEW HOPE CHURCH,"Villa Rica, Georgia","June 12, 1994",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7607,PLEASANT HILL (JOHNSON SCHOOL HOUSE),"Aldridge Memorial - Fayette County, Alabama","June 12, 1994",Aldridge Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7608,"MOORE, GRAVES AND CALVERT MEMORIAL","Addington Chaple Methodist Church, Cullman County, Alabama","June 18,1994","Moore, Graves, and Calvert Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7609,HOPEWELL PRIMITIVE BAPTIST CHURCH,"Near Ephesus, Georgia","June 19, 1994",Hopewell Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7610,KING SCHOOL HOUSE (MT. VERNON BAPTIS CHURCH),"Natural Bridge, Alabama","June 19, 1994",Clifford Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7611,LITTLE VINE PRIMITIVE BAPTIST CHURCH,"Empire, Alabama","June 19,1994",Little Vine Primitive Baptist Church - Empire,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7612,ST MICHAEL CHURCH,"Fruithurst, Alabama","June 19, 1994","Alewine, Laminack, and Stephen McElroy Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7613,ZION HILL HOMECOMING SACRED HARP SINGING,"12 miles South of Henderson, Toxas","June 19, 1994",Zion Hill Homecoming Singing (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7614,SHADY GROVE CHURCH,"Winston County, Alabama","June 25, 26, 1994",Kermit Adams and Steve Adams Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7615,DELONG MEMORIAL,"Ebenezer Primitive Baptist Church, Dunwoody, Georgia","June 26, 1994",DeLong-Roberts Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7616,MT LEBANON CHURCH,"Near Fayette, Alabama","June 26, 1994",Mt. Lebanon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7617,NEW HOPE CHURCH,"Cullman County, Alabama","June 26, 1994",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7618,HENAGAR - UNION CONVENTION - LIBERTY CHURCH,"Henager, Alabama","July 2 - 3, 1994",Henagar-Union Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7619,CROSS ROADS CHURCH,"North of Tallapoosa, Georgia","July 3, 1994",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7620,DUTTON AND GEEEN MEFIORIAL,"South of Nauvoo, Alabama","July 3, 1994","Dutton, Green, and Jackson Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7621,MUSCADINE METHODIST CHURCH,"Muscadine, Alabama","July 4, 1994",Independence Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7622,JONES CHAPEL SENIOR CITIZENS CENTER,"Cullman, Alabama","July 6, 1994",Jones Chapel Sacred Harp Memorial Singing - July,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7623,CULLMAN COUNTY SINGING CONVENTION,"Cullman County Courthouse, Cullman, Alabama","July 9-10, 1994",Cullman County Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7624,Mt. ZION PRIMITIVE BAPTIST CHURCH,"Hwy 159 North of Gordo, Alabama","July 10, 1994",Mt. Zion Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7625,MT. OAK METHODIST CHURCH,"Six Miles Northwest of Arab, Alabama","Saturday, July 16, 1994",Mt. Oak Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7626,WALKER COUNTY CONVENTION,"City Auditorium, Jasper, Alabama","Saturday, July 16, 1994",Walker County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7627,"CHAFIN, HARBINSON AND HOLLIS MEMORIAL","New Prospect Church, Cullman County, Alabama","July 17, 1994","Chafin, Harbinson, and Hollis Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7628,COTACO SACRED HARP CONVENTION,Gum Pond Primitive Baptist Church,"Saturday, July 23, 1994",Cotaco Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7629,MT. ZION MEMORIAL,"Mt. Zion, Georgia","July 23, 24, 1994",Mt. Zion Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7630,DORSEY CREEK PRIMITIVE BAPTIST CHURCH,"Bremen, Alabama - on Hwy 69","July 24, 1994",Dorsey Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.889
-7631,MARION COUNTY COURT HOUSE SINGING,"Hamilton, Alabama","July 24, 1994",Marion County Court House Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7632,YOUNG PEOPLES SACRED HARP SINGING CONVENTION,"Concord Church, Winfield, Alabama","Saturday, July 30, 1994",Young People's Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7633,LACY'S CHAPEL,"Henagar, Alabama","July 31, 1994",Lacy Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7634,MOON AND GUTHRIE MEMORIAL,"Liberty Church (McCormick) Jefferson, County, Alabama","July 31, 1994",Moon and Guthrie Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7635,UNION MUSICAL CONVENTION,"Ebernezer Primitive Baptist Church, Dunwoday, Georgia","July 30, 31, 1994",Union Musical Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7636,WARRIOR RIVER - CLEAR CREEK CONVENTION,Mt. Moriah Church,"August 6, 7, 1994",Warrior River - Clear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7637,FAYETTE COUNTY CONVENTION,"Bevill State Junior College, Fayette, Alabama","August 7, 1994",Fayette County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7638,EAST TEXAS SACRED HARP SINGING CONVENTION,"Community Center Building - Henderson, Texas","August 13, 14, 1994",East Texas Sacred Harp Singing Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7639,MACEDONIA BAPTIST CHURCH,"Haleyville, Alabara","August 14, 1994",Macedonia Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7640,TENNESSEE RIVER CONVENTION,"Second Creek Church - Five Points, Tennessee","August 14, 1994",Tennessee River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7641,ELMORE CENTER,"Four miles south of Gordo, Alabama, County Road 9 and 21","August 17, 1994",Elmore Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7642,CLEBURNE COUNTY CONVENTION,Cane Creek Church,"August 21, 1994",Cleburne County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7643,ROCK CREEK MOUNTAIN HOME-RYAN CREEK CONVENTION,"Dorsey Creek Primitive Baptist Church - Bremen, Alabama Hwy. 69 soutn","August 20, 21, 1994",Rock Creek-Mountain Home,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7644,BEAR CREEK CONVENTION,"Shady Grove Church - Winston County, Alabama","August 27, 1994",Bear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7645,LOOKOUT MOUNTAIN CONVENTION,Pine Grove Church,"August 27-28, 1994",Lookout Mountain Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7646,ROCKY MOUNTAIN SACRED HARP SINGING,"Old San Ysidro Church, Corrales, New Mexico","August 27, 28, 1994",Rocky Mountain Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7647,CHERRY TREE SINGING,James Creek Church,"August 28, 1994",Cherry Tree Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7648,CLEAR CREEK CONVENTION WEST,Pleasant Hill Church (Johnson School House) Fayette County Alabama.,September 4 1994,Clear Creek Convention West,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7649,LITTLE VINE CHURCH,Near Bremen Georgia,September 4 1994,Shiloh-Little Vine Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7650,MULBERRY RIVER CONVENTION,Liberty Church (McCormick) Primitive Baptist Church,September 3-4 1994,Mulberry River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7651,FOX VALLEY FOLK MUSIC FESTIVAL,Geneva Illinois,"September 4, 1994",Fox Valley Folk Festival,,,,,,,minutes_pre95.db,add_new_row_from_database,0.889
-7652,LABOR DAY SINGING,Shoal Creek Church,"September 5, 1994",Labor Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7653,THE UNITED SACRED HARP MUSICAL ASSOCATION,"Emmaus Church, Carrollton, Gerogia","September 10, 11, 1994",The United Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.987
-7654,MIOUNTAIN HOME CHURCH,"Near Bear Creek, Alabama","September 11, 1994",Mountain Home Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.976
-7655,CALHOUN COUNTY CONVENTION,Four Mile Mt. Moriah Primitive Baptist Church,"September 17, 18, 1994",Calhoun County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7656,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","September 19, 1994",Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7657,GUM POND CHURCH,"Morgan County, Alabama","September 25, 1994",Gum Pond Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7658,LIBERTY HILL BAPTIST CHURCH,"Boaz, Alabsma","September 25, 1994",Liberty Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7659,WINSTON COUNTY CONVENTION,Shady Grove Church,"September 25, 1994",Winston County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7660,MINNESOTA STATE SACRED HARP CONVENTION,"Faith Mennonite Church Minneapolis, Minnesota","October 1, 2, 1994",Minnesota State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7661,OLD SARDIS CHURCH,"Near Lynn, Alabama","October 2, 1994",Tom Harper and Ganus Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7662,CHESNUT GROVE CHURCH,"lder, Alabama","October 9, 1994",Chestnut Grove Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7663,HARPER MEMORIAL,"Old Flatwods Primitive Baptist Church - Nauvoo, Alabama","October 9, 1994",Harper Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7664,SECOND CREEK PRIMITIVE BAPTIST CHURCH,"Near Five Points, Tennessee","October 9, 1994",Tennessee State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.917
-7665,THE WALKER CATES AND HERBERT BROWN MEMORIAL,Muscadine Methodist Church,"October 9, 1994","Albright, Cates, Brown, and Sheppard Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7666,MARS HILL PRIMITIVE BAPTIST CHURCH,"McWhorter Memorial - Cleburn County, Alabama","October 16, 1994",Zion Hill Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.882
-7667,NEW YORK STATE SACRED HARP CONVENTION,"Bethel Grove Community Center, Ithaca, New York","October 14-16, 1994",New York State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7668,REID MEMORIAL,"Old County Line Church Near Corner, Alabama","October 16, 1994",Reid Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7669,COY PUTMAN MEMORIAL,"Rocky Mlount Primitve Baptist Church, Arab, Alabama","October 22, 1994",Coy Putman Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7670,MR. AND MRS. JOE MYERS AND W. A. PARKER MEMORIAL,"New Hope Primitive Baptist Church - Walker County, Alabama","October 22, 23, 1994","W.A. Parker, Mr. and Mrs. Joe Myers, and Elsie Beasley Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7671,CINCINNATI - COLUMBUS SINGING,"Friends Meetinghouse, Yellow Springs, Ohio","October 22, 1994","Columbus-Cincinnati Singing, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7672,JORDAN CHAPEL,"Newell, Randolph County, Alabama","October 23, 1994",Jordan's Chapel Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7673,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Sneads Cross Road,"October 23, 1994",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7674,SOUTHEAST TEXAS SINGING,"Salem Lutheran Church, Brenham, Texas","October 22, 1994",Southeast Texas Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7675,SOUTHWEST TEXAS SACRED HARP CONVENTION,"Littlevine Primitive Baptist Church, Austin, Texas","October 29-30, 1994","Southwest Texas Sacred Harp Singing Convention, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7676,MARTIN BLACKMON MEMORIAL,"New Hope Primitive Baptist Church, Villa Rica, Georgia","October 30, 1994",Martin Blackmon Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7677,TUSCALOSSA COMMUNITY CENTER,"Rosedale Southside Lions Club, Tuscalossa, Alabama","October 30, 1994",Tuscaloosa Community Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7678,ALVIS BROTHERS AND B. I. WOOD MEMORIAL SINGING,Pilgrim Rest Primitive Baptist Church,"November 6, 1994",Alvis Brothers - B. I. Wood Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7679,BETHEL PRIMITVIE BAPTIST CHURCH,"Heard County, Gerogia- off Hwy 27 South","Saturday, November 5, 1994",Bethel Primitive Baptist Church - Mississippi,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7680,HOLLY SPRINGS PRIMITIVE BAPTIST CHURCH,"Bremen, Georgia, I20- Hwy 278","November 6, 1994",Holly Springs Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7681,LOUISIANA STATE SACRED HARP SINGING,"Bethel Primitive Baptist Church Baton Rouge, Louisiana","November 5, 1994",Louisiana State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7682,MT. EBRON CHURCH MEMORIAL SINGING,"Near Double Springs, Alabama","November 6, 1994",Mt. Ebron Church Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7683,SOUTH GEORGIA SACRED HARP SINGING CONVENTION,"Lebanon Primitive Baptist Church - Near Cordele, Georgia","November 6, 1994",South Georgia Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7684,WESTERN OHIO SCHOOL HOUSE SINGING,"Bluffton, Ohio","November 5, 1994",Western Ohio School House Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7685,SOUTHREN WISCONSIN SINGING,Free Congregation of Sauk County,"Saturday, November 12, 1994",All-Wisconsin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7686,OAK GROVE CHURCH,"Alpharetta, Georgia","November 13, 1994",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7687,OAK HILL BAPTIST CHURCH,"Oxford, Alabama","November 13, 1994",Oak Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7688,HARMONY PRIMITIVE BAPTIST CHURCH,"Calhoun, Georgia","November 20, 1994",Elder and Mrs. Jason Davis Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7689,JAMES RIVER CONVENTION,"Richmond, Virginia","November 19, 20, 1994",James River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7690,JONES CHAPEL SENIOR CITIZENS CENTER,"Cullman County, Alabama","November 20, 1994",Jones Chapel Sacred Harp Memorial Singing - July,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7691,ALABAMA STATE CONVENTION,"Mt. Pleasant Home Primitive Baptist Church North Birmingham, Alabama.","November 26, 27, 1994",Alabama Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7692,GANUS AND WILFORD WAKEFIELD MEMORIAL,"Mt. Vernon (King School House) - Natural Bridge, Alabama.","November 27, 1994",Wakefield Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7693,FLORIDA STATE CONVENTION,"Holiday Inn, Panama City, Florida","December 3-4, 1994",Florida State Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
-7694,LILLIAN CALVERT AND IRENE WOODLEY MEMORIAL,"Pleasant Grove Church - Boldo, Alabama","January 8, 1994",Lillian Calvert and Irene Woodley Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7695,ALTAMONT FAIR (TRICOUNTY FAIR GROUNDS),"Near Albany, New York","June 25, 26, 1994",Old Songs Book Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
-7696,OAK GROVE PRIMITIVE BAPTIST CHURCH,"Oak Grove, Alabama","July 10, 1994",Boiling Springs Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
-7697,BEASLEY - LEE MEMORIAL SINGING,"Concord Primitive Baptist Church, Winfield, Alabama","August 14, 1994",Belton and Emma Beasley and Phillip Lee III Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7252,EMMAUS PRIMITIVE BAPTIST CHURCH,"South of Carrollton, Georgia","May 3, 1992",Emmaus Baptist Church - Carrollton,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7253,SHADY GROVE ( KEETON CEMETERY),"Walker County, Alabama","May 3, 1992",Shady Grove (Keeton Cemetery),,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7254,HUNTSVILLE SACRED HARP SINGING,Burritt Museum,"May 9, 1992",Huntsville Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7255,CROSS ROADS BAPTIST CHURCH,"County Road 66 East Cleburne County, Alabama","May 10, 1992",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7256,OLD FLATWOODS PRIMITIVE BAPTIST CHURCH,"Nauvoo, Alabama","May 10, 1992",Old Flatwoods Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7257,HARMONY CHURCH,"Lawrenceburg, Tennessee","May 16, 1992",Mattox Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7258,KENTUCKY STATE SACRED HARP CONVENTION,"Berea, Kentucky","May 16, 1992",Kentucky State Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7259,CANE CREEK PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","May 17,1992",Cane Creek Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7260,NEW CANAAN BAPTIST CHURCH,"Walker County, Alabama","May 17, 1992",New Canaan Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7261,POPOLAR SPRINGS CHURCH,"North of Tallapossa, Georgia","May 17, 1992",Poplar Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.977
+7262,DOSS MEMORIAL SINGING,"Sardis Baptist Church - Morris, Alabama","May 23-24, 1992",Doss Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7263,GUM POND CHURCH,"Morgan County, Alabama","May 24, 1992",Gum Pond Decoration Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7264,MOUNT PISGAH (COOPER BOCK) SACRED HARP SINGING,"Chambers County, Alabama","May 23, 1992",Mount Pisgah Singing Society (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7265,SULLINS SCHOOL HOUSE,"Hamilton, Alabama","May 24, 1992",Sullins School House,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7266,"PARKER, HOLLIS AND PUTTMAN MEMORIAL","Liberty Church (McComrick ) Jefferson County, Alabama.","May 31, 1992","Parker, Hollis, and Putman Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.985
+7267,MIDWEST CONVENTION,"Evanston, Illinois","May 30, 1992",Midwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7268,HOLLY SPRING MEMORIAL,"Near Bremen, Georgia, 1 -20- 27S","June 6, 7, 1992",Holly Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7269,LIBERTY CHURCH,"Henagar, Alabama","June 7, 1992",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7270,PINE TUCKY CHURCH,"Winston County, Alabama","June 6, 1992",Pine Tucky Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7271,HOPEWELL HOMECOMING,"Oneonta, Alabama","June 12, 14, 1992",Hopewell Homecoming,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7272,ALPHARETTA MUNICIPAL BUILDING,"Alpharetta, Georgia","June 14, 1992",Alpharetta Municipal Building,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7273,MOUNT VERNON PRIMITIVE BAPTIST CHURCH,"Near Cullman, Alabama on Hwy. 69 East.","June 14, 1992",Mount Vernon Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7274,NEW HOPE PRIMITIVE BAPTIST CHURCH,"Near Villa Rica, Georgia","June 14, 1992",New Hope Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7275,PLEASANT HILL (JOHNSON SCHOOL HOUSE),"Aldridge Memorial - Fayette County, Alabama","June 14, 1992",Aldridge Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7277,"MOORE, GRAVES AND CALVERT MEMORIAL","Addington Chapel Methodist Church, Cullman County, Alabama","June 21, 1992","Moore, Graves, and Calvert Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7278,HOPEWELL PRIMITIVE BAPTIST CHURCH,"Near Ephesus, Georgia","June 21, 1992",Hopewell Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7279,KING SCHOOL HOUSE (MT. VERNON CHURCH),"Natural Bridge, Alabama","June 21, 1992",Clifford Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7280,LITTLE VINE FRIMITIVE BAPTIST CHURCH,"Empire, Alabama","June 21, 1992",Little Vine Primitive Baptist Church - Empire,,,,,,,minutes_pre95.db,add_new_row_from_database,0.886
+7281,ST. MICHAEL CHURCH,"Fruithurst, Alabama","June 21, 1992","Alewine, Laminack, and Stephen McElroy Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7282,THE BATTLES AND KEENER MEMORIAL,"Pleasant Valley Church. Gallant, Alabara","June 21, 1992",The Battles And Keener Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7283,SHADY GROVE CHURCH,"Winston County, Alabama","June 27, 18, 1992",Kermit Adams and Steve Adams Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7284,DeLONG MEMORIAL,"Ebenezer Primitive Baptist Church-Dunwoody, Georgia","June 28, 1992",DeLong-Roberts Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7285,INDIAN CREEK CHURCH,"North of Bowdon, Georgia Hwy 100","June 28, 1992",Indian Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7286,MT. LEBANON CHURCH,"Near Fayette, Alabama","June 28, 1992",Mt. Lebanon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7287,JONES CHAPEL SENIOR CITIZEN CENTER,"Gib Hale, Grady Chandler and Luther Parker Memorial","July 1, 1992",Jones Chapel Sacred Harp Memorial Singing - November,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7288,MUSCADINE METHODIST CHURCH,"Muscadine, Alsbama","July 4, 1992",Independence Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7289,HENAGAR UNION CONVENTION - LIBERTY CHURCH,"Henagar, Alabama","July 4, 5, 1992",Henagar-Union Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7290,CROSS ROADS BAPTIST CHURCH,"North of Tallapoosa, Georgia off Hwy 100","July 5, 1992",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7291,DUTTOM AND GREEN SINGING,"New Flatwoods Primitive Baptist Church, South of Nauvoo, Alabama","July 7, 1992","Dutton, Green, and Jackson Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7292,CULLMAN COUNTY SINGING CONVENTION,"Cullman County, Courthouse","July 11, 12, 1992",Cullman County Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7293,MT. ZION PRIMITIVE BAPTIST CHURCH,"HWY. 159 North of Gordo, Alabama","July 12, 1992",Mt. Zion Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7294,MICHIANA REGIONAL SACFRD HARP SINGING,"New Testament Baptist Church, Goshen, Indiana","Saturday July 11, 1992",Michiana Regional Sacfrd Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7295,NORTHMINSTER PRESBYTERIAN CHURCH,"Columbus, Ohio","Saturday, July 18, 1992",Northminster Presbyterian Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7296,WALKER COUNTY CONVENTION,"City Auditorium, Jasper, Alabama","July 18, 1992",Walker County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7297,"CHAFIN, HARBINSON AND HOLLIS MEMORIAL","New Prospect Church, Cullman County, Alabama","July 19, 1992","Chafin, Harbinson, and Hollis Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7298,CINCINNATI SACRED HARP SINGING,"Calvary Episcopal Church, Cincinnati, Ohio","July 25, 1992",Cincinnati Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7299,COTACO SACRED HARP CONVENTION,Gum Pond Primitive Baptist Church,"July 25, 1992",Cotaco Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7300,DORSEY CREEK CHURCH,"Bremen, Alabama on Hwy 69","July 26, 1992",Dorsey Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7301,MT. ZION MEMORIAL SINGING,"Mount Zion, Georgia","July 25, 26 1992",Mt. Zion Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7302,CHATTAHOCHEE CONVENTION,"Wilson's Chapel Church - Carrollton, Georqia","August 1-2, 1992",Chattahoochee Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.979
+7303,WARRIOR RIVER - CLEAR CREEK CONVENTION,"Pleasant Valley Church, Gallant, Alabama","August 1, 2, 1992",Warrior River - Clear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7304,LAMAR AND PICKENS COUNTY CONVENTION,ZION CHURCH,"AUGUST 9, 1992",Lamar and Pickens Counties Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7305,TENNESSEE RIVER CONVENTION,"Second Creek Church -Five Point, Tennessee","August 9, 1992",Tennessee River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7306,BOILING SPRINGS MUSICAL CONVENTION,"Ebenezer Methodist Church, Chambers County, Alabama","Saturday, August 15, 1992",Boiling Springs Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7307,CLEBURNE COUNTY CONVENTION,Mars Hill Primitive Baptist Church,"August 15, 16,1992",Cleburne County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7308,ROCK CREEK MOUNTAIN HOME-RYAN CREEK CONVENTION,Dorsey Creek Primitive Baptist Church,"August 15, 16, 1992",Rock Creek-Mountain Home,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7309,BEAR CREEK CONVENTION,"Shady Grove Church - Winston Counrty, Alabama","August 22, 1992",Bear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7310,CHERRY TREE SINGING,James Creek Church,"August 23, 1992",Cherry Tree Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7311,ROBERTA SINGING,"Maconic Lodge, Roberta, Georgia","August 23, 1992",Roberta Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7312,LOOKOUT MOUNTAIN CONVENTION,Pine Grove Church,"August 22, 23, 1992",Lookout Mountain Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7313,LACY'S CHAPEL,"Henagar, Alabarna","August 30, 1992",Lacy Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7314,VIVALENE MOON AND HARLIE GUTHRIE MEMORIAL,"Liberty Church (McCormick) Jefferson County, Alabama","August 30, 1992",Moon and Guthrie Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7315,SOUTHWEST TEXAS SACRED HARP CONVENTION,"Little Vine Primitive Baptist Church - Austin, Texas","August 29, 30, 1992","Southwest Texas Sacred Harp Singing Convention, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7316,UNION MUSICAL CONVENTION,"Oak Grove Chruch, near Alpharetta, Georgia","August 29, 30, 1992",Union Musical Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7317,CLEAR CREEK CONVENTION WEST,"Pleasant Hill Church (Johnson School House) Fayette County, Alabama","September 6, 1992",Clear Creek Convention West,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7318,LITTLE VINE CHURCH,"Near Bremen, Georgia","September 6, 1992",Shiloh-Little Vine Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7319,MULBERRY RIVER CONVENTION,Liberty Church (McCormick) Primitive Baptist Church,"September 5, 6, 1992",Mulberry River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7320,LABOR DAY SINGING,Sholes Creek Chruch,"September 7, 1992",Labor Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7321,FOX VALLEY SINGING,"Chicago, Illinoise","September 6, 1992",Fox Valley Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7322,THE UNITED SACRED HARP MUSICAL ASSOCIATION,"West Georgia College, Carrolton, Georgia.","September 12-13, 1992",The United Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7323,MOUNTAIN HOME CHURCH,"Near Bear Creek, Alabama","September 13, 1992",Mountain Home Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7324,CALHOUN COUNTY CONVENTION,Four Mile Mt. Moriah Primitive Baptist Church,"September 19, 20, 1992",Calhoun County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7325,ROCKY MOUNTAIN SACRED HARP SINGING,"Old San Ysidro Church, Corrales, New Mexico","September 19, 20, 1992",Rocky Mountain Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7326,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","September 20, 1992",Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7327,GUM POND CHURCH,"Morgan County, Alabama","September 27, 1992",Gum Pond Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7328,WINSTON COUNTY CONVENTION,Shady Grove Church,"September 22, 1992",Winston County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7330,LIBERTY HILL BAPTIST CHURCH,"Boaz, Alabama","September 27, 1992",Liberty Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7331,NEW ENGLAND SINGING,"Strafford, Vermont","October 2-3, 1992",New England Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7332,"ALEXANDER, HULLETT LOWE AND BROTHERS MEFORIAL",Hopewell Primitive Baptist Church,"October 4, 1992","Alexander, Hullett, Lowe, Brothers, Hyatt, Putman, and Wootten Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7333,OLD SARDIS CHURCH #1,"Near Lynn, Alabama","October 4, 1992",Tom Harper and Ganus Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7334,CHESNUT GROVE CHURCH,"Ider, Alabama","October 11, 1992",Chestnut Grove Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7335,MEMORIAL SINGING,Glenco Senior Citizen Center,"October 13, 1992",Etowah County Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7336,SECOND CREEK PRIMITIVE BAPTIST CHURCH,"Near Five Points, Tennessee","October 11, 1992",Tennessee State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.917
+7337,THE WALKER CATES AND HERBERT BROWN MEMORIAL,Muscadine Methodist Church,"October 11, 1992","Albright, Cates, Brown, and Sheppard Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7338,TWIN CITIES SACRED HARP SINGING CONVENTION,"Lyndale Congregational Church, MPLS, Minnesota","October 17, 18, 1992",Twin Cities Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7339,MARS HILL PRIMITIVE BAPTIST CHURCH,"McWhorter Memorial- Cleburne County, Alabama","October 18, 1992",Zion Hill Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.882
+7340,REID MEMORIAL,"Old County Line Church_ Near Corner, Alabama","October 18, 1992",Reid Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7341,COY PUTMAN MEMORIAL,"Rocky Mount Fall Singing, Arab, Alabama","October 24, 1992",Coy Putman Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7342,JORDAN CHAPEL,"Newell, Randolph County, Alabama","October 23, 1992",Jordan's Chapel Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7343,CINCINNATI -COLUMBUS,"Friends Meetinghouse, Yellow Springs, Ohio","October 24, 1992","Columbus-Cincinnati Singing, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7344,MR AND MRS JOE MYERS AND W. A. PARKER MEMORIAL,"New Hope Primitive Baptist Church - Walker County, Alabama","October 24, 25, 1992","W.A. Parker, Mr. and Mrs. Joe Myers, and Elsie Beasley Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7345,SOUTHEAST TEXAS CONVENTION,"Salem Lutheren Church, Brenham, Texas","October 24, 1992",Southeast Texas Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7346,LOUISIANA STATE SACRED HARP CONVENTION,New Orleans Baptist Theological Seminary,"October 23-24, 1992",Louisiana State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7347,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"October 25, 1992",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7348,NEW YORK STATE SACRED HARP CONVENTION,"Bethel Grove Community Center, Ithaca, New York","October 16-17, 1992",New York State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7349,BETHEL PRIMITIVE BAPTIST CHURCH,"Heard County, Georgia, Off, Hwy 27 So.","Saturday October 31, 1992",Bethel Primitive Baptist Church - Mississippi,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7350,ALVIS BROTHER5 - B. I WOOD MeMORIAL SINGING,Pilgrim Rest Primitive Baptist Church,"November 1, 1992",Alvis Brothers - B. I. Wood Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.975
+7351,"MADISON, WISCONSIN SINGING",St. Francis House,"November 7, 1992",All-Wisconsin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7352,HOLLY SPRINGS MEMORIAL,"I-20 27 HWY South, Bremen, Georgia","November 1, 1992",Holly Springs Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7353,MT EBRON CHURCH MEMORIAL SINGING,Near Double Springs Alabama,"November 1, 1992",Mt. Ebron Church Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7354,IMMANUEL BAPTIST CHURCH,"Nashville, Tennessee","Saturday, November 7 1992",Immanuel Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7355,OAK HILL CHURCH,"Oxford, Alabama","November 3, 1992",Oak Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7357,HARMONY PRIMITIVE BAPTIST CHURCH,"Calhoun, Georgia","November 15, 1992",Elder and Mrs. Jason Davis Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7358,JONES CHAPEL SENIOR CITIZEN CENTER,"Cullman County, Alabama","November 15, 1992",Jones Chapel Sacred Harp Memorial Singing - November,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7359,ALABAMA STATE CONVENTION,"Mt Pleasant Home Primitive Baptist Church North Birmingham, Alabama","November 21, 22, 1992",Alabama Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7360,JAMES RIVER SACRED HARP SINGING CONVENTION,"Dorey Recreation Center, Richmond, Virginia","November 21, 1992",James River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7361,MT. VERNON (KING SCHOOL HOUSE),"Natural Bridge, Alabama","November 22, 1992",Mt. Vernon (King School House),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7362,MARTIN BLACKMON MEMORIAL.,"New Hope Primitive Baptist Church, East of Villa Rica, Georgia","November 29, 1992",Martin Blackmon Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7363,TUSCALOSSA COMMUNITY CENTER SINGING,"Southside Lions Club in Rosedale Tuscaloosa, Alabama","November 29, 1992",Tuscaloosa Community Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7364,SOUTHWEST TEXAS CONVENTION,Bethel Primitive Baptist Church,"March 28 - 29, 1992",Southwest Texas Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7365,MACEDONIA PRIMITIVE BAPTIST CHURCH,"Fyffe, Alabama","June 21,1992",Macedonia Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7366,CONNECTICUT CONVENTION,"Wesleyan University, Middletown, Connecticut","July 12, 1992",Connecticut Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7367,BEASLEY AND LEE MEMORIAL,"Concord Primitiva Baptist Church, Winfield, Alabama","August 16, 1992",Beasley And Lee Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7368,OAK GROVE CHURCH,"Near Alpheretta, Georgia","November 8, 1992",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7369,LIBERTY CHURCH,"Helicon, Alsbama","December 6, 1992",Liberty Church - Helicon,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7370,LITTLE BRANCH PRIMITIVE BAPTIST CHURCH,"Albertville, Alabama","December 17, 1992",Little Branch Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7371,SINGING'S HELD IN 1993 CINCINNATI NEW YEAR SINGING,"College Hill Christian Church, Cincinnati, Ohio","January 1, 1993",Singing'S Held In 1993 Cincinnati New Year Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7372,ORIGINAL DUTCH SINGING,"West Georgia College, Carrolton, Georgia","January 3, 1993",University of West Georgia,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7373,DUTCH TREAT SINGING,"Shady Grove Church, Winston County, Alabama","January 3, 1993",Shady Grove Annual Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7374,UNCLE JACK KERR MEMORIAL,"Camp Ground Methodist Church - North of Fruithurst, Alabama","January 10, 1993",Uncle Jack Kerr Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7375,INDIAN BOUNDARY PARK,"Chicago, Illinois","January 10, 1993",Indian Boundary Park,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7376,ALL- CALIFORNIA SACRED HARP SINGING CONVENTION,"San Francisco, California","January 17, 1993",All-California Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7377,FOUR - NOTE SINGING,"Marion, Kentucky","January 23, 1993",Four - Note Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7378,BALDWIN COUNTY SACRED HARP SINGING CONVENTION,Bay Minette City Hall— Bay Minette Alabama,"January 23 -24, 1993",W. L. Green Memorial and Baldwin County Sacred Harp Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7379,LIBERTY CHURCH,"Henagar, Alabama","January 31, 1993",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7380,"PARKER, HOLLIS AND PUTMAN MEMORIAL","Liberty Church (McCormick) Jefferson County, Alabama","January 31, 1993","Parker, Hollis, and Putman Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7381,BOB BURNHAM MEMORIAL DUTCH TREAT SINGING,"Jacksonville, Alabama","February 7, 1993",Burnham and Brown Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7382,MOUNT HOPE BAPTIST CHURCH,"Northeast of Sipsey, Alabama","February 7, 1993",J.D. Starnes Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7383,MR AND MRS HOMER MURPHREE MEMORIAL,Pine Grove Church,"February 14, 1993",Mr And Mrs Homer Murphree Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7384,LINCOLN'S BIRTHDAY SINGING,"University of Chicago, Ida Noyes Hall","February 14, 1993",Lincoln's Birthday Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7385,OHIO STATE CONVENTION,"Columbus, Ohio","February 20, 21, 1993",Ohio State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7386,SANDERS MEMORIAL,"Cardova Senior Citizens Center- Cardova, Alabama","February 21, 1993",Sanders Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7387,PACIFIC NORTHWEST CONVENTION,"Portland, Oregon","February 27, 1993",Pacific Northwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7388,TEXAS STATE SACRED HARP CONVENTION,"Conference Center, College Station, Texas","February 27-28, 1993",Texas State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7389,UNIVERSITY OF GEORGIA,"Visitor Center Botonical Gardens, Athens, Gerogia","February 28, 1993",University of Georgia Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7390,DUKE MEMORIAL SINGING,"Bethel Primitive Baptist Church - Heard County, Georgia","March 6, 1993",Duke Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7391,WALKER MEMORIAL SINGING,"Vinemont Fire Station, Vinemont, Alabama","March 7, 1993",Walker Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7392,MR. AND MRS. FRANK ROGERS MEMORI AL,"Ephesus, Georgia","March 7, 1993",Mr. And Mrs. Frank Rogers Memori Al,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7393,MISSOURI STATE CONVENTION,Union Baptist Church,"March 13, 14, 1993",Missouri State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7394,OXFORD CITY HALL,Oxford Mississippi,"March 14, 1993",Oxford City Hall,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7396,ANTIOCH METHODIST CHURCH,"Cleburne County, Alabama","March 21, 1993",Antioch Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7397,GARRISON MEMORIAL,"Oak Grove Primitive Baptist Church _ Alpharetta, Georgia","March 21, 1993",Garrison Memorial (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7398,THE LOG CABIN SACRED HARP SINGING,"North of Double Springs, Alabama","March 21, 1993",The Log Cabin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7400,GEORGIA STATE CONVENTION,"Big Creek Primitive Baptist Church, Alpharetta, Georgia","March 27, 28, 1993",Georgia State Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7401,MOUNT PLEASANT BAPTIST CHURCH,"Crossville, Alabama","March 21, 1993",Mount Pleasant Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7402,POTOMIC RIVER CONVENTION,"Washington, DC","April 3, 4, 1993",Potomac River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.958
+7403,EDWARDSVILLE CHURCH,"Six miles east of Heflin, Alabama","April 4, 1993",Edwardsville Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7404,OLD ENON CHURCH,"Lynn, Alabama","April 4, 1993",Old Enon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7406,OAK GROVE CHURCH,"Alpharetta, Georgia","April 11, 1993",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7407,OLD COUNTY LINE CHURCH,"Near Corner, Alabama","April 11, 1993",County Line Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7408,ANTIOCH BAPTIST CHURCH,Ider Alabama,"April 11, 1993",Antioch Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7409,SECOND CREEK SINGING,"Five Points, Tennessee","April 11, 1993",Second Creek Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7410,ROCKY MOUNT PRIMITIVE BAPTIST CHURCH,"HWY 69 East of Arab, Alabama","Saturday April 17, 1993",Sharon Jordan Leach Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7411,HARPETH VALLEY-PRIESTLEY MILLER MEMORIAL,"Harpeth Presbyterian Church-South of Nashville, Tennessee","April 17, 1993",Harpeth Valley - Priestley Miller Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.909
+7412,EPHESUS CHURCH,"Valley (Fairfax), Alabama","April 18, 1993",Ephesus Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7413,OLD HARMONY PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","April 18, 1993",Old Harmony Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7414,OLD UNION BAPTIST CHURCH,"Five miles southwest of Winfield, Alabama","April 18, 1993",Old Union Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7415,NEW ORLEANS BAPTIST THEOLOGICAL SEMINARY,"3939 Gentilly Blbd., New Orleans, Louisiana","April 20, 1993",New Orleans Baptist Theological Seminary Fall Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7416,COLUMBUS -CINCINNATI SINGING,"Yellow Springs, Ohio","April 24, 1993","Columbus-Cincinnati Singing, Spring Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7417,FRIENDSHIP PRIMITIVE BAPTSIT CHURCH,"Haleyville, Alabama","April 25, 1993",Friendship Primitive Baptist Church - April,,,,,,,minutes_pre95.db,add_new_row_from_database,0.895
+7418,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"April 25, 1993",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7419,EMMAUS BAPTIST CHURCH,"South of Carrollton, Georgia","May 2, 1993",Emmaus Baptist Church - Carrollton,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7420,NORTH CAROLINA CONVENTION,"Unitarian Universalist Fellowship Raleigh, North Carolina","May 2, 1993",North Carolina Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7421,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","May 2, 1993",Shady Grove (Keeton Cemetery),,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7422,HUNTSVILLE SACRED HARP SINGING,Burritt Museum,"May 8, 1993",Huntsville Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7423,CROSS ROADS BAPTIST CHURCH,"County Road 66-East Cleburne County, Alabama","May 9, 1993",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7424,OLD FLATWOODS PRIMITIVE BAPTIST CHURCH,"Nauvoo, Alabama","May 9, 1993",Old Flatwoods Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7425,KENTUCKY STATE SACRED HARP CONVENTION,"Berea, Kentucky","May 15, 1993",Kentucky State Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7426,CANE CREEK PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","May 16, 1993",Cane Creek Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7427,NEW CANAAN BAPTIST CHURCH,"Walker County, Alabama","May 16, 1993",New Canaan Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7428,GARDEN STATE SACRED HARP SINGING CONVENTION,"Montclair Friends Meetinghouse, Upper Montclair, New Jersey","May 14-15, 1993",Garden State Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7429,POPOLAR SPRINGS CHURCH,"North of Tallapoosa, Georgia off HWY 100.","May 16, 1993",Poplar Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.977
+7430,DOSS MEPORIAL SINGING,"Sardis Baptist Clurch, Morris Alabama","May 23, 1993",Doss Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.952
+7431,GUM POND PRIMITIVE BAPTIST CHURCH,"Morgan County, Alabama","May 23, 1993",Gum Pond Decoration Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7432,MOUNT PISGAH CHURCH (COOPER BOOK),"Chambers County, Alabama","May 22, 1993",Mount Pisgah Singing Society (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7433,SULLINS SCHOOL HOUSE,"Hamilton, Alabama","May 23, 1993",Sullins School House,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7434,MIDWEST CONVENTION,"Evanston and Chicago, Illinois","May 29-30, 1993",Midwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7435,SOUTHWEST TEXAS SACRED HARP CONVENTION,Bethel Primitive Baptist Church McMahan (Caldwell CO.) Texas,"May 29-30, 1993","Southwest Texas Sacred Harp Singing Convention, Spring Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7436,HOLLY SPRINGS MEMORIAL SINGING,"Near Bremen, Georgia 1-20 -27s","June 5-6, 1993",Holly Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7437,LIBERTY CHURCH,"Henager, Alabama","June 6, 1993",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7438,PINE TUCKY CHURCH,"Winston County, Alabama","June 6, 1993",Pine Tucky Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7439,HOPEWELL HOMECOMING,"Oneonta, Alabama","June 12, 13, 1993",Hopewell Homecoming,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7440,ALPHARETTA MUNICIPAL BUILDING,"Alpharetta, Gorgia","June, 13, 1993",Alpharetta Municipal Building,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7441,MOUNT VERNON CHURCH,"Near Cullman, Alabama on HWY. 69 East","June 13, 1993",Mount Vernon Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7442,NEW HOPE CHURCH,"Villa Rica, Georgia","June 13, 1993",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7443,PLEASANT HILL (JOHNSON SCHOOL HOUSE),"Aldridge Memorial - Fayette County, Alabama","June 13, 1993",Aldridge Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7444,"MOORE, GRAVES AND CALVERT MEMORIAL","Addington Chapel Methodist Church, Cullman County, Alabama","June 19, 1993","Moore, Graves, and Calvert Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7445,HOPEWELL PRIMITIVE BAPTIST CHURCH,"Near Ephesus, Georgia","June 20, 1993",Hopewell Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7446,KING SCHOOL HOUSE (MT. VERNON BAPTIST CHURCH),"National Bridge, Alabama","June 20, 1993",Clifford Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7447,LITTLE VINE PRIMITIVE BAPTIST CHURCH,"Empire, Alabama","June 20, 1993",Little Vine Primitive Baptist Church - Empire,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7449,ALTAMONT FAIR (TRICOUNTY FAIR GROUNDS),Near Albany New York,"June 26, 27, 1993",Old Songs Book Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7450,THE BATTLES AND KEENER MEMORIAL,"Pleasant Valley Church - Gallant, Alabama","Saturday, June 26, 1993",The Battles And Keener Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7451,SHADY GROVE CHURCH,"Winston County, Alabama","June 26, 27, 1993",Kermit Adams and Steve Adams Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7452,DELONG MEMORIAL,"Ebenezer Primitive Baptist Church Dunewoody, Georgia","June 27, 1993",DeLong-Roberts Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7453,INDIAN CREEK CHURCH,"North of Bowdon, Gerogia HWY 100","June 27, 1993",Indian Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7454,MT. LEBANON CHURCH,"Near Fayette, Alabama","June 27, 1993",Mt. Lebanon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7455,NEW HOPE CHURCH,"Cullman, County, Alabama.","June 27, 1993",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7456,HENAGAR UNION CONVENTION - LIBERTY CHURCH,"Henagar, Alabama","July 3, 4, 1993",Henagar-Union Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7457,CROSS ROADS BAPTIST CHURCH,"North of Tallapoosa, Georgia - off HWY 100","July 4, 1993",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7458,DUTTON AND GREEN MEMORIAL,"New Flatwoods Primtive Baptist Church, South of Nauvoo, Alabama","July 4, 1993","Dutton, Green, and Jackson Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7459,MUSCADINE METHODIST CHURCH,"Muscadine, Alabama","July 5, 1993",Independence Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7460,JONES CHAPEL MEMORIAL,"Cullman County, Alabama","July 7, 1993",Jones Chapel Sacred Harp Memorial Singing - July,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7461,MICHIANA SACRED HARP SINGING,"New Testament Baptist Church, Goshen, Indiana","July 10, 1993",Michiana Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7462,Cullman COUNTY SINGING CONVENTION,"Cullman County Courthouse, Cullman, Alabama","July 10, 11, 1993",Cullman County Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7463,CONNECTICUT CONVENTION,"Middletown, Connecticut","July 11, 1993",Connecticut Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7464,MT. ZION PRIMITIVE BAPTIST CHURCH,"Hwy 159 north of Gordo, Alabama","July 11, 1993",Mt. Zion Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7465,MT. OAK METHODIST CHURCH,"Six miles northwest of Arab, Alabama","Saturday July 17, 1993",Mt. Oak Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7466,WALKER COUNTY CONVENTION,"City Auditorium, Jasper, Alabama","July 17, 1993",Walker County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7467,"CHAFIN, HARBINSON AND HOLLIS MEMORIAL","New Prospect Church, Cullman County, Alabama","July 18, 1993","Chafin, Harbinson, and Hollis Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7468,DEAN ALLEMANG HOMECOMING SINGING,"Columbus, Ohio","July 18, 1993",Dean Allemang Homecoming Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7469,COTACO SACRED HARP CONVENTION,Gum Pond Primitive Baptist Church,"Saturday, July 24, 1993",Cotaco Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7470,CINCINNATI ALL DAY SINGING,College Hill Christian Church,"July 25, 1993",Cincinnati Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7471,DORSEY CREEK PRIMITIVE BAPTIST CHURCH,"Bremen, Alabama on Hwy 69","July 25, 1993",Dorsey Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.889
+7472,MARION COUNTY COURT HOUSE SINGING,"Hamilton, Alabama","July 25, 1993",Marion County Court House Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7473,MT ZION MEMORIAL,"MT. ZION, GEORGIA","JULY 24, 25, 1993",Mt. Zion Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7475,WARRIOR RIVER - CLEAR CREEK CONVENTION,"Liberty Hill ChurCh, Boaz, Alabama","July 31-August 1, 1993",Warrior River - Clear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7476,FAVETTE COUNTY CONVENTION,"Bevill State Junior College, Fayette, Alabama","August 1, 1993",Fayette County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.96
+7478,LAMAR AND PICKENS COUNTY CONVENTION,Zion Church,"August 8, 1993",Lamar and Pickens Counties Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7479,MACEDONIA BAPTIST CHRUCH,"Haleyville, Alabama","August 8, 1993",Macedonia Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.958
+7480,TENNESSEE RIVER CONVENTION,"Second Creek Church - Five Points, Tennessee","August 8, 1993",Tennessee River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7481,ELMORE CENTER,"Four miles south of Gordo, Alabama, County Roads 9 and 21","August 11, 1993",Elmore Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7482,BEASLEY - LEE MEMORIAL SINGING,"Concord Primitive Baptist Church, Winfield, Alabama","August 15, 1993",Belton and Emma Beasley and Phillip Lee III Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7483,CLEBURNE COUNTY CONVENTION,Mars Hill Primitive Baptist Church,"August 15, 1993",Cleburne County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7484,ROCK CREEK MOUNTAIN HOME-RYAN CREEK CONVENTION,Dorsey Creek Primitive Baptist Curch,"August 14, 15, 1993",Rock Creek-Mountain Home,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7485,BEAR CREEK CONVENITO,"Shady Grove Church - Winston County, Alabama","August 21, 1993",Bear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.927
+7486,LOOKOUT FOUNTAIN CONVENTION,Pine Grove Church,"August 21-22, 1993",Lookout Mountain Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7487,CHERRY TREE SINGING,James Creek Church,"August 22, 1993",Cherry Tree Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7488,UNION MUSICAL CONVENTION,Camp Creck Primitive Baptist Church,"August 28-29, 1993",Union Musical Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7489,ROBERT SINGING,"Masonic Lodge, Roberta, Georgia","August 22, 1993",Roberta Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7490,YOUNG PEOPLES SACRED HARP SINGING,"Grace Baptist Church, Sumiton, Alabama","August 28, 1993",Young People's Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7491,LACY'S CHAPEL SINGING,"Dean Chapel Church, Henegar, Alabama","August 29, 1993",Lacy Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7492,MOON AND GUTHRIE MEMORIAL,"Liberty Church (McCormick) Jefferson County, Alabama","August 29, 1993",Moon and Guthrie Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7493,CLEAR CREEK CONVENTION WEST,"Pleasant Hill Church, (Johnson School House) Fayette County, Alabama","September 5, 1993",Clear Creek Convention West,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7494,LITTLE VINE CHURCH,"Near Bremen, Georgia","September 5, 1993",Shiloh-Little Vine Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7495,FOX VALLEY FOLK FESTIVAL,"Geneva, Illinois","September 5, 1993",Fox Valley Folk Festival,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7496,MULBERRY RIVER CONVENTION,Liberty Church (McCormick) Primitive Baptist Church,"September 4, 5, 1993",Mulberry River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7497,LABOR DAY SINGING,Shoals Creek Church,"September 6, 1993",Labor Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7498,THE UNITED SACRED HARP MUSICAL ASSOCIATION,"Coundy Line Church, Near Corner, Alabama","September 11, 12, 1993",The United Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7499,MOUNTAIN HOME CHURCH,"Near Bear Creeak, Alabama","September 12, 1993",Mountain Home Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7500,CALHOUN COUNTY CONVENTION,Four Mile MT. Moriah Primitive Baptist Church,"September 18, 1993",Calhoun County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7501,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","September 19, 1993",Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7502,GUM POND CHURCH,"Morgan County, Alabama","September 27, 1993",Gum Pond Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7504,LIBERTY HILL BAPTIST CHURCH,"Boaz, Alabama","September 26, 1993",Liberty Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7505,WINSTON COUNTY SINGING CONVENTION,Shady Grove Church,"September 26, 1993",Winston County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7506,ROCKY MOUNTAIN SACRED HARP SINGING,Denver (Lakewood) Colorado,"October 2, 3, 1993",Rocky Mountain Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7507,"ALEXANDER, HULLETT, LOWE AND BROTHERS MEMORIAL",Hopewell Primitive Baptist Church,"October 3, 1993","Alexander, Hullett, Lowe, Brothers, Hyatt, Putman, and Wootten Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7508,OLD SARDIS CHURCH #1,"Near Lynn, Alabama","October 3, 1993",Tom Harper and Ganus Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7509,CHESNUT GROVE CHURCH,"Ider, Alabama","October 10, 1993",Chestnut Grove Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7510,SECOND CREEK PRIMITIVE BAPTIST CHURCH,"Near Five Points, Tennessee","October 11, 1993",Tennessee State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.917
+7511,HARPER MEMORIAL,Old Flatwoods Primitive Baptist Church - Nauvoo Alabama,"October 10, 1993",Harper Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7512,MEMORIAL SINGING,Glenco Senior Citizen Center,"Saturday, October 9, 1993",Etowah County Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7513,NEW YORK STATE SACRED HARP CONVENTION,"Bethel Grove Community Center, Ithaca New York","October 15-17, 1993",New York State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7514,MARS HILL PRIMITIVE BAPTIST CHURCH,"McWhorter Memorial - Cleburn County, Alabama","October 17, 1993",Zion Hill Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.882
+7515,REID MEMORIAL,"Old County Line Church near Corner, Alabama","October 17, 1993",Reid Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7516,COY PUTMAN MEMORIAL,"Rocky Mount Primitive Baptist Church, Arab, Alabama","October 23, 1993",Coy Putman Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7517,JORDAN CHAPEL,"Newall, Randolph County, Alabama","October 24, 1993",Jordan's Chapel Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7518,CINCINNATI- COLUMBUS,"Friends Meetinghouse, Yellow Springs, Ohio","October 23, 1993","Columbus-Cincinnati Singing, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7519,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Sneads Crossroads,"October 24, 1993",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7520,SOUTHEAST TEXAS SINGING,"Salem Lutheran Church, Brenham, Texas","October 23, 1993",Southeast Texas Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7521,SOUTHWEST TEXAS CONVENTION,"Littlevine Primitive Baptist Church, Austin, Texas","October 30, 31, 1993",Southwest Texas Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7522,MARTIN BLACKMON MEMORIAL,"New Hope Primitive Baptist Church, East of Villa Rica, Georgia","October 31, 1993",Martin Blackmon Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7523,TUSCALOSSA COMMUNITY CENTER,"Rosedale Southside Lions Club, Tuscalossa, Alabama","October 31, 1993",Tuscaloosa Community Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7524,ALVIS BROTHERS -B. I. WOOD MEMORIAL SINGING,Pilgrims's Rest Primitive Baptist Church,"November 7, 1993",Alvis Brothers - B. I. Wood Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7525,MT EBRON CHURCH MEMORIAL SINGING,"Near Double Springs, Alabama","November 7, 1993",Mt. Ebron Church Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7526,SOUTH GEORGIA SACRED HARP SINGING CONVENTION,"Lebanon Primitive Baptist Church Near Cordele, Georgia","November 7, 1993",South Georgia Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7527,BETHEL PRIMITIVE BAPTIST CHURCH,"Heard County, Georgia - Off Hwy 27 South","Saturday, November 6, 1993",Bethel Primitive Baptist Church - Mississippi,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7528,HOLLY SPRINGS MEMORIAL,"1-20 and 27 South, Bremen, Georgia","November 7, 1993",Holly Springs Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7529,IMMANUEL BAPTIST CHURCH,"Nashville, Tennessee","November 13, 1993",Immanuel Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7530,"MADISON, WISCONSIN SINGING",St. Francis House,"Saturday, November 13, 1993",All-Wisconsin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7531,OAK GROVE CHURCH,"Alpharetta, Georgia","November 14, 1993",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7532,OAK HILL BAPTIST CHURCH,"Oxford, Alabama","November 14, 1993",Oak Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7534,HARMONY PRIMITIVE BAPTIST CHURCH,"Calhoun, Georgia","November 21, 1993",Elder and Mrs. Jason Davis Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7535,JONES CHAPEL SENIOR CITIZEN CENTER,"Cullman County, Alabama","November 21, 1993",Jones Chapel Sacred Harp Memorial Singing - November,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7536,ALABAMA STATE CONVENTION,"Mt. Pleasant Home Primitive Baptist Church, North Birmingham, Alabama","November 27, 28, 1993",Alabama Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7537,MT. VERNON (KING SCHOOL HOUSE),"Natural Bridge, Alabama","November 28, 1993",Mt. Vernon (King School House),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7539,ST. MICHAEL CHURCH,"Fruithurst, Alabama","June 20, 1993","Alewine, Laminack, and Stephen McElroy Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7540,OAK GROVE PRIMITIVE BAPTIST CHURCH,"Oak Grove, Alabama","July 11, 1993",Boiling Springs Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7541,LOUISIANA STATE SACRED HARP CONVENTION,Bethel Primitive Baptist Church,"October 30, 1993",Louisiana State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7542,CALVERT AND WOODLEY MEMORIAL SINGING,"Pleasant Grove Church- Boldo- Near Jasper, Alabama.","January 9, 1993",Lillian Calvert and Irene Woodley Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7543,JAMES RIVER CONVENTION,"Richmond, Virginia","November 20, 21, 1993",James River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7544,LIBERTY CHURCH,"Helicon, Alabama","December 5, 1993",Liberty Church - Helicon,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7545,CONCORD PRIMITIVE BAPTIST CHURCH,"Winfield, Alabama","December 12, 1993",Joseph Jackson Beasley Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7546,LITTLE BRANCH PRIMITIVE BAPTIST CHURCH,"Albertville, Alabama","December 16, 1993",Little Branch Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7547,CINCINNATI NEW YEAR'S SINGING,College Hill Christian Church,"Saturday, January 1, 1994",Cincinnati New Year's Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7548,DUTCH TREAT SINGING,"Shady Grove Church, Winston County, Alabama","January 2, 1994",Shady Grove Annual Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7549,WEST GEORGIA COLLEGE (FOOD SERVICES BUILDING),"Carrollton, Georgia","January 2, 1994",University of West Georgia,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7550,UNCLE JACK KERR MEMORIAL,"Camp Ground Methodist Church - North of Fruithurst, Alabama","January 9, 1994",Uncle Jack Kerr Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7551,ANNIVERSARY SINGING,"Chicago, Illinois","January 9, 1994",Chicago Anniversary Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7552,ALL-CALIFORNIA SACRED HARP SINGING CONVENTION,"San Diego, California","January 15, 16, 1994",All-California Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7553,SOUTHWESTERN BAPTIST THEOLOGICAL SEMINARY,"Fort Worth, Texas","January 19, 1994",William J. Reynolds Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7554,BALDWIN COUNTY Cooper Book SINGING CONVENTION,"Bay Minette City Hall - Bay Minette, Alabama","January, 22-23, 1994",W. L. Green Memorial and Baldwin County Sacred Harp Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7555,"PARKER, HOLLIS AND PUTMAN MEMORIAL","Liberty Church, (McCormick) Jefferson County, Alabama","January 30, 1994","Parker, Hollis, and Putman Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7556,BOB BURNHAM MEMORIAL DUTCH TREAT SINGING,"Jacksonville, Alabama","February 6, 1994",Burnham and Brown Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7557,MT. HOPE BAPTIST CHURCH,"Northeast of Sipsey, Alabama","February 6, 1994",J.D. Starnes Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7558,LINCOLN'S BIRTHDAY SINGING,"University of Chicago, Ida Noyes Hall","February 6, 1994",Lincoln's Birthday Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7560,OHIO STATE CONVENTION,"Cincinnati, Ohio","February 18-20, 1994",Ohio State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7561,SANDERS MEMORIAL,"Cardova Senior Citizen Center - Cardova, Alabama","February 20, 1994",Sanders Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7562,PACIFIC NORTHWEST CONVENTION,"Seattle, Washington","February 27, 1994",Pacific Northwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7563,UNIVERSITY OF GEORGIA,"Visitor Center-Botanical Gardens, Athens Georgia","February 27, 1994",University of Georgia Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7564,WINSTON COUNTY COURTHOUSE MEMORI AL SINGING,"Winston County, Alabama","Saturday, February 26, 1994",Winston County Courthouse Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.988
+7565,TEXAS STATE CONVENTION,"Conference Center, College Station, Texas","February 26-27, 1994",Texas State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7566,MR. AND MRS. O.H. HANDLEY AND MR. AND MRS .WH. WALKER MEMORIAL SINGING,"Vinemont Fire Station, Vinemont, Alabama (Cullman, County)","March 6, 1994",Walker Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.992
+7567,MARTHA HARPER NIX - LEWIS KEETON MEMORIAL,"New Flatwoods Church - Nauvoo, Alabama - Walker County","March 6, 1994","Martha Harper Nix, Lewis Keeton, and Lavada McGough Gilmore Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7568,MR. AND MRS. FRANK ROGERS MEMORIAL,"Ephesus, Georgia","March 6, 1994",Rogers Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7569,MR. AND MRS. HOMER MURPHREE MEMORIAL,Pine Grove Baptist Church,"Saturday, March 12, 1994",Mr And Mrs Homer Murphree Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7570,OXFORD CITY HA,"Oxford, Mississippi","March 13, 1994",Oxford City Hall,,,,,,,minutes_pre95.db,add_new_row_from_database,0.933
+7571,L.O. AND C. H. GILLILAND MEMORI AL,Old Clear Creek Primitive Baptist Church,"March 13, 1994",Gilliland and Brothers Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7574,ANTIOCH METHODIST CHURCH,Cleburne County. Alabama,"March 20, 1994",Antioch Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7575,GARRISON MEMORIAL (COOPER BOOK),"Oak Grove Primitive Baptist Church Alpharetta, Georgia, B'ham Road","March 20, 1994",Garrison Memorial (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7576,MEMORIAL SINGING GLENCO SENIOR CITIZEN CENTER,"Near Gadsden, Alabama","March 20, 1994",Etowah County Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7577,THE LOG CABIN SACRED HARP SINGING,"North of Double Springs, Alabama","March 20, 1994",The Log Cabin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7578,"LEONA HORTON, MAUDE ADANS, MINA ADAMS AND DELIA WATTS MEMORIAL","Shady Grove Church - Double Springs, Alabama","March 20, 1994",Godsey Sisters and Sandra Spradlin Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7579,GEORGIA STATE CONVENTION,"Old Decatur Courthouse, Decatur, Georgia","March 26- 27, 1994",Georgia State Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7580,SHADY GROVE PRIMITIVE BAPTIST CHURCH,Winston County. Alabama,"March 27, 1994",???,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7581,EDWARDSVILLE CHURCH,"Six miles east of Heflin, Ala.. off Hwy. 78.","April 3, 1994",Edwardsville Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7582,OLD ENON CHURCH,"Lynn, Alabama","April 3, 1994",Old Enon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7583,HARPETH VALLELY - PRIESTLEY MILLER MEMORIAL,"Harpeth Presbyterian Church -South of Nashville, Tennessee","Saturday, April 9, 1994",Harpeth Valley - Priestley Miller Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.899
+7584,STATE LINE CHURCH,"Cleburne County, Alabama","April 9, 1994",State Line Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7585,ANTIOCH BAPTIST CHURCH,"Ider, Alabama","April 10, 1994",Antioch Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7586,COUNTY LINE CHURCH,"Near Corner, Alabama","April 10, 1994",County Line Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7587,NEW ORLEANS BAPTIST THEOLOGICAL SEMINARV,"3939 Gentilly Blvd., New Orleans, Louisiana","April, 14, 1994",New Orleans Baptist Theological Seminary Spring Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7588,SEED AND FEED SACRED HARP SINGING,"Atlanta Friends Meeting House, Decatur Georgia","Saturday, April 16, 1994",Seed and Feed Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7589,POTOMAC RIVER CONVENTION,"Washington, DC.",April 15-17 1994,Potomac River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7590,ROCKY MOUNT PRIMITIVE BAPTIST CHURCH,"HWY. 69 East of Arab, Alabama","Saturday, April 16, 1994",Sharon Jordan Leach Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7591,EPHESUS CHURCH,Valley (Fairfax) Alabama,"April 17, 1994",Ephesus Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7592,OLD HARMONY PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","April 17, 1994",Old Harmony Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7593,OLD UNION BAPTIST CHURCH,"Five miles southwest of Winfield, Alabama","April 17, 1994",Old Union Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7594,COLUMBUS- CINCINNATI SINGING,"Yellow Springs, Ohio","April 23, 1994","Columbus-Cincinnati Singing, Spring Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7595,FRIENDSHIP PRIMITIVE BAPTIST CHURCH,"Haleyville, Alabama","April 24, 1994",Friendship Primitive Baptist Church - April,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7596,OAK GROVE CHURCH,"Alpharetta, Georgia","April 24, 1994",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7597,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Snead Crossroads,"April 24, 1994",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7598,EMMAUS CHURCH,"South of Carrollton, Georgia","May 1, 1994",Emmaus Baptist Church - Carrollton,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7599,NORTH CAROLINA SACRED HARP CONVENTION,"Raleigh, North Carolina","May 1, 1994",North Carolina Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7600,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","May 1, 1994",Shady Grove (Keeton Cemetery),,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7601,HUNTSVILLE SACRED HARP SINGING,Burritt Museum,"May 7, 1994",Huntsville Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7602,CROSS ROADS BAPTIST CHURCH,"County Road 66 --East Cleburne County, Alabama","May 2, 1994",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7603,OLD FLATWOODS PRIMITVE BAPTIST CHURCH,"Nauvoo, Alabama","May 8, 1994",Old Flatwoods Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.987
+7604,HARMONY CHURCH,"Lawerenceburg, Tennessee","Saturday, May 14, 1994",Mattox Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7605,KENTUCKY STATE SACRED HARP CONVENTION,"Berea, Kentucky","Saturday, May 14, 1994",Kentucky State Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7606,CANE CREEK PRIMITIVE BAPTIST CHURCH,"Cleburne County, Alabama","May 15, 1994",Cane Creek Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7607,GARDEN STATE SACRED HARP SINGING CONVENTION,"Montclair Friends Meetinghouse, Upper Montclair, New Jersey","May 13-14, 1994",Garden State Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7608,NEW CANAAN BAPTIST CHURCH,"Walker County, Alabama","May 15, 1994",New Canaan Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7610,DOSS MEMORIAL SINGING,"Sardis Baptist Church, Morris, Alabama","May 22, 1994",Doss Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7611,GUM POND PRIMITIVE BAPTIST CHURCH,"Morgan County, Alabama","May 22, 1994",Gum Pond Decoration Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7612,POPOLAR SPRINGS CHURCH,"North of Tallapoosa, Georgia off Hwy. 100","May 22, 1994",Poplar Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.977
+7613,GULLINS SCHOOL HOUSE,"Hamilton, Alabama","May 22, 1994",Sullins School House,,,,,,,minutes_pre95.db,add_new_row_from_database,0.95
+7614,MIDWEST CONVENTION,"Chicago, Illinoise","May 28-29, 1994",Midwest Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7615,SOUTHWEST TEXAS CONVENTION,"Bethel Primitive Baptist Church - McMahan, Texas","May 28-29, 1994",Southwest Texas Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7616,HOLLY SPRINGS MEMORIAL SINGING,"Near Bremen, Georgia I-20 and 27 South","June 4-5, 1994",Holly Springs Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7617,LIBERTY CHURCH,"Henager, Alabama","June 5, 1994",Ivey Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7618,PINE TUCKY CHURCH,"Winston County, Alabama","June 5, 1994",Pine Tucky Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7619,NORTHERN SHENANDOAH VALLEY SINGING,"Berryville, Virginia",June 11 1994,Northern Shenandoah Valley Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7620,HOPEWELL HOMECOMING,"Oneonta, Alabama","June 11, 12, 1994",Hopewell Homecoming,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7621,ALPHARETTA MUNICIPAL BUILDING,"Alpharetta, Georgia","June 12, 1994",Alpharetta Municipal Building,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7622,MOUNT VERNON PRIMITIVE BAPTIST CHURCH,"Near Cullman, Alabama on HWY. 69 East","JUNE 12, 1994",Mount Vernon Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7623,NEW HOPE CHURCH,"Villa Rica, Georgia","June 12, 1994",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7624,PLEASANT HILL (JOHNSON SCHOOL HOUSE),"Aldridge Memorial - Fayette County, Alabama","June 12, 1994",Aldridge Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7626,"MOORE, GRAVES AND CALVERT MEMORIAL","Addington Chaple Methodist Church, Cullman County, Alabama","June 18,1994","Moore, Graves, and Calvert Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7627,HOPEWELL PRIMITIVE BAPTIST CHURCH,"Near Ephesus, Georgia","June 19, 1994",Hopewell Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7628,KING SCHOOL HOUSE (MT. VERNON BAPTIS CHURCH),"Natural Bridge, Alabama","June 19, 1994",Clifford Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7629,LITTLE VINE PRIMITIVE BAPTIST CHURCH,"Empire, Alabama","June 19,1994",Little Vine Primitive Baptist Church - Empire,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7630,ST MICHAEL CHURCH,"Fruithurst, Alabama","June 19, 1994","Alewine, Laminack, and Stephen McElroy Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7631,ZION HILL HOMECOMING SACRED HARP SINGING,"12 miles South of Henderson, Toxas","June 19, 1994",Zion Hill Homecoming Singing (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7632,SHADY GROVE CHURCH,"Winston County, Alabama","June 25, 26, 1994",Kermit Adams and Steve Adams Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7633,DELONG MEMORIAL,"Ebenezer Primitive Baptist Church, Dunwoody, Georgia","June 26, 1994",DeLong-Roberts Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7634,MT LEBANON CHURCH,"Near Fayette, Alabama","June 26, 1994",Mt. Lebanon Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7635,NEW HOPE CHURCH,"Cullman County, Alabama","June 26, 1994",New Hope Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7636,HENAGAR - UNION CONVENTION - LIBERTY CHURCH,"Henager, Alabama","July 2 - 3, 1994",Henagar-Union Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7637,CROSS ROADS CHURCH,"North of Tallapoosa, Georgia","July 3, 1994",Cross Roads Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7638,DUTTON AND GEEEN MEFIORIAL,"South of Nauvoo, Alabama","July 3, 1994","Dutton, Green, and Jackson Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7639,MUSCADINE METHODIST CHURCH,"Muscadine, Alabama","July 4, 1994",Independence Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7640,JONES CHAPEL SENIOR CITIZENS CENTER,"Cullman, Alabama","July 6, 1994",Jones Chapel Sacred Harp Memorial Singing - July,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7641,CULLMAN COUNTY SINGING CONVENTION,"Cullman County Courthouse, Cullman, Alabama","July 9-10, 1994",Cullman County Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7642,Mt. ZION PRIMITIVE BAPTIST CHURCH,"Hwy 159 North of Gordo, Alabama","July 10, 1994",Mt. Zion Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7643,MT. OAK METHODIST CHURCH,"Six Miles Northwest of Arab, Alabama","Saturday, July 16, 1994",Mt. Oak Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7644,WALKER COUNTY CONVENTION,"City Auditorium, Jasper, Alabama","Saturday, July 16, 1994",Walker County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7645,"CHAFIN, HARBINSON AND HOLLIS MEMORIAL","New Prospect Church, Cullman County, Alabama","July 17, 1994","Chafin, Harbinson, and Hollis Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7646,COTACO SACRED HARP CONVENTION,Gum Pond Primitive Baptist Church,"Saturday, July 23, 1994",Cotaco Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7647,MT. ZION MEMORIAL,"Mt. Zion, Georgia","July 23, 24, 1994",Mt. Zion Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7648,DORSEY CREEK PRIMITIVE BAPTIST CHURCH,"Bremen, Alabama - on Hwy 69","July 24, 1994",Dorsey Creek Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.889
+7649,MARION COUNTY COURT HOUSE SINGING,"Hamilton, Alabama","July 24, 1994",Marion County Court House Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7650,YOUNG PEOPLES SACRED HARP SINGING CONVENTION,"Concord Church, Winfield, Alabama","Saturday, July 30, 1994",Young People's Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7651,LACY'S CHAPEL,"Henagar, Alabama","July 31, 1994",Lacy Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7652,MOON AND GUTHRIE MEMORIAL,"Liberty Church (McCormick) Jefferson, County, Alabama","July 31, 1994",Moon and Guthrie Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7653,UNION MUSICAL CONVENTION,"Ebernezer Primitive Baptist Church, Dunwoday, Georgia","July 30, 31, 1994",Union Musical Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7655,WARRIOR RIVER - CLEAR CREEK CONVENTION,Mt. Moriah Church,"August 6, 7, 1994",Warrior River - Clear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7656,FAYETTE COUNTY CONVENTION,"Bevill State Junior College, Fayette, Alabama","August 7, 1994",Fayette County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7657,EAST TEXAS SACRED HARP SINGING CONVENTION,"Community Center Building - Henderson, Texas","August 13, 14, 1994",East Texas Sacred Harp Singing Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7658,MACEDONIA BAPTIST CHURCH,"Haleyville, Alabara","August 14, 1994",Macedonia Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7659,TENNESSEE RIVER CONVENTION,"Second Creek Church - Five Points, Tennessee","August 14, 1994",Tennessee River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7660,ELMORE CENTER,"Four miles south of Gordo, Alabama, County Road 9 and 21","August 17, 1994",Elmore Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7661,CLEBURNE COUNTY CONVENTION,Cane Creek Church,"August 21, 1994",Cleburne County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7662,ROCK CREEK MOUNTAIN HOME-RYAN CREEK CONVENTION,"Dorsey Creek Primitive Baptist Church - Bremen, Alabama Hwy. 69 soutn","August 20, 21, 1994",Rock Creek-Mountain Home,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7663,BEAR CREEK CONVENTION,"Shady Grove Church - Winston County, Alabama","August 27, 1994",Bear Creek Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7664,LOOKOUT MOUNTAIN CONVENTION,Pine Grove Church,"August 27-28, 1994",Lookout Mountain Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7665,ROCKY MOUNTAIN SACRED HARP SINGING,"Old San Ysidro Church, Corrales, New Mexico","August 27, 28, 1994",Rocky Mountain Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7666,CHERRY TREE SINGING,James Creek Church,"August 28, 1994",Cherry Tree Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7667,CLEAR CREEK CONVENTION WEST,Pleasant Hill Church (Johnson School House) Fayette County Alabama.,September 4 1994,Clear Creek Convention West,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7668,LITTLE VINE CHURCH,Near Bremen Georgia,September 4 1994,Shiloh-Little Vine Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7669,MULBERRY RIVER CONVENTION,Liberty Church (McCormick) Primitive Baptist Church,September 3-4 1994,Mulberry River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7670,FOX VALLEY FOLK MUSIC FESTIVAL,Geneva Illinois,"September 4, 1994",Fox Valley Folk Festival,,,,,,,minutes_pre95.db,add_new_row_from_database,0.889
+7671,LABOR DAY SINGING,Shoal Creek Church,"September 5, 1994",Labor Day Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7672,THE UNITED SACRED HARP MUSICAL ASSOCATION,"Emmaus Church, Carrollton, Gerogia","September 10, 11, 1994",The United Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.987
+7673,MIOUNTAIN HOME CHURCH,"Near Bear Creek, Alabama","September 11, 1994",Mountain Home Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.976
+7674,CALHOUN COUNTY CONVENTION,Four Mile Mt. Moriah Primitive Baptist Church,"September 17, 18, 1994",Calhoun County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7675,SHADY GROVE (KEETON CEMETARY),"Walker County, Alabama","September 19, 1994",Cornelius Benjamin Keeton and Travis Keeton Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7676,GUM POND CHURCH,"Morgan County, Alabama","September 25, 1994",Gum Pond Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7677,LIBERTY HILL BAPTIST CHURCH,"Boaz, Alabsma","September 25, 1994",Liberty Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7678,WINSTON COUNTY CONVENTION,Shady Grove Church,"September 25, 1994",Winston County Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7680,MINNESOTA STATE SACRED HARP CONVENTION,"Faith Mennonite Church Minneapolis, Minnesota","October 1, 2, 1994",Minnesota State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7681,OLD SARDIS CHURCH,"Near Lynn, Alabama","October 2, 1994",Tom Harper and Ganus Wakefield Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7682,CHESNUT GROVE CHURCH,"lder, Alabama","October 9, 1994",Chestnut Grove Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7683,HARPER MEMORIAL,"Old Flatwods Primitive Baptist Church - Nauvoo, Alabama","October 9, 1994",Harper Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7684,SECOND CREEK PRIMITIVE BAPTIST CHURCH,"Near Five Points, Tennessee","October 9, 1994",Tennessee State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.917
+7685,THE WALKER CATES AND HERBERT BROWN MEMORIAL,Muscadine Methodist Church,"October 9, 1994","Albright, Cates, Brown, and Sheppard Memorial Singing",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7686,MARS HILL PRIMITIVE BAPTIST CHURCH,"McWhorter Memorial - Cleburn County, Alabama","October 16, 1994",Zion Hill Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.882
+7687,NEW YORK STATE SACRED HARP CONVENTION,"Bethel Grove Community Center, Ithaca, New York","October 14-16, 1994",New York State Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7688,REID MEMORIAL,"Old County Line Church Near Corner, Alabama","October 16, 1994",Reid Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7689,COY PUTMAN MEMORIAL,"Rocky Mlount Primitve Baptist Church, Arab, Alabama","October 22, 1994",Coy Putman Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7690,MR. AND MRS. JOE MYERS AND W. A. PARKER MEMORIAL,"New Hope Primitive Baptist Church - Walker County, Alabama","October 22, 23, 1994","W.A. Parker, Mr. and Mrs. Joe Myers, and Elsie Beasley Memorial",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7691,CINCINNATI - COLUMBUS SINGING,"Friends Meetinghouse, Yellow Springs, Ohio","October 22, 1994","Columbus-Cincinnati Singing, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7692,JORDAN CHAPEL,"Newell, Randolph County, Alabama","October 23, 1994",Jordan's Chapel Methodist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7693,MOUNT MORIAH PRIMITIVE BAPTIST CHURCH,Near Sneads Cross Road,"October 23, 1994",Mount Moriah Primitive Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7694,SOUTHEAST TEXAS SINGING,"Salem Lutheran Church, Brenham, Texas","October 22, 1994",Southeast Texas Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7695,SOUTHWEST TEXAS SACRED HARP CONVENTION,"Littlevine Primitive Baptist Church, Austin, Texas","October 29-30, 1994","Southwest Texas Sacred Harp Singing Convention, Fall Session",,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7696,MARTIN BLACKMON MEMORIAL,"New Hope Primitive Baptist Church, Villa Rica, Georgia","October 30, 1994",Martin Blackmon Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7697,TUSCALOSSA COMMUNITY CENTER,"Rosedale Southside Lions Club, Tuscalossa, Alabama","October 30, 1994",Tuscaloosa Community Center Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7698,ALVIS BROTHERS AND B. I. WOOD MEMORIAL SINGING,Pilgrim Rest Primitive Baptist Church,"November 6, 1994",Alvis Brothers - B. I. Wood Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7699,BETHEL PRIMITVIE BAPTIST CHURCH,"Heard County, Gerogia- off Hwy 27 South","Saturday, November 5, 1994",Bethel Primitive Baptist Church - Mississippi,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7700,HOLLY SPRINGS PRIMITIVE BAPTIST CHURCH,"Bremen, Georgia, I20- Hwy 278","November 6, 1994",Holly Springs Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7701,LOUISIANA STATE SACRED HARP SINGING,"Bethel Primitive Baptist Church Baton Rouge, Louisiana","November 5, 1994",Louisiana State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7702,MT. EBRON CHURCH MEMORIAL SINGING,"Near Double Springs, Alabama","November 6, 1994",Mt. Ebron Church Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7703,SOUTH GEORGIA SACRED HARP SINGING CONVENTION,"Lebanon Primitive Baptist Church - Near Cordele, Georgia","November 6, 1994",South Georgia Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7704,WESTERN OHIO SCHOOL HOUSE SINGING,"Bluffton, Ohio","November 5, 1994",Western Ohio School House Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7705,SOUTHREN WISCONSIN SINGING,Free Congregation of Sauk County,"Saturday, November 12, 1994",All-Wisconsin Sacred Harp Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7706,OAK GROVE CHURCH,"Alpharetta, Georgia","November 13, 1994",Oak Grove Primitive Baptist Church - Alpharetta,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7707,OAK HILL BAPTIST CHURCH,"Oxford, Alabama","November 13, 1994",Oak Hill Baptist Church,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7709,HARMONY PRIMITIVE BAPTIST CHURCH,"Calhoun, Georgia","November 20, 1994",Elder and Mrs. Jason Davis Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7710,JAMES RIVER CONVENTION,"Richmond, Virginia","November 19, 20, 1994",James River Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7711,JONES CHAPEL SENIOR CITIZENS CENTER,"Cullman County, Alabama","November 20, 1994",Jones Chapel Sacred Harp Memorial Singing - July,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7712,ALABAMA STATE CONVENTION,"Mt. Pleasant Home Primitive Baptist Church North Birmingham, Alabama.","November 26, 27, 1994",Alabama Sacred Harp Musical Association,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7713,GANUS AND WILFORD WAKEFIELD MEMORIAL,"Mt. Vernon (King School House) - Natural Bridge, Alabama.","November 27, 1994",Wakefield Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7714,FLORIDA STATE CONVENTION,"Holiday Inn, Panama City, Florida","December 3-4, 1994",Florida State Convention (Cooper Book),,,,,,,minutes_pre95.db,add_new_row_from_database,0.7
+7715,LILLIAN CALVERT AND IRENE WOODLEY MEMORIAL,"Pleasant Grove Church - Boldo, Alabama","January 8, 1994",Lillian Calvert and Irene Woodley Memorial,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7716,ALTAMONT FAIR (TRICOUNTY FAIR GROUNDS),"Near Albany, New York","June 25, 26, 1994",Old Songs Book Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.55
+7717,OAK GROVE PRIMITIVE BAPTIST CHURCH,"Oak Grove, Alabama","July 10, 1994",Boiling Springs Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7718,BEASLEY - LEE MEMORIAL SINGING,"Concord Primitive Baptist Church, Winfield, Alabama","August 14, 1994",Belton and Emma Beasley and Phillip Lee III Memorial Singing,,,,,,,minutes_pre95.db,add_new_row_from_database,0.97
+7276,National Sacred Harp Convention,"Samford University, Birmingham, Alabama","June 18, 19 and 20, 1992",National Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,1.0
+7329,Illinois State Sacred Harp Convention,"Otterbein United Methodist Church and Coles County Courthouse Charleston, Illinois","September 26-27, 1992",Illinois State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,1.0
+7503,Illinois State Sacred Harp Convention,"Otterbein United Hethodist Church and Coles County Courthouse Charleston, Illinois","September 25-26, 1993",Illinois State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,1.0
+7538,National Sacred Harp Convention,"Briarwood Presbyterian Church, Birmingham, Alabama","June 17, 18 ,19, 1993",National Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,1.0
+7625,National Sacred Harp Convention,"Trinity United Methodist Church, Birmingham, Alabama","June 16, 17, 18, 1994",National Sacred Harp Singing Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,1.0
+7679,Illinois State Sacred Harp Convention,"Otterbein United Methodist Church and Coles County Courthouse Charleston, Illionis","September 24, 25, 1994",Illinois State Sacred Harp Convention,,,,,,,minutes_pre95.db,add_new_row_from_database,1.0

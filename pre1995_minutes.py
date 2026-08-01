@@ -15,12 +15,19 @@ MONTH_PATTERN = (
     'November|December'
 )
 
-DATE_PATTERN = re.compile(
-    r'^(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[,]?\s*'
+DATE_TEXT_PATTERN = (
+    r'(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?[,]?\s*'
     r'(?:' + MONTH_PATTERN + r'),?\s+'
     r'\d{1,2}'
-    r'(?:\s*(?:,|--|-|to)\s*(?:' + MONTH_PATTERN + r')?\s*\d{1,2})?'
-    r',?\s*\d{4}$',
+    r'(?:\s*(?:,|--|-|to|and)\s*(?:' + MONTH_PATTERN + r')?\s*\d{1,2})*'
+    r',?\s*\d{4}'
+)
+DATE_PATTERN = re.compile(
+    r'^' + DATE_TEXT_PATTERN + r'$',
+    re.IGNORECASE,
+)
+DATE_AT_END_PATTERN = re.compile(
+    r'^(?P<location>.+?)\s+(?P<date>' + DATE_TEXT_PATTERN + r')$',
     re.IGNORECASE,
 )
 
@@ -32,6 +39,15 @@ PAGE_PROSE_PATTERN = re.compile(
 )
 ADDRESS_ENTRY_PATTERN = re.compile(
     r"^[A-Z][A-Za-z'.-]+,\s+(?:[A-Z][A-Za-z'.&-]+|[A-Z]\.)\b"
+)
+PRINTED_PAGE_NUMBER_PATTERN = re.compile(r'^\d{1,3}$')
+BODY_BREAK_PATTERN = re.compile(
+    r'^(?:'
+    r'RECESS|'
+    r'(?:DISMISSED|ADJOURNED)(?:\s+FOR)?\s+(?:LUNCH|DINNER)|'
+    r'LUNCH|DINNER'
+    r')\.?$',
+    re.IGNORECASE,
 )
 NAME_BEFORE_PAGE_PATTERN = (
     r"(?:[A-Z][A-Za-z’'.-]*|[A-Z]\.)"
@@ -109,25 +125,52 @@ def find_big_minutes_headers(text, start_after='NOTES:'):
 
     headers = []
     for idx in range(start_idx, len(lines)):
-        date = lines[idx].strip()
-        if not DATE_PATTERN.match(date):
-            continue
+        line = lines[idx].strip()
+        inline_location = None
+        if DATE_PATTERN.match(line):
+            date = line
+            location_idx = idx - 1
+            while location_idx >= start_idx and not lines[location_idx].strip():
+                location_idx -= 1
+            if location_idx < start_idx:
+                continue
+            location_start = location_idx
+        else:
+            inline_match = DATE_AT_END_PATTERN.match(line)
+            if not inline_match:
+                continue
+            inline_location = inline_match.group('location').strip()
+            date = inline_match.group('date').strip()
+            location_start = idx
 
-        location_idx = idx - 1
-        while location_idx >= start_idx and not lines[location_idx].strip():
-            location_idx -= 1
-        if location_idx < start_idx:
-            continue
-
-        title_start = _title_start(lines, location_idx)
+        title_start = _title_start(lines, location_start)
+        # Some old minutes use two physical lines for the location.  If the
+        # line immediately above the date is not preceded by a title, walk
+        # upward through a small number of possible location lines until a
+        # title is found.
+        if (
+                title_start is None
+                and location_start > start_idx
+                and lines[location_start - 1].strip()):
+            location_start -= 1
+            title_start = _title_start(lines, location_start)
         if title_start is None:
             continue
 
         title = ' '.join(
-            line.strip() for line in lines[title_start:location_idx]
+            line.strip() for line in lines[title_start:location_start]
             if line.strip()
         )
-        location = lines[location_idx].strip()
+        if inline_location is not None:
+            location = ' '.join(
+                [line.strip() for line in lines[location_start:idx] if line.strip()]
+                + [inline_location]
+            )
+        else:
+            location = ' '.join(
+                line.strip() for line in lines[location_start:idx]
+                if line.strip()
+            )
         if not title or not location:
             continue
 
@@ -263,6 +306,7 @@ def _format_page_token(token, book_year):
 
 def normalize_pre1995_minutes(text, book_year=1991):
     """Convert likely old-style Denson page references to parser syntax."""
+    text = reflow_pre1995_ocr_text(text)
     text = PAGE_PROSE_PATTERN.sub(
         lambda m: '%s %s' % (m.group(1), _format_page_token(m.group(2), book_year)),
         text,
@@ -282,6 +326,41 @@ def normalize_pre1995_minutes(text, book_year=1991):
 
     text = PAGE_TOKEN_PATTERN.sub(replace_token, text)
     return separate_pre1995_comma_list_leaders(text, book_year)
+
+
+def reflow_pre1995_ocr_text(text):
+    """Remove scan-line wrapping while retaining meaningful session breaks."""
+    lines = text.splitlines()
+    kept_lines = []
+
+    for idx, line in enumerate(lines):
+        stripped = line.strip()
+        if PRINTED_PAGE_NUMBER_PATTERN.match(stripped):
+            previous_is_blank = idx > 0 and not lines[idx - 1].strip()
+            next_is_blank = idx + 1 < len(lines) and not lines[idx + 1].strip()
+            if previous_is_blank or next_is_blank:
+                continue
+        kept_lines.append(stripped)
+
+    sections = []
+    current = []
+    for line in kept_lines:
+        if not line:
+            continue
+        if BODY_BREAK_PATTERN.match(line):
+            if current:
+                sections.append(' '.join(current))
+                current = []
+            sections.append(line)
+        else:
+            current.append(line)
+
+    if current:
+        sections.append(' '.join(current))
+
+    # Vertical tabs are the paragraph/session delimiter used by the 1995+
+    # minutes and are already understood by parse_minutes.
+    return '\v'.join(sections)
 
 
 def separate_pre1995_comma_list_leaders(text, book_year=1991):
