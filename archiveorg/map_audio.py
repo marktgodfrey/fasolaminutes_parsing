@@ -4,9 +4,36 @@ import json
 import csv
 import sqlite3
 import difflib
+import time
+import tempfile
+import xml.etree.ElementTree as ET
+from urllib.parse import quote
 import requests
 
 BASE_URL = 'https://archive.org/download'
+METADATA_TIMEOUT = 30
+METADATA_MAX_ATTEMPTS = 4
+DEFAULT_METADATA_CACHE = os.path.join(os.path.dirname(__file__), 'metadata_cache')
+
+
+def extract_pagenum(title):
+    book_prefix = r'(?:SH|Sacred Harp|Denson|Cooper|CH|Christian Harmony|CSH|Colored Sacred Harp)'
+    if re.search(r'^\d+\s+' + book_prefix + r'\b', title, re.IGNORECASE):
+        return None
+
+    m = re.search(r'^(\d+[tb]?)\b', title, re.IGNORECASE)
+    if not m:
+        m = re.search(
+            r'^' + book_prefix + r'\s+(\d+[tb]?)\b',
+            title,
+            re.IGNORECASE,
+        )
+
+    pagenum = m.group(1) if m else None
+    if pagenum and pagenum[0] == '0':
+        pagenum = pagenum[1:]
+
+    return pagenum
 
 
 def open_db():
@@ -18,24 +45,157 @@ def open_db():
     return conn
 
 
-def read_item(item_id):
-    response = requests.get('https://archive.org/metadata/' + item_id)
-    try:
-        data = response.json()
-    except ValueError:
-        print('bad archive.org metadata response: %s status=%s' % (
-            item_id,
-            response.status_code,
-        ))
-        return []
+def metadata_cache_path(item_id, cache_dir=None):
+    cache_dir = cache_dir or os.environ.get(
+        'ARCHIVEORG_METADATA_CACHE',
+        DEFAULT_METADATA_CACHE,
+    )
+    return os.path.join(cache_dir, quote(item_id, safe='') + '.json')
 
-    if 'files' not in data:
-        print('missing archive.org files metadata: %s status=%s keys=%s' % (
+
+def read_cached_metadata(item_id, cache_dir=None):
+    path = metadata_cache_path(item_id, cache_dir)
+    try:
+        with open(path, 'r') as cache_file:
+            data = json.load(cache_file)
+        if not isinstance(data, dict) or 'files' not in data:
+            raise ValueError('cached response has no files metadata')
+        return data
+    except FileNotFoundError:
+        return None
+    except (OSError, ValueError) as exc:
+        print('ignoring bad archive.org metadata cache for %s: %s' % (
             item_id,
-            response.status_code,
-            sorted(data.keys()),
+            exc,
         ))
-        return []
+        return None
+
+
+def write_cached_metadata(item_id, data, cache_dir=None):
+    path = metadata_cache_path(item_id, cache_dir)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    temp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode='w',
+            dir=os.path.dirname(path),
+            prefix='.metadata-',
+            suffix='.tmp',
+            delete=False,
+        ) as cache_file:
+            temp_path = cache_file.name
+            json.dump(data, cache_file)
+        os.replace(temp_path, path)
+    finally:
+        if temp_path and os.path.exists(temp_path):
+            os.unlink(temp_path)
+
+
+def fetch_with_retries(item_id, source_name, load):
+    last_error = None
+    for attempt in range(1, METADATA_MAX_ATTEMPTS + 1):
+        try:
+            return load()
+        except (requests.RequestException, ET.ParseError, ValueError, RuntimeError) as exc:
+            last_error = exc
+            if attempt < METADATA_MAX_ATTEMPTS:
+                delay = 2 ** (attempt - 1)
+                print('archive.org %s attempt %d/%d failed for %s: %s; retrying in %ds' % (
+                    source_name,
+                    attempt,
+                    METADATA_MAX_ATTEMPTS,
+                    item_id,
+                    exc,
+                    delay,
+                ))
+                time.sleep(delay)
+
+    raise RuntimeError(
+        'archive.org %s failed after %d attempts for %s: %s' % (
+            source_name,
+            METADATA_MAX_ATTEMPTS,
+            item_id,
+            last_error,
+        )
+    )
+
+
+def fetch_partial_files(item_id):
+    url = 'https://archive.org/metadata/%s/files?extended_err=1' % item_id
+
+    def load():
+        response = requests.get(url, timeout=METADATA_TIMEOUT)
+        if response.status_code >= 400:
+            raise RuntimeError('HTTP %s' % response.status_code)
+        data = response.json()
+        if not isinstance(data, dict):
+            raise RuntimeError('response is not a JSON object')
+        if 'result' not in data:
+            error = data.get('error', 'response has keys %s' % sorted(data.keys()))
+            raise RuntimeError(str(error))
+        if not isinstance(data['result'], list):
+            raise RuntimeError('files result is not a list')
+        return data['result']
+
+    return fetch_with_retries(item_id, 'partial files metadata', load)
+
+
+def fetch_files_xml(item_id):
+    filename = quote(item_id, safe='') + '_files.xml'
+    url = '%s/%s/%s' % (BASE_URL, quote(item_id, safe=''), filename)
+
+    def load():
+        response = requests.get(url, timeout=METADATA_TIMEOUT)
+        if response.status_code >= 400:
+            raise RuntimeError('HTTP %s' % response.status_code)
+        root = ET.fromstring(response.content)
+        if root.tag != 'files':
+            raise RuntimeError('XML root is %s, not files' % root.tag)
+        files = []
+        for node in root.findall('file'):
+            file_data = dict(node.attrib)
+            for child in node:
+                file_data[child.tag] = child.text
+            files.append(file_data)
+        return files
+
+    return fetch_with_retries(item_id, 'files.xml metadata', load)
+
+
+def fetch_item_metadata(item_id, cache_dir=None):
+    refresh = os.environ.get('ARCHIVEORG_REFRESH_METADATA', '').lower() in (
+        '1', 'true', 'yes',
+    )
+    if not refresh:
+        cached_data = read_cached_metadata(item_id, cache_dir)
+        if cached_data is not None:
+            return cached_data
+
+    try:
+        files = fetch_partial_files(item_id)
+    except RuntimeError as partial_error:
+        print('%s; falling back to canonical files.xml' % partial_error)
+        try:
+            files = fetch_files_xml(item_id)
+        except RuntimeError as xml_error:
+            raise RuntimeError('%s; fallback also failed: %s' % (
+                partial_error,
+                xml_error,
+            )) from xml_error
+
+    data = {'files': files}
+    try:
+        write_cached_metadata(item_id, data, cache_dir)
+    except (OSError, TypeError) as exc:
+        print('could not cache archive.org metadata for %s: %s' % (
+            item_id,
+            exc,
+        ))
+    return data
+
+
+def read_item(item_id, cache_dir=None):
+    data = fetch_item_metadata(item_id, cache_dir)
 
     songs = []
     for file in data['files']:
@@ -57,14 +217,10 @@ def read_item(item_id):
 
             title = title.split('.')[-1]
 
-        m = re.search(r'^(\d+[tb]?)', title)
-        pagenum = m.group() if m else None
+        pagenum = extract_pagenum(title)
         if not pagenum:
             # print('no pagenum? %s %s' % (file, title))
             continue
-
-        if pagenum[0] == '0':
-            pagenum = pagenum[1:]
 
         url = os.path.join(BASE_URL, item_id, file['name'])
         print('%s,%s' % (pagenum, url))
@@ -150,6 +306,28 @@ def insert_songs(conn, minutes_id, book_year, songs_audio, check_seq=True):
     curs.close()
 
 
+def map_items(conn, minutes):
+    failures = []
+    for minutes_id, item_id, book_year in minutes:
+        try:
+            songs = read_item(item_id)
+        except RuntimeError as exc:
+            print('skipping archive.org item %s after metadata failure: %s' % (
+                item_id,
+                exc,
+            ))
+            failures.append((item_id, str(exc)))
+            continue
+        insert_songs(
+            conn,
+            minutes_id,
+            book_year,
+            songs,
+            check_seq=(item_id != 'sacredharp2025edition'),
+        )
+    return failures
+
+
 if __name__ == "__main__":
     conn = open_db()
 
@@ -172,8 +350,14 @@ if __name__ == "__main__":
             print("no minutes: " + row[0])
     curs.close()
 
-    for minutes_id, item_id, book_year in minutes:
-        songs = read_item(item_id)
-        insert_songs(conn, minutes_id, book_year, songs, check_seq=(item_id != 'sacredharp2025edition'))
-
+    failures = map_items(conn, minutes)
     conn.close()
+
+    if failures:
+        details = '\n'.join('  %s: %s' % failure for failure in failures)
+        raise SystemExit(
+            'archive.org metadata failed for %d item(s):\n%s' % (
+                len(failures),
+                details,
+            )
+        )
